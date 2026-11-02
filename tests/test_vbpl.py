@@ -1,0 +1,129 @@
+"""Kiểm thử phân tích sitemap, khớp số ký hiệu và đọc tình trạng từ vbpl.vn (không gọi mạng)."""
+
+import tempfile
+import unittest
+from pathlib import Path
+
+from crawler import store, vbpl
+
+SITEMAP_XML = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://vbpl.vn/van-ban/chi-tiet/luat-cu-tru-so-68-2020-qh14--146648</loc>
+    <lastmod>2026-04-05</lastmod>
+  </url>
+  <url>
+    <loc>https://vbpl.vn/van-ban/chi-tiet/law-68-2020-qh14--vbpqta_11132</loc>
+    <lastmod>2026-04-06</lastmod>
+  </url>
+</urlset>
+"""
+
+DETAIL_TEXT = (
+    "Trang chủ > Văn bản quy phạm pháp luật Trung ương > Nghị định 158/2026/NĐ-CP\n"
+    "Nghị định 158/2026/NĐ-CP Quy định chi tiết\n"
+    "Còn hiệu lực\nNgày có hiệu lực: 01/07/2026\nNgày cập nhật: 29/10/2026\n23 lượt xem"
+)
+
+
+def entry(url, lastmod="2026-01-01", sheet=1):
+    return {"url": url, "lastmod": lastmod, "sheet": sheet}
+
+
+class SitemapTest(unittest.TestCase):
+    def test_read_urlset_reads_loc_lastmod_and_sheet(self):
+        entries = vbpl.read_urlset(SITEMAP_XML, 1)
+        self.assertEqual(len(entries), 2)
+        self.assertEqual(entries[0]["lastmod"], "2026-04-05")
+        self.assertEqual(entries[0]["sheet"], 1)
+
+    def test_english_versions_are_skipped(self):
+        self.assertTrue(vbpl.is_vietnamese_version("https://vbpl.vn/van-ban/chi-tiet/luat-cu-tru-so-68-2020-qh14--146648"))
+        self.assertFalse(vbpl.is_vietnamese_version("https://vbpl.vn/van-ban/chi-tiet/law-68-2020-qh14--vbpqta_11132"))
+
+
+class NumberMatchTest(unittest.TestCase):
+    def test_normalize_number_handles_vietnamese_letters(self):
+        self.assertEqual(vbpl.normalize_number("68/2020/QH14"), "68-2020-qh14")
+        self.assertEqual(vbpl.normalize_number("49/2026/QĐ-UBND"), "49-2026-qd-ubnd")
+
+    def test_find_by_number_matches_whole_number_only(self):
+        entries = [
+            entry("https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-118-2026-nq-hdnd-abc--1"),
+            entry("https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-18-2026-nq-hdnd-le-phi-ho-tich--2"),
+        ]
+        hit = vbpl.find_by_number(entries, "18/2026/NQ-HĐND")
+        self.assertIn("so-18-2026", hit["url"])
+
+    def test_find_by_number_skips_english_version(self):
+        entries = [
+            entry("https://vbpl.vn/van-ban/chi-tiet/law-68-2020-qh14--vbpqta_11132"),
+            entry("https://vbpl.vn/van-ban/chi-tiet/luat-cu-tru-so-68-2020-qh14--146648"),
+        ]
+        hit = vbpl.find_by_number(entries, "68/2020/QH14")
+        self.assertTrue(hit["url"].endswith("146648"))
+
+    def test_find_by_number_returns_none_when_absent(self):
+        self.assertIsNone(vbpl.find_by_number([entry("https://vbpl.vn/van-ban/chi-tiet/luat-abc--1")], "1/2000/QH1"))
+
+
+class DiscoverTest(unittest.TestCase):
+    keywords = ["cu-tru", "con-dau"]
+
+    def test_local_documents_must_mention_ho_chi_minh_city(self):
+        other_province = entry(
+            "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-ve-cu-tru-tinh-khac--1", "2026-06-01", sheet=20
+        )
+        hcm = entry(
+            "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-ve-cu-tru-tren-dia-ban-thanh-pho-ho-chi-minh--2",
+            "2026-06-01", sheet=20,
+        )
+        found = vbpl.discover([other_province, hcm], self.keywords, "2025-01-01")
+        self.assertEqual([hit["url"] for hit in found], [hcm["url"]])
+
+    def test_central_documents_need_only_keyword_and_recent_update(self):
+        recent = entry("https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-ve-con-dau--1", "2026-02-13", sheet=1)
+        old = entry("https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-ve-con-dau--2", "2019-02-13", sheet=1)
+        found = vbpl.discover([recent, old], self.keywords, "2025-01-01")
+        self.assertEqual([hit["url"] for hit in found], [recent["url"]])
+
+
+class DetailTextTest(unittest.TestCase):
+    def test_status_and_dates_are_read_from_page_text(self):
+        info = vbpl.parse_detail_text(DETAIL_TEXT)
+        self.assertEqual(info["tinh_trang"], "Còn hiệu lực")
+        self.assertEqual(info["ngay_hieu_luc"], "2026-07-01")
+        self.assertEqual(info["ngay_cap_nhat"], "2026-10-29")
+
+    def test_expired_status_is_detected(self):
+        text = "Hết hiệu lực Ngày có hiệu lực: 01/01/2016 Ngày cập nhật: 16/01/2026"
+        self.assertEqual(vbpl.parse_detail_text(text)["tinh_trang"], "Hết hiệu lực")
+
+    def test_missing_fields_become_none(self):
+        info = vbpl.parse_detail_text("Trang lỗi")
+        self.assertIsNone(info["tinh_trang"])
+        self.assertIsNone(info["ngay_hieu_luc"])
+
+
+class StoreVbplTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.conn = store.connect(Path(self._tmp.name) / "test.db")
+
+    def tearDown(self):
+        self.conn.close()
+        self._tmp.cleanup()
+
+    def test_upsert_keeps_columns_not_in_the_new_row(self):
+        url = "https://vbpl.vn/van-ban/chi-tiet/luat-cu-tru-so-68-2020-qh14--146648"
+        store.upsert_vbpl(self.conn, {"url": url, "so_ky_hieu": "68/2020/QH14", "tinh_trang": "Còn hiệu lực"})
+        store.upsert_vbpl(self.conn, {"url": url, "kiem_tra_luc": "2026-11-02T08:00:00", "loi": "timeout"})
+
+        row = store.load_vbpl(self.conn)[0]
+        self.assertEqual(row["tinh_trang"], "Còn hiệu lực")
+        self.assertEqual(row["so_ky_hieu"], "68/2020/QH14")
+        self.assertEqual(row["loi"], "timeout")
+
+
+if __name__ == "__main__":
+    unittest.main()

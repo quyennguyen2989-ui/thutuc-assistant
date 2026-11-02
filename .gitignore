@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 data/raw/
 data/*.log
+data/*.db-journal
+data/*.db-shm
+data/*.db-wal

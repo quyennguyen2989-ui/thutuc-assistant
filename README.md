@@ -61,6 +61,23 @@ schtasks /Create /SC DAILY /ST 08:00 /TN "ThuTucAssistant" /TR "cmd /c cd /d D:\
 - Bản ghi biến mất khỏi cổng được đánh dấu, không xóa.
 - Nếu số bản ghi giảm quá nửa, hoặc cổng trả về rỗng, lần chạy bị coi là lỗi và không ghi gì (tránh xóa nhầm dữ liệu khi cổng sự cố).
 
+## Văn bản từ vbpl.vn (CSDL quốc gia về pháp luật)
+
+Công cụ đọc thêm tình trạng hiệu lực và ngày cập nhật từ vbpl.vn, gồm cả văn bản trung ương và văn bản địa phương TP.HCM. Mô-đun này làm đúng theo `robots.txt` của trang: chỉ đọc sitemap và trang chi tiết, không gọi `/api/`.
+
+- **Mỗi tuần một lần**: đọc toàn bộ sitemap để tìm văn bản theo số ký hiệu và văn bản mới theo từ khóa (`crawler/vbpl_config.json`). Văn bản địa phương chỉ giữ những văn bản có "thành phố Hồ Chí Minh" trong tên.
+- **Mỗi ngày**: mở từng trang chi tiết bằng trình duyệt tự động (Playwright) để lấy tình trạng, ngày có hiệu lực và ngày cập nhật.
+- Khi không có Playwright, bước này được bỏ qua và phần cổng Phòng CSQLHC vẫn chạy bình thường.
+
+Cài đặt để bật bước này trên máy:
+
+```bash
+pip install playwright
+python -m playwright install chromium
+```
+
+Thứ tự ưu tiên khi hiển thị tình trạng: vbpl.vn trước, rồi đối chiếu thủ công, rồi cổng Phòng CSQLHC.
+
 ## Hạn chế đã biết
 
 - **Cổng chưa được cập nhật đầy đủ.** Ngày ban hành mới nhất của văn bản trên cổng là 01/10/2019. Cổng vẫn đánh dấu "còn hiệu lực" cho Luật Cư trú 2006 và Luật Căn cước công dân 2014, dù đã bị thay thế. Vì vậy công cụ dùng `crawler/tinh_trang_thu_cong.json` để ghi chú đối chiếu, kèm nguồn và ngày đối chiếu, và `crawler/van_ban_bo_sung.json` cho Luật Căn cước 2023 và Luật Cư trú 2020.

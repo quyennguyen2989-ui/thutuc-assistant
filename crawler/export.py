@@ -9,11 +9,16 @@ Mỗi mục đều ghi nguồn và ngày đối chiếu, để người dùng t�
 import json
 from pathlib import Path
 
-from . import store
+from . import store, vbpl, vbpl_sync
 
 SOURCE_PORTAL = {
     "ten": "Trang thông tin điện tử Phòng Cảnh sát quản lý hành chính về trật tự xã hội (Công an TP.HCM)",
     "url": "https://qlhc-congan.hochiminhcity.gov.vn/wps/portal/Home/vbpq",
+}
+
+SOURCE_VBPL = {
+    "ten": "Cơ sở dữ liệu quốc gia về pháp luật (vbpl.vn)",
+    "url": vbpl.SITE,
 }
 
 DISCLAIMER = (
@@ -41,6 +46,54 @@ def _van_ban_view(conn, overrides, extra):
     return items
 
 
+def _merge_vbpl(items, rows, keywords):
+    """Gắn trạng thái đọc từ vbpl.vn vào văn bản đã có, hoặc thêm văn bản mới tìm được.
+
+    Chỉ lấy văn bản có trạng thái và còn thuộc phạm vi hiện tại (theo số ký hiệu hoặc từ khóa).
+    """
+    by_number = {item["so_ky_hieu"]: item for item in items}
+    for row in rows:
+        if not row["tinh_trang"]:
+            continue
+        if not (row["so_ky_hieu"] or vbpl.is_relevant(row["url"], row["sheet"], keywords)):
+            continue
+        number = row["so_ky_hieu"] or _number_from_title(row["tieu_de"]) or row["url"]
+        vbpl_info = {
+            "url": row["url"],
+            "tinh_trang": row["tinh_trang"],
+            "ngay_hieu_luc": row["ngay_hieu_luc"],
+            "ngay_cap_nhat": row["ngay_cap_nhat"],
+            "kiem_tra_luc": row["kiem_tra_luc"],
+        }
+        if number in by_number:
+            by_number[number]["vbpl"] = vbpl_info
+            continue
+        item = {
+            "id": None,
+            "so_ky_hieu": number,
+            "loai": "",
+            "linh_vuc": "",
+            "co_quan_ban_hanh": "",
+            "nguoi_ky": "",
+            "trich_yeu": row["tieu_de"] or "",
+            "ngay_ban_hanh": "",
+            "ngay_hieu_luc": row["ngay_hieu_luc"] or "",
+            "hieu_luc_theo_cong": None,
+            "file_dinh_kem": "",
+            "nguon": "vbpl",
+            "vbpl": vbpl_info,
+            "_missing": False,
+        }
+        items.append(item)
+        by_number[number] = item
+    return items
+
+
+def _number_from_title(title):
+    match = vbpl.NUMBER_IN_TEXT.search(title or "")
+    return match.group(0) if match else None
+
+
 def _last_ok_run(conn):
     row = conn.execute(
         "SELECT run_at FROM runs WHERE status = 'ok' ORDER BY run_at DESC LIMIT 1"
@@ -55,7 +108,8 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     overrides = {item["so_ky_hieu"]: item for item in _read_json(overrides_path, [])}
     extra = _read_json(extra_path, [])
 
-    van_ban = _van_ban_view(conn, overrides, extra)
+    keywords = vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"]
+    van_ban = _merge_vbpl(_van_ban_view(conn, overrides, extra), store.load_vbpl(conn), keywords)
     tthc = store.load_records(conn, "tthc")
     changes = store.load_changes(conn)
 
@@ -65,6 +119,7 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
         "so_van_ban": len(van_ban),
         "so_thu_tuc": len(tthc),
         "nguon": SOURCE_PORTAL,
+        "nguon_van_ban": SOURCE_VBPL,
         "luu_y": DISCLAIMER,
     }
 

@@ -13,7 +13,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import export, normalize, sources, store
+from . import export, normalize, sources, store, vbpl_sync
 from .client import BlockedError, PortalClient
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,11 +65,32 @@ def run():
         change_count += store.sync_records(conn, "tthc", tthc, run_at, first_run)
         store.log_run(conn, run_at, "ok", len(van_ban), len(tthc), change_count)
 
+    _sync_vbpl(conn, run_at)
     export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
 
     label = "lần đầu, ghi nhận nền" if first_run else f"{change_count} thay đổi"
     print(f"Xong. Văn bản: {len(van_ban)}, thủ tục: {len(tthc)}. {label}.")
     return 0
+
+
+def _sync_vbpl(conn, run_at):
+    """Đọc trạng thái từ vbpl.vn. Lỗi ở bước này không chặn cập nhật từ cổng Phòng CSQLHC."""
+    try:
+        config = vbpl_sync.load_config()
+        extra_numbers = [item["so_ky_hieu"] for item in json.loads(EXTRA_PATH.read_text(encoding="utf-8"))]
+        run_date = datetime.fromisoformat(run_at).date()
+        count = vbpl_sync.sync(conn, extra_numbers, run_at, run_date, config)
+        conn.commit()
+        print(f"vbpl.vn: đã đọc trạng thái {count} văn bản.")
+    except ImportError as error:
+        conn.rollback()
+        print(f"Bỏ qua vbpl.vn: thiếu thư viện ({error}). Cài Playwright để bật bước này.")
+    except BlockedError as error:
+        conn.commit()
+        print(f"vbpl.vn chặn truy cập: {error}. Giữ dữ liệu cũ, không thử lại.")
+    except Exception as error:  # noqa: BLE001 - lỗi vbpl không làm hỏng dữ liệu của cổng
+        conn.commit()
+        print(f"vbpl.vn lỗi: {error}. Giữ dữ liệu cũ.")
 
 
 def _check_sanity(conn, kind, fresh_count):

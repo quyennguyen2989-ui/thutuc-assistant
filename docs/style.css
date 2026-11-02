@@ -182,6 +182,34 @@ button.secondary { background: transparent; color: var(--accent); }
 
 .change-line { font-size: 14px; margin: 4px 0; }
 
+.chat-log { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+
+.bubble {
+  max-width: 92%;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--card);
+  white-space: pre-wrap;
+}
+
+.bubble.user { align-self: flex-end; background: var(--accent-soft); border-color: transparent; }
+
+.bubble.error { color: var(--warn); background: var(--warn-soft); border-color: transparent; }
+
+.chat-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  resize: vertical;
+}
+
+button:disabled { opacity: 0.6; cursor: wait; }
+
 .footer {
   max-width: 960px;
   margin: 24px auto 32px;

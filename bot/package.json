@@ -1,0 +1,17 @@
+{
+  "name": "tchc-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bot tra cứu thủ tục cho cán bộ khu vực dân cư (chạy sau Caddy, có đăng nhập ở tầng proxy).",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest"
+  }
+}

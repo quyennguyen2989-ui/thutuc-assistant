@@ -35,6 +35,22 @@ CREATE TABLE IF NOT EXISTS runs (
     tthc_count INTEGER NOT NULL DEFAULT 0,
     change_count INTEGER NOT NULL DEFAULT 0
 );
+CREATE TABLE IF NOT EXISTS vbpl (
+    url TEXT PRIMARY KEY,
+    so_ky_hieu TEXT,
+    sheet INTEGER,
+    lastmod TEXT,
+    tieu_de TEXT,
+    tinh_trang TEXT,
+    ngay_hieu_luc TEXT,
+    ngay_cap_nhat TEXT,
+    kiem_tra_luc TEXT,
+    loi TEXT
+);
+CREATE TABLE IF NOT EXISTS state (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL
+);
 """
 
 
@@ -121,6 +137,11 @@ def _log_change(conn, run_at, kind, record_id, change_type, diff):
     )
 
 
+def record_change(conn, run_at, kind, record_id, change_type, diff):
+    """Ghi một thay đổi (kể cả của vbpl.vn) vào nhật ký cập nhật."""
+    _log_change(conn, run_at, kind, record_id, change_type, diff)
+
+
 def log_run(conn, run_at, status, van_ban_count, tthc_count, change_count):
     conn.execute(
         "INSERT OR REPLACE INTO runs (run_at, status, van_ban_count, tthc_count, change_count) VALUES (?, ?, ?, ?, ?)",
@@ -142,6 +163,39 @@ def load_records(conn, kind):
         record["_last_seen"] = row["last_seen"]
         result.append(record)
     return result
+
+
+VBPL_COLUMNS = ["url", "so_ky_hieu", "sheet", "lastmod", "tieu_de", "tinh_trang",
+                "ngay_hieu_luc", "ngay_cap_nhat", "kiem_tra_luc", "loi"]
+
+
+def upsert_vbpl(conn, row):
+    """Ghi các cột có trong row cho một văn bản vbpl.vn. Cột không có trong row giữ nguyên."""
+    columns = [column for column in VBPL_COLUMNS if column in row]
+    placeholders = ", ".join("?" for _ in columns)
+    updates = ", ".join(f"{column} = excluded.{column}" for column in columns if column != "url")
+    sql = f"INSERT INTO vbpl ({', '.join(columns)}) VALUES ({placeholders})"
+    if updates:
+        sql += f" ON CONFLICT(url) DO UPDATE SET {updates}"
+    else:
+        sql += " ON CONFLICT(url) DO NOTHING"
+    conn.execute(sql, [row[column] for column in columns])
+
+
+def load_vbpl(conn):
+    return [dict(row) for row in conn.execute("SELECT * FROM vbpl ORDER BY so_ky_hieu, url")]
+
+
+def get_state(conn, key, default=None):
+    row = conn.execute("SELECT value FROM state WHERE key = ?", (key,)).fetchone()
+    return row["value"] if row else default
+
+
+def set_state(conn, key, value):
+    conn.execute(
+        "INSERT INTO state (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+        (key, value),
+    )
 
 
 def load_changes(conn, limit=200):

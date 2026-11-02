@@ -43,6 +43,9 @@ const state = {
   tthcById: new Map(),
   vanBanBySo: new Map(),
   names: new Map(),
+  latestChange: null,
+  chat: [],
+  chatBusy: false,
 };
 
 const app = document.getElementById("app");
@@ -107,6 +110,10 @@ function citedSoKyHieu(title) {
 }
 
 function vanBanStatus(v) {
+  if (v.vbpl && v.vbpl.tinh_trang) {
+    const outdated = v.vbpl.tinh_trang === "Hết hiệu lực";
+    return { text: `vbpl.vn: ${v.vbpl.tinh_trang.toLowerCase()}`, cls: outdated ? "badge-warn" : "badge-ok" };
+  }
   if (v.doi_chieu_thu_cong) {
     const outdated = v.doi_chieu_thu_cong.tinh_trang === "het_hieu_luc";
     return {
@@ -123,7 +130,9 @@ function vanBanStatus(v) {
 function isOutdatedCitation(title) {
   const so = citedSoKyHieu(title);
   const doc = so && state.vanBanBySo.get(so);
-  return Boolean(doc && doc.doi_chieu_thu_cong && doc.doi_chieu_thu_cong.tinh_trang === "het_hieu_luc");
+  if (!doc) return false;
+  if (doc.vbpl && doc.vbpl.tinh_trang) return doc.vbpl.tinh_trang === "Hết hiệu lực";
+  return Boolean(doc.doi_chieu_thu_cong && doc.doi_chieu_thu_cong.tinh_trang === "het_hieu_luc");
 }
 
 function haystackTthc(t) {
@@ -155,6 +164,7 @@ function route() {
   const id = rest.length ? decodeURIComponent(rest.join("/")) : null;
   if (head === "vanban") return { tab: "vanban", id };
   if (head === "capnhat") return { tab: "capnhat", id: null };
+  if (head === "hoidap") return { tab: "hoidap", id: null };
   return { tab: "tthc", id: head === "tthc" ? id : null };
 }
 
@@ -166,13 +176,31 @@ function render() {
   });
 
   if (current.tab === "capnhat") return renderUpdates();
+  if (current.tab === "hoidap") return renderChat();
   if (current.tab === "vanban") return current.id ? renderVanBanDetail(current.id) : renderVanBanList();
   return current.id ? renderTthcDetail(current.id) : renderTthcList();
 }
 
 function setView(...nodes) {
-  app.replaceChildren(...nodes);
+  const banner = state.data && route().tab !== "capnhat" ? updateBanner() : null;
+  app.replaceChildren(...(banner ? [banner] : []), ...nodes);
   window.scrollTo({ top: 0 });
+}
+
+// Thông báo ở đầu mỗi trang: lần kiểm tra gần nhất và thay đổi gần nhất được ghi nhận.
+function updateBanner() {
+  const { meta } = state.data;
+  const latest = state.latestChange;
+  if (!latest) {
+    return el("div", { class: "meta" }, `Đã kiểm tra dữ liệu lúc ${fmtDateTime(meta.cap_nhat_luc)}, chưa có thay đổi nào được ghi nhận.`);
+  }
+  return el(
+    "div",
+    { class: "warning-box" },
+    el("strong", {}, `Thay đổi gần nhất (${fmtDateTime(latest.run_at)}): ${latest.count} mục. `),
+    `Kiểm tra dữ liệu lúc ${fmtDateTime(meta.cap_nhat_luc)}. `,
+    el("a", { href: "#capnhat" }, "Xem chi tiết")
+  );
 }
 
 // ----- Danh sách thủ tục -----
@@ -417,6 +445,17 @@ function renderVanBanDetail(soKyHieu) {
   const status = vanBanStatus(v);
 
   const notes = [];
+  if (v.vbpl && v.vbpl.tinh_trang) {
+    notes.push(
+      el(
+        "div",
+        { class: "warning-box" },
+        el("strong", {}, `Theo vbpl.vn: ${v.vbpl.tinh_trang}. `),
+        `Có hiệu lực từ ${fmtDate(v.vbpl.ngay_hieu_luc)}. Trang vbpl.vn cập nhật ${fmtDate(v.vbpl.ngay_cap_nhat)}, kiểm tra lúc ${fmtDateTime(v.vbpl.kiem_tra_luc)}. `,
+        el("a", { href: v.vbpl.url, target: "_blank", rel: "noopener" }, "Mở trên vbpl.vn")
+      )
+    );
+  }
   if (v.doi_chieu_thu_cong) {
     notes.push(
       el(
@@ -438,7 +477,7 @@ function renderVanBanDetail(soKyHieu) {
         (v.tham_khao || []).map((url) => [el("a", { href: url, target: "_blank", rel: "noopener" }, url), " "])
       )
     );
-  } else if (v.hieu_luc_theo_cong) {
+  } else if (v.hieu_luc_theo_cong && !(v.vbpl && v.vbpl.tinh_trang)) {
     notes.push(
       el(
         "div",
@@ -486,11 +525,10 @@ function changesSection(kind, recordId) {
 function describeChange(change) {
   const time = fmtDateTime(change.run_at);
   const label = CHANGE_LABELS[change.change_type] || change.change_type;
-  const name = state.names.get(`${change.kind}:${change.record_id}`) || `#${change.record_id}`;
-  const diffs = Object.entries(change.diff || {}).map(
-    ([field, value]) =>
-      `${FIELD_LABELS[field] || field}: "${shorten(value.cu, 100)}" → "${shorten(value.moi, 100)}"`
-  );
+  const name = change.diff?._ten || state.names.get(`${change.kind}:${change.record_id}`) || `#${change.record_id}`;
+  const diffs = Object.entries(change.diff || {})
+    .filter(([field]) => !field.startsWith("_"))
+    .map(([field, value]) => `${FIELD_LABELS[field] || field}: "${shorten(value.cu, 100)}" → "${shorten(value.moi, 100)}"`);
   return `${time} · ${label}: ${name}${diffs.length ? " — " + diffs.join("; ") : ""}`;
 }
 
@@ -528,6 +566,96 @@ function renderNotFound() {
   );
 }
 
+// ----- Hỏi đáp (bot) -----
+
+function renderChat() {
+  const input = el("textarea", {
+    id: "chat-input",
+    rows: "3",
+    placeholder: "Ví dụ: đăng ký tạm trú cần giấy tờ gì? Cấp lại thẻ căn cước mất bao lâu?",
+    "aria-label": "Câu hỏi",
+  });
+  const form = el(
+    "form",
+    {
+      class: "chat-form",
+      onsubmit: (event) => {
+        event.preventDefault();
+        sendQuestion(input.value);
+      },
+    },
+    input,
+    el("div", { class: "actions" }, el("button", { type: "submit", disabled: state.chatBusy ? "disabled" : null }, "Gửi"))
+  );
+
+  setView(
+    el("h2", {}, "Hỏi đáp thủ tục"),
+    el("p", { class: "meta" }, "Trả lời dựa trên dữ liệu thủ tục và văn bản của trang. Luôn đối chiếu văn bản gốc trước khi áp dụng."),
+    el("div", { class: "chat-log" }, state.chat.length ? state.chat.map(chatBubble) : el("p", { class: "empty" }, "Chưa có câu hỏi nào.")),
+    form
+  );
+}
+
+function chatBubble(message) {
+  const classes = `bubble ${message.role}${message.error ? " error" : ""}`;
+  return el(
+    "div",
+    { class: classes },
+    String(message.text || "")
+      .split("\n")
+      .map((line) => el("div", {}, renderInline(line))),
+    message.sources && message.sources.length
+      ? el("div", { class: "meta" }, `Nguồn: ${message.sources.map((source) => source.ten).join("; ")}`)
+      : null
+  );
+}
+
+// Hiển thị **chữ đậm** trong câu trả lời của bot, các phần còn lại giữ nguyên.
+function renderInline(line) {
+  return line
+    .split(/(\*\*[^*]+\*\*)/)
+    .filter(Boolean)
+    .map((part) => (part.startsWith("**") && part.endsWith("**") ? el("strong", {}, part.slice(2, -2)) : part));
+}
+
+async function sendQuestion(text) {
+  const question = text.trim();
+  if (!question || state.chatBusy) return;
+
+  const history = state.chat
+    .filter((message) => !message.pending)
+    .slice(-8)
+    .map((message) => ({ role: message.role === "user" ? "user" : "assistant", content: message.text }));
+
+  state.chatBusy = true;
+  state.chat.push({ role: "user", text: question });
+  state.chat.push({ role: "bot", text: "Đang tra cứu…", pending: true });
+  renderChat();
+
+  try {
+    const response = await fetch("api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: question, history }),
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (response.status === 404) throw new Error("trang này chưa kết nối bot");
+    if (!response.ok) throw new Error(payload.loi || `lỗi ${response.status}`);
+    state.chat.pop();
+    state.chat.push({ role: "bot", text: payload.answer, sources: payload.sources || [] });
+  } catch (error) {
+    state.chat.pop();
+    state.chat.push({
+      role: "bot",
+      text: `Chưa trả lời được: ${error.message}. Thử lại sau, hoặc tra cứu trực tiếp ở mục Thủ tục.`,
+      error: true,
+    });
+  } finally {
+    state.chatBusy = false;
+  }
+  renderChat();
+}
+
 // ----- Khởi động -----
 
 async function loadJson(name) {
@@ -556,6 +684,11 @@ async function init() {
     state.vanBanBySo.set(v.so_ky_hieu, v);
     if (v.id !== null) state.names.set(`van_ban:${v.id}`, v.so_ky_hieu);
   });
+
+  const latestRun = data.changes.reduce((max, change) => (change.run_at > max ? change.run_at : max), "");
+  state.latestChange = latestRun
+    ? { run_at: latestRun, count: data.changes.filter((change) => change.run_at === latestRun).length }
+    : null;
 
   document.getElementById("disclaimer").textContent = data.meta.luu_y;
   const sourceLink = document.getElementById("source-link");
