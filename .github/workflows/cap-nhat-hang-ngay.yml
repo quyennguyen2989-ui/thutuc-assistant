@@ -1,0 +1,30 @@
+name: Cập nhật dữ liệu hằng ngày
+
+on:
+  schedule:
+    - cron: "0 1 * * *"   # 08:00 giờ Việt Nam mỗi ngày
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cap-nhat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Chạy crawler
+        run: python -m crawler.update
+
+      - name: Lưu thay đổi nếu có
+        run: |
+          git config user.name "cap-nhat-tu-dong"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data data/thutuc.db
+          git diff --cached --quiet || git commit -m "Cập nhật dữ liệu tự động"
+          git push
