@@ -64,6 +64,7 @@ def _merge_vbpl(items, rows, keywords):
             "ngay_hieu_luc": row["ngay_hieu_luc"],
             "ngay_cap_nhat": row["ngay_cap_nhat"],
             "kiem_tra_luc": row["kiem_tra_luc"],
+            "lich_su": json.loads(row["lich_su"]) if row["lich_su"] else None,
         }
         if number in by_number:
             by_number[number]["vbpl"] = vbpl_info

@@ -111,7 +111,7 @@ function citedSoKyHieu(title) {
 
 function vanBanStatus(v) {
   if (v.vbpl && v.vbpl.tinh_trang) {
-    const outdated = v.vbpl.tinh_trang === "Hết hiệu lực";
+    const outdated = v.vbpl.tinh_trang.startsWith("Hết hiệu lực");
     return { text: `vbpl.vn: ${v.vbpl.tinh_trang.toLowerCase()}`, cls: outdated ? "badge-warn" : "badge-ok" };
   }
   if (v.doi_chieu_thu_cong) {
@@ -131,7 +131,7 @@ function isOutdatedCitation(title) {
   const so = citedSoKyHieu(title);
   const doc = so && state.vanBanBySo.get(so);
   if (!doc) return false;
-  if (doc.vbpl && doc.vbpl.tinh_trang) return doc.vbpl.tinh_trang === "Hết hiệu lực";
+  if (doc.vbpl && doc.vbpl.tinh_trang) return doc.vbpl.tinh_trang.startsWith("Hết hiệu lực");
   return Boolean(doc.doi_chieu_thu_cong && doc.doi_chieu_thu_cong.tinh_trang === "het_hieu_luc");
 }
 
@@ -451,7 +451,7 @@ function renderVanBanDetail(soKyHieu) {
         "div",
         { class: "warning-box" },
         el("strong", {}, `Theo vbpl.vn: ${v.vbpl.tinh_trang}. `),
-        `Có hiệu lực từ ${fmtDate(v.vbpl.ngay_hieu_luc)}. Trang vbpl.vn cập nhật ${fmtDate(v.vbpl.ngay_cap_nhat)}, kiểm tra lúc ${fmtDateTime(v.vbpl.kiem_tra_luc)}. `,
+        `${v.vbpl.ngay_hieu_luc ? `Có hiệu lực từ ${fmtDate(v.vbpl.ngay_hieu_luc)}. ` : "Trang vbpl.vn chưa ghi ngày hiệu lực, xem lịch sử sửa đổi bên dưới. "}Trang vbpl.vn cập nhật ${fmtDate(v.vbpl.ngay_cap_nhat)}, kiểm tra lúc ${fmtDateTime(v.vbpl.kiem_tra_luc)}. `,
         el("a", { href: v.vbpl.url, target: "_blank", rel: "noopener" }, "Mở trên vbpl.vn")
       )
     );
@@ -503,7 +503,19 @@ function renderVanBanDetail(soKyHieu) {
       row("Cơ quan ban hành", v.co_quan_ban_hanh),
       row("Người ký", v.nguoi_ky),
       row("Ngày ban hành", fmtDate(v.ngay_ban_hanh)),
-      row("Ngày có hiệu lực", fmtDate(v.ngay_hieu_luc)),
+      row("Ngày có hiệu lực", v.vbpl?.ngay_hieu_luc || v.ngay_hieu_luc ? fmtDate(v.vbpl?.ngay_hieu_luc || v.ngay_hieu_luc) : "Chưa có trên trang, xem lịch sử sửa đổi"),
+      v.vbpl && v.vbpl.lich_su && v.vbpl.lich_su.length
+        ? el(
+            "div",
+            { class: "section" },
+            el("h4", {}, "Lịch sử sửa đổi, bổ sung (vbpl.vn)"),
+            el(
+              "ul",
+              {},
+              v.vbpl.lich_su.map((item) => el("li", {}, `${fmtDate(item.ngay)} — ${item.trang_thai}: ${item.van_ban_nguon}`))
+            )
+          )
+        : null,
       v.id !== null && changesSection("van_ban", v.id)
     )
   );

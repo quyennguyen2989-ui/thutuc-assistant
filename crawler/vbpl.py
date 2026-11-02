@@ -25,8 +25,24 @@ CENTRAL_SHEETS = range(1, 13)
 LOCAL_SHEETS = range(13, 37)
 HCM_MARK = "thanh-pho-ho-chi-minh"
 
-STATUS_BEFORE_EFFECTIVE = re.compile(r"(Còn hiệu lực|Hết hiệu lực|Chưa có hiệu lực)\s*Ngày có hiệu lực")
-STATUS_ANY = re.compile(r"(Còn hiệu lực|Hết hiệu lực|Chưa có hiệu lực)")
+# Nhãn có "một phần" phải đứng trước, nếu không sẽ bị cắt thành "Hết hiệu lực".
+STATUS_LABELS = r"(Còn hiệu lực một phần|Hết hiệu lực một phần|Còn hiệu lực|Hết hiệu lực|Chưa có hiệu lực)"
+STATUS_BEFORE_EFFECTIVE = re.compile(STATUS_LABELS + r"\s*Ngày có hiệu lực")
+STATUS_ANY = re.compile(STATUS_LABELS)
+# Các trạng thái trong mục "Lịch sử văn bản" của vbpl.vn.
+HISTORY_HEAD = "Lịch sử văn bản"
+HISTORY_COLUMNS = "Thời gian Trạng thái Văn bản nguồn"
+HISTORY_TERMS = (
+    "Văn bản bị sửa đổi, bổ sung",
+    "Văn bản bị bãi bỏ một phần",
+    "Văn bản bị bãi bỏ",
+    "Văn bản bị thay thế",
+    "Văn bản bị đình chỉ",
+    "Văn bản hết hiệu lực",
+    "Văn bản có hiệu lực",
+    "Văn bản được ban hành",
+)
+DATE_IN_HISTORY = re.compile(r"(\d{2}/\d{2}/\d{4}) ")
 EFFECTIVE = re.compile(r"Ngày có hiệu lực:\s*(\d{2}/\d{2}/\d{4})")
 UPDATED = re.compile(r"Ngày cập nhật:\s*(\d{2}/\d{2}/\d{4})")
 NUMBER_IN_TEXT = re.compile(r"\d{1,4}/\d{4}/[\w\-]+")
@@ -84,12 +100,19 @@ def number_in_slug(number, slug):
     return re.search(rf"(?:^|-){re.escape(number)}(?:-|$)", slug) is not None
 
 
+def is_consolidated(url):
+    """Văn bản hợp nhất (VBHN) là bản tổng hợp của văn bản gốc, không phải văn bản gốc."""
+    return slug_of(url).startswith("van-ban-hop-nhat")
+
+
 def find_by_number(entries, so_ky_hieu):
-    """Tìm đường dẫn tiếng Việt có số ký hiệu này trong tên."""
+    """Tìm văn bản gốc (không phải bản hợp nhất) có số ký hiệu này trong tên."""
     number = normalize_number(so_ky_hieu)
     matches = [
         entry for entry in entries
-        if is_vietnamese_version(entry["url"]) and number_in_slug(number, slug_of(entry["url"]))
+        if is_vietnamese_version(entry["url"])
+        and not is_consolidated(entry["url"])
+        and number_in_slug(number, slug_of(entry["url"]))
     ]
     return matches[0] if matches else None
 
@@ -132,11 +155,53 @@ def _iso(dd_mm_yyyy):
     return datetime.strptime(dd_mm_yyyy, "%d/%m/%Y").date().isoformat()
 
 
-def read_detail_pages(urls, on_result, delay_seconds=3.0, timeout_ms=60000):
+def parse_history_text(text):
+    """Đọc mục "Lịch sử văn bản": danh sách {ngay, trang_thai, van_ban_nguon} theo thời gian.
+
+    Trang liệt kê mỗi lần sửa đổi, bổ sung, bãi bỏ một phần... kèm ngày và văn bản gây ra.
+    Dòng nào không nhận ra trạng thái sẽ ghi "không rõ" và giữ nguyên chữ gốc, không đoán.
+    """
+    text = re.sub(r"\s+", " ", text)
+    start = text.find(HISTORY_HEAD)
+    if start < 0:
+        return []
+    body = text[start + len(HISTORY_HEAD):].replace(HISTORY_COLUMNS, "", 1)
+    parts = DATE_IN_HISTORY.split(body)
+    entries = []
+    for index in range(1, len(parts) - 1, 2):
+        rest = parts[index + 1].strip()
+        status = next((term for term in HISTORY_TERMS if rest.startswith(term)), None)
+        source = rest[len(status):].strip() if status else rest
+        source = _cut_footer(source)
+        entries.append({
+            "ngay": _iso(parts[index]),
+            "trang_thai": status or "không rõ",
+            "van_ban_nguon": source,
+        })
+        if status == "Văn bản được ban hành":
+            break  # Đây là dòng ban hành của chính văn bản, sau nó là phần chân trang.
+    return entries
+
+
+# Chữ của thanh công cụ trang chi tiết, có thể lẫn vào dòng cuối của lịch sử.
+FOOTER_MARKERS = ("Tải về", "Lược đồ", "Văn bản gốc", "Nội dung Thuộc tính", "TRANG THÔNG TIN")
+
+
+def _cut_footer(text):
+    cut = len(text)
+    for marker in FOOTER_MARKERS:
+        index = text.find(marker)
+        if index >= 0:
+            cut = min(cut, index)
+    return text[:cut].strip()
+
+
+def read_detail_pages(urls, on_result, delay_seconds=3.0, timeout_ms=60000, history_urls=frozenset()):
     """Mở từng trang chi tiết bằng Chromium không giao diện, rồi gọi on_result(url, info).
 
     on_result nhận ngay kết quả từng trang, nên nếu bị chặn giữa chừng thì các trang
-    trước đó vẫn được lưu. Nếu máy chủ trả về 403/429 thì dừng (BlockedError).
+    trước đó vẫn được lưu. Với các url trong history_urls, đọc thêm mục lịch sử.
+    Nếu máy chủ trả về 403/429 thì dừng (BlockedError).
     """
     from playwright.sync_api import sync_playwright
 
@@ -146,12 +211,52 @@ def read_detail_pages(urls, on_result, delay_seconds=3.0, timeout_ms=60000):
         try:
             for url in urls:
                 info = _read_one(page, url, timeout_ms)
+                if url in history_urls and not info.get("loi"):
+                    info["lich_su"] = _read_history(page, url, timeout_ms)
                 on_result(url, info)
                 if info.get("http_status") in (403, 429):
                     raise BlockedError(f"HTTP {info['http_status']} khi mở {url}")
                 time.sleep(delay_seconds)
         finally:
             browser.close()
+
+
+def read_full_texts(urls, on_text, delay_seconds=3.0, timeout_ms=60000):
+    """Lấy toàn bộ chữ của trang chi tiết (nội dung văn bản) rồi gọi on_text(url, text)."""
+    from playwright.sync_api import sync_playwright
+
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(headless=True)
+        page = browser.new_page(user_agent=USER_AGENT, locale="vi-VN")
+        try:
+            for url in urls:
+                try:
+                    page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+                    page.wait_for_function(
+                        "document.body && document.body.innerText.includes('Ngày cập nhật')",
+                        timeout=timeout_ms,
+                    )
+                    main = page.query_selector("main") or page.query_selector("body")
+                    on_text(url, main.inner_text())
+                except Exception:  # noqa: BLE001 - một văn bản lỗi không làm hỏng cả đợt
+                    on_text(url, None)
+                time.sleep(delay_seconds)
+        finally:
+            browser.close()
+
+
+def _read_history(page, url, timeout_ms):
+    """Mở mục Lịch sử của văn bản. Trả về None nếu không đọc được."""
+    try:
+        page.goto(f"{url}?tabs=lich-su", wait_until="domcontentloaded", timeout=timeout_ms)
+        page.wait_for_function(
+            f"document.body && document.body.innerText.includes('{HISTORY_HEAD}')",
+            timeout=timeout_ms,
+        )
+        main = page.query_selector("main") or page.query_selector("body")
+        return parse_history_text(main.inner_text())
+    except Exception:  # noqa: BLE001 - thiếu lịch sử không làm hỏng dữ liệu tình trạng
+        return None
 
 
 def _read_one(page, url, timeout_ms):

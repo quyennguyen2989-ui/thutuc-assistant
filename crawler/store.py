@@ -59,6 +59,10 @@ def connect(path):
     conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    # Cơ sở dữ liệu cũ chưa có cột lịch sử sửa đổi của vbpl.vn.
+    vbpl_columns = {row["name"] for row in conn.execute("PRAGMA table_info(vbpl)")}
+    if "lich_su" not in vbpl_columns:
+        conn.execute("ALTER TABLE vbpl ADD COLUMN lich_su TEXT")
     return conn
 
 
@@ -166,7 +170,7 @@ def load_records(conn, kind):
 
 
 VBPL_COLUMNS = ["url", "so_ky_hieu", "sheet", "lastmod", "tieu_de", "tinh_trang",
-                "ngay_hieu_luc", "ngay_cap_nhat", "kiem_tra_luc", "loi"]
+                "ngay_hieu_luc", "ngay_cap_nhat", "kiem_tra_luc", "loi", "lich_su"]
 
 
 def upsert_vbpl(conn, row):

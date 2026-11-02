@@ -1,1 +1,988 @@
-[]
+[
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3500673348,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 56/2023/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2899390112,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Luật 97/2015/QH13 của Quốc hội",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Hết hiệu lực một phần"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3899782904,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "lich_su": {
+    "cu": 0,
+    "moi": 5
+   },
+   "_ten": "Nghị định 96/2016/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3053309270,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Luật 81/2006/QH11 của Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1384785104,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị định 79/2018/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1257392364,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 36/2018/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1136755221,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 4
+   },
+   "_ten": "Luật 68/2020/QH14 của Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2904397141,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 66/2015/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2010489715,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 33/2018/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1998568065,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 59/2019/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1436480522,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 4
+   },
+   "_ten": "Luật 59/2014/QH13 của Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1259853755,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 50/2014/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2559795114,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 42/2017/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1346858033,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 41/2019/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2666267357,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị quyết 37/2009/NQ-HĐND của HĐND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2543086609,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 36/2014/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 645154320,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Luật 36/2013/QH13 của Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1190917597,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 35/2014/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3546268080,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 4
+   },
+   "_ten": "Văn bản pháp luật"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2796381440,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 34/2012/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1538747960,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 331/2016/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2770859066,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị định 31/2014/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 4020559638,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 31/2012/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2299104491,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Chỉ thị 30/CT-TTg của Thủ tướng Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 14175600,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 30/2012/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1750912265,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Luật 26/2023/QH15 của Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2503354731,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị định 26/2012/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 660773277,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 256/2016/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1936108367,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 250/2016/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 575803190,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị định 25/2012/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 630453452,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 23/2019/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 169969627,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 41/2011/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1734085465,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 19/2016/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1528116708,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 17/2018/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 447589882,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Pháp lệnh 16/2011/UBTVQH12 của Uỷ ban Thường vụ Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3179424404,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 157/2015/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1839916758,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 4
+   },
+   "_ten": "Luật 14/2017/QH14 của Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3829912087,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 40/2019/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3144356524,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 4
+   },
+   "_ten": "Nghị định 120/2016/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2791740887,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 48/2019/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1306981190,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 4
+   },
+   "_ten": "Quyết định 100/2009/QĐ-UBND của UBND Tỉnh Nghệ An"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 398797830,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 39/2019/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3123657203,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị quyết 18/2026/NQ-HĐND của HĐND Tỉnh Lai Châu"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2230054565,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Pháp lệnh 07/2013/UBTVQH13 của Uỷ ban Thường vụ Quốc hội"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1867968863,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư liên tịch 05/2009/TTLT-BCA-BNG của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2854524224,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 94/2021/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3010128512,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 90/2011/TT-BQP của Bộ Quốc phòng"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1406282082,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 75/2024/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2138146073,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 75/2022/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2795126589,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 73/2024/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1850744669,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 53/2025/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1280170114,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 48/2018/TT-BCT của Bộ Công Thương"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 4236432142,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 43/2023/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3972059984,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 31/2015/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 380666758,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 168/2016/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3823564739,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 14/2018/TT-BNV của Bộ Nội vụ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1227473430,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 07/2023/TT-BNG của Bộ Ngoại giao"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2291682955,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 04/2025/TT-BNG của Bộ Ngoại giao"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1326359072,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 04/2024/TT-BTP của Bộ Tư pháp"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1269136578,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 04/2020/TT-BTP của Bộ Tư pháp"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3952738554,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 04/2016/TT-BNG của Bộ Ngoại giao"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1104859398,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 04/2012/TT-BNV của Bộ Nội vụ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2681180155,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Thông tư 01/2022/TT-BTP của Bộ Tư pháp"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 3041737830,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 87/2020/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1728431620,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 77/2017/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2135343083,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 59/2006/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2073339173,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 33/2024/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 814692969,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 33/2023/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 2630735294,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 282/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 257208755,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 123/2015/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1345804608,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 104/2022/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1156265496,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 07/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 1206503604,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Nghị định 06/2012/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T22:32:03+07:00",
+  "kind": "vbpl",
+  "record_id": 531952170,
+  "change_type": "thay_doi",
+  "diff": {
+   "tinh_trang": {
+    "cu": "Hết hiệu lực",
+    "moi": "Hết hiệu lực một phần"
+   },
+   "_ten": "Luật 30/2023/QH15 của Quốc hội"
+  }
+ }
+]

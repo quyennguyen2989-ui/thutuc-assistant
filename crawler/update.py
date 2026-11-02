@@ -13,7 +13,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import export, normalize, sources, store, vbpl_sync
+from . import export, normalize, sources, store, vbpl_sync, vbpl_text
 from .client import BlockedError, PortalClient
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,7 +65,8 @@ def run():
         change_count += store.sync_records(conn, "tthc", tthc, run_at, first_run)
         store.log_run(conn, run_at, "ok", len(van_ban), len(tthc), change_count)
 
-    _sync_vbpl(conn, run_at)
+    if "--khong-vbpl" not in sys.argv:
+        _sync_vbpl(conn, run_at)
     export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
 
     label = "lần đầu, ghi nhận nền" if first_run else f"{change_count} thay đổi"
@@ -82,6 +83,8 @@ def _sync_vbpl(conn, run_at):
         count = vbpl_sync.sync(conn, extra_numbers, run_at, run_date, config)
         conn.commit()
         print(f"vbpl.vn: đã đọc trạng thái {count} văn bản.")
+        texts = vbpl_text.sync_texts(conn, DOCS_DATA_DIR / "vbpl_text", config["do_tre_giua_cac_yeu_cau_giay"])
+        print(f"vbpl.vn: đã lưu toàn văn {texts} văn bản có thay đổi.")
     except ImportError as error:
         conn.rollback()
         print(f"Bỏ qua vbpl.vn: thiếu thư viện ({error}). Cài Playwright để bật bước này.")

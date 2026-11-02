@@ -13,7 +13,7 @@
   "file_dinh_kem": "Luatcutru.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "doi_chieu_thu_cong": {
    "so_ky_hieu": "81/2006/QH11",
@@ -30,7 +30,24 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-07-01",
    "ngay_cap_nhat": "2026-03-27",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2014-01-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Sửa đổi, bổ sung một số điều của Luật Cư trú số 36/2013/QH13"
+    },
+    {
+     "ngay": "2007-07-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Luật Cư trú số 81/2006/QH11"
+    },
+    {
+     "ngay": "2006-11-29",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Luật Cư trú số 81/2006/QH11"
+    }
+   ]
   }
  },
  {
@@ -47,14 +64,31 @@
   "file_dinh_kem": "_3_6_._p_d_f_",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-cu-tru-so-36-2013-qh13--32514",
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2014-01-01",
    "ngay_cap_nhat": "2026-03-27",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2021-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Luật Cư trú số 68/2020/QH14"
+    },
+    {
+     "ngay": "2014-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Luật Sửa đổi, bổ sung một số điều của Luật Cư trú số 36/2013/QH13"
+    },
+    {
+     "ngay": "2013-06-20",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Luật Sửa đổi, bổ sung một số điều của Luật Cư trú số 36/2013/QH13"
+    }
+   ]
   }
  },
  {
@@ -71,14 +105,31 @@
   "file_dinh_kem": "_3_1_._s_i_g_n_e_d_._p_d_f_",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-31-2014-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-cu-tru--34848",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-06-15",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2021-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 55/2021/TT-BCA Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú"
+    },
+    {
+     "ngay": "2014-06-15",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị định số 31/2014/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú"
+    },
+    {
+     "ngay": "2014-04-18",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị định số 31/2014/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú"
+    }
+   ]
   }
  },
  {
@@ -95,14 +146,26 @@
   "file_dinh_kem": "_T_T_ _3_6_._s_i_g_n_e_d___0_1_._p_d_f_",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-36-2014-tt-bca-quy-dinh-ve-bieu-mau-su-dung-trong-dang-ky-quan-ly-cu-tru--37650",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-10-28",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2014-10-28",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 36/2014/TT-BCA Quy định về biểu mẫu sử dụng trong đăng ký, quản lý cư trú"
+    },
+    {
+     "ngay": "2014-09-09",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 36/2014/TT-BCA Quy định về biểu mẫu sử dụng trong đăng ký, quản lý cư trú"
+    }
+   ]
   }
  },
  {
@@ -119,7 +182,7 @@
   "file_dinh_kem": "(1)59.signed.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "doi_chieu_thu_cong": {
    "so_ky_hieu": "59/2014/QH13",
@@ -136,7 +199,29 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-01-01",
    "ngay_cap_nhat": "2026-01-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2024-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Luật Căn cước số 26/2023/QH15"
+    },
+    {
+     "ngay": "2021-07-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Cư trú số 68/2020/QH14"
+    },
+    {
+     "ngay": "2016-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Luật Căn cước công dân số 59/2014/QH13"
+    },
+    {
+     "ngay": "2014-11-20",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Luật Căn cước công dân số 59/2014/QH13"
+    }
+   ]
   }
  },
  {
@@ -153,14 +238,26 @@
   "file_dinh_kem": "(1)137-nd.signed.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-40-2019-tt-bca-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-07-2016-tt-bca-ngay-01-thang-02-nam-2016-cua-bo-truong-bo-cong-an-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-can-cuoc-cong-dan-va-nghi-dinh-so-137-2015-nd-cp-ngay-31-thang-12-nam-2015-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-can-cuoc-cong-dan--138828",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2019-11-18",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2019-11-18",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 40/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 07/2016/TT-BCA ngày 01 tháng 02 năm 2016 của Bộ trưởng Bộ Công an quy định chi tiết một số điều của Luật Căn cước công dân và Nghị định số 137/2015/NĐ-CP ngày 31 tháng 12 năm 2015 quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước công dân"
+    },
+    {
+     "ngay": "2019-10-01",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 40/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 07/2016/TT-BCA ngày 01 tháng 02 năm 2016 của Bộ trưởng Bộ Công an quy định chi tiết một số điều của Luật Căn cước công dân và Nghị định số 137/2015/NĐ-CP ngày 31 tháng 12 năm 2015 quy định chi tiết một số điều và biện pháp thi hành Luật Căn cước công dân"
+    }
+   ]
   }
  },
  {
@@ -177,14 +274,31 @@
   "file_dinh_kem": "(1)11.2016.TT.BCA.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-48-2019-tt-bca-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-11-2016-tt-bca-ngay-04-thang-3-nam-2016-cua-bo-cong-an-quy-dinh-ve-trinh-tu-cap-doi-cap-lai-the-can-cuoc-cong-dan--138831",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2019-12-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2021-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 60/2021/TT-BCA Quy định trình tự cấp, đổi, cấp lại thẻ Căn cước công dân"
+    },
+    {
+     "ngay": "2019-12-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 48/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 11/2016/TT-BCA ngày 04 tháng 3 năm 2016 của Bộ Công an quy định về trình tự cấp, đổi, cấp lại thẻ Căn cước công dân"
+    },
+    {
+     "ngay": "2019-10-15",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 48/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 11/2016/TT-BCA ngày 04 tháng 3 năm 2016 của Bộ Công an quy định về trình tự cấp, đổi, cấp lại thẻ Căn cước công dân"
+    }
+   ]
   }
  },
  {
@@ -201,14 +315,15 @@
   "file_dinh_kem": "(1)TT07-2016BCA.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-07-2016-tt-bca-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-can-cuoc-cong-dan-va-nghi-dinh-so-137-2015-nd-cp-ngay-31-thang-12-nam-2015-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-cua-luat-can-cuoc-cong-dan--115047",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-03-20",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   }
  },
  {
@@ -225,14 +340,26 @@
   "file_dinh_kem": "(1)61.2015.TT.BCA.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-33-2018-tt-bca-sua-doi-mot-so-dieu-cua-thong-tu-so-61-2015-tt-bca-ngay-16-thang-11-nam-2015-quy-dinh-ve-mau-the-can-cuoc-cong-dan--131636",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-10-10",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2018-10-10",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 33/2018/TT-BCA Sửa đổi một số điều của Thông tư số 61/2015/TT-BCA ngày 16 tháng 11 năm 2015 quy định về mẫu thẻ Căn cước công dân"
+    },
+    {
+     "ngay": "2018-10-10",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 33/2018/TT-BCA Sửa đổi một số điều của Thông tư số 61/2015/TT-BCA ngày 16 tháng 11 năm 2015 quy định về mẫu thẻ Căn cước công dân"
+    }
+   ]
   }
  },
  {
@@ -249,14 +376,26 @@
   "file_dinh_kem": "(1)TT66-2015BCA.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-66-2015-tt-bca-quy-dinh-ve-bieu-mau-su-dung-trong-cong-tac-cap-quan-ly-the-can-cuoc-cong-dan-tang-thu-can-cuoc-cong-dan-va-co-so-du-lieu-quoc-gia-ve-dan-cu--115016",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-02-02",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2016-02-02",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 66/2015/TT-BCA Quy định về biểu mẫu sử dụng trong công tác cấp, quản lý thẻ Căn cước công dân, tàng thư căn cước công dân và Cơ sở dữ liệu quốc gia về dân cư"
+    },
+    {
+     "ngay": "2015-12-15",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 66/2015/TT-BCA Quy định về biểu mẫu sử dụng trong công tác cấp, quản lý thẻ Căn cước công dân, tàng thư căn cước công dân và Cơ sở dữ liệu quốc gia về dân cư"
+    }
+   ]
   }
  },
  {
@@ -273,7 +412,7 @@
   "file_dinh_kem": "3039.QĐ-BCA.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong"
  },
  {
@@ -290,14 +429,41 @@
   "file_dinh_kem": "96-nd.signed.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-96-2016-nd-cp-quy-dinh-dieu-kien-ve-an-ninh-trat-tu-doi-voi-mot-so-nganh-nghe-dau-tu-kinh-doanh-co-dieu-kien--113088",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2016-07-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2023-08-15",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Nghị định số 56/2023/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 96/2016/NĐ-CP ngày 01 tháng 7 năm 2016 quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện, Nghị định số 99/2016/NĐ-CP ngày 01 tháng 7 năm 2016 về quản lý và sử dụng con dấu, Nghị định số 137/2020/NĐ-CP ngày 27 tháng 11 năm 2020 quy định về quản lý, sử dụng pháo"
+    },
+    {
+     "ngay": "2021-03-26",
+     "trang_thai": "Văn bản bị bãi bỏ một phần",
+     "van_ban_nguon": "Nghị định số 31/2021/NĐ-CP Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Đầu tư"
+    },
+    {
+     "ngay": "2021-03-26",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Nghị định số 31/2021/NĐ-CP Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Đầu tư"
+    },
+    {
+     "ngay": "2016-07-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị định số 96/2016/NĐ-CP Quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện"
+    },
+    {
+     "ngay": "2016-07-01",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị định số 96/2016/NĐ-CP Quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện"
+    }
+   ]
   }
  },
  {
@@ -314,14 +480,26 @@
   "file_dinh_kem": "99.2016.NĐ-CP.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-56-2023-nd-cp-sua-doi-bo-sung-mot-so-dieu-cua-nghi-dinh-so-96-2016-nd-cp-ngay-01-thang-7-nam-2016-quy-dinh-dieu-kien-ve-an-ninh-trat-tu-doi-voi-mot-so-nganh-nghe-dau-tu-kinh-doanh-co-dieu-kien-nghi-dinh-so-99-2016-nd-cp-ngay-01-thang-7-nam-2016-ve-quan-ly-va-su-dung-con-dau-nghi-dinh-so-137-2020-nd-cp-ngay-27-thang-11-nam-2020-quy-dinh-ve-quan-ly-su-dung-phao--163098",
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2023-08-15",
    "ngay_cap_nhat": "2026-04-06",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2023-08-15",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị định số 56/2023/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 96/2016/NĐ-CP ngày 01 tháng 7 năm 2016 quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện, Nghị định số 99/2016/NĐ-CP ngày 01 tháng 7 năm 2016 về quản lý và sử dụng con dấu, Nghị định số 137/2020/NĐ-CP ngày 27 tháng 11 năm 2020 quy định về quản lý, sử dụng pháo"
+    },
+    {
+     "ngay": "2023-07-24",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị định số 56/2023/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 96/2016/NĐ-CP ngày 01 tháng 7 năm 2016 quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện, Nghị định số 99/2016/NĐ-CP ngày 01 tháng 7 năm 2016 về quản lý và sử dụng con dấu, Nghị định số 137/2020/NĐ-CP ngày 27 tháng 11 năm 2020 quy định về quản lý, sử dụng pháo"
+    }
+   ]
   }
  },
  {
@@ -338,14 +516,36 @@
   "file_dinh_kem": "Luat_quan_ly_su_dung_vk.20.6.2017.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro-so-14-2017-qh14--124150",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-07-01",
    "ngay_cap_nhat": "2026-03-23",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2025-01-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ số 42/2024/QH15"
+    },
+    {
+     "ngay": "2021-01-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật doanh nghiệp số 59/2020/QH14"
+    },
+    {
+     "ngay": "2018-07-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ số 14/2017/QH14"
+    },
+    {
+     "ngay": "2017-06-20",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ số 14/2017/QH14"
+    }
+   ]
   }
  },
  {
@@ -362,14 +562,26 @@
   "file_dinh_kem": "19.2016.TT.BCA.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-19-2016-tt-bca-quy-dinh-ve-huan-luyen-cap-doi-cap-lai-giay-chung-nhan-su-dung-chung-chi-quan-ly-vu-khi-cong-cu-ho-tro--122189",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-07-20",
    "ngay_cap_nhat": "2026-05-14",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2016-07-20",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 19/2016/TT-BCA Quy định về huấn luyện, cấp, đổi, cấp lại giấy chứng nhận sử dụng, chứng chỉ quản lý vũ khí, công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2016-06-02",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 19/2016/TT-BCA Quy định về huấn luyện, cấp, đổi, cấp lại giấy chứng nhận sử dụng, chứng chỉ quản lý vũ khí, công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -386,14 +598,31 @@
   "file_dinh_kem": "16.2011.PL.UBTVQH12.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/phap-lenh-so-16-2011-ubtvqh12-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--26759",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2012-01-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2014-03-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Pháp lệnh số 07/2013/UBTVQH13 Sửa đổi, bổ sung một số điều của Pháp lệnh Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Pháp lệnh số 16/2011/UBTVQH12 Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2011-06-30",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Pháp lệnh số 16/2011/UBTVQH12 Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -410,14 +639,26 @@
   "file_dinh_kem": "7PL.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/phap-lenh-so-07-2013-ubtvqh13-sua-doi-bo-sung-mot-so-dieu-cua-phap-lenh-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--32603",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2014-03-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2014-03-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Pháp lệnh số 07/2013/UBTVQH13 Sửa đổi, bổ sung một số điều của Pháp lệnh Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2013-07-12",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Pháp lệnh số 07/2013/UBTVQH13 Sửa đổi, bổ sung một số điều của Pháp lệnh Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -434,14 +675,26 @@
   "file_dinh_kem": "30.signed.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/chi-thi-so-30-ct-ttg-ve-viec-tang-cuong-thuc-hanh-tiet-kiem-chong-lang-phi--52312",
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2012-11-26",
    "ngay_cap_nhat": "2026-04-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2012-11-26",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Chỉ thị số 30/CT-TTg Về việc tăng cường thực hành tiết kiệm, chống lãng phí"
+    },
+    {
+     "ngay": "2012-11-26",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Chỉ thị số 30/CT-TTg Về việc tăng cường thực hành tiết kiệm, chống lãng phí"
+    }
+   ]
   }
  },
  {
@@ -458,14 +711,31 @@
   "file_dinh_kem": "25ND_01.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-25-2012-nd-cp-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-phap-lenh-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--35000",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-05-20",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2018-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Nghị định số 79/2018/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-05-20",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị định số 25/2012/NĐ-CP Quy định chi tiết thi hành một số điều của Pháp lệnh Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-04-05",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị định số 25/2012/NĐ-CP Quy định chi tiết thi hành một số điều của Pháp lệnh Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -482,14 +752,31 @@
   "file_dinh_kem": "26ND.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-26-2012-nd-cp-quy-dinh-trinh-tu-thu-tuc-tham-quyen-va-kinh-phi-phuc-vu-viec-tiep-nhan-thu-gom-phan-loai-bao-quan-thanh-ly-tieu-huy-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--27415",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-05-20",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2018-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Nghị định số 79/2018/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-05-20",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị định số 26/2012/NĐ-CP Quy định trình tự, thủ tục, thẩm quyền và kinh phí phục vụ việc tiếp nhận, thu gom, phân loại, bảo quản, thanh lý, tiêu hủy vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-04-05",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị định số 26/2012/NĐ-CP Quy định trình tự, thủ tục, thẩm quyền và kinh phí phục vụ việc tiếp nhận, thu gom, phân loại, bảo quản, thanh lý, tiêu hủy vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -506,14 +793,31 @@
   "file_dinh_kem": "VanBanGoc_30_2012_TT-BCA.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-30-2012-tt-bca-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-phap-lenh-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro-va-nghi-dinh-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-phap-lenh--70312",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-07-20",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2018-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 16/2018/TT-BCA Quy định chi tiết một số điều của Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-07-20",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 30/2012/TT-BCA Quy định chi tiết thi hành một số điều của Pháp lệnh Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ và Nghị định quy định chi tiết thi hành một số điều của Pháp lệnh"
+    },
+    {
+     "ngay": "2012-05-29",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 30/2012/TT-BCA Quy định chi tiết thi hành một số điều của Pháp lệnh Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ và Nghị định quy định chi tiết thi hành một số điều của Pháp lệnh"
+    }
+   ]
   }
  },
  {
@@ -530,14 +834,31 @@
   "file_dinh_kem": "TT31_2012.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-31-2012-tt-bca-quy-dinh-chi-tiet-viec-tiep-nhan-thu-gom-phan-loai-bao-quan-thanh-ly-tieu-huy-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--70676",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-07-20",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2018-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 16/2018/TT-BCA Quy định chi tiết một số điều của Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-07-20",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 31/2012/TT-BCA Quy định chi tiết việc tiếp nhận, thu gom, phân loại, bảo quản, thanh lý, tiêu hủy vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-05-29",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 31/2012/TT-BCA Quy định chi tiết việc tiếp nhận, thu gom, phân loại, bảo quản, thanh lý, tiêu hủy vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -554,14 +875,26 @@
   "file_dinh_kem": "TT34_2012.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-34-2012-tt-bca-quy-dinh-bieu-mau-su-dung-trong-quan-ly-tiep-nhan-thu-gom-phan-loai-bao-quan-thanh-ly-tieu-huy-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--70682",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-07-30",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2012-07-30",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 34/2012/TT-BCA Quy định biểu mẫu sử dụng trong quản lý, tiếp nhận, thu gom, phân loại, bảo quản, thanh lý, tiêu hủy vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2012-06-12",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 34/2012/TT-BCA Quy định biểu mẫu sử dụng trong quản lý, tiếp nhận, thu gom, phân loại, bảo quản, thanh lý, tiêu hủy vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -578,14 +911,26 @@
   "file_dinh_kem": "Thông_tư_42.2017.TT-BCA.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-42-2017-tt-bca-quy-dinh-chi-tiet-mot-so-dieu-cua-nghi-dinh-so-96-2016-nd-cp-ngay-01-7-2016-quy-dinh-dieu-kien-ve-an-ninh-trat-tu-doi-voi-mot-so-nganh-nghe-dau-tu-kinh-doanh-co-dieu-kien--150784",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2017-12-06",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2017-12-06",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 42/2017/TT-BCA Quy định chi tiết một số điều của Nghị định số 96/2016/NĐ-CP ngày 01/7/2016 quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện"
+    },
+    {
+     "ngay": "2017-10-20",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 42/2017/TT-BCA Quy định chi tiết một số điều của Nghị định số 96/2016/NĐ-CP ngày 01/7/2016 quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện"
+    }
+   ]
   }
  },
  {
@@ -602,14 +947,31 @@
   "file_dinh_kem": "VanBanGoc_35.2014.TT.BCA.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-35-2014-tt-bca-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-cu-tru-va-nghi-dinh-so-31-2014-nd-cp-ngay-18-thang-4-nam-2014-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-cu-tru--37649",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-10-28",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2021-07-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 55/2021/TT-BCA Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú"
+    },
+    {
+     "ngay": "2014-10-28",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 35/2014/TT-BCA Quy định chi tiết thi hành một số điều của Luật Cư trú và Nghị định số 31/2014/NĐ-CP ngày 18 tháng 4 năm 2014 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú"
+    },
+    {
+     "ngay": "2014-09-09",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 35/2014/TT-BCA Quy định chi tiết thi hành một số điều của Luật Cư trú và Nghị định số 31/2014/NĐ-CP ngày 18 tháng 4 năm 2014 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú"
+    }
+   ]
   }
  },
  {
@@ -626,14 +988,31 @@
   "file_dinh_kem": "79_2018_ND-CP.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-79-2018-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--130589",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-07-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2025-01-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Nghị định số 149/2024/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2018-07-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị định số 79/2018/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2018-05-16",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị định số 79/2018/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -650,14 +1029,26 @@
   "file_dinh_kem": "17_2018_TT-BCA.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-17-2018-tt-bca-quy-dinh-ve-trang-bi-vu-khi-vat-lieu-no-quan-dung-cong-cu-ho-tro--130593",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-07-01",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2018-07-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 17/2018/TT-BCA Quy định về trang bị vũ khí, vật liệu nổ quân dụng, công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2018-05-15",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 17/2018/TT-BCA Quy định về trang bị vũ khí, vật liệu nổ quân dụng, công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -674,14 +1065,15 @@
   "file_dinh_kem": "218_2016_TT-BTC.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-218-2016-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-quan-ly-va-su-dung-phi-tham-dinh-dieu-kien-thuoc-linh-vuc-an-ninh-phi-sat-hach-cap-chung-chi-nghiep-vu-bao-ve-le-phi-cap-giay-phep-quan-ly-phao-le-phi-cap-giay-phep-quan-ly-vu-khi-vat-lieu-no-cong-cu-ho-tro--119159",
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2017-01-01",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   }
  },
  {
@@ -698,14 +1090,26 @@
   "file_dinh_kem": "23_2019_TT-BTC.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-23-2019-tt-btc-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-218-2016-tt-btc-ngay-10-thang-11-nam-2016-cua-bo-truong-bo-tai-chinh-quy-dinh-muc-thu-che-do-thu-nop-quan-ly-ya-su-dung-phi-tham-dinh-dieu-kien-thuoc-linh-vuc-an-ninh-phi-sat-hach-cap-chung-chi-nghiep-vu-bao-ve-le-phi-cap-giay-phep-quan-ly-phao-le-phi-cap-giay-phep-quan-ly-vu-khi-vat-lieu-no-cong-cu-ho-tro--135621",
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2019-06-05",
    "ngay_cap_nhat": "2026-04-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2019-06-05",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 23/2019/TT-BTC Sửa đổi, bổ sung một số điều của Thông tư số 218/2016/TT-BTC ngày 10 tháng 11 năm 2016 của Bô trưởng Bộ Tài chính quy đinh mức thu, chế độ thu, nộp, quản lý yà sử dụng phí thẩm định điều kiện thuộc lĩnh vực an ninh; phí sát hạch cấp chứng chỉ nghiệp vụ bảo vệ; lệ phí cấp giấy phép quản lý pháo; lệ phí cấp giẩy phép quản lý vũ khí, vật liệu nổ, công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2019-04-19",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 23/2019/TT-BTC Sửa đổi, bổ sung một số điều của Thông tư số 218/2016/TT-BTC ngày 10 tháng 11 năm 2016 của Bô trưởng Bộ Tài chính quy đinh mức thu, chế độ thu, nộp, quản lý yà sử dụng phí thẩm định điều kiện thuộc lĩnh vực an ninh; phí sát hạch cấp chứng chỉ nghiệp vụ bảo vệ; lệ phí cấp giấy phép quản lý pháo; lệ phí cấp giẩy phép quản lý vũ khí, vật liệu nổ, công cụ hỗ trợ"
+    }
+   ]
   }
  },
  {
@@ -722,14 +1126,26 @@
   "file_dinh_kem": "59_2019_TT-BTC_423305.doc",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-59-2019-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-va-quan-ly-le-phi-cap-can-cuoc-cong-dan--139900",
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2019-10-16",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2019-10-16",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 59/2019/TT-BTC Quy định mức thu, chế độ thu, nộp và quản lý lệ phí cấp Căn cước công dân"
+    },
+    {
+     "ngay": "2019-08-30",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 59/2019/TT-BTC Quy định mức thu, chế độ thu, nộp và quản lý lệ phí cấp Căn cước công dân"
+    }
+   ]
   }
  },
  {
@@ -746,14 +1162,26 @@
   "file_dinh_kem": "thong-tu-41-2019-ttbca.pdf",
   "_missing": false,
   "_first_seen": "2026-11-02T20:50:07+07:00",
-  "_last_seen": "2026-11-02T21:35:30+07:00",
+  "_last_seen": "2026-11-02T22:32:03+07:00",
   "nguon": "cong_tu_dong",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-41-2019-tt-bca-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-66-2015-tt-bca-ngay-15-thang-12-nam-2015-quy-dinh-ve-bieu-mau-su-dung-trong-cong-tac-cap-quan-ly-the-can-cuoc-cong-dan-tang-thu-can-cuoc-cong-dan-va-co-so-du-lieu-quoc-gia-ve-dan-cu--138830",
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2019-11-18",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2019-11-18",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 41/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 66/2015/TT-BCA ngày 15 tháng 12 năm 2015 quy định về biểu mẫu sử dụng trong công tác cấp, quản lý thẻ Căn cước công dân, tàng thư căn cước công dân và Cơ sở dữ liệu quốc gia về dân cư"
+    },
+    {
+     "ngay": "2019-10-01",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 41/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 66/2015/TT-BCA ngày 15 tháng 12 năm 2015 quy định về biểu mẫu sử dụng trong công tác cấp, quản lý thẻ Căn cước công dân, tàng thư căn cước công dân và Cơ sở dữ liệu quốc gia về dân cư"
+    }
+   ]
   }
  },
  {
@@ -779,7 +1207,24 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2026-07-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA 10 LUẬT CÓ LIÊN QUAN ĐẾN AN NINH, TRẬT TỰ SỐ Luật số: 118/2025/QH15"
+    },
+    {
+     "ngay": "2024-07-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Luật Căn cước số 26/2023/QH15"
+    },
+    {
+     "ngay": "2023-11-27",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Luật Căn cước số 26/2023/QH15"
+    }
+   ]
   }
  },
  {
@@ -805,7 +1250,29 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2021-07-01",
    "ngay_cap_nhat": "2026-04-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2026-07-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA 10 LUẬT CÓ LIÊN QUAN ĐẾN AN NINH, TRẬT TỰ SỐ Luật số: 118/2025/QH15"
+    },
+    {
+     "ngay": "2026-01-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Tư pháp người chưa thành niên số 59/2024/QH15"
+    },
+    {
+     "ngay": "2021-07-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Luật Cư trú số 68/2020/QH14"
+    },
+    {
+     "ngay": "2020-11-13",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Luật Cư trú số 68/2020/QH14"
+    }
+   ]
   }
  },
  {
@@ -826,7 +1293,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1997-09-12",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -848,7 +1316,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1997-09-12",
    "ngay_cap_nhat": "2026-04-15",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -870,7 +1339,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1995-11-16",
    "ngay_cap_nhat": "2026-04-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -892,7 +1362,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1977-01-04",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -914,7 +1385,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2011-02-20",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -936,7 +1408,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2007-05-02",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -958,7 +1431,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1989-03-30",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -980,7 +1454,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2006-03-30",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1002,7 +1477,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-06-15",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1024,7 +1500,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2009-05-28",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1046,7 +1523,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-06-21",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1068,7 +1546,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-08-06",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1090,7 +1569,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1980-10-10",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1112,7 +1592,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1996-10-14",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1134,7 +1615,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2004-11-07",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1156,7 +1638,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2003-04-09",
    "ngay_cap_nhat": "2026-03-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1178,7 +1661,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1994-09-16",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1200,7 +1684,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2009-06-25",
    "ngay_cap_nhat": "2026-04-13",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1222,7 +1707,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2013-06-28",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1244,7 +1730,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2013-07-17",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1266,7 +1753,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2014-12-04",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1288,7 +1776,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2014-12-04",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1310,7 +1799,8 @@
    "tinh_trang": "Chưa có hiệu lực",
    "ngay_hieu_luc": "2027-03-01",
    "ngay_cap_nhat": "2026-07-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1332,7 +1822,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2016-01-01",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1351,10 +1842,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-luc-luong-tham-gia-bao-ve-an-ninh-trat-tu-o-co-so-so-30-2023-qh15--168904",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1376,7 +1868,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-01-01",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1398,7 +1891,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2017-01-01",
    "ngay_cap_nhat": "2026-01-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1420,7 +1914,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-01",
    "ngay_cap_nhat": "2026-07-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1442,7 +1937,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2020-01-10",
    "ngay_cap_nhat": "2026-01-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1464,7 +1960,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-03-15",
    "ngay_cap_nhat": "2026-05-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1483,10 +1980,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-06-2012-nd-cp-sua-doi-bo-sung-mot-so-dieu-cua-cac-nghi-dinh-ve-ho-tich-hon-nhan-va-gia-dinh-va-chung-thuc--27159",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2012-04-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1505,10 +2003,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-07-2025-nd-cp-sua-doi-bo-sung-mot-so-dieu-cua-cac-nghi-dinh-trong-linh-vuc-ho-tich-quoc-tich-chung-thuc--174485",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2025-01-09",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1530,7 +2029,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-01-09",
    "ngay_cap_nhat": "2026-04-06",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1552,7 +2052,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2001-03-09",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1574,7 +2075,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2005-09-11",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1596,7 +2098,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2023-01-30",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1615,10 +2118,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-104-2022-nd-cp-sua-doi-bo-sung-mot-so-dieu-cua-cac-nghi-dinh-lien-quan-den-viec-nop-xuat-trinh-so-ho-khau-so-tam-tru-giay-khi-thuc-hien-thu-tuc-hanh-chinh-cung-cap-dich-vu-cong--167220",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2023-01-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1640,7 +2144,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-07-31",
    "ngay_cap_nhat": "2026-03-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1662,7 +2167,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2005-09-13",
    "ngay_cap_nhat": "2026-03-27",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1684,7 +2190,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1999-03-18",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1706,7 +2213,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-11-05",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1725,10 +2233,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-123-2015-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-ho-tich--92897",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2016-01-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1750,7 +2259,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2022-01-01",
    "ngay_cap_nhat": "2026-05-14",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1772,7 +2282,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-01-01",
    "ngay_cap_nhat": "2026-03-23",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1794,7 +2305,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2024-02-16",
    "ngay_cap_nhat": "2026-04-06",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1816,7 +2328,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2006-01-04",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1838,7 +2351,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2006-04-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1860,7 +2374,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2013-12-28",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1882,7 +2397,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-03-01",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1904,7 +2420,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-02-15",
    "ngay_cap_nhat": "2026-04-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1926,7 +2443,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-01-01",
    "ngay_cap_nhat": "2026-04-18",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1948,7 +2466,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-07-01",
    "ngay_cap_nhat": "2026-10-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1970,7 +2489,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-05-26",
    "ngay_cap_nhat": "2026-08-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -1992,7 +2512,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-15",
    "ngay_cap_nhat": "2026-08-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2011,10 +2532,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-282-2025-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-an-ninh-trat-tu-an-toan-xa-hoi-phong-chong-te-nan-xa-hoi-phong-chong-bao-luc-gia-dinh--185254",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2025-12-15",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2036,7 +2558,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-10-01",
    "ngay_cap_nhat": "2026-10-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2058,7 +2581,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-11-17",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2080,7 +2604,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2009-06-01",
    "ngay_cap_nhat": "2026-05-13",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2102,7 +2627,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-12-18",
    "ngay_cap_nhat": "2026-04-18",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2121,10 +2647,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-33-2023-nd-cp-quy-dinh-ve-can-bo-cong-chuc-cap-xa-va-nguoi-hoat-dong-khong-chuyen-trach-o-cap-xa-o-thon-to-dan-pho--160747",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2023-08-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2143,10 +2670,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-33-2024-nd-cp-quy-dinh-viec-thuc-hien-cong-uoc-cam-phat-trien-san-xuat-tang-tru-su-dung-va-pha-huy-vu-khi-hoa-hoc--167525",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2024-05-19",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2168,7 +2696,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2019-06-25",
    "ngay_cap_nhat": "2026-03-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2190,7 +2719,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-09-15",
    "ngay_cap_nhat": "2026-10-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2212,7 +2742,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-05-14",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2234,7 +2765,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-07-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2256,7 +2788,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-04-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2278,7 +2811,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2009-07-08",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2300,7 +2834,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1996-08-12",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2322,7 +2857,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1996-08-15",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2344,7 +2880,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-05-17",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2366,7 +2903,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1959-08-21",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2388,7 +2926,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1997-07-15",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2410,7 +2949,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1997-07-15",
    "ngay_cap_nhat": "2026-03-27",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2432,7 +2972,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2006-06-29",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2454,7 +2995,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-07-10",
    "ngay_cap_nhat": "2026-03-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2476,7 +3018,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2001-09-09",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2495,10 +3038,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-59-2006-nd-cp-quy-dinh-chi-tiet-luat-thuong-mai-ve-hang-hoa-dich-vu-cam-kinh-doanh-han-che-kinh-doanh-va-kinh-doanh-co-dieu-kien--16019",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2006-07-09",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2520,7 +3064,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-07-01",
    "ngay_cap_nhat": "2026-01-09",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2542,7 +3087,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1993-09-22",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2564,7 +3110,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2586,7 +3133,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-07-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2608,7 +3156,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2009-10-20",
    "ngay_cap_nhat": "2026-05-13",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2630,7 +3179,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2002-09-04",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2652,7 +3202,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-09-15",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2674,7 +3225,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1956-06-02",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2693,10 +3245,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-77-2017-nd-cp-quy-dinh-ve-quan-ly-bao-ve-an-ninh-trat-tu-tai-cua-khau-cang--138844",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2017-08-20",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2718,7 +3271,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2019-11-11",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2740,7 +3294,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1998-10-25",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2762,7 +3317,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-01-30",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2781,10 +3337,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-87-2020-nd-cp-quy-dinh-ve-co-so-du-lieu-ho-tich-dien-tu-dang-ky-ho-tich-truc-tuyen--143472",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2020-09-15",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2806,7 +3363,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2020-01-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2828,7 +3386,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2025-04-13",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2850,7 +3409,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-07-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2872,7 +3432,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2022-12-22",
    "ngay_cap_nhat": "2026-04-13",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2894,7 +3455,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-01-10",
    "ngay_cap_nhat": "2026-04-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2916,7 +3478,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2017-08-01",
    "ngay_cap_nhat": "2026-04-06",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2938,7 +3501,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2024-04-01",
    "ngay_cap_nhat": "2026-07-07",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -2960,7 +3524,19 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-06-13",
    "ngay_cap_nhat": "2026-06-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2026-06-13",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị quyết số 18/2026/NQ-HĐND Bãi bỏ Nghị quyết số 07/2017/NQ-HĐND ngày 14/7/2017 của Hội đồng nhân dân tỉnh quy định mức trích từ các khoản thu hồi phát hiện qua công tác thanh tra đã thực nộp vào ngân sách nhà nước trên địa bàn tỉnh Lai Châu"
+    },
+    {
+     "ngay": "2026-06-03",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị quyết số 18/2026/NQ-HĐND Bãi bỏ Nghị quyết số 07/2017/NQ-HĐND ngày 14/7/2017 của Hội đồng nhân dân tỉnh quy định mức trích từ các khoản thu hồi phát hiện qua công tác thanh tra đã thực nộp vào ngân sách nhà nước trên địa bàn tỉnh Lai Châu"
+    }
+   ]
   },
   "_missing": false
  },
@@ -2982,7 +3558,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3004,7 +3581,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-11-01",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3026,7 +3604,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2016-01-18",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3048,7 +3627,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2021-01-11",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3070,7 +3650,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2022-08-01",
    "ngay_cap_nhat": "2026-01-09",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3092,7 +3673,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-01",
    "ngay_cap_nhat": "2026-07-07",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3114,7 +3696,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-06-19",
    "ngay_cap_nhat": "2026-07-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3136,7 +3719,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2023-12-18",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3158,7 +3742,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-11-14",
    "ngay_cap_nhat": "2026-04-15",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3180,7 +3765,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-01",
    "ngay_cap_nhat": "2026-07-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3202,7 +3788,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1988-12-22",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3224,7 +3811,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-03-21",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3246,7 +3834,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-03-21",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3268,7 +3857,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2014-09-18",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3290,7 +3880,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2011-03-23",
    "ngay_cap_nhat": "2026-04-09",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3312,7 +3903,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2015-03-02",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3334,7 +3926,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-06-10",
    "ngay_cap_nhat": "2026-06-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3356,7 +3949,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-08-21",
    "ngay_cap_nhat": "2026-04-12",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3378,7 +3972,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-10-21",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3400,7 +3995,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-04-06",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3422,7 +4018,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1996-11-08",
    "ngay_cap_nhat": "2026-04-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3444,7 +4041,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2011-12-04",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3466,7 +4064,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2008-08-30",
    "ngay_cap_nhat": "2026-04-12",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3488,7 +4087,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2002-01-17",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3510,7 +4110,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2006-05-30",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3532,7 +4133,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1999-01-06",
    "ngay_cap_nhat": "2026-04-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3554,7 +4156,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-09-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3576,7 +4179,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2013-02-09",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3598,7 +4202,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1975-01-16",
    "ngay_cap_nhat": "2026-05-13",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3620,7 +4225,29 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2009-11-07",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2009-12-26",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Quyết định số 113/2009/QĐ-UBND Về việc sửa đổi, bổ sung một số điều của Quyết định số 100/2009/QĐ-UBND ngày"
+    },
+    {
+     "ngay": "2009-10-28",
+     "trang_thai": "không rõ",
+     "van_ban_nguon": "của UBND tỉnh Nghệ An ban hành quy định giao đất theo hình thức định giá đất gắn với cấp giấy chứng nhận quyền sử dụng đất ở cho hộ gia đình, cá nhân trên địa bàn tỉnh Nghệ An"
+    },
+    {
+     "ngay": "2009-11-07",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Quyết định số 100/2009/QĐ-UBND Về việc ban hành quy định giao đất theo hình thức định giá đất gắn với cấp giấy chứng nhận quyền sử dụng đất ở cho hộ gia đình, cá nhân trên địa bàn tỉnh Nghệ An"
+    },
+    {
+     "ngay": "2009-10-28",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Quyết định số 100/2009/QĐ-UBND Về việc ban hành quy định giao đất theo hình thức định giá đất gắn với cấp giấy chứng nhận quyền sử dụng đất ở cho hộ gia đình, cá nhân trên địa bàn tỉnh Nghệ An"
+    }
+   ]
   },
   "_missing": false
  },
@@ -3642,7 +4269,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2001-11-26",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3664,7 +4292,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1993-03-25",
    "ngay_cap_nhat": "2026-03-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3686,7 +4315,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-08-26",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3708,7 +4338,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2000-11-15",
    "ngay_cap_nhat": "2026-04-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3730,7 +4361,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": null,
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3752,7 +4384,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-01-18",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3774,7 +4407,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2002-12-21",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3796,7 +4430,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2006-01-21",
    "ngay_cap_nhat": "2026-04-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3818,7 +4453,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2007-04-19",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3840,7 +4476,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2007-04-19",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3862,7 +4499,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2003-03-30",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3884,7 +4522,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2003-08-29",
    "ngay_cap_nhat": "2026-04-09",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3906,7 +4545,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2004-06-11",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3928,7 +4568,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2007-02-26",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3950,7 +4591,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2001-04-13",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3972,7 +4614,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2001-04-12",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -3994,7 +4637,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2019-07-01",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4016,7 +4660,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2006-07-30",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4038,7 +4683,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-08-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4060,7 +4706,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1995-03-30",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4082,7 +4729,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2011-11-03",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4104,7 +4752,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-11-09",
    "ngay_cap_nhat": "2026-01-09",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4126,7 +4775,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1995-07-15",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4148,7 +4798,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1995-07-15",
    "ngay_cap_nhat": "2026-04-15",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4170,7 +4821,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2009-07-03",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4192,7 +4844,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1993-11-25",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4214,7 +4867,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2024-08-01",
    "ngay_cap_nhat": "2026-06-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4236,7 +4890,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-08-01",
    "ngay_cap_nhat": "2026-07-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4258,7 +4913,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2000-05-06",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4280,7 +4936,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2000-05-05",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4302,7 +4959,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-11-10",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4324,7 +4982,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2006-07-20",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4346,7 +5005,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1995-03-30",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4368,7 +5028,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-07-20",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4390,7 +5051,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2002-06-29",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4412,7 +5074,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-11-09",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4434,7 +5097,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2000-02-04",
    "ngay_cap_nhat": "2026-04-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4456,7 +5120,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2005-06-09",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4478,7 +5143,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2000-10-09",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4500,7 +5166,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1948-01-25",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4522,7 +5189,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1948-04-14",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4544,7 +5212,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1948-06-11",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4555,7 +5224,7 @@
   "linh_vuc": "",
   "co_quan_ban_hanh": "",
   "nguoi_ky": "",
-  "trich_yeu": "Sắc lệnh 70/SL của Chủ tịch Chính phủ Việt Nam Dân chủ Cộng hoà",
+  "trich_yeu": "Văn bản pháp luật",
   "ngay_ban_hanh": "",
   "ngay_hieu_luc": "1947-08-23",
   "hieu_luc_theo_cong": null,
@@ -4566,7 +5235,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1947-08-23",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4588,7 +5258,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": null,
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4610,7 +5281,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2005-06-14",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4632,7 +5304,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2005-06-14",
    "ngay_cap_nhat": "2026-03-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4654,7 +5327,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-03-10",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4676,7 +5350,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-02-26",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4698,7 +5373,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1993-04-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4720,7 +5396,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-08-15",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4742,7 +5419,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1998-09-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4764,7 +5442,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2000-04-04",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4786,7 +5465,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2006-09-28",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4808,7 +5488,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-08-26",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4830,7 +5511,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-08-26",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4852,7 +5534,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-08-03",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4874,7 +5557,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2013-12-10",
    "ngay_cap_nhat": "2026-03-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4896,7 +5580,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1998-12-31",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4918,7 +5603,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2002-05-21",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4940,7 +5626,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1999-01-10",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4962,7 +5649,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1999-01-10",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -4984,7 +5672,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2009-03-01",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5006,7 +5695,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2000-01-05",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5028,7 +5718,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2005-01-01",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5050,7 +5741,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2007-02-03",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5072,7 +5764,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1999-01-01",
    "ngay_cap_nhat": "2026-04-07",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5094,7 +5787,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-03-01",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5116,7 +5810,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-01-06",
    "ngay_cap_nhat": "2026-04-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5138,7 +5833,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2001-12-14",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5160,7 +5856,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": null,
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5182,7 +5879,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2005-06-23",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5204,7 +5902,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-08-15",
    "ngay_cap_nhat": "2026-01-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5226,7 +5925,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-07-09",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5245,10 +5945,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-01-2022-tt-btp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-nghi-dinh-so-87-2020-nd-cp-ngay-28-thang-7-nam-2020-cua-chinh-phu-quy-dinh-ve-co-so-du-lieu-ho-tich-dien-tu-dang-ky-ho-tich-truc-tuyen--152812",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2022-02-18",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5270,7 +5971,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2001-05-04",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5292,7 +5994,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-01-11",
    "ngay_cap_nhat": "2026-04-18",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5314,7 +6017,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1998-01-22",
    "ngay_cap_nhat": "2026-01-19",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5336,7 +6040,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1998-01-23",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5358,7 +6063,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2003-01-15",
    "ngay_cap_nhat": "2026-04-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5380,7 +6086,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2023-08-02",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5402,7 +6109,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-03-01",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5424,7 +6132,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1999-07-30",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5446,7 +6155,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2000-03-24",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5465,10 +6175,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-04-2012-tt-bnv-huong-dan-ve-to-chuc-va-hoat-dong-cua-thon-to-dan-pho--27794",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2012-10-15",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5487,10 +6198,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-04-2016-tt-bng-huong-dan-thu-tuc-cap-thi-thuc-cap-the-tam-tru-gia-han-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-thuoc-tham-quyen-cua-bo-ngoai-giao--122364",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2016-09-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5509,10 +6221,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-04-2020-tt-btp-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-ho-tich-va-nghi-dinh-so-123-2015-nd-cp-ngay-15-thang-11-nam-2015-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-ho-tich--142805",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2020-07-16",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5531,10 +6244,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-04-2024-tt-btp-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-02-2020-tt-btp-ngay-08-4-2020-cua-bo-truong-bo-tu-phap-ban-hanh-huong-dan-su-dung-quan-ly-mau-so-quoc-tich-va-mau-giay-to-ve-quoc-tich-va-thong-tu-so-04-2020-tt-btp-ngay-28-5-2020-cua-bo-truong-bo-tu-phap-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-ho-tich-va-nghi-dinh-so-123-2015-nd-cp-ngay-15-11-2015-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-ho-tich--167546",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2024-06-06",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5553,10 +6267,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-04-2025-tt-bng-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-04-2016-tt-bng-ngay-30-thang-6-nam-2016-cua-bo-truong-bo-ngoai-giao-huong-dan-thu-tuc-cap-thi-thuc-gia-han-tam-tru-cap-the-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-thuoc-tham-quyen-cua-bo-ngoai-giao-va-quyet-dinh-so-2985-2007-qd-bng-ngay-29-thang-11-nam-2007-cua-bo-truong-bo-ngoai-giao-ban-hanh-quy-che-to-chuc-va-hoat-dong-quy-bao-ho-cong-dan-va-phap-nhan-viet-nam-o-nuoc-ngoai--178771",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2025-07-13",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5578,7 +6293,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-03-03",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5600,7 +6316,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-07-10",
    "ngay_cap_nhat": "2026-03-27",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5622,7 +6339,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2022-05-23",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5644,7 +6362,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1996-09-28",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5666,7 +6385,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2007-07-20",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5688,7 +6408,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-06-27",
    "ngay_cap_nhat": "2026-05-13",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5710,7 +6431,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-09-01",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5732,7 +6454,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2016-03-18",
    "ngay_cap_nhat": "2026-10-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5754,7 +6477,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-01-23",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5776,7 +6500,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1997-07-15",
    "ngay_cap_nhat": "2026-01-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5798,7 +6523,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2008-02-12",
    "ngay_cap_nhat": "2026-03-23",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5820,7 +6546,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-03-22",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5842,7 +6569,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2017-04-10",
    "ngay_cap_nhat": "2026-10-12",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5861,10 +6589,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-07-2023-tt-bng-huong-dan-viec-dang-ky-va-quan-ly-ho-tich-tai-cac-co-quan-dai-dien-ngoai-giao-co-quan-dai-dien-lanh-su-cua-viet-nam-o-nuoc-ngoai--164939",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2024-02-15",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5886,7 +6615,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-07-13",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5908,7 +6638,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2000-06-30",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5930,7 +6661,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2013-03-20",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5952,7 +6684,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-05-10",
    "ngay_cap_nhat": "2026-03-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5974,7 +6707,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1989-09-01",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -5996,7 +6730,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1995-11-21",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6018,7 +6753,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-03-01",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6040,7 +6776,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2023-01-01",
    "ngay_cap_nhat": "2026-04-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6062,7 +6799,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2023-09-14",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6084,7 +6822,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2013-07-05",
    "ngay_cap_nhat": "2026-03-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6106,7 +6845,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-04-10",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6128,7 +6868,19 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2019-11-18",
    "ngay_cap_nhat": "2026-05-14",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2019-11-18",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 39/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 10/2016/TT-BCA ngày 03 tháng 3 năm 2016 quy định về công tác tàng thư căn cước công dân"
+    },
+    {
+     "ngay": "2019-10-01",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 39/2019/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 10/2016/TT-BCA ngày 03 tháng 3 năm 2016 quy định về công tác tàng thư căn cước công dân"
+    }
+   ]
   },
   "_missing": false
  },
@@ -6150,7 +6902,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2020-11-14",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6172,7 +6925,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2013-08-13",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6194,7 +6948,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2005-10-31",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6216,7 +6971,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2000-05-05",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6238,7 +6994,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-01",
    "ngay_cap_nhat": "2026-07-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6260,7 +7017,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-01",
    "ngay_cap_nhat": "2026-07-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6282,7 +7040,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-01",
    "ngay_cap_nhat": "2026-07-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6304,7 +7063,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1999-07-10",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6326,7 +7086,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2011-11-24",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6348,7 +7109,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2022-02-10",
    "ngay_cap_nhat": "2026-04-16",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6370,7 +7132,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2012-05-04",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6392,7 +7155,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2019-12-25",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6414,7 +7178,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1995-07-01",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6436,7 +7201,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-06-30",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6458,7 +7224,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-06-30",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6480,7 +7247,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1995-08-02",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6502,7 +7270,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2012-09-20",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6521,10 +7290,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-14-2018-tt-bnv-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-04-2012-tt-bnv-ngay-31-thang-8-nam-2012-cua-bo-truong-bo-noi-vu-huong-dan-ve-to-chuc-va-hoat-dong-cua-thon-to-dan-pho--132466",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2019-01-20",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6546,7 +7316,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2023-10-16",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6568,7 +7339,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-03-29",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6590,7 +7362,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2013-10-17",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6612,7 +7385,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-01-02",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6634,7 +7408,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2022-05-21",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6656,7 +7431,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-12-01",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6678,7 +7454,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-07-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6700,7 +7477,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6722,7 +7500,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-12-01",
    "ngay_cap_nhat": "2026-03-27",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6741,10 +7520,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-168-2016-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-quan-ly-va-su-dung-phi-tham-dinh-kinh-doanh-hang-hoa-dich-vu-han-che-kinh-doanh-hang-hoa-dich-vu-kinh-doanh-co-dieu-kien-thuoc-linh-vuc-thuong-mai-va-le-phi-cap-giay-phep-thanh-lap-so-giao-dich-hang-hoa--118372",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2017-01-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6766,7 +7546,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2019-01-28",
    "ngay_cap_nhat": "2026-04-03",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6788,7 +7569,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1997-07-22",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6810,7 +7592,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2013-09-16",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6832,7 +7615,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2024-07-01",
    "ngay_cap_nhat": "2026-07-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6854,7 +7638,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2016-01-01",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6876,7 +7661,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2018-07-01",
    "ngay_cap_nhat": "2026-03-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6898,7 +7684,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1995-07-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6920,7 +7707,24 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2011-03-24",
    "ngay_cap_nhat": "2026-03-28",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2011-03-24",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 41/2011/TT-BTC Sửa đổi, bổ sung Thông tư số 193/2010/TT-BTC ngày"
+    },
+    {
+     "ngay": "2010-12-02",
+     "trang_thai": "không rõ",
+     "van_ban_nguon": "quy định chế độ thu, nộp, quản lý và sử dụng phí thẩm định điều kiện về an ninh trật tự; phí sát hạch cấp chứng chỉ nghiệp vụ bảo vệ; lệ phí cấp giấy chứng nhận đã đăng ký mẫu dấu; lệ phí cấp giấy phép mang pháo hoa vào, ra Việt Nam; lệ phí cấp giấy phép quản lý vũ khí, vật liệu nổ, công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2011-03-24",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 41/2011/TT-BTC Sửa đổi, bổ sung Thông tư số 193/2010/TT-BTC ngày"
+    }
+   ]
   },
   "_missing": false
  },
@@ -6942,7 +7746,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2019-09-03",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6964,7 +7769,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2022-06-06",
    "ngay_cap_nhat": "2026-10-11",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -6986,7 +7792,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-01-08",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7008,7 +7815,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-01-08",
    "ngay_cap_nhat": "2026-04-06",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7030,7 +7838,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-06-18",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7052,7 +7861,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2016-08-10",
    "ngay_cap_nhat": "2026-10-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7074,7 +7884,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2017-01-01",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7096,7 +7907,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-07-01",
    "ngay_cap_nhat": "2026-04-13",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7115,10 +7927,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-31-2015-tt-bca-huong-dan-mot-so-noi-dung-ve-cap-thi-thuc-cap-the-tam-tru-cap-giay-phep-xuat-nhap-canh-giai-quyet-thuong-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam--70409",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2015-08-20",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7140,7 +7953,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1993-12-30",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7162,7 +7976,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-11-20",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7184,7 +7999,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2012-12-01",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7206,7 +8022,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2017-12-06",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7225,10 +8042,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-43-2023-tt-btc-sua-doi-bo-sung-mot-so-dieu-cua-cac-thong-tu-co-quy-dinh-lien-quan-den-viec-nop-xuat-trinh-va-khai-thong-tin-ve-dang-ky-so-ho-khau-so-tam-tru-hoac-giay-to-co-yeu-cau-xac-nhan-cua-dia-phuong-noi-cu-tru-khi-thuc-hien-cac-chinh-sach-hoac-thu-tuc-hanh-chinh-thuoc-linh-vuc-quan-ly-nha-nuoc-cua-bo-tai-chinh--160910",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2023-06-27",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7250,7 +8068,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2020-05-26",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7269,10 +8088,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-48-2018-tt-bct-sua-doi-mot-so-dieu-cua-thong-tu-so-55-2014-tt-bct-ngay-19-thang-12-nam-2014-cua-bo-truong-bo-cong-thuong-quy-dinh-cu-the-va-huong-dan-thuc-hien-mot-so-dieu-cua-nghi-dinh-so-38-2014-nd-cp-ngay-06-thang-5-nam-2014-cua-chinh-phu-ve-quan-ly-hoa-chat-cua-cong-uoc-cam-phat-trien-san-xuat-tang-tru-su-dung-va-pha-huy-vu-khi-hoa-hoc--133217",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2019-01-07",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7294,7 +8114,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-07-01",
    "ngay_cap_nhat": "2026-04-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7316,7 +8137,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-01-01",
    "ngay_cap_nhat": "2026-05-14",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7338,7 +8160,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "1988-06-04",
    "ngay_cap_nhat": "2026-04-15",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7360,7 +8183,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2013-04-26",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7382,7 +8206,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2015-04-17",
    "ngay_cap_nhat": "2026-04-18",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7404,7 +8229,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2011-01-20",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7426,7 +8252,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2017-02-15",
    "ngay_cap_nhat": "2026-07-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7445,10 +8272,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-53-2025-tt-bca-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-55-2021-tt-bca-ngay-15-thang-5-nam-2021-cua-bo-truong-bo-cong-an-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-cu-tru-duoc-sua-doi-bo-sung-boi-thong-tu-so-66-2023-tt-bca-ngay-17-thang-11-nam-2023-thong-tu-so-56-2021-tt-bca-ngay-15-thang-5-nam-2021-cua-bo-truong-bo-cong-an-quy-dinh-ve-bieu-mau-trong-dang-ky-quan-ly-cu-tru-duoc-sua-doi-bo-sung-boi-thong-tu-so-66-2023-tt-bca-ngay-17-thang-11-nam-2023-thong-tu-so-17-2024-tt-bca-ngay-15-thang-5-nam-2024-cua-bo-truong-bo-cong-an-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-can-cuoc--179354",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2025-07-01",
    "ngay_cap_nhat": "2026-04-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7470,7 +8298,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-02-15",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7492,7 +8321,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-07-01",
    "ngay_cap_nhat": "2026-07-20",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7514,7 +8344,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2020-06-12",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7536,7 +8367,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-07-01",
    "ngay_cap_nhat": "2026-05-14",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7558,7 +8390,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2015-12-20",
    "ngay_cap_nhat": "2026-04-09",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7580,7 +8413,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-07-01",
    "ngay_cap_nhat": "2026-01-09",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7602,7 +8436,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2021-07-01",
    "ngay_cap_nhat": "2026-05-14",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7624,7 +8459,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-02-24",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7646,7 +8482,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2020-06-22",
    "ngay_cap_nhat": null,
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7668,7 +8505,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-01-01",
    "ngay_cap_nhat": "2026-04-02",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7690,7 +8528,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2017-08-15",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7712,7 +8551,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2012-04-25",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7734,7 +8574,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2014-05-19",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7756,7 +8597,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2024-01-01",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7778,7 +8620,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2024-01-01",
    "ngay_cap_nhat": "2026-03-25",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7800,7 +8643,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "1996-07-19",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7822,7 +8666,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-01",
    "ngay_cap_nhat": "2026-09-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7841,10 +8686,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-73-2024-tt-btc-quy-dinh-muc-thu-mien-che-do-thu-nop-le-phi-cap-doi-cap-lai-the-can-cuoc--170888",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2024-10-21",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7863,10 +8709,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-75-2022-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-va-quan-ly-le-phi-dang-ky-cu-tru--158216",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2023-02-05",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7885,10 +8732,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-75-2024-tt-bca-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro--174919",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2025-01-01",
    "ngay_cap_nhat": "2026-04-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7910,7 +8758,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2012-07-01",
    "ngay_cap_nhat": "2026-03-26",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7932,7 +8781,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2002-09-26",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7954,7 +8804,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2012-02-01",
    "ngay_cap_nhat": "2026-04-05",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7976,7 +8827,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2010-06-08",
    "ngay_cap_nhat": "2026-04-01",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -7998,7 +8850,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2025-01-01",
    "ngay_cap_nhat": "2026-04-04",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -8020,7 +8873,8 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2026-07-24",
    "ngay_cap_nhat": "2026-07-24",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -8039,10 +8893,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-90-2011-tt-bqp-sua-doi-thong-tu-181-2005-tt-bqp-huong-dan-nghi-dinh-32-2005-nd-cp-ve-quy-che-cua-khau-bien-gioi-dat-lien-va-thong-tu-05-2010-tt-bqp-huong-dan-nghi-dinh-50-2008-nd-cp-ve-quan-ly-bao-ve-an-ninh-trat-tu-tai-cua-khau-cang-bien--26694",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2011-08-14",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -8064,7 +8919,8 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-08-29",
    "ngay_cap_nhat": "2026-03-27",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -8083,10 +8939,11 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-94-2021-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-quan-ly-va-su-dung-phi-dang-kiem-an-toan-ky-thuat-tau-ca-kiem-dinh-trang-thiet-bi-nghe-ca-phi-tham-dinh-xac-nhan-nguon-goc-nguyen-lieu-thuy-san-phi-tham-dinh-kinh-doanh-co-dieu-kien-thuoc-linh-vuc-thuy-san-le-phi-cap-giay-phep-khai-thac-hoat-dong-thuy-san--151150",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2021-12-17",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": null
   },
   "_missing": false
  },
@@ -8108,7 +8965,24 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2009-06-26",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2016-09-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư liên tịch số 04/2016/TTLT-BCA-BNG Bãi bỏ Thông tư liên tịch số 05/2009/TTLT-BCA-BNG ngày 12 tháng 5 năm 2009 của Bộ Công an và Bộ Ngoại giao hướng dẫn thủ tục giải quyết cho công dân Việt Nam định cư ở nước ngoài đăng ký thường trú tại Việt Nam"
+    },
+    {
+     "ngay": "2009-06-26",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư liên tịch số 05/2009/TTLT-BCA-BNG Hướng dẫn thủ tục giải quyết cho công dân Việt Nam định cư ở nước ngoài đăng ký thường trú tại Việt Nam"
+    },
+    {
+     "ngay": "2009-05-12",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư liên tịch số 05/2009/TTLT-BCA-BNG Hướng dẫn thủ tục giải quyết cho công dân Việt Nam định cư ở nước ngoài đăng ký thường trú tại Việt Nam"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8130,7 +9004,29 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2017-01-01",
    "ngay_cap_nhat": "2026-04-17",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2026-01-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Nghị định số 362/2025/NĐ-CP Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Phí và lệ phí"
+    },
+    {
+     "ngay": "2024-01-12",
+     "trang_thai": "Văn bản bị bãi bỏ một phần",
+     "van_ban_nguon": "Nghị định số 82/2023/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 120/2016/NĐ-CP ngày 23 tháng 8 năm 2016 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Phí và lệ phí"
+    },
+    {
+     "ngay": "2017-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị định số 120/2016/NĐ-CP Quy định chi tiết và hướng dẫn thi hành một số điều của Luật phí và lệ phí"
+    },
+    {
+     "ngay": "2016-08-23",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị định số 120/2016/NĐ-CP Quy định chi tiết và hướng dẫn thi hành một số điều của Luật phí và lệ phí"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8152,7 +9048,24 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2015-11-23",
    "ngay_cap_nhat": "2026-03-22",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2017-01-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 219/2016/TT-BTC Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí, lệ phí trong lĩnh vực xuất cảnh, nhập cảnh, quá cảnh, cư trú tại Việt Nam"
+    },
+    {
+     "ngay": "2015-11-23",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 157/2015/TT-BTC Quy định chế độ thu, nộp và quản lý sử dụng lệ phí cấp hộ chiếu,thị thực, giấy tờ về nhập cảnh, xuất cảnh, quá cảnh và cư trú tại Việt Nam"
+    },
+    {
+     "ngay": "2015-10-08",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 157/2015/TT-BTC Quy định chế độ thu, nộp và quản lý sử dụng lệ phí cấp hộ chiếu,thị thực, giấy tờ về nhập cảnh, xuất cảnh, quá cảnh và cư trú tại Việt Nam"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8171,10 +9084,27 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-250-2016-tt-btc-huong-dan-ve-phi-va-le-phi-thuoc-tham-quyen-quyet-dinh-cua-hoi-dong-nhan-dan-tinh-thanh-pho-truc-thuoc-trung-uong--118894",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2017-01-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2017-11-11",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Thông tư số 96/2017/TT-BTC Sửa đổi, bổ sung Thông tư số 250/2016/TT-BTC ngày 11 tháng 11 năm 2016 hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương"
+    },
+    {
+     "ngay": "2017-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 250/2016/TT-BTC Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương"
+    },
+    {
+     "ngay": "2016-11-11",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 250/2016/TT-BTC Hướng dẫn về phí và lệ phí thuộc thẩm quyền quyết định của Hội đồng nhân dân tỉnh, thành phố trực thuộc Trung ương"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8193,10 +9123,27 @@
   "nguon": "vbpl",
   "vbpl": {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-256-2016-tt-btc-quy-dinh-muc-thu-che-do-thu-nop-va-quan-ly-le-phi-cap-can-cuoc-cong-dan--118913",
-   "tinh_trang": "Hết hiệu lực",
+   "tinh_trang": "Hết hiệu lực một phần",
    "ngay_hieu_luc": "2017-01-01",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2017-02-10",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Thông tư số 331/2016/TT-BTC Sửa đổi, bổ sung một số điều của Thông tư số 256/2016/TT-BTC ngày 11 tháng 11 năm 2016 quy định mức thu, chế độ thu, nộp và quản lý lệ phí cấp căn cước công dân"
+    },
+    {
+     "ngay": "2017-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 256/2016/TT-BTC Quy định mức thu, chế độ thu, nộp và quản lý lệ phí cấp Căn cước công dân"
+    },
+    {
+     "ngay": "2016-11-11",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 256/2016/TT-BTC Quy định mức thu, chế độ thu, nộp và quản lý lệ phí cấp Căn cước công dân"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8218,7 +9165,19 @@
    "tinh_trang": "Còn hiệu lực",
    "ngay_hieu_luc": "2017-02-10",
    "ngay_cap_nhat": "2026-03-31",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2017-02-10",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 331/2016/TT-BTC Sửa đổi, bổ sung một số điều của Thông tư số 256/2016/TT-BTC ngày 11 tháng 11 năm 2016 quy định mức thu, chế độ thu, nộp và quản lý lệ phí cấp căn cước công dân"
+    },
+    {
+     "ngay": "2016-12-26",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 331/2016/TT-BTC Sửa đổi, bổ sung một số điều của Thông tư số 256/2016/TT-BTC ngày 11 tháng 11 năm 2016 quy định mức thu, chế độ thu, nộp và quản lý lệ phí cấp căn cước công dân"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8229,7 +9188,7 @@
   "linh_vuc": "",
   "co_quan_ban_hanh": "",
   "nguoi_ky": "",
-  "trich_yeu": "Thông tư 04/2014/TT-BCA của Bộ Công an",
+  "trich_yeu": "Văn bản pháp luật",
   "ngay_ban_hanh": "",
   "ngay_hieu_luc": "2014-03-10",
   "hieu_luc_theo_cong": null,
@@ -8240,7 +9199,29 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-03-10",
    "ngay_cap_nhat": "2026-03-30",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2021-11-15",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 110/2021/TT-BCA Bãi bỏ toàn bộ hoặc một phần một số văn bản quy phạm pháp luật do Bộ trưởng Bộ Công an ban hành liên tịch ban hành"
+    },
+    {
+     "ngay": "2014-03-10",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 04/2014/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 35/2010/TT-BCA ngày"
+    },
+    {
+     "ngay": "2010-10-11",
+     "trang_thai": "không rõ",
+     "van_ban_nguon": "của Bộ trưởng Bộ Công an quy định về cấp giấy phép vận chuyển vật liệu nổ công nghiệp và hàng nguy hiểm"
+    },
+    {
+     "ngay": "2014-01-21",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 04/2014/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 35/2010/TT-BCA ngày"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8262,7 +9243,24 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2010-01-01",
    "ngay_cap_nhat": "2026-01-10",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2018-01-01",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Nghị quyết số 26/2017/NQ-HĐND Về việc bãi bỏ văn bản."
+    },
+    {
+     "ngay": "2010-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Nghị quyết số 37/2009/NQ-HĐND Về việc thu lệ phí chứng minh nhân dân và lệ phí đăng ký cư trú trên địa bàn thành phố Hồ Chí Minh."
+    },
+    {
+     "ngay": "2009-12-09",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Nghị quyết số 37/2009/NQ-HĐND Về việc thu lệ phí chứng minh nhân dân và lệ phí đăng ký cư trú trên địa bàn thành phố Hồ Chí Minh."
+    }
+   ]
   },
   "_missing": false
  },
@@ -8284,7 +9282,19 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2014-12-15",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2014-12-15",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 50/2014/TT-BCA Quy định về cấp, đổi, cấp lại giấy phép, giấy xác nhận về vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    },
+    {
+     "ngay": "2014-10-24",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 50/2014/TT-BCA Quy định về cấp, đổi, cấp lại giấy phép, giấy xác nhận về vũ khí, vật liệu nổ và công cụ hỗ trợ"
+    }
+   ]
   },
   "_missing": false
  },
@@ -8306,7 +9316,93 @@
    "tinh_trang": "Hết hiệu lực",
    "ngay_hieu_luc": "2018-12-05",
    "ngay_cap_nhat": "2026-05-08",
-   "kiem_tra_luc": "2026-11-02T21:35:30+07:00"
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2021-02-20",
+     "trang_thai": "Văn bản hết hiệu lực",
+     "van_ban_nguon": "toàn bộ Thông tư số 149 /2020/TT-BCA Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng cháy và chữa cháy và Luật sửa đổi, bổ sung một số điều của Luật Phòng cháy và chữa cháy và Nghị định số 136/2020/NĐ-CP ngày 24 tháng 11 năm 2020 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Phòng cháy và chữa cháy và Luật sửa đổi, bổ sung một số điều của Luật Phòng cháy và chữa cháy"
+    },
+    {
+     "ngay": "2018-12-05",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Thông tư số 36/2018/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 66/2014/TT-BCA ngày 16 tháng 12 năm 2014 của Bộ trưởng Bộ Công an quy định chi tiết thi hành một số điều của Nghị định số 79/2014/NĐ-CP ngày 31 tháng 7 năm 2014 quy định chi tiết thi hành một số điều của Luật Phòng cháy và chữa cháy và Luật sửa đổi, bổ sung một số điều của Luật Phòng cháy và chữa cháy"
+    },
+    {
+     "ngay": "2018-12-05",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Thông tư số 36/2018/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 66/2014/TT-BCA ngày 16 tháng 12 năm 2014 của Bộ trưởng Bộ Công an quy định chi tiết thi hành một số điều của Nghị định số 79/2014/NĐ-CP ngày 31 tháng 7 năm 2014 quy định chi tiết thi hành một số điều của Luật Phòng cháy và chữa cháy và Luật sửa đổi, bổ sung một số điều của Luật Phòng cháy và chữa cháy"
+    }
+   ]
+  },
+  "_missing": false
+ },
+ {
+  "id": null,
+  "so_ky_hieu": "97/2015/QH13",
+  "loai": "",
+  "linh_vuc": "",
+  "co_quan_ban_hanh": "",
+  "nguoi_ky": "",
+  "trich_yeu": "Luật 97/2015/QH13 của Quốc hội",
+  "ngay_ban_hanh": "",
+  "ngay_hieu_luc": "2017-01-01",
+  "hieu_luc_theo_cong": null,
+  "file_dinh_kem": "",
+  "nguon": "vbpl",
+  "vbpl": {
+   "url": "https://vbpl.vn/van-ban/chi-tiet/luat-phi-va-le-phi-so-97-2015-qh13--96119",
+   "tinh_trang": "Hết hiệu lực một phần",
+   "ngay_hieu_luc": "2017-01-01",
+   "ngay_cap_nhat": "2026-05-08",
+   "kiem_tra_luc": "2026-11-02T22:32:03+07:00",
+   "lich_su": [
+    {
+     "ngay": "2026-01-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Ngân sách nhà nước số 89/2025/QH15"
+    },
+    {
+     "ngay": "2025-01-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Đường bộ số 35/2024/QH15"
+    },
+    {
+     "ngay": "2025-01-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật sửa đổi, bổ sung một số điều của Luật Chứng khoán, Luật Kế toán, Luật Kiểm toán độc lập, Luật Ngân sách Nhà nước, Luật Quản lý, sử dụng tài sản công, Luật Quản lý thuế, Luật Thuế thu nhập cá nhân, Luật Dự trữ quốc gia, Luật Xử lý vi phạm hành chính số 56/2024/QH15"
+    },
+    {
+     "ngay": "2024-07-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Viễn thông số 24/2023/QH15"
+    },
+    {
+     "ngay": "2024-07-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Giao dịch điện tử số 20/2023/QH15"
+    },
+    {
+     "ngay": "2022-01-01",
+     "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+     "van_ban_nguon": "Luật Bảo vệ môi trường số 72/2020/QH14"
+    },
+    {
+     "ngay": "2019-07-01",
+     "trang_thai": "Văn bản bị bãi bỏ một phần",
+     "van_ban_nguon": "Luật Cạnh tranh số 23/2018/QH14"
+    },
+    {
+     "ngay": "2017-01-01",
+     "trang_thai": "Văn bản có hiệu lực",
+     "van_ban_nguon": "Luật Phí và lệ phí số 97/2015/QH13"
+    },
+    {
+     "ngay": "2015-11-25",
+     "trang_thai": "Văn bản được ban hành",
+     "van_ban_nguon": "Luật Phí và lệ phí số 97/2015/QH13"
+    }
+   ]
   },
   "_missing": false
  }

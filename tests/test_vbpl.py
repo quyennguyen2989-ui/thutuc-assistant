@@ -125,5 +125,57 @@ class StoreVbplTest(unittest.TestCase):
         self.assertEqual(row["loi"], "timeout")
 
 
+PARTIAL_TEXT = (
+    "Luật Phí và lệ phí số 97/2015/QH13 Hết hiệu lực một phần Ngày có hiệu lực: 01/01/2017 "
+    "Ngày cập nhật: 08/05/2026 137 lượt xem"
+)
+
+HISTORY_TEXT = (
+    "Lịch sử văn bản Thời gian Trạng thái Văn bản nguồn "
+    "01/01/2026 Văn bản bị sửa đổi, bổ sung Luật Ngân sách nhà nước số 89/2025/QH15 "
+    "01/01/2025 Văn bản bị sửa đổi, bổ sung Luật Đường bộ số 35/2024/QH15 "
+    "01/07/2019 Văn bản bị bãi bỏ một phần Luật Cạnh tranh số 23/2018/QH14 "
+    "01/01/2017 Văn bản có hiệu lực Luật Phí và lệ phí số 97/2015/QH13 "
+    "25/11/2015 Văn bản được ban hành Luật Phí và lệ phí số 97/2015/QH13 Tải về"
+)
+
+
+class PartialStatusTest(unittest.TestCase):
+    def test_partial_expiry_is_not_cut_to_expired(self):
+        info = vbpl.parse_detail_text(PARTIAL_TEXT)
+        self.assertEqual(info["tinh_trang"], "Hết hiệu lực một phần")
+        self.assertEqual(info["ngay_hieu_luc"], "2017-01-01")
+
+
+class HistoryTest(unittest.TestCase):
+    def test_history_entries_are_read_in_order(self):
+        entries = vbpl.parse_history_text(HISTORY_TEXT)
+        self.assertEqual(entries[0], {
+            "ngay": "2026-01-01",
+            "trang_thai": "Văn bản bị sửa đổi, bổ sung",
+            "van_ban_nguon": "Luật Ngân sách nhà nước số 89/2025/QH15",
+        })
+        self.assertEqual(entries[2]["trang_thai"], "Văn bản bị bãi bỏ một phần")
+        self.assertEqual(entries[-1]["trang_thai"], "Văn bản được ban hành")
+        self.assertEqual(len(entries), 5)
+
+    def test_history_stops_at_issuance_and_ignores_footer(self):
+        entries = vbpl.parse_history_text(HISTORY_TEXT)
+        self.assertTrue(all("Tải về" not in entry["van_ban_nguon"] for entry in entries))
+
+    def test_missing_history_returns_empty_list(self):
+        self.assertEqual(vbpl.parse_history_text("Nội dung văn bản không có mục lịch sử"), [])
+
+
+class ConsolidatedMatchTest(unittest.TestCase):
+    def test_base_law_is_matched_not_the_consolidated_copy(self):
+        entries = [
+            entry("https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-92-vbhn-vpqh-luat-phi-va-le-phi-so-97-2015-qh13--a9fa1f00"),
+            entry("https://vbpl.vn/van-ban/chi-tiet/luat-phi-va-le-phi-so-97-2015-qh13--96119"),
+        ]
+        hit = vbpl.find_by_number(entries, "97/2015/QH13")
+        self.assertTrue(hit["url"].endswith("--96119"))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -78,6 +78,8 @@ def read_statuses(conn, run_at, delay, keywords):
         row["url"] for row in rows
         if row["so_ky_hieu"] or vbpl.is_relevant(row["url"], row["sheet"], keywords)
     ]
+    # Văn bản đang theo dõi (căn cứ của thủ tục, văn bản của cổng) có thêm mục lịch sử sửa đổi.
+    history_urls = frozenset(row["url"] for row in rows if row["so_ky_hieu"])
     # Lần đầu có trạng thái thì chỉ ghi nhận nền, không báo thay đổi.
     baseline = not any(row["tinh_trang"] for row in rows)
 
@@ -91,11 +93,13 @@ def read_statuses(conn, run_at, delay, keywords):
             "ngay_hieu_luc": info.get("ngay_hieu_luc"),
             "ngay_cap_nhat": info.get("ngay_cap_nhat"),
         }
+        if info.get("lich_su") is not None:
+            new["lich_su"] = json.dumps(info["lich_su"], ensure_ascii=False)
         store.upsert_vbpl(conn, {"url": url, **new, "kiem_tra_luc": run_at, "loi": None})
         if not baseline and new["tinh_trang"]:
             _record_change(conn, run_at, url, by_url.get(url, {}), new)
 
-    vbpl.read_detail_pages(targets, save, delay_seconds=delay)
+    vbpl.read_detail_pages(targets, save, delay_seconds=delay, history_urls=history_urls)
     return len(targets)
 
 
@@ -113,9 +117,22 @@ def _record_change(conn, run_at, url, old, new):
         for field in ("tinh_trang", "ngay_hieu_luc", "ngay_cap_nhat")
         if old.get(field) != new[field]
     }
+    # Thêm lần sửa đổi, bổ sung mới trong lịch sử cũng là một thay đổi cần báo.
+    if new.get("lich_su") is not None and old.get("lich_su") != new["lich_su"]:
+        diff["lich_su"] = {
+            "cu": _count_history(old.get("lich_su")),
+            "moi": _count_history(new["lich_su"]),
+        }
     if diff:
         diff["_ten"] = name
         store.record_change(conn, run_at, "vbpl", record_id, "thay_doi", diff)
+
+
+def _count_history(raw):
+    """Số mục lịch sử đã lưu (chuỗi JSON hoặc danh sách)."""
+    if not raw:
+        return 0
+    return len(json.loads(raw)) if isinstance(raw, str) else len(raw)
 
 
 def sync(conn, extra_numbers, run_at, run_date, config):

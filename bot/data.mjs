@@ -63,11 +63,17 @@ function scoreAll(items, query, { titleOf, textOf }, limit) {
 // Tình trạng hiệu lực: ưu tiên vbpl.vn, rồi đối chiếu thủ công, rồi cổng.
 export function statusOf(doc) {
   if (doc.vbpl && doc.vbpl.tinh_trang) {
+    const hasEffectiveDate = Boolean(doc.vbpl.ngay_hieu_luc);
     return {
       tinh_trang: doc.vbpl.tinh_trang,
       nguon: "vbpl.vn",
+      ngay_hieu_luc: doc.vbpl.ngay_hieu_luc || null,
       ngay_cap_nhat: doc.vbpl.ngay_cap_nhat || null,
       kiem_tra_luc: doc.vbpl.kiem_tra_luc || null,
+      lich_su: doc.vbpl.lich_su || [],
+      luu_y: hasEffectiveDate
+        ? null
+        : "Trang vbpl.vn chưa ghi ngày hiệu lực cho văn bản này. Không suy ra tình trạng chỉ từ việc thiếu ngày; xem lịch sử sửa đổi và văn bản sửa đổi để biết nội dung nào đã thay đổi.",
     };
   }
   if (doc.doi_chieu_thu_cong) {
