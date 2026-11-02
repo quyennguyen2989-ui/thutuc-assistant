@@ -70,13 +70,17 @@ def discover(conn, numbers, config, run_date, delay):
     return {"so_sanh_duoc": len(entries), "theo_so_ky_hieu": matched, "van_ban_moi": new_found}
 
 
-def read_statuses(conn, run_at, delay, keywords):
-    """Mở trang chi tiết của văn bản đang theo dõi, lưu tình trạng và ghi nhận thay đổi."""
+def read_statuses(conn, run_at, delay, keywords, only_urls=None):
+    """Mở trang chi tiết của văn bản đang theo dõi, lưu tình trạng và ghi nhận thay đổi.
+
+    only_urls: nếu có, chỉ đọc các đường dẫn này (dùng khi vừa tìm được văn bản mới).
+    """
     rows = store.load_vbpl(conn)
     by_url = {row["url"]: row for row in rows}
     targets = [
         row["url"] for row in rows
-        if row["so_ky_hieu"] or vbpl.is_relevant(row["url"], row["sheet"], keywords)
+        if (row["so_ky_hieu"] or vbpl.is_relevant(row["url"], row["sheet"], keywords))
+        and (only_urls is None or row["url"] in only_urls)
     ]
     # Văn bản đang theo dõi (căn cứ của thủ tục, văn bản của cổng) có thêm mục lịch sử sửa đổi.
     history_urls = frozenset(row["url"] for row in rows if row["so_ky_hieu"])

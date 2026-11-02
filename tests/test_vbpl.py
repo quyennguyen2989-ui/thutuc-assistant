@@ -167,6 +167,41 @@ class HistoryTest(unittest.TestCase):
         self.assertEqual(vbpl.parse_history_text("Nội dung văn bản không có mục lịch sử"), [])
 
 
+class OwnNumberMatchTest(unittest.TestCase):
+    def test_document_that_repeals_a_number_is_not_chosen_over_its_own(self):
+        entries = [
+            {"url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-32-2023-nq-hdnd-bai-bo-nghi-quyet-so-07-2017-nq-hdnd-thanh-pho-ho-chi-minh--5", "lastmod": "2026-03-25", "sheet": 25},
+            {"url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-07-2017-nq-hdnd-le-phi-cu-tru-thanh-pho-ho-chi-minh--6", "lastmod": "2026-03-25", "sheet": 25},
+        ]
+        hit = vbpl.find_by_number(entries, "07/2017/NQ-HĐND")
+        self.assertTrue(hit["url"].endswith("--6"))
+
+    def test_amending_document_is_used_only_when_no_own_document_exists(self):
+        entries = [
+            {"url": "https://vbpl.vn/van-ban/chi-tiet/luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-cu-tru-so-36-2013-qh13--7", "lastmod": "2026-03-27", "sheet": 1},
+        ]
+        hit = vbpl.find_by_number(entries, "36/2013/QH13")
+        self.assertTrue(hit["url"].endswith("--7"))
+
+
+class ProvinceMatchTest(unittest.TestCase):
+    def test_hcm_document_is_preferred_over_another_province_with_same_number(self):
+        entries = [
+            {"url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-07-2017-nq-hdnd-lai-chau--1", "lastmod": "2026-06-16", "sheet": 20},
+            {"url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-07-2017-nq-hdnd-le-phi-cu-tru-thanh-pho-ho-chi-minh--2", "lastmod": "2026-06-16", "sheet": 20},
+        ]
+        hit = vbpl.find_by_number(entries, "07/2017/NQ-HĐND")
+        self.assertTrue(hit["url"].endswith("--2"))
+
+    def test_central_document_is_preferred_over_local(self):
+        entries = [
+            {"url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-16-2011-ubtvqh12-thanh-pho-ho-chi-minh--3", "lastmod": "2026-01-01", "sheet": 14},
+            {"url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-16-2011-ubtvqh12--4", "lastmod": "2026-01-01", "sheet": 1},
+        ]
+        hit = vbpl.find_by_number(entries, "16/2011/UBTVQH12")
+        self.assertTrue(hit["url"].endswith("--4"))
+
+
 class ConsolidatedMatchTest(unittest.TestCase):
     def test_base_law_is_matched_not_the_consolidated_copy(self):
         entries = [

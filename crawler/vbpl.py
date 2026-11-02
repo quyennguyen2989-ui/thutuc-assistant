@@ -105,8 +105,33 @@ def is_consolidated(url):
     return slug_of(url).startswith("van-ban-hop-nhat")
 
 
+# Cụm từ cho biết văn bản đang sửa đổi hoặc bãi bỏ văn bản khác, số phía sau không phải số của nó.
+MODIFIER_MARKERS = ("-bai-bo-", "-sua-doi-", "-thay-the-", "-dinh-chinh-", "-ngung-hieu-luc-")
+
+
+def _is_own_number(slug, number):
+    """Số có phải là số của chính văn bản (đứng trước mọi cụm sửa đổi, bãi bỏ) không."""
+    head = slug
+    for marker in MODIFIER_MARKERS:
+        index = slug.find(marker)
+        if index >= 0:
+            head = slug[:index]
+    return number_in_slug(number, head)
+
+
+def _rank(entry):
+    """Số ký hiệu có thể trùng giữa các tỉnh: ưu tiên trung ương, rồi TP.HCM, rồi các tỉnh khác."""
+    if entry["sheet"] in CENTRAL_SHEETS:
+        return 0
+    return 1 if HCM_MARK in slug_of(entry["url"]) else 2
+
+
 def find_by_number(entries, so_ky_hieu):
-    """Tìm văn bản gốc (không phải bản hợp nhất) có số ký hiệu này trong tên."""
+    """Tìm văn bản gốc (không phải bản hợp nhất) có số ký hiệu này trong tên.
+
+    Ưu tiên văn bản mang chính số đó (không phải văn bản bãi bỏ hay sửa đổi nó),
+    rồi đến văn bản trung ương, TP.HCM, các tỉnh khác.
+    """
     number = normalize_number(so_ky_hieu)
     matches = [
         entry for entry in entries
@@ -114,6 +139,7 @@ def find_by_number(entries, so_ky_hieu):
         and not is_consolidated(entry["url"])
         and number_in_slug(number, slug_of(entry["url"]))
     ]
+    matches.sort(key=lambda entry: (not _is_own_number(slug_of(entry["url"]), number), _rank(entry)))
     return matches[0] if matches else None
 
 

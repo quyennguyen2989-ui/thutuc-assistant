@@ -11,8 +11,17 @@ from pathlib import Path
 from . import store, vbpl
 
 INDEX_NAME = "index.json"
-# Văn bản TP.HCM chưa có số ký hiệu theo dõi vẫn được lưu toàn văn nếu thuộc các nhóm này.
-EXTRA_TEXT_KEYWORDS = ["khu-pho", "to-dan-pho", "ho-tich"]
+CONFIG_PATH = Path(__file__).resolve().parent / "vbpl_config.json"
+IN_FORCE = ("Còn hiệu lực", "Chưa có hiệu lực")
+
+
+def _wanted(row, keywords):
+    """Lưu toàn văn: mọi văn bản đang theo dõi, và văn bản liên quan còn hiệu lực theo chủ đề."""
+    if not row["tinh_trang"]:
+        return False
+    if row["so_ky_hieu"]:
+        return True
+    return vbpl.is_relevant(row["url"], row["sheet"], keywords) and row["tinh_trang"].startswith(IN_FORCE)
 
 
 def file_name(key):
@@ -40,10 +49,8 @@ def sync_texts(conn, out_dir, delay_seconds):
     out_dir.mkdir(parents=True, exist_ok=True)
     index = load_index(out_dir)
 
-    rows = [
-        row for row in store.load_vbpl(conn)
-        if row["tinh_trang"] and (row["so_ky_hieu"] or vbpl.is_relevant(row["url"], row["sheet"], EXTRA_TEXT_KEYWORDS))
-    ]
+    keywords = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))["tu_khoa_tim_van_ban_moi"]
+    rows = [row for row in store.load_vbpl(conn) if _wanted(row, keywords)]
     todo = [row for row in rows if index.get(_key(row), {}).get("ngay_cap_nhat") != row["ngay_cap_nhat"]]
     by_url = {row["url"]: row for row in todo}
     written = 0

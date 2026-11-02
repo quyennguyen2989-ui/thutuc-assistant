@@ -1,5 +1,187 @@
 [
  {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 2137675587,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị định 99/2016/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 3339801633,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Nghị định 79/2014/NĐ-CP của Chính phủ",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Hết hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 703290949,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 66/2014/TT-BCA của Bộ Công an",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Hết hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 514059196,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 61/2015/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 3261570579,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 35/2010/TT-BCA của Bộ Công an",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Hết hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 1078978546,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 218/2016/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 3638281731,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 193/2010/TT-BTC của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 2762410717,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị định 137/2015/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 3657937434,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 11/2016/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 3927203370,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 10/2016/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 1977733840,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị quyết 07/2017/NQ-HĐND của HĐND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:39:54+07:00",
+  "kind": "vbpl",
+  "record_id": 1031657002,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 07/2016/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:35:39+07:00",
+  "kind": "vbpl",
+  "record_id": 212061657,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Quyết định 100/2009/QĐ-UBND của UBND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-02T23:35:39+07:00",
+  "kind": "vbpl",
+  "record_id": 1604307644,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị quyết 32/2023/NQ-HĐND của HĐND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
   "run_at": "2026-11-02T22:32:03+07:00",
   "kind": "vbpl",
   "record_id": 3500673348,
