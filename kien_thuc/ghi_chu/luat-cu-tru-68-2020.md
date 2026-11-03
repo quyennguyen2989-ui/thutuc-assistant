@@ -22,6 +22,14 @@ Chỉ ghi điều, khoản đã đọc trong toàn văn. Phần chưa đọc ghi
 - Quản lý, lưu trữ hồ sơ và bảo mật thông tin cư trú của công dân.
 - Giải quyết kiến nghị, khiếu nại, tố cáo về cư trú theo thẩm quyền.
 
+## Phân công quản lý nhà nước (Điều 32)
+
+- Chính phủ thống nhất quản lý nhà nước về cư trú trong cả nước.
+- Bộ Công an chịu trách nhiệm trước Chính phủ: xây dựng văn bản về cư trú; chỉ đạo tổ chức đăng ký, quản lý cư trú trên toàn quốc và cập nhật Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú; đình chỉ hoặc kiến nghị bãi bỏ quy định trái luật; ban hành biểu mẫu, tờ khai, sổ sách; trang bị, đào tạo cán bộ; thống kê; kiểm tra, thanh tra và xử lý vi phạm (điểm a-h khoản 2).
+- Bộ, cơ quan ngang Bộ quản lý theo sự phân công của Chính phủ (khoản 3).
+- Ủy ban nhân dân các cấp, trong phạm vi nhiệm vụ: tổ chức thực hiện văn bản về cư trú ở địa phương; chỉ đạo phối hợp giữa các cơ quan; tuyên truyền pháp luật; kiểm tra, thanh tra, giải quyết khiếu nại, tố cáo và xử lý vi phạm (khoản 4).
+- Phân việc cụ thể cho từng cấp công an (cục, tỉnh, xã) nằm ở TT 116/2026 (xem ghi chú riêng).
+
 ## Trẻ em (Điều 17)
 
 Điều 17 chỉ nói về nơi cư trú của trẻ em, người khuyết tật và người không nơi nương tựa được nhận nuôi và sinh sống trong cơ sở tôn giáo, tín ngưỡng. Điều này không phải quy trình đăng ký thường trú cho con mới sinh. Thủ tục liên thông cho trẻ dưới 6 tuổi xem ghi chú NĐ 301/2026.
