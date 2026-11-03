@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
-  <link rel="stylesheet" href="style.css?v=3">
+  <script>(function () { try { var t = localStorage.getItem("tchc-theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();</script>
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <a class="skip" href="#app">Chuyển đến nội dung</a>
@@ -18,16 +19,22 @@
   <header class="site-head">
     <div class="site-head__inner">
       <a class="brand" href="#tthc">
-        <span class="brand__name">Tra cứu thủ tục</span>
-        <span class="brand__place">Khu vực dân cư · TP.HCM</span>
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 3.5h7.5L19 8v12.5H7z"/><path d="M9.5 12h7M9.5 15.5h7"/></svg></span>
+        <span class="brand__text">
+          <span class="brand__name">Tra cứu thủ tục</span>
+          <span class="brand__place">Khu vực dân cư · TP.HCM</span>
+        </span>
       </a>
-      <nav class="tabs" aria-label="Chức năng">
-        <a href="#tthc" data-tab="tthc">Thủ tục</a>
-        <a href="#vanban" data-tab="vanban">Văn bản</a>
-        <a href="#hoidap" data-tab="hoidap">Hỏi đáp</a>
-        <a href="#capnhat" data-tab="capnhat">Cập nhật</a>
-        <a href="#taikhoan" data-tab="taikhoan">Tài khoản</a>
-      </nav>
+      <div class="site-head__tools">
+        <nav class="tabs" aria-label="Chức năng">
+          <a href="#tthc" data-tab="tthc">Thủ tục</a>
+          <a href="#vanban" data-tab="vanban">Văn bản</a>
+          <a href="#hoidap" data-tab="hoidap">Hỏi đáp</a>
+          <a href="#capnhat" data-tab="capnhat">Cập nhật</a>
+          <a href="#taikhoan" data-tab="taikhoan">Tài khoản</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button">Chế độ tối</button>
+      </div>
     </div>
   </header>
 
@@ -45,6 +52,27 @@
     </div>
   </footer>
 
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=4"></script>
+  <script>
+    (function () {
+      // Nút chuyển sáng/tối: nhãn nói việc sẽ xảy ra khi bấm. Không chọn thì theo cài đặt của máy.
+      var root = document.documentElement;
+      var button = document.getElementById("theme-toggle");
+      function dangToi() {
+        var chon = root.getAttribute("data-theme");
+        return chon ? chon === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+      function hienNhan() {
+        button.textContent = dangToi() ? "Chế độ sáng" : "Chế độ tối";
+      }
+      button.addEventListener("click", function () {
+        var chon = dangToi() ? "light" : "dark";
+        root.setAttribute("data-theme", chon);
+        try { localStorage.setItem("tchc-theme", chon); } catch (e) {}
+        hienNhan();
+      });
+      hienNhan();
+    })();
+  </script>
 </body>
 </html>

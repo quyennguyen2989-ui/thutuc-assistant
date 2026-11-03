@@ -34,6 +34,13 @@ const FIELD_LABELS = {
 // Việc thường gặp, bấm để tìm nhanh.
 const COMMON_TASKS = ["tạm trú", "thẻ căn cước", "hộ khẩu", "lệ phí", "con dấu", "vũ khí"];
 
+// Lối vào nhanh ở trang chủ: mỗi lối là một việc cụ thể cán bộ hay cần.
+const QUICK_LINKS = [
+  { href: "#hoidap", ten: "Hỏi đáp theo tình huống", mo_ta: "Mô tả việc công dân cần làm. Bot nêu hồ sơ, nơi nộp và luồng duyệt." },
+  { href: "#vanban", ten: "Tra cứu văn bản", mo_ta: "Nhập số ký hiệu để xem tình trạng hiệu lực và ghi chú đọc hiểu." },
+  { href: "#capnhat", ten: "Thay đổi mới nhất", mo_ta: "Văn bản và thủ tục vừa được cập nhật, kèm ngày và nguồn." },
+];
+
 const MIN_PASSWORD_LENGTH = 6;
 
 const state = {
@@ -341,6 +348,27 @@ function feeItem(fee) {
 
 // ----- Thủ tục -----
 
+// Bắt đầu nhanh: ẩn khi người dùng đang lọc, để kết quả hiện lên ngay.
+function quickStart(filters) {
+  return el(
+    "section",
+    { class: "quick", id: "quick-start", "aria-labelledby": "quick-title", hidden: Boolean(filters.q || filters.lv) },
+    el("h2", { class: "quick__title", id: "quick-title" }, "Bắt đầu nhanh"),
+    el(
+      "div",
+      { class: "quick__grid" },
+      QUICK_LINKS.map((item) =>
+        el(
+          "a",
+          { class: "quick__card", href: item.href },
+          el("span", { class: "quick__name" }, item.ten),
+          el("span", { class: "quick__text" }, item.mo_ta)
+        )
+      )
+    )
+  );
+}
+
 function renderTthcList() {
   const filters = state.filters.tthc;
   const input = el("input", {
@@ -397,6 +425,7 @@ function renderTthcList() {
         )
       )
     ),
+    quickStart(filters),
     el("p", { class: "count", id: "results-count", "aria-live": "polite" }),
     el("div", { class: "rows", id: "results" })
   );
@@ -409,11 +438,12 @@ function updateTthcResults() {
     (t) => (!lv || t.linh_vuc === lv) && (!q || matchesQuery(haystackTthc(t), q))
   );
   document.getElementById("results-count").textContent = `${matched.length} thủ tục`;
+  document.getElementById("quick-start").hidden = Boolean(q || lv);
   const results = document.getElementById("results");
 
   if (!matched.length) {
     results.replaceChildren(
-      emptyState("Không có thủ tục nào khớp với từ khóa này.", () => {
+      emptyState("Không có thủ tục khớp. Thử từ khóa ngắn hơn, ví dụ \"tạm trú\".", () => {
         state.filters.tthc = { q: "", lv: "" };
         renderTthcList();
       })

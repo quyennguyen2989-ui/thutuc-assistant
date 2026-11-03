@@ -7,6 +7,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f63d6'/%3E%3Cpath d='M8 10h16v3H8zm0 5h12v3H8zm0 5h14v3H8z' fill='%23fff'/%3E%3C/svg%3E">
   <meta name="robots" content="noindex">
   <title>Đăng nhập</title>
+  <script>(function () { try { var t = localStorage.getItem("tchc-theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
@@ -18,12 +19,35 @@
       --ink: #0e2340;
       --muted: #4f6079;
       --rule: #b6c8e0;
+      --line-strong: #b6c8e0;
       --blue: #1f63d6;
+      --blue-hover: #174fb0;
       --blue-ring: rgba(31, 99, 214, 0.22);
       --danger: #b42318;
+      --danger-soft: #fdecea;
       --shadow-md: 0 8px 24px -10px rgba(14, 35, 64, 0.18), 0 2px 6px rgba(14, 35, 64, 0.06);
+      --shadow-btn: 0 6px 14px -6px rgba(31, 99, 214, 0.55);
       --serif: "Newsreader", Georgia, "Times New Roman", serif;
       --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    /* Chế độ tối: cùng bảng màu với style.css. */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --paper: #0c1729; --surface: #13223a; --ink: #e9f0fb; --muted: #a7b8d0;
+        --rule: #22355a; --line-strong: #3a5279; --blue: #2563eb; --blue-hover: #1e53c9;
+        --blue-ring: rgba(120, 170, 255, 0.35); --danger: #ff9b92; --danger-soft: #3a1b1e;
+        --shadow-md: 0 10px 28px -12px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.3);
+        --shadow-btn: 0 6px 14px -6px rgba(37, 99, 235, 0.6);
+        color-scheme: dark;
+      }
+    }
+    :root[data-theme="dark"] {
+      --paper: #0c1729; --surface: #13223a; --ink: #e9f0fb; --muted: #a7b8d0;
+      --rule: #22355a; --line-strong: #3a5279; --blue: #2563eb; --blue-hover: #1e53c9;
+      --blue-ring: rgba(120, 170, 255, 0.35); --danger: #ff9b92; --danger-soft: #3a1b1e;
+      --shadow-md: 0 10px 28px -12px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.3);
+      --shadow-btn: 0 6px 14px -6px rgba(37, 99, 235, 0.6);
+      color-scheme: dark;
     }
     * { box-sizing: border-box; }
     /* Chuyển sang tra cứu hoặc quay lại đăng nhập: trượt nhẹ giữa hai trang, khớp với style.css. */
@@ -65,6 +89,11 @@
       padding: 28px 24px 24px;
     }
     h1 { margin: 0 0 4px; font: 500 28px/1.15 var(--serif); }
+    .mark {
+      display: grid; place-items: center; width: 40px; height: 40px; margin-bottom: 14px;
+      border-radius: 10px; background: var(--blue); box-shadow: var(--shadow-btn);
+    }
+    .mark svg { width: 22px; height: 22px; fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
     .place { margin: 0 0 24px; font-size: 14px; color: var(--muted); }
     .field { margin: 0 0 16px; }
     label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 500; }
@@ -76,7 +105,7 @@
       font: 400 16px var(--sans);
       color: var(--ink);
       background: var(--surface);
-      border: 1px solid #b6c8e0;
+      border: 1px solid var(--line-strong);
       border-radius: 10px;
       box-shadow: 0 1px 2px rgba(14, 35, 64, 0.06);
     }
@@ -104,14 +133,14 @@
       box-shadow: 0 6px 14px -6px rgba(31, 99, 214, 0.55);
       cursor: pointer;
     }
-    .btn:hover { background: #174fb0; border-color: #174fb0; }
+    .btn:hover { background: var(--blue-hover); border-color: var(--blue-hover); }
     .btn:disabled { opacity: 0.6; cursor: wait; }
     .error {
       display: none;
       margin: 0 0 16px;
       padding: 10px 12px;
       border-left: 4px solid var(--danger);
-      background: #fdecea;
+      background: var(--danger-soft);
       border-radius: 0 8px 8px 0;
       color: var(--danger);
       font-size: 15px;
@@ -122,6 +151,7 @@
 </head>
 <body>
   <main class="card">
+    <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M7 3.5h7.5L19 8v12.5H7z"/><path d="M9.5 12h7M9.5 15.5h7"/></svg></span>
     <h1>Tra cứu thủ tục</h1>
     <p class="place">Khu vực dân cư, TP.HCM</p>
 
