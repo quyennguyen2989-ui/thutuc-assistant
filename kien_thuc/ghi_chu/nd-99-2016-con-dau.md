@@ -2,7 +2,7 @@
 so_ky_hieu: 99/2016/NĐ-CP
 chu_de: Quản lý và sử dụng con dấu: đối tượng và cơ quan đăng ký mẫu con dấu (Công an tỉnh, Công an cấp xã), hồ sơ, thời hạn 03 ngày làm việc, giao nộp và hủy con dấu; sửa đổi bởi NĐ 58/2026 và TT 62/2026
 ---
-# Nghị định 99/2016/NĐ-CP: quản lý và sử dụng con dấu (đã đọc các điều chính; xem mục chưa đọc)
+# Nghị định 99/2016/NĐ-CP: quản lý và sử dụng con dấu (đã đọc Điều 1–25; phụ lục mẫu không có trong bản text)
 
 Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 01/07/2016** (Điều 26 khoản 1). Thay thế Nghị định 58/2001 và Nghị định 31/2009 (Điều 26 khoản 2).
 
@@ -41,7 +41,29 @@ Phải giao nộp con dấu cho cơ quan đăng ký trong các trường hợp:
 
 ## Điều kiện sử dụng và cấm (Điều 5, 6)
 
-- Điều kiện sử dụng con dấu (Điều 5) và các hành vi bị cấm (Điều 6): chưa đọc chi tiết. Xem NĐ 282/2025 Điều 16 về các mức phạt liên quan (khoản 1–4).
+- **Điều kiện** (Điều 5): chỉ dùng con dấu khi đã có quy định cho phép trong văn bản quy phạm pháp luật hoặc quyết định của cơ quan có thẩm quyền, và **phải đăng ký mẫu trước khi sử dụng** (khoản 1). Mỗi cơ quan chỉ dùng **một con dấu** theo mẫu đã đăng ký (khoản 4). Thêm dấu ướt cần cơ quan có thẩm quyền cho phép; dấu nổi, dấu thu nhỏ, dấu xi chỉ dùng cho cơ quan có chức năng cấp văn bằng, chứng chỉ, giấy tờ có dán ảnh hoặc niêm phong (khoản 3–4).
+- **Cấm** (Điều 6): làm giả, sử dụng con dấu giả; mua bán, tiêu hủy trái phép; dùng con dấu hết giá trị; làm biến dạng, sửa mẫu đã đăng ký; không giao nộp khi có quyết định; mượn, cho mượn, cầm cố con dấu; chiếm giữ trái phép; dùng con dấu chưa đăng ký; làm giả, sửa giấy chứng nhận đăng ký; đóng dấu lên chữ ký người không có thẩm quyền; không xuất trình con dấu khi kiểm tra; lợi dụng nhiệm vụ để sách nhiễu, gây phiền hà khi giải quyết thủ tục.
+- Mức phạt các hành vi này: xem NĐ 282/2025 Điều 16 (khoản 1–4).
+
+## Phân loại con dấu theo hình quốc huy, biểu tượng (Điều 7, 8)
+
+- **Con dấu có hình Quốc huy** (Điều 7): Chủ tịch nước, Quốc hội, Chính phủ, các bộ, cơ quan ngang bộ, tòa án, viện kiểm sát, **Hội đồng nhân dân và Ủy ban nhân dân các cấp** (khoản 7), cơ quan thi hành án dân sự, các cơ quan đại diện Nhà nước ở nước ngoài.
+- **Con dấu có hình biểu tượng hoặc không có hình biểu tượng** (Điều 8): cơ quan thuộc cơ cấu bộ, ngành trung ương; cơ quan thuộc hệ thống bộ, ngành trung ương tại địa phương (khoản 2); cơ quan điều tra Công an nhân dân (khoản 5); cơ quan thi hành án hình sự Công an cấp tỉnh và cấp huyện (khoản 6); cơ quan chuyên môn và tổ chức sự nghiệp thuộc UBND cấp tỉnh, cấp huyện (khoản 9).
+- **Lưu ý**: Điều 7 và 8 không liệt kê riêng **Công an cấp xã**. Về con dấu của Công an cấp xã, đối chiếu với NĐ 58/2026 (Điều 12 mới) và TT 62/2026 trước khi trả lời chắc chắn.
+
+## Con dấu của tổ chức nước ngoài (Điều 9, 10)
+
+- Cơ quan đại diện ngoại giao, cơ quan lãnh sự của nước ngoài phải thông báo mẫu con dấu với Bộ Ngoại giao trước khi sử dụng (Điều 9).
+- Tổ chức nước ngoài không có chức năng ngoại giao mang con dấu vào Việt Nam hoặc làm con dấu tại Việt Nam phải đăng ký mẫu tại cơ quan đăng ký (Điều 10).
+
+## Trách nhiệm cơ quan, tổ chức và kiểm tra (Điều 19–25)
+
+- **Người đứng đầu cơ quan, tổ chức** phải quản lý, kiểm tra việc dùng con dấu và ban hành quy định nội bộ (Điều 24 khoản 1). Con dấu phải được quản lý chặt tại trụ sở; **chỉ chức danh nhà nước hoặc người đứng đầu mới được quyết định mang con dấu ra ngoài trụ sở** (Điều 24 khoản 5).
+- Mất con dấu: báo bằng văn bản trong **02 ngày** cho cơ quan cấp giấy chứng nhận và **Công an xã, phường, thị trấn** nơi xảy ra mất (Điều 24 khoản 7 bản cũ; nay đã sửa theo NĐ 58/2026: Công an cấp xã).
+- Con dấu hỏng, mòn, biến dạng hoặc đổi tên, đổi tổ chức: đăng ký lại và nộp lại con dấu cũ (Điều 24 khoản 9). Giấy chứng nhận mất thì cấp lại; hỏng thì đổi (khoản 10).
+- **Bộ Công an** (Điều 19): thống nhất mẫu con dấu, hướng dẫn, kiểm tra, xử lý vi phạm, phối hợp xây dựng cơ sở dữ liệu quản lý con dấu.
+- **Kiểm tra** (Điều 25): kiểm tra định kỳ **không quá 01 lần trong một năm**, thông báo trước **03 ngày làm việc**; kiểm tra đột xuất khi có dấu hiệu vi phạm hoặc đơn tố cáo. Thẩm quyền: Cục Cảnh sát quản lý hành chính về trật tự xã hội; Phòng Cảnh sát quản lý hành chính Công an tỉnh, thành phố. Người kiểm tra phải có giấy giới thiệu và lập biên bản.
+- **Ủy ban nhân dân các cấp** (Điều 22): tuyên truyền, phổ biến pháp luật về con dấu; tổ chức thực hiện.
 
 ## Trách nhiệm của Ủy ban nhân dân các cấp (Điều 22)
 
@@ -54,5 +76,6 @@ Phải giao nộp con dấu cho cơ quan đăng ký trong các trường hợp:
 
 ## Chưa đọc
 
-- Điều 5 (điều kiện sử dụng con dấu), Điều 6 (hành vi cấm), Điều 7–10 (con dấu có hình Quốc huy, con dấu có hình biểu tượng, cơ quan nước ngoài), Điều 19–21 và 23–25 (trách nhiệm các bộ, cơ quan, kiểm tra): chưa đọc đủ.
+- Đã đọc Điều 5–10, 19–25 (phiên này). Chi tiết hồ sơ Điều 11–17 đã cập nhật theo NĐ 58/2026 (xem nd-58-2026-con-dau-phao.md).
+- Điều 21 (trách nhiệm các bộ: Bộ Nội vụ, Bộ Quốc phòng, Bộ Ngoại giao, Bộ Tài chính về phí lệ phí đăng ký mẫu) và Điều 23 (cơ quan quyết định thành lập, cấp giấy phép, yêu cầu ghi thời hạn giao nộp con dấu): đã đọc, không tóm tắt chi tiết.
 - Phụ lục mẫu con dấu và mẫu giấy chứng nhận: không có trong bản text.
