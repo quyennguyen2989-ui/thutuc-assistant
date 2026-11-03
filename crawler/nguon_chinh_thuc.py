@@ -130,6 +130,31 @@ def phu_hop(text, keywords):
 # Từ khóa chung cho mọi thủ tục hành chính; chỉ giữ khi thủ tục do cơ quan công an thực hiện hoặc ban hành.
 THU_TUC_HANH_CHINH = "thu-tuc-hanh-chinh"
 
+# Từ khóa dễ lẫn sang ngành khác (khai sinh của Tư pháp, đăng kiểm xe của Giao thông...):
+# chỉ giữ khi văn bản thuộc cơ quan công an, giống thủ tục hành chính chung.
+TU_KHOA_CAN_CONG_AN = (
+    THU_TUC_HANH_CHINH,
+    "moi-sinh", "sinh-con", "khai-sinh",
+    "dang-ky-xe", "dang-ky-phuong-tien", "giay-phep-lai-xe",
+    "xuat-canh", "nhap-canh", "ho-chieu",
+)
+
+# Giai đoạn 3: các đăng ký khác với cơ quan công an mà công dân hay làm khi mới sinh con, đi lại, xuất nhập cảnh.
+# Thủ tục chi tiết (hồ sơ, trình tự) chưa có trong danh mục cổng; bot tra cứu bằng toàn văn văn bản.
+GIAI_DOAN_3 = [
+    "moi-sinh",
+    "sinh-con",
+    "khai-sinh",
+    "dang-ky-xe",
+    "dang-ky-phuong-tien",
+    "giay-phep-lai-xe",
+    "xuat-canh",
+    "nhap-canh",
+    "ho-chieu",
+    "phong-chay",
+    "chua-chay",
+]
+
 
 def thuoc_cong_an(ten, so_ky_hieu="", co_quan=""):
     """Văn bản của cơ quan công an: số hiệu có "BCA", cơ quan ban hành hoặc tên có "công an"."""
@@ -148,7 +173,7 @@ def _khoa_so(so_ky_hieu):
 
 
 def ngoai_pham_vi_thu_tuc(ten, so_ky_hieu="", co_quan="", tu_khoa=()):
-    """Thủ tục hành chính của ngành khác: tên chỉ khớp từ khóa chung và văn bản không thuộc cơ quan công an.
+    """Văn bản của ngành khác: tên chỉ khớp các từ khóa dễ lẫn (TU_KHOA_CAN_CONG_AN) và không thuộc cơ quan công an.
 
     Tên đã khớp một lĩnh vực cụ thể trong tu_khoa (cư trú, căn cước, con dấu...) thì không bị loại.
     Văn bản trong GIU_THEO_SO luôn được giữ.
@@ -156,9 +181,9 @@ def ngoai_pham_vi_thu_tuc(ten, so_ky_hieu="", co_quan="", tu_khoa=()):
     if any(_khoa_so(so_ky_hieu) == _khoa_so(giu) for giu in GIU_THEO_SO):
         return False
     slugged = slug(ten)
-    if not co_cum(slugged, THU_TUC_HANH_CHINH):
+    if not any(co_cum(slugged, keyword) for keyword in TU_KHOA_CAN_CONG_AN):
         return False
-    if any(co_cum(slugged, keyword) for keyword in tu_khoa if keyword != THU_TUC_HANH_CHINH):
+    if any(co_cum(slugged, keyword) for keyword in tu_khoa if keyword not in TU_KHOA_CAN_CONG_AN):
         return False
     return not thuoc_cong_an(ten, so_ky_hieu, co_quan)
 
@@ -567,10 +592,13 @@ READERS = {
 
 def tu_khoa_giai_doan(giai_doan, tu_khoa_vbpl=()):
     """Từ khóa theo giai đoạn: giai đoạn 1 là thủ tục và cư trú; giai đoạn 2 thêm các lĩnh vực
-    đã thống nhất trong vbpl_config.json (ANTT, vũ khí, con dấu, khu phố, hộ tịch...)."""
+    đã thống nhất trong vbpl_config.json (ANTT, vũ khí, con dấu, khu phố, hộ tịch...);
+    giai đoạn 3 thêm đăng ký khác với công an (mới sinh con, đăng ký xe, PCCC, xuất nhập cảnh)."""
     if giai_doan == 1:
         return list(GIAI_DOAN_1)
-    return list(dict.fromkeys(list(GIAI_DOAN_1) + list(tu_khoa_vbpl)))
+    if giai_doan == 2:
+        return list(dict.fromkeys(list(GIAI_DOAN_1) + list(tu_khoa_vbpl)))
+    return list(dict.fromkeys(list(GIAI_DOAN_1) + list(tu_khoa_vbpl) + GIAI_DOAN_3))
 
 
 def khoa_nen(nguon, giai_doan):

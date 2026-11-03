@@ -235,8 +235,9 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     extra = _read_json(extra_path, [])
 
     keywords = vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"]
-    tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(2, keywords)
-    tthc = store.load_records(conn, "tthc")
+    tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(3, keywords)
+    # Thủ tục từ cổng quốc gia (chỉ phần do công an) nằm cùng danh mục với thủ tục của cổng TP.HCM.
+    tthc = store.load_records(conn, "tthc") + store.load_records(conn, "tthc_qg")
     cited = _can_cu_dang_theo_doi(tthc)
     van_ban = _merge_vbpl(_van_ban_view(conn, overrides, extra), store.load_vbpl(conn), keywords, cited, tu_khoa)
     van_ban = _merge_chinh_thuc(van_ban, store.load_chinh_thuc(conn), store.load_vbpl(conn), cited, tu_khoa)

@@ -84,7 +84,7 @@ def _kiem_tra(conn, van_ban, giai_doan):
 
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
-    giai_doan = 1
+    giai_doan = 3
     for arg in sys.argv:
         if arg.startswith("--giai-doan="):
             giai_doan = int(arg.split("=", 1)[1])

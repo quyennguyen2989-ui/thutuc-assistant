@@ -47,6 +47,27 @@ class PhamViTest(unittest.TestCase):
         self.assertTrue(nguon.phu_hop_pham_vi("Thông tư quy định về thủ tục cấp thẻ Căn cước", nguon.GIAI_DOAN_1))
         self.assertFalse(nguon.phu_hop_pham_vi("Quy định về kinh doanh vàng", nguon.GIAI_DOAN_1))
 
+    def test_giai_doan_3_them_dang_ky_cong_an(self):
+        tu_khoa = nguon.tu_khoa_giai_doan(3)
+        self.assertIn("moi-sinh", tu_khoa)
+        self.assertIn("thuong-tru", tu_khoa)
+        self.assertTrue(nguon.phu_hop_pham_vi("Thông tư quy định đăng ký thường trú cho trẻ mới sinh",
+                                              tu_khoa, "12/2026/TT-BCA"))
+        self.assertFalse(nguon.phu_hop_pham_vi("Nghị định quy định đăng ký khai sinh cho trẻ mới sinh",
+                                               tu_khoa, "12/2026/NĐ-CP"))
+        self.assertTrue(nguon.phu_hop_pham_vi("Nghị định quy định đăng ký khai sinh cho trẻ mới sinh",
+                                              tu_khoa, "12/2026/TT-BCA"))
+
+    def test_dang_ky_xe_can_co_dau_hieu_cong_an(self):
+        tu_khoa = nguon.tu_khoa_giai_doan(3)
+        ten = "Thông tư quy định đăng ký xe máy"
+        self.assertFalse(nguon.phu_hop_pham_vi(ten, tu_khoa, "05/2024/TT-BGTVT"))
+        self.assertTrue(nguon.phu_hop_pham_vi(ten, tu_khoa, "58/2020/TT-BCA"))
+
+    def test_phong_chay_la_linh_vuc_cu_the(self):
+        tu_khoa = nguon.tu_khoa_giai_doan(3)
+        self.assertTrue(nguon.phu_hop_pham_vi("Nghị định quy định về phòng cháy và chữa cháy", tu_khoa, "136/2020/NĐ-CP"))
+
     def test_loc_pham_vi_bo_dong_khong_co_tu_khoa(self):
         rows = [{"so_ky_hieu": "76/2018/NĐ-CP", "trich_yeu": "ngày 15 tháng 5 năm 2018 của Chính phủ quy định "
                  "chi tiết Luật Chuyển giao công nghệ", "co_quan_ban_hanh": ""}]

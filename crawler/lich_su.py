@@ -49,7 +49,7 @@ def main():
         return 0
     conn = store.connect(DB_PATH)
     keywords = nguon_chinh_thuc.tu_khoa_giai_doan(
-        2, vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"]
+        3, vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"]
     )
     try:
         lien_quan, moi = nap_nam(conn, nguon_chinh_thuc.Fetcher(), nam, keywords)

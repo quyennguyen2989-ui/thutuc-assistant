@@ -13,7 +13,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import export, normalize, nguon_chinh_thuc, nguon_text, sources, store, vbpl_sync, vbpl_text
+from . import cong_dvc, export, normalize, nguon_chinh_thuc, nguon_text, sources, store, vbpl_sync, vbpl_text
 from .client import BlockedError, PortalClient
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -69,6 +69,8 @@ def run():
         for giai_doan in _cac_giai_doan():
             _sync_chinh_thuc(conn, run_at, giai_doan)
         _sync_nguon_text(conn)
+    if "--khong-cong-dvc" not in sys.argv:
+        _sync_cong_dvc(conn, run_at)
     if "--khong-vbpl" not in sys.argv:
         _sync_vbpl(conn, run_at)
     export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
@@ -79,12 +81,12 @@ def run():
 
 
 def _cac_giai_doan():
-    """Các giai đoạn cần cập nhật: mặc định cả giai đoạn 1 (thủ tục và cư trú) và giai đoạn 2 (các lĩnh vực còn lại).
-    Chọn một giai đoạn bằng --giai-doan=1 hoặc --giai-doan=2."""
+    """Các giai đoạn cần cập nhật: mặc định cả ba giai đoạn (1: thủ tục và cư trú; 2: các lĩnh vực còn lại;
+    3: đăng ký khác với công an). Chọn một giai đoạn bằng --giai-doan=1, 2 hoặc 3."""
     for arg in sys.argv:
         if arg.startswith("--giai-doan="):
             return [int(arg.split("=", 1)[1])]
-    return [1, 2]
+    return [1, 2, 3]
 
 
 def _sync_chinh_thuc(conn, run_at, giai_doan):
@@ -116,7 +118,7 @@ def _sync_chinh_thuc(conn, run_at, giai_doan):
 
 def _chinh_thuc_trong_pham_vi(conn):
     """Văn bản chính thức đã lưu, bỏ thủ tục của ngành khác (không do công an). Dùng cho toàn văn và đối chiếu vbpl."""
-    tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(2, vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"])
+    tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(3, vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"])
     return nguon_chinh_thuc.loc_pham_vi(store.load_chinh_thuc(conn), tu_khoa)
 
 
@@ -131,6 +133,19 @@ def _sync_nguon_text(conn):
         print(f"Toàn văn nguồn chính thức bị từ chối: {error}. Thử lại lần sau.")
     except Exception as error:  # noqa: BLE001
         print(f"Toàn văn nguồn chính thức lỗi: {error}. Giữ dữ liệu cũ.")
+
+
+def _sync_cong_dvc(conn, run_at):
+    """Thủ tục do công an từ Cổng Dịch vụ công Quốc gia. Lỗi ở đây không chặn các nguồn khác."""
+    try:
+        tong, chon, moi = cong_dvc.dong_bo(conn, run_at)
+        print(f"Cổng quốc gia: {tong} thủ tục công khai; chọn {chon} thủ tục có công an; {moi} thay đổi.")
+    except BlockedError as error:
+        conn.rollback()
+        print(f"Cổng quốc gia từ chối truy cập: {error}. Giữ dữ liệu cũ.")
+    except Exception as error:  # noqa: BLE001 - lỗi một nguồn không làm hỏng các nguồn khác
+        conn.rollback()
+        print(f"Cổng quốc gia lỗi: {error}. Giữ dữ liệu cũ.")
 
 
 def _sync_vbpl(conn, run_at):
