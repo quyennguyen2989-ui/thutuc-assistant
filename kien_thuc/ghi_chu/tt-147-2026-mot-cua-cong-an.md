@@ -2,7 +2,7 @@
 so_ky_hieu: 147/2026/TT-BCA
 chu_de: Bộ phận Tiếp nhận và trả kết quả tập trung Công an cấp xã: tiếp nhận hồ sơ không phụ thuộc địa giới trong tỉnh, không yêu cầu giấy tờ đã có trong dữ liệu, hướng dẫn qua nhiều kênh, trả kết quả đúng hẹn
 ---
-# Thông tư 147/2026/TT-BCA: thực hiện thủ tục hành chính theo cơ chế một cửa tại Công an các cấp (đã đọc các điều chính; Điều 9, 10, 15–17 chỉ đọc khung, xem mục chưa đọc)
+# Thông tư 147/2026/TT-BCA: thực hiện thủ tục hành chính theo cơ chế một cửa tại Công an các cấp (đã đọc toàn bộ 21 điều)
 
 Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 08/10/2026** (Điều 20 khoản 1). Các bộ phận đã hoạt động trước ngày đó tiếp tục, và phải rà soát để phù hợp (khoản 3).
 
@@ -50,8 +50,23 @@ Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 08/10/20
 - Tiêu chí đánh giá việc tiếp nhận, giải quyết và trả kết quả (Điều 15–17): đối tượng tham gia và phương thức đánh giá theo văn bản.
 - Kiểm tra, hướng dẫn và báo cáo theo Điều 18. Kinh phí theo Điều 19.
 
+## Trụ sở, trang thiết bị, cán bộ (Điều 9, 10)
+
+- **Trụ sở** (Điều 9 khoản 1): bố trí vị trí thuận tiện, dễ tìm; ưu tiên nâng cấp trụ sở sẵn có; xây mới phải có ý kiến của cấp có thẩm quyền. Giám đốc Công an cấp tỉnh quyết định một hoặc nhiều địa điểm tiếp nhận, không tạo đầu mối độc lập mới.
+- **Trang thiết bị** (Điều 9 khoản 2–3): trang bị theo Nghị định 118/2025 Điều 13 khoản 2 điểm b; biển hiệu, khu hướng dẫn, khu tiếp nhận, khu trả kết quả, bảng niêm yết thống nhất.
+- **Tiêu chuẩn cán bộ** (Điều 10 khoản 1): có kinh nghiệm trong lĩnh vực được phân công, kỹ năng giao tiếp, đạo đức tốt, tác phong lịch sự.
+- **Trách nhiệm cán bộ** (Điều 10 khoản 2): hướng dẫn đầy đủ, rõ ràng, chính xác; **yêu cầu sửa, bổ sung hồ sơ chỉ được thực hiện một lần**. Trường hợp cần hướng dẫn bổ sung thêm phải có văn bản nêu rõ lý do, nội dung, và xác nhận của Lãnh đạo phụ trách Bộ phận.
+- Cán bộ **cập nhật hồ sơ vào phần mềm quản lý và cấp mã số hồ sơ** cho người dân (khoản 2 điểm c).
+- Cán bộ được tập huấn, hưởng chế độ theo quy định, và được khen thưởng khi có thành tích (Điều 10 khoản 3).
+
+## Đánh giá, kiểm tra, báo cáo (Điều 15–18)
+
+- Tiêu chí đánh giá (Điều 15): mức độ hài lòng của người dân; công khai, minh bạch; tiến độ và kết quả giải quyết; số hóa hồ sơ; dịch vụ công trực tuyến.
+- Đối tượng đánh giá (Điều 16): người dân, Công an các cấp tự đánh giá, Bộ Công an đánh giá tổng thể.
+- Kết quả đánh giá là căn cứ xem xét mức độ hoàn thành nhiệm vụ và trách nhiệm cá nhân (Điều 17 khoản 2).
+- Kiểm tra, báo cáo (Điều 18): Giám đốc Công an cấp tỉnh báo cáo quý và báo cáo đột xuất về Cục Pháp chế và cải cách hành chính, tư pháp. Cục này lập kế hoạch kiểm tra hằng năm.
+- Kinh phí (Điều 19): trong dự toán thường xuyên của Công an địa phương.
+
 ## Chưa đọc hoặc chưa có trong dữ liệu
 
-- Mục 3 chi tiết tiêu chí đánh giá (Điều 15–17): đã đọc phần đầu, phần chi tiết cần đọc lại nếu cần.
-- Điều 9 và Điều 10 (trụ sở, trang thiết bị, chế độ chính sách cán bộ): đã đọc khung, chưa đọc đủ tiêu chí cụ thể.
-- Danh mục thủ tục cụ thể thuộc Công an cấp xã: nằm trong quy định khác (Nghị định 118/2025, Thông tư 62/2026 Phụ lục phân cấp).
+- Đã đọc đủ 21 điều của thông tư. Danh mục thủ tục cụ thể thuộc Công an cấp xã nằm ở Nghị định 118/2025 và Thông tư 62/2026 (Phụ lục phân cấp của NQ 22/2026 chưa có trong dữ liệu).

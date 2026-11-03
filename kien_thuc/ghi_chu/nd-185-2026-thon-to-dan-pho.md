@@ -62,8 +62,16 @@ Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 26/05/20
 - Người hoạt động không chuyên trách ở cấp xã được bố trí về thôn, tổ dân phố từ 01/07/2025 đến trước 30/06/2026 được hưởng chính sách theo nghị định này (khoản 1).
 - Việc đóng bảo hiểm xã hội bắt buộc trong giai đoạn từ 01/07/2025 đến khi nghị định có hiệu lực được quy định ở khoản 2.
 
+## Người hoạt động không chuyên trách, quản lý và trách nhiệm (Điều 14, 16–18)
+
+- **Chức danh** (Điều 14 khoản 1): Trưởng thôn hoặc Tổ trưởng tổ dân phố; Bí thư Chi bộ; Trưởng Ban Công tác Mặt trận. Tối đa **03 người** không chuyên trách mỗi thôn, tổ dân phố (khoản 2).
+- **Quản lý** (Điều 16 khoản 1): chịu sự quản lý, phân công của cấp ủy và chính quyền cấp xã.
+- **Đào tạo** (Điều 16 khoản 2): ưu tiên tuyên truyền, vận động, hòa giải, ứng dụng số, cập nhật dữ liệu, hỗ trợ dịch vụ công trực tuyến.
+- **Bảo hiểm và chính sách** (Điều 16 khoản 3–4): hưởng bảo hiểm xã hội bắt buộc, bảo hiểm y tế; nghỉ do sắp xếp lại thôn, tổ dân phố thì hưởng chính sách tinh giản biên chế.
+- **Nguồn kinh phí** (Điều 17): ngân sách nhà nước theo phân cấp; bảo hiểm y tế theo luật; bảo hiểm xã hội do Quỹ bảo hiểm xã hội chi trả.
+- **Trách nhiệm** (Điều 18): Bộ Nội vụ hướng dẫn, kiểm tra việc thực hiện và sắp xếp thôn, tổ dân phố; Bộ Tài chính kiểm tra việc sử dụng kinh phí. UBND cấp tỉnh ban hành quy chế tổ chức, hoạt động của thôn, tổ dân phố; quyết định hoặc trình HĐND các chế độ; bảo đảm điều kiện hoạt động.
+
 ## Chưa đọc hoặc chưa đủ
 
-- Điều 8, 11 (đặt tên, trường hợp đặc biệt), Điều 13 (giải thể, đổi tên, ghép cụm dân cư): đã đọc khung; chi tiết cần đọc khi áp dụng.
-- Điều 16–18 (quản lý, đào tạo, trách nhiệm các bộ, UBND tỉnh): chưa đọc đầy đủ.
+- Điều 8, 11 (nguyên tắc sắp xếp và trường hợp đặc biệt), Điều 13 (giải thể, đổi tên, ghép cụm dân cư): đã đọc khung; chi tiết cần đọc khi áp dụng.
 - Quyết định 49/2026/QĐ-UBND TP.HCM và quy chế khu phố (tệp đính kèm chưa đọc được): cần để biết mức phụ cấp và tiêu chuẩn cụ thể của TP.HCM.
