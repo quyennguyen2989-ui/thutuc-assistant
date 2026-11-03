@@ -40,12 +40,18 @@ Tình trạng trên dữ liệu: còn hiệu lực. Có hiệu lực từ **10/0
 - Hồ sơ đăng ký: nghị quyết cấp ủy; kế hoạch bảo đảm ANTT của UBND; bản đăng ký phấn đấu.
 - Hồ sơ đề nghị công nhận: tờ trình; báo cáo kết quả; biên bản cuộc họp đánh giá; tài liệu liên quan.
 
-## Thẩm quyền công nhận (Điều 10)
+## Thẩm quyền công nhận (Điều 10, đã sửa bởi TT 48/2025)
 
-- **UBND cấp xã** xét duyệt, ra quyết định công nhận và cấp Giấy công nhận cho **khu dân cư** thuộc thẩm quyền hoặc được ủy quyền.
-- UBND cấp huyện công nhận xã, phường, thị trấn và cơ quan, doanh nghiệp, cơ sở giáo dục trên địa bàn.
-- UBND cấp tỉnh công nhận cơ quan, doanh nghiệp, cơ sở giáo dục thuộc thẩm quyền.
-- Bộ Công an công nhận cơ quan, doanh nghiệp, cơ sở giáo dục do các đơn vị nghiệp vụ Bộ Công an theo dõi.
+- **UBND cấp xã** xét duyệt, ra quyết định công nhận và cấp Giấy công nhận cho **khu dân cư** thuộc thẩm quyền hoặc được ủy quyền (khoản 1).
+- **UBND cấp tỉnh** xét duyệt, công nhận **xã, phường, đặc khu**, cơ quan, doanh nghiệp, cơ sở giáo dục thuộc thẩm quyền (khoản 3, sửa theo TT 48/2025). Từ 01/07/2025 không còn thẩm quyền của UBND cấp huyện công nhận xã (TT 48/2025 bãi bỏ khoản 2 Điều 10).
+- Bộ Công an công nhận cơ quan, doanh nghiệp, cơ sở giáo dục do các đơn vị nghiệp vụ Bộ Công an theo dõi (khoản 4).
+- Phần thay "thị trấn" bằng "đặc khu" và bỏ các mẫu phụ lục cũ theo TT 48/2025 (Điều 2 khoản 5–6).
+
+## Sửa đổi bởi Thông tư 48/2025/TT-BCA (hiệu lực 01/07/2025)
+
+- Điều 9: Công an xã, phường, đặc khu tham mưu cho UBND cùng cấp chủ trì họp đánh giá xã, phường, đặc khu (điểm b khoản 1 sửa). Hồ sơ của xã được hoàn thiện tại UBND cấp xã trước khi trình.
+- Điều 10: như trên.
+- Đã đọc Điều 2 và Điều 4 của TT 48/2025 (hiệu lực 01/07/2025). Điều 1 chỉ đọc tiêu đề các khoản; nội dung sửa TT 09/2024 về công tác dân vận của lực lượng CAND, không liên quan trực tiếp đến cấp xã.
 
 ## Lưu ý cho cán bộ công an cấp xã
 
