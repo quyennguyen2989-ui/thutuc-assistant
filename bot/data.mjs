@@ -314,20 +314,34 @@ async function paragraphsOf(tep) {
   if (hit && hit.raw === raw) return hit.paragraphs;
 
   const full = raw.replace(/\r/g, "");
-  const headings = [...full.matchAll(/(?:^|\n)[ \t]*(Điều\s+\d+[a-z]?)\s*\./g)]
-    .map((match) => ({ at: match.index, dieu: match[1].replace(/^Điều\s+/, "Điều ") }));
+  // Tiêu đề điều: đầu dòng, hoặc sau dấu kết câu (văn bản công báo thường nối tiêu đề vào cuối đoạn trước).
+  // Chữ hoa sau số điều bắt buộc, nên các câu dẫn như "Điều 33 Luật Cư trú" không bị nhận nhầm.
+  const headings = [...full.matchAll(/(?<=^|\n|[.;:]\s)[ \t]*Điều\s+(\d+[a-z]?)\.\s+(?=\p{Lu})/gmu)]
+    .map((match) => ({ at: match.index + match[0].search(/Điều/), dieu: `Điều ${match[1]}` }));
+  const dieuTai = (position) => {
+    let found = null;
+    for (const heading of headings) {
+      if (heading.at > position) break;
+      found = heading.dieu;
+    }
+    return found;
+  };
   const paragraphs = [];
   let pointer = 0;
-  let headingIndex = -1;
   for (const block of full.split(/\n\s*\n/)) {
-    const text = block.trim();
-    if (!text) continue;
-    const at = full.indexOf(block, pointer);
-    pointer = at + block.length;
-    while (headingIndex + 1 < headings.length && headings[headingIndex + 1].at <= at) headingIndex += 1;
-    const dieu = headingIndex >= 0 ? headings[headingIndex].dieu : null;
-    for (const piece of splitLong(text)) {
-      paragraphs.push({ text: piece, norm: normalize(piece), dieu });
+    if (!block.trim()) continue;
+    const start = full.indexOf(block, pointer);
+    const end = start + block.length;
+    pointer = end;
+    // Cắt khối tại mọi tiêu đề điều nằm trong nó, để mỗi đoạn gắn đúng điều.
+    const cuts = [start, ...headings.filter((h) => h.at > start && h.at < end).map((h) => h.at), end];
+    for (let i = 0; i < cuts.length - 1; i += 1) {
+      const text = full.slice(cuts[i], cuts[i + 1]).trim();
+      if (!text) continue;
+      const dieu = dieuTai(cuts[i]);
+      for (const piece of splitLong(text)) {
+        paragraphs.push({ text: piece, norm: normalize(piece), dieu });
+      }
     }
   }
   paragraphCache.set(tep, { raw, paragraphs });
