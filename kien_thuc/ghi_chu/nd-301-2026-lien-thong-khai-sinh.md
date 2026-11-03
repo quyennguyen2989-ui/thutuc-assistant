@@ -31,6 +31,16 @@ Trong liên thông, chỉ cấp thẻ căn cước cho trẻ khi người đại
 
 Bản điện tử Giấy khai sinh và Trích lục khai tử được đồng bộ vào hệ thống phục vụ thủ tục cư trú, cấp thẻ BHYT, cấp thẻ căn cước cho trẻ dưới 6 tuổi.
 
+## Hướng dẫn cho cha mẹ khi con mới sinh (theo văn bản đã đọc)
+
+1. **Đăng ký khai sinh**: thủ tục khai sinh thông thường do UBND cấp xã làm theo Luật Hộ tịch, **chưa đọc đến thời hạn và hồ sơ trong dữ liệu**. Không nêu thời hạn khai sinh cho công dân cho đến khi đọc Luật Hộ tịch.
+2. **Đăng ký thường trú cho con**: khi con về với cha, mẹ (Luật Cư trú Điều 20 khoản 2 điểm a), cần ý kiến đồng ý của chủ hộ và chủ sở hữu chỗ ở hợp pháp (Điều 21 khoản 2). Hồ sơ: tờ khai thay đổi thông tin cư trú có ghi ý kiến đồng ý; giấy tờ chứng minh quan hệ nhân thân với chủ hộ (không cần nếu đã có trong cơ sở dữ liệu); giấy tờ chứng minh điều kiện khác. Người chưa thành niên cần ý kiến đồng ý của cha mẹ hoặc người giám hộ (Điều 20 khoản 7).
+3. **Thời hạn thường trú**: 07 ngày làm việc kể từ khi nhận hồ sơ đầy đủ (Luật Cư trú Điều 22 khoản 3). Trong liên thông điện tử cho trẻ dưới 6 tuổi (NĐ 301 Điều 6 điểm a): con về với cha, mẹ thì **không quá 02 ngày làm việc** kể từ khi nhận hồ sơ điện tử; trường hợp khác phải xác minh, không quá 05 ngày làm việc.
+4. **Liên thông điện tử cho trẻ dưới 6 tuổi** (NĐ 301 Điều 7 khoản 2): khai sinh, thường trú, thẻ BHYT và thẻ căn cước được làm liên thông, **không quá 03 ngày làm việc** kể từ khi cơ quan có thẩm quyền nhận đủ hồ sơ; nếu phải xác minh thì không quá 05 ngày làm việc.
+5. **Thẻ căn cước cho trẻ dưới 6 tuổi** (NĐ 301 Điều 6 khoản 3a): trong liên thông, chỉ cấp khi người đại diện hợp pháp đề nghị ở bước nộp hồ sơ trực tuyến.
+6. **Nơi nộp**: trực tuyến qua Cổng dịch vụ công quốc gia hoặc VNeID; trực tiếp tại cơ quan đăng ký cư trú (Công an cấp xã nơi cư trú) theo TT 116/2026 Điều 3.
+7. **Mã hồ sơ**: mỗi hồ sơ được cấp một mã để tra cứu tiến độ (TT 116/2026 Điều 3 khoản 2).
+
 ## Chưa đọc hết
 
 - Thủ tục liên thông khai tử, xóa đăng ký thường trú, mai táng phí (Điều 14): không đưa vào ghi chú này.
