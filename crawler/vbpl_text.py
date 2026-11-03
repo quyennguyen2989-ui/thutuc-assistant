@@ -4,6 +4,7 @@ Chỉ tải lại văn bản khi trang vbpl.vn có ngày cập nhật khác lầ
 Mỗi văn bản là một tệp .txt, và index.json ghi lại đường dẫn, ngày cập nhật và tình trạng.
 """
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -24,9 +25,20 @@ def _wanted(row, keywords):
     return vbpl.is_relevant(row["url"], row["sheet"], keywords) and row["tinh_trang"].startswith(IN_FORCE)
 
 
+MAX_TEN_TEP = 100
+
+
 def file_name(key):
-    """'97/2015/QH13' -> '97-2015-QH13.txt'. Với văn bản không có số, dùng tên đường dẫn."""
-    return re.sub(r"[^0-9A-Za-zĐđ]+", "-", key).strip("-") + ".txt"
+    """'97/2015/QH13' -> '97-2015-QH13.txt'. Với văn bản không có số, dùng tên đường dẫn.
+
+    Tên đường dẫn có thể rất dài; Windows giới hạn 260 ký tự cho đường dẫn đầy đủ, nên tên quá dài được cắt
+    và thêm 8 ký tự băm của khóa gốc (ổn định, không trùng).
+    """
+    base = re.sub(r"[^0-9A-Za-zĐđ]+", "-", key).strip("-")
+    if len(base) > MAX_TEN_TEP:
+        digest = hashlib.sha1(key.encode("utf-8")).hexdigest()[:8]
+        base = base[: MAX_TEN_TEP - 9].rstrip("-") + "-" + digest
+    return base + ".txt"
 
 
 def _key(row):

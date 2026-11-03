@@ -1,7 +1,7 @@
 {
- "cap_nhat_luc": "2026-11-03T01:50:02+00:00",
- "lan_chay_thanh_cong_gan_nhat": "2026-11-03T01:50:02+00:00",
- "so_van_ban": 383,
+ "cap_nhat_luc": "2026-11-03T10:15:36+07:00",
+ "lan_chay_thanh_cong_gan_nhat": "2026-11-03T10:15:36+07:00",
+ "so_van_ban": 230,
  "so_thu_tuc": 42,
  "nguon": {
   "ten": "Trang thông tin điện tử Phòng Cảnh sát quản lý hành chính về trật tự xã hội (Công an TP.HCM)",
@@ -11,5 +11,19 @@
   "ten": "Cơ sở dữ liệu quốc gia về pháp luật (vbpl.vn)",
   "url": "https://vbpl.vn"
  },
+ "nguon_chinh_thuc": [
+  {
+   "ten": "Công báo điện tử Chính phủ",
+   "url": "https://congbao.chinhphu.vn/"
+  },
+  {
+   "ten": "Công báo Thành phố Hồ Chí Minh",
+   "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/van-ban-moi"
+  },
+  {
+   "ten": "Cổng Thông tin điện tử Bộ Công an (Hệ thống văn bản)",
+   "url": "https://vanban.bocongan.gov.vn/"
+  }
+ ],
  "luu_y": "Công cụ hỗ trợ tra cứu, không thay thế văn bản pháp luật chính thức và không phải ý kiến pháp lý. Trước khi áp dụng, đối chiếu với văn bản gốc trên Cơ sở dữ liệu quốc gia về văn bản pháp luật hoặc Công báo."
 }
