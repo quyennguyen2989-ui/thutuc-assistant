@@ -1,41 +1,62 @@
 ---
 so_ky_hieu: 68/2020/QH14
-chu_de: Luật Cư trú: thời hạn đăng ký và trách nhiệm cơ quan đăng ký
+chu_de: Luật Cư trú 2020: toàn bộ 38 điều, thời hạn, hồ sơ, trách nhiệm
 ---
-# Luật Cư trú 2020: thời hạn và trách nhiệm (đọc từ toàn văn vbpl.vn)
+# Luật Cư trú 68/2020/QH14 (đọc hết 38 điều từ toàn văn vbpl.vn)
 
-Chỉ ghi điều, khoản đã đọc trong toàn văn. Phần chưa đọc ghi rõ ở cuối.
+Có hiệu lực từ 01/07/2021. Văn bản vbpl có đánh dấu các khoản "đã sửa đổi, bổ sung" (một số điều liên quan đến luật sửa đổi năm 2025). Khi trích một khoản được đánh dấu, phải kiểm tra bản sửa đổi trước.
 
-## Thời hạn xử lý hồ sơ (theo điều)
+## Chương I: Những quy định chung (Điều 1–7)
+- **Điều 1** phạm vi: tự do cư trú của công dân Việt Nam; đăng ký và quản lý cư trú; quyền, nghĩa vụ, trách nhiệm của công dân, cơ quan, tổ chức.
+- **Điều 2** giải thích từ ngữ: chỗ ở hợp pháp (nhà ở, tàu thuyền, phương tiện, chỗ ở khác theo pháp luật); cư trú (sinh sống tại xã/phường/thị trấn hoặc huyện không có xã); **cơ quan đăng ký cư trú** là Công an xã, phường, thị trấn và Công an huyện, quận, thị xã, thành phố thuộc tỉnh ở nơi không có xã; lưu trú (dưới 30 ngày); nơi thường trú, nơi tạm trú, nơi ở hiện tại.
+- **Điều 3** nguyên tắc: thủ tục đơn giản, công khai, không gây phiền hà; mỗi công dân tại một thời điểm chỉ có một nơi thường trú và có thể có thêm một nơi tạm trú.
+- **Điều 4** giới hạn quyền tự do cư trú: người đang bị tạm giữ, tạm giam, án treo trong thử thách, cải tạo không giam giữ, biện pháp giáo dục tại xã, cách ly dịch bệnh, địa điểm không được đăng ký mới (Điều 23), và các trường hợp khác theo luật.
+- **Điều 5** bảo đảm: Nhà nước bảo đảm ngân sách, cơ sở vật chất, nhân lực, công nghệ cho đăng ký cư trú.
+- **Điều 6** hợp tác quốc tế về quản lý cư trú.
+- **Điều 7** hành vi bị nghiêm cấm: cản trở tự do cư trú; nhận hối lộ; không tiếp nhận hoặc trì hoãn hồ sơ; **không giải quyết hoặc giải quyết không đúng thời hạn khi hồ sơ đủ điều kiện**; xóa đăng ký trái luật; thu lệ phí trái quy định; tự đặt thời hạn, giấy tờ trái luật; làm giả, khai man, mua bán giấy tờ về cư trú; cho đăng ký vào chỗ ở không sinh sống thực tế.
 
-- **Đăng ký thường trú (Điều 22, khoản 3):** trong 07 ngày làm việc kể từ ngày nhận hồ sơ đầy đủ và hợp lệ, cơ quan đăng ký cư trú phải giải quyết. Hồ sơ chưa đủ thì hướng dẫn người đăng ký bổ sung.
-- **Đăng ký tạm trú (Điều 28):** trong 03 ngày làm việc kể từ ngày nhận hồ sơ đầy đủ và hợp lệ. Gia hạn tạm trú phải nộp trước ngày hết hạn tạm trú 15 ngày (Điều 28, khoản 3).
-- **Khai báo thông tin về cư trú (Điều 19):** nếu người khai báo đã có trong Cơ sở dữ liệu quốc gia về dân cư hoặc Cơ sở dữ liệu về cư trú thì kiểm tra trong 05 ngày làm việc. Nếu chưa có thì kiểm tra trong 30 ngày kể từ ngày tiếp nhận.
-- **Khai báo tạm vắng (Điều 31):** cơ quan đăng ký cư trú cấp phiếu khai báo trong 01 ngày làm việc kể từ ngày nhận đề nghị; trường hợp phức tạp không quá 02 ngày làm việc.
-- **Thường trú tại nơi ở mới (Điều 22):** điều luật có quy định thời hạn 12 tháng kể từ ngày đủ điều kiện để đăng ký thường trú tại nơi ở mới. Cần đọc kỹ đối tượng áp dụng trước khi nêu cho công dân.
+## Chương II: Quyền, nghĩa vụ của công dân (Điều 8–10)
+- **Điều 8** quyền: lựa chọn nơi cư trú; bảo mật thông tin; được xác nhận thông tin cư trú ở bất kỳ cơ quan đăng ký nào; được cập nhật, điều chỉnh thông tin; khiếu nại, khởi kiện.
+- **Điều 9** nghĩa vụ: đăng ký cư trú; cung cấp đầy đủ, chính xác thông tin; nộp lệ phí.
+- **Điều 10** chủ hộ và thành viên hộ gia đình: người cùng ở một chỗ ở hợp pháp và có quan hệ gia đình (ông bà, cha mẹ, vợ chồng, con, anh chị em ruột, cháu ruột) đăng ký theo hộ; chủ hộ do thành viên thống nhất đề cử (có năng lực hành vi dân sự đầy đủ); chủ hộ có nghĩa vụ thông báo khi có thành viên thuộc trường hợp Điều 24 khoản 1 hoặc Điều 29 khoản 1.
 
-## Trách nhiệm cơ quan đăng ký cư trú (Điều 33)
+## Chương III: Nơi cư trú (Điều 11–19)
+- **Điều 11** nơi cư trú gồm nơi thường trú và nơi tạm trú.
+- **Điều 12** người chưa thành niên cư trú theo cha, mẹ (hoặc nơi thường xuyên chung sống, hoặc theo thỏa thuận, hoặc theo Tòa án).
+- **Điều 13** người được giám hộ cư trú theo người giám hộ. **Điều 14** vợ chồng theo nơi thường xuyên chung sống.
+- **Điều 15** quân nhân, sĩ quan, học viên quân đội, công an: nơi đơn vị đóng quân; điều kiện, hồ sơ đăng ký tại đơn vị do Bộ trưởng Quốc phòng (quân nhân) và Bộ trưởng Công an (công an) quy định.
+- **Điều 16** người sống trên tàu, thuyền, phương tiện: nơi đăng ký phương tiện hoặc nơi phương tiện thường đậu; Chính phủ quy định chi tiết.
+- **Điều 17** trẻ em, người khuyết tật, người không nơi nương tựa sống trong cơ sở tôn giáo, tín ngưỡng: nơi cư trú là cơ sở đó (không phải quy trình đăng ký thường trú cho con mới sinh).
+- **Điều 18** người được chăm sóc tại cơ sở trợ giúp xã hội hoặc tại cộng đồng: nơi cư trú là cơ sở hoặc nơi người nhận chăm sóc.
+- **Điều 19** người không có nơi thường trú, nơi tạm trú: nơi ở hiện tại. Phải khai báo với cơ quan đăng ký nơi ở hiện tại. **Thời hạn: 05 ngày làm việc** nếu đã có thông tin trong Cơ sở dữ liệu; **30 ngày** kể từ khi tiếp nhận khai báo nếu chưa có, **có thể kéo dài nhưng không quá 60 ngày** với trường hợp phức tạp. Sau khi xác minh phải cập nhật và thông báo cho người khai báo. Có thay đổi thông tin thì phải khai báo lại; đủ điều kiện thì làm thủ tục đăng ký thường trú hoặc tạm trú.
 
-- Niêm yết công khai thủ tục hành chính; công khai địa điểm, số điện thoại hoặc cách khác để tiếp nhận thông báo lưu trú và khai báo tạm vắng.
-- Cập nhật thông tin cư trú vào Cơ sở dữ liệu quốc gia về dân cư và Cơ sở dữ liệu về cư trú.
-- Xác nhận thông tin cư trú và thông báo kết quả đăng ký thường trú, tạm trú, gia hạn, tách hộ, khai báo tạm vắng bằng văn bản, tin nhắn điện tử hoặc hình thức khác theo quy định của Bộ trưởng Công an.
-- Quản lý, lưu trữ hồ sơ và bảo mật thông tin cư trú của công dân.
-- Giải quyết kiến nghị, khiếu nại, tố cáo về cư trú theo thẩm quyền.
+## Chương IV: Đăng ký thường trú (Điều 20–26)
+- **Điều 20** điều kiện: (1) có chỗ ở hợp pháp thuộc sở hữu của mình thì được đăng ký thường trú tại đó. (2) Chỗ ở thuộc sở hữu người khác: được chủ hộ và chủ sở hữu đồng ý trong các trường hợp: vợ về với chồng, chồng về với vợ; **con về với cha mẹ, cha mẹ về với con**; người cao tuổi về với họ hàng gần; người khuyết tật, người không có khả năng lao động, bệnh tâm thần về với họ hàng/người giám hộ; người chưa thành niên về với người giám hộ hoặc họ hàng. (3) Chỗ ở thuê, mượn, ở nhờ: được chủ sở hữu đồng ý, chủ hộ đồng ý (nếu vào hộ có sẵn) và **diện tích nhà ở tối thiểu 08 m² sàn/người** do HĐND cấp tỉnh quy định (không thấp hơn 08 m²). (4) Cơ sở tôn giáo, tín ngưỡng có công trình phụ trợ là nhà ở và các đối tượng được nêu. (5) Người được chăm sóc tại cơ sở trợ giúp xã hội. (6) Người sống trên phương tiện: phương tiện được đăng ký, đăng kiểm; phương tiện không phải đăng ký thì cần xác nhận của UBND cấp xã. (7) Người chưa thành niên cần sự đồng ý của cha mẹ hoặc người giám hộ. (8) **Không được đăng ký thường trú mới tại địa điểm Điều 23**, trừ trường hợp con về với cha mẹ quy định tại khoản 2. (9) Người Việt Nam định cư ở nước ngoài còn quốc tịch Việt Nam cần hộ chiếu hoặc giấy tờ chứng minh và văn bản đồng ý của cơ quan quản lý xuất nhập cảnh Bộ Công an.
+- **Điều 21** hồ sơ: (1) chủ sở hữu: tờ khai và giấy tờ chứng minh sở hữu. (2) con về với cha mẹ, vợ về với chồng...: tờ khai có ý kiến đồng ý của chủ hộ, chủ sở hữu; giấy tờ chứng minh quan hệ nhân thân (trừ khi đã có trong cơ sở dữ liệu). (3) thuê, mượn, ở nhờ: tờ khai có ý kiến đồng ý, hợp đồng hoặc văn bản đã công chứng/chứng thực, giấy tờ chứng minh đủ diện tích. (4)-(7) các đối tượng còn lại: tờ khai và giấy tờ tương ứng (cơ sở tôn giáo: văn bản xác nhận của UBND cấp xã; trợ giúp xã hội: văn bản đề nghị của người đứng đầu cơ sở; phương tiện: giấy chứng nhận đăng ký, giấy an toàn kỹ thuật, văn bản xác nhận của UBND cấp xã). (8) người chưa thành niên có ý kiến đồng ý của cha mẹ hoặc người giám hộ. Chính phủ quy định chi tiết loại giấy tờ.
+- **Điều 22** thủ tục: nộp hồ sơ tại cơ quan đăng ký nơi cư trú; **cấp phiếu tiếp nhận**; hồ sơ chưa đủ thì hướng dẫn bổ sung. **Khoản 3: trong 07 ngày làm việc** kể từ khi nhận hồ sơ đầy đủ, hợp lệ, thẩm định, cập nhật nơi thường trú mới và thông báo; từ chối phải trả lời bằng văn bản, nêu lý do. **Khoản 4: người đã đăng ký thường trú mà chuyển đến chỗ ở hợp pháp khác và đủ điều kiện phải đăng ký thường trú tại nơi ở mới trong 12 tháng kể từ ngày đủ điều kiện.**
+- **Điều 23** địa điểm không được đăng ký thường trú mới: trong khu vực cấm xây dựng, hành lang bảo vệ công trình, di tích đã xếp hạng, khu vực cảnh báo sạt lở, lũ quét; nhà trên đất lấn chiếm trái phép hoặc không đủ điều kiện xây dựng; đất đã có quyết định thu hồi và phương án bồi thường; nhà đang tranh chấp; nhà bị tịch thu; phương tiện đã xóa đăng ký hoặc không có giấy an toàn kỹ thuật; nhà có quyết định phá dỡ.
+- **Điều 24** xóa đăng ký thường trú: (a) chết, mất tích; (b) ra nước ngoài định cư; (c) bị hủy bỏ theo Điều 35; **(d) vắng mặt liên tục tại nơi thường trú từ 12 tháng trở lên mà không đăng ký tạm trú hoặc không khai báo tạm vắng** (trừ xuất cảnh không định cư, đang chấp hành án phạt tù, biện pháp giáo dục); (đ) thôi, bị tước quốc tịch; **(e) đã chấm dứt thuê, mượn, ở nhờ mà sau 12 tháng vẫn chưa đăng ký thường trú nơi mới** (trừ trường hợp h); **(g) chỗ ở đã chuyển quyền sở hữu mà sau 12 tháng chưa đăng ký nơi mới** (trừ chủ mới đồng ý giữ); (h) đã chấm dứt thuê mượn và không được chủ đồng ý cho giữ đăng ký; (i) chỗ ở đã bị phá dỡ, tịch thu, phương tiện đã bị xóa. Cơ quan đã đăng ký có thẩm quyền xóa và ghi rõ lý do, thời điểm; Chính phủ quy định hồ sơ, thủ tục xóa.
+- **Điều 25** tách hộ: có năng lực hành vi dân sự đầy đủ; được chủ hộ và chủ sở hữu đồng ý (trừ vợ chồng đã ly hôn vẫn được cùng sử dụng chỗ ở); nơi thường trú không thuộc Điều 23. Hồ sơ: tờ khai có ý kiến đồng ý. **Trong 05 ngày làm việc** kể từ khi nhận hồ sơ đầy đủ, cơ quan cập nhật và thông báo; từ chối phải có văn bản.
+- **Điều 26** điều chỉnh thông tin trong Cơ sở dữ liệu: (a) thay đổi chủ hộ: **03 ngày làm việc**; (b) thay đổi thông tin hộ tịch: người có thông tin nộp hồ sơ **trong 30 ngày** kể từ khi có quyết định của cơ quan có thẩm quyền về hộ tịch, cơ quan cập nhật **trong 03 ngày làm việc**; (c) thay đổi địa chỉ do đổi địa giới, tên đường, số nhà: cơ quan tự cập nhật.
 
-## Phân công quản lý nhà nước (Điều 32)
+## Chương V: Tạm trú, lưu trú, tạm vắng (Điều 27–31)
+- **Điều 27** điều kiện tạm trú: đến sinh sống ở chỗ ở hợp pháp **ngoài phạm vi xã nơi đã đăng ký thường trú** để lao động, học tập hoặc mục đích khác **từ 30 ngày trở lên** phải đăng ký tạm trú. **Thời hạn tạm trú tối đa 02 năm**, gia hạn nhiều lần. Không đăng ký tạm trú mới tại địa điểm Điều 23.
+- **Điều 28** hồ sơ và thủ tục tạm trú: tờ khai và giấy tờ chứng minh chỗ ở hợp pháp (người chưa thành niên cần đồng ý của cha mẹ); nộp tại cơ quan nơi dự kiến tạm trú; cấp phiếu tiếp nhận; **trong 03 ngày làm việc** kể từ khi nhận hồ sơ đầy đủ, cập nhật và thông báo. **Gia hạn: nộp trong 15 ngày trước khi hết thời hạn tạm trú**, cùng thủ tục như trên.
+- **Điều 29** xóa đăng ký tạm trú: chết, mất tích; bị hủy theo Điều 35; quốc tịch bị thôi, tước; **vắng mặt liên tục tại nơi tạm trú từ 06 tháng trở lên mà không đăng ký tạm trú chỗ khác**; đã đăng ký thường trú tại đúng nơi đó; chấm dứt thuê, mượn, ở nhờ mà không đăng ký nơi khác; chỗ ở chuyển quyền sở hữu (trừ chủ mới đồng ý); chỗ ở bị phá dỡ, tịch thu, phương tiện bị xóa. Cơ quan đã đăng ký xóa và ghi rõ lý do.
+- **Điều 30** thông báo lưu trú: người có chỗ ở (thành viên hộ gia đình, cơ sở lưu trú, cơ sở chữa bệnh, khách sạn, nhà nghỉ và cơ sở khác) có trách nhiệm thông báo cho cơ quan đăng ký; người đến lưu trú ở nhà người khác mà chủ không có mặt cũng phải tự thông báo. Thông báo trực tiếp, qua điện thoại hoặc phương tiện điện tử theo quy định của Bộ trưởng Công an. Nội dung: họ tên, số định danh hoặc CMND, số hộ chiếu, lý do, thời gian, địa chỉ. **Thời điểm: trước 23 giờ ngày bắt đầu lưu trú; nếu đến sau 23 giờ thì trước 08 giờ ngày hôm sau.** Người thân ruột thịt đến lưu trú nhiều lần chỉ cần thông báo một lần. Ghi vào sổ tiếp nhận lưu trú.
+- **Điều 31** khai báo tạm vắng (có khoản đã sửa đổi): (a) bị can, bị cáo tại ngoại, người án treo, quản chế, tha tù có điều kiện... đi khỏi xã **từ 01 ngày trở lên**; (b) người đang chấp hành biện pháp giáo dục tại xã, cơ sở cai nghiện... đi khỏi xã **từ 01 ngày trở lên**; (c) đi khỏi huyện **từ 03 tháng liên tục trở lên** đối với người trong độ tuổi nghĩa vụ quân sự hoặc nghĩa vụ khác theo quyết định; **(d) đi khỏi xã nơi thường trú từ 12 tháng liên tục trở lên** (trừ đã đăng ký tạm trú nơi mới hoặc đã xuất cảnh). Trước khi đi (khoản a, b): đến khai báo tại cơ quan nơi cư trú, kèm đề nghị và văn bản đồng ý của cơ quan giám sát, quản lý. **Trong 01 ngày làm việc** cấp phiếu khai báo; phức tạp không quá 02 ngày làm việc. Điểm c, d khai báo trực tiếp hoặc qua điện thoại, phương tiện điện tử. Người chưa thành niên do cha mẹ hoặc người giám hộ khai báo. Cơ quan cập nhật vào Cơ sở dữ liệu và thông báo khi có yêu cầu.
 
-- Chính phủ thống nhất quản lý nhà nước về cư trú trong cả nước.
-- Bộ Công an chịu trách nhiệm trước Chính phủ: xây dựng văn bản về cư trú; chỉ đạo tổ chức đăng ký, quản lý cư trú trên toàn quốc và cập nhật Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú; đình chỉ hoặc kiến nghị bãi bỏ quy định trái luật; ban hành biểu mẫu, tờ khai, sổ sách; trang bị, đào tạo cán bộ; thống kê; kiểm tra, thanh tra và xử lý vi phạm (điểm a-h khoản 2).
-- Bộ, cơ quan ngang Bộ quản lý theo sự phân công của Chính phủ (khoản 3).
-- Ủy ban nhân dân các cấp, trong phạm vi nhiệm vụ: tổ chức thực hiện văn bản về cư trú ở địa phương; chỉ đạo phối hợp giữa các cơ quan; tuyên truyền pháp luật; kiểm tra, thanh tra, giải quyết khiếu nại, tố cáo và xử lý vi phạm (khoản 4).
-- Phân việc cụ thể cho từng cấp công an (cục, tỉnh, xã) nằm ở TT 116/2026 (xem ghi chú riêng).
+## Chương VI: Trách nhiệm quản lý cư trú (Điều 32–36)
+- **Điều 32** phân công quản lý nhà nước: (1) Chính phủ thống nhất quản lý cả nước. (2) **Bộ Công an** chịu trách nhiệm trước Chính phủ: xây dựng văn bản về cư trú; chỉ đạo tổ chức đăng ký, quản lý cư trú toàn quốc và cập nhật Cơ sở dữ liệu; đình chỉ, bãi bỏ quy định trái luật; ban hành biểu mẫu, tờ khai, sổ sách; trang bị, đào tạo; thống kê; tuyên truyền; kiểm tra, thanh tra, xử lý vi phạm; hợp tác quốc tế. (3) Bộ, cơ quan ngang Bộ theo phân công của Chính phủ. (4) **Ủy ban nhân dân các cấp** trong phạm vi nhiệm vụ: tổ chức thực hiện văn bản về cư trú ở địa phương; chỉ đạo phối hợp các cơ quan hữu quan; tuyên truyền; kiểm tra, thanh tra, xử lý vi phạm.
+- **Điều 33** trách nhiệm cơ quan đăng ký cư trú: niêm yết công khai thủ tục hành chính; hướng dẫn công dân, hộ gia đình; công khai địa điểm, số điện thoại để tiếp nhận thông báo lưu trú và khai báo tạm vắng; cập nhật thông tin vào Cơ sở dữ liệu; xác nhận và thông báo kết quả đăng ký thường trú, tạm trú, gia hạn, tách hộ, khai báo tạm vắng bằng văn bản, tin nhắn điện tử theo quy định của Bộ trưởng Công an; quản lý, lưu trữ hồ sơ và bảo mật; giải quyết kiến nghị, khiếu nại, tố cáo.
+- **Điều 34** người làm công tác đăng ký cư trú: được đào tạo; thái độ nghiêm túc; giải quyết đúng thời hạn; khi hồ sơ chưa đủ thì hướng dẫn cụ thể bằng văn bản và chịu trách nhiệm về hướng dẫn đó.
+- **Điều 35** hủy bỏ đăng ký: nếu cơ quan đăng ký sai thẩm quyền, sai đối tượng, sai điều kiện thì cơ quan đã đăng ký hoặc thủ trưởng cấp trên trực tiếp ra quyết định hủy; thông báo bằng văn bản và nêu lý do.
+- **Điều 36** Cơ sở dữ liệu về cư trú: tài sản quốc gia do Bộ Công an thống nhất quản lý; kết nối với Cơ sở dữ liệu quốc gia về dân cư; thay đổi thông tin công dân phải được thủ trưởng cơ quan đăng ký phê duyệt; không được cung cấp, sao chép trái phép thông tin.
 
-## Trẻ em (Điều 17)
+## Chương VII: Điều khoản thi hành (Điều 37–38)
+- **Điều 37** sửa các luật khác: Luật Căn cước 59/2014 (nội dung thông tin thu thập, cập nhật, gồm cả nơi thường trú, nơi tạm trú, tình trạng khai báo tạm vắng, nơi ở hiện tại); Luật Bảo hiểm y tế (định nghĩa hộ gia đình tham gia BHYT theo cư trú); bãi bỏ điều của Luật Thủ đô và Luật Lý lịch tư pháp.
+- **Điều 38** hiệu lực: từ 01/07/2021; Luật Cư trú 2006 hết hiệu lực; **Sổ hộ khẩu, Sổ tạm trú đã cấp được dùng đến hết 31/12/2022**; từ đó dùng cơ sở dữ liệu; khi có thay đổi thì thu hồi sổ, không cấp mới.
 
-Điều 17 chỉ nói về nơi cư trú của trẻ em, người khuyết tật và người không nơi nương tựa được nhận nuôi và sinh sống trong cơ sở tôn giáo, tín ngưỡng. Điều này không phải quy trình đăng ký thường trú cho con mới sinh. Thủ tục liên thông cho trẻ dưới 6 tuổi xem ghi chú NĐ 301/2026.
-
-## Chưa đọc hết
-
-- Điều 20, 21 (điều kiện và hồ sơ đăng ký thường trú), Điều 24 (xóa đăng ký thường trú), Điều 29 (xóa tạm trú), Điều 35 (hủy bỏ đăng ký): chưa đọc đầy đủ, không nêu thời hạn từ các điều này.
-- Điều 34 (người làm công tác đăng ký cư trú) và phân công cụ thể cho công an cấp huyện, tỉnh: xem ghi chú TT 116/2026.
-- Chế tài xử phạt: nằm ở nghị định riêng (xem ghi chú NĐ 282/2025, Điều 10).
+## Ghi chú về phạm vi đọc
+- Đã đọc toàn bộ 38 điều. Các khoản có dấu "đã sửa đổi, bổ sung" trong vbpl cần đối chiếu với luật sửa đổi trước khi trích cho công dân.
+- Các chi tiết hồ sơ, biểu mẫu, quy trình cụ thể nằm ở nghị định hướng dẫn (NĐ 154/2024) và thông tư (TT 116/2026): xem các ghi chú riêng.
