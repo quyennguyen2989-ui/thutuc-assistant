@@ -2,31 +2,45 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Tra cứu thủ tục và văn bản</title>
-  <meta name="description" content="Tra cứu thủ tục hành chính và văn bản pháp quy về cư trú, căn cước, vũ khí, ANTT, theo dõi thay đổi tự động.">
+  <meta name="description" content="Tra cứu thủ tục hành chính và văn bản pháp luật cho cán bộ khu vực dân cư: hồ sơ, trình tự, thời hạn, lệ phí và tình trạng hiệu lực.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="#">Tra cứu thủ tục và văn bản</a>
+  <a class="skip" href="#app">Chuyển đến nội dung</a>
+
+  <header class="site-head">
+    <div class="site-head__inner">
+      <a class="brand" href="#tthc">
+        <span class="brand__name">Tra cứu thủ tục</span>
+        <span class="brand__place">Khu vực dân cư · TP.HCM</span>
+      </a>
       <nav class="tabs" aria-label="Chức năng">
         <a href="#tthc" data-tab="tthc">Thủ tục</a>
         <a href="#vanban" data-tab="vanban">Văn bản</a>
         <a href="#hoidap" data-tab="hoidap">Hỏi đáp</a>
         <a href="#capnhat" data-tab="capnhat">Cập nhật</a>
+        <a href="#taikhoan" data-tab="taikhoan">Tài khoản</a>
       </nav>
     </div>
   </header>
 
-  <main class="container" id="app">
-    <p class="loading">Đang tải dữ liệu…</p>
+  <main id="app" class="page" tabindex="-1">
+    <p class="state">Đang tải dữ liệu…</p>
   </main>
 
-  <footer class="footer">
-    <p id="disclaimer"></p>
-    <p>Mã nguồn mở. Dữ liệu tự động lấy từ <a id="source-link" href="#" target="_blank" rel="noopener">cổng của Phòng CSQLHC về TTXH</a>, kèm đối chiếu thủ công khi cổng chưa cập nhật.</p>
+  <footer class="site-foot">
+    <div class="site-foot__inner">
+      <p id="disclaimer"></p>
+      <p>
+        Nguồn: <a id="source-link" href="#" target="_blank" rel="noopener">cổng Phòng CSQLHC</a>
+        và <a id="vbpl-link" href="#" target="_blank" rel="noopener">vbpl.vn</a>.
+      </p>
+    </div>
   </footer>
 
   <script src="app.js"></script>

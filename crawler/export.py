@@ -7,9 +7,10 @@ Mỗi mục đều ghi nguồn và ngày đối chiếu, để người dùng t�
 """
 
 import json
+import re
 from pathlib import Path
 
-from . import store, vbpl, vbpl_sync
+from . import nguon_chinh_thuc, store, vbpl, vbpl_sync
 
 SOURCE_PORTAL = {
     "ten": "Trang thông tin điện tử Phòng Cảnh sát quản lý hành chính về trật tự xã hội (Công an TP.HCM)",
@@ -46,7 +47,45 @@ def _van_ban_view(conn, overrides, extra):
     return items
 
 
-def _merge_vbpl(items, rows, keywords):
+def _nam_cua(row):
+    """Năm ban hành suy ra từ số ký hiệu (…/2006/…), hoặc năm hiệu lực nếu không có số."""
+    match = re.search(r"/(\d{4})/", row.get("so_ky_hieu") or "")
+    if match:
+        return int(match.group(1))
+    ngay = row.get("ngay_hieu_luc") or ""
+    return int(ngay[:4]) if ngay[:4].isdigit() else None
+
+
+def _trong_pham_vi(row, cited, tu_khoa=()):
+    """Văn bản vbpl.vn có đưa vào dữ liệu không.
+
+    Lấy: căn cứ của thủ tục đang theo dõi; văn bản từ 2025 trở đi; văn bản còn (một phần) hiệu lực.
+    Bỏ: thủ tục hành chính của ngành khác (không do công an); văn bản đã hết hiệu lực từ 2025 trở về trước
+    và không phải căn cứ của thủ tục.
+    """
+    if row.get("so_ky_hieu") in cited:
+        return True
+    ten = row.get("trich_yeu") or row.get("tieu_de") or ""
+    if nguon_chinh_thuc.ngoai_pham_vi_thu_tuc(ten, row.get("so_ky_hieu") or "",
+                                              row.get("co_quan_ban_hanh") or "", tu_khoa):
+        return False
+    nam = _nam_cua(row)
+    if nam is not None and nam >= vbpl_sync.NAM_BAT_DAU_LICH_SU:
+        return True
+    tinh_trang = row.get("tinh_trang") or ""
+    return tinh_trang.startswith(("Còn hiệu lực", "Chưa có hiệu lực", "Hết hiệu lực một phần"))
+
+
+def _can_cu_dang_theo_doi(tthc):
+    """Số ký hiệu của mọi căn cứ pháp lý trong các thủ tục đang theo dõi."""
+    found = set()
+    for item in tthc:
+        for title in item.get("can_cu") or []:
+            found.update(vbpl.NUMBER_IN_TEXT.findall(title))
+    return found
+
+
+def _merge_vbpl(items, rows, keywords, cited=frozenset(), tu_khoa=()):
     """Gắn trạng thái đọc từ vbpl.vn vào văn bản đã có, hoặc thêm văn bản mới tìm được.
 
     Chỉ lấy văn bản có trạng thái và còn thuộc phạm vi hiện tại (theo số ký hiệu hoặc từ khóa).
@@ -69,6 +108,8 @@ def _merge_vbpl(items, rows, keywords):
         if number in by_number:
             by_number[number]["vbpl"] = vbpl_info
             continue
+        if not _trong_pham_vi(row, cited, tu_khoa):
+            continue
         item = {
             "id": None,
             "so_ky_hieu": number,
@@ -88,6 +129,90 @@ def _merge_vbpl(items, rows, keywords):
         items.append(item)
         by_number[number] = item
     return items
+
+
+def _so_key(number):
+    """Khóa so khớp số ký hiệu: bỏ khoảng trắng, Đ thành D, không phân biệt hoa thường."""
+    return re.sub(r"\s+", "", number or "").upper().replace("Đ", "D")
+
+
+def _merge_chinh_thuc(items, rows, vbpl_rows=(), cited=frozenset(), tu_khoa=()):
+    """Gắn nguồn chính thức vào văn bản đã có cùng số ký hiệu, hoặc thêm văn bản chỉ có ở nguồn chính thức.
+
+    Văn bản chính thức cũ (trước 2025) chỉ thêm khi vbpl.vn cho biết còn hiệu lực hoặc là căn cứ của thủ tục.
+    """
+    by_key = {}
+    for item in items:
+        key = _so_key(item["so_ky_hieu"])
+        if key:
+            by_key.setdefault(key, item)
+    vbpl_status = {}
+    for vb in vbpl_rows:
+        key = _so_key(vb.get("so_ky_hieu"))
+        if key and vb.get("tinh_trang"):
+            vbpl_status.setdefault(key, vb["tinh_trang"])
+    for row in rows:
+        source = {
+            "ten": nguon_chinh_thuc.TEN_NGUON[row["nguon"]],
+            "url": row["url"],
+            "ngay_ban_hanh": row["ngay_ban_hanh"] or "",
+        }
+        key = _so_key(row["so_ky_hieu"])
+        if not key:
+            continue
+        if key in by_key:
+            by_key[key].setdefault("nguon_chinh_thuc", []).append(source)
+            continue
+        probe = {
+            "so_ky_hieu": row["so_ky_hieu"],
+            "trich_yeu": row["trich_yeu"] or "",
+            "co_quan_ban_hanh": row["co_quan_ban_hanh"] or "",
+            "ngay_hieu_luc": row["ngay_hieu_luc"] or "",
+            "tinh_trang": vbpl_status.get(key, ""),
+        }
+        if not _trong_pham_vi(probe, cited, tu_khoa):
+            continue
+        item = {
+            "id": None,
+            "so_ky_hieu": row["so_ky_hieu"],
+            "loai": row["loai"] or "",
+            "linh_vuc": "",
+            "co_quan_ban_hanh": row["co_quan_ban_hanh"] or "",
+            "nguoi_ky": "",
+            "trich_yeu": row["trich_yeu"] or "",
+            "ngay_ban_hanh": row["ngay_ban_hanh"] or "",
+            "ngay_hieu_luc": row["ngay_hieu_luc"] or "",
+            "hieu_luc_theo_cong": None,
+            "file_dinh_kem": "",
+            "nguon": "chinh_thuc",
+            "nguon_chinh_thuc": [source],
+            "_missing": False,
+        }
+        items.append(item)
+        by_key[key] = item
+    return items
+
+
+def _ngay_cap_nhat(item, thay_doi):
+    """Ngày cập nhật mới nhất của một văn bản hoặc thủ tục, kèm nguồn của ngày đó.
+
+    Ưu tiên ngày do nguồn công bố (vbpl.vn, đối chiếu thủ công, ngày ban hành công báo);
+    nếu không có thì dùng ngày hệ thống phát hiện thay đổi, hoặc ngày ghi nhận lần đầu.
+    """
+    vb = item.get("vbpl") or {}
+    if vb.get("ngay_cap_nhat"):
+        return vb["ngay_cap_nhat"], "vbpl.vn cập nhật trang văn bản"
+    dc = item.get("doi_chieu_thu_cong") or {}
+    if dc.get("ngay_doi_chieu"):
+        return dc["ngay_doi_chieu"], "đối chiếu thủ công"
+    if item.get("nguon") == "chinh_thuc" and item.get("ngay_ban_hanh"):
+        return item["ngay_ban_hanh"], "ngày ban hành trên công báo"
+    run_at = thay_doi.get(item.get("id"))
+    if run_at:
+        return run_at[:10], "hệ thống phát hiện thay đổi trên cổng"
+    if item.get("_first_seen"):
+        return item["_first_seen"][:10], "ghi nhận lần đầu, cổng không ghi ngày cập nhật"
+    return "", ""
 
 
 def _number_from_title(title):
@@ -110,9 +235,19 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     extra = _read_json(extra_path, [])
 
     keywords = vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"]
-    van_ban = _merge_vbpl(_van_ban_view(conn, overrides, extra), store.load_vbpl(conn), keywords)
+    tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(2, keywords)
     tthc = store.load_records(conn, "tthc")
+    cited = _can_cu_dang_theo_doi(tthc)
+    van_ban = _merge_vbpl(_van_ban_view(conn, overrides, extra), store.load_vbpl(conn), keywords, cited, tu_khoa)
+    van_ban = _merge_chinh_thuc(van_ban, store.load_chinh_thuc(conn), store.load_vbpl(conn), cited, tu_khoa)
     changes = store.load_changes(conn)
+
+    thay_doi_van_ban = store.last_change_dates(conn, "van_ban")
+    for item in van_ban:
+        item["ngay_cap_nhat"], item["nguon_ngay_cap_nhat"] = _ngay_cap_nhat(item, thay_doi_van_ban)
+    thay_doi_tthc = store.last_change_dates(conn, "tthc")
+    for item in tthc:
+        item["ngay_cap_nhat"], item["nguon_ngay_cap_nhat"] = _ngay_cap_nhat(item, thay_doi_tthc)
 
     meta = {
         "cap_nhat_luc": run_at,
@@ -121,6 +256,10 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
         "so_thu_tuc": len(tthc),
         "nguon": SOURCE_PORTAL,
         "nguon_van_ban": SOURCE_VBPL,
+        "nguon_chinh_thuc": [
+            {"ten": nguon_chinh_thuc.TEN_NGUON[nguon], "url": url}
+            for nguon, url in nguon_chinh_thuc.DIA_CHI_TRANG.items()
+        ],
         "luu_y": DISCLAIMER,
     }
 

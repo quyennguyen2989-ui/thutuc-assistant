@@ -1,9 +1,14 @@
-// Đọc dữ liệu đã xuất (docs/data) và tìm kiếm, tính trạng thái hiệu lực cho bot.
-import { readFile } from "node:fs/promises";
+// Đọc dữ liệu đã xuất (docs/data) cho bot: thủ tục, văn bản, tình trạng, ghi chú đọc hiểu và toàn văn.
+// Mọi tệp đọc qua bộ nhớ đệm, chỉ đọc lại khi tệp thay đổi, để trả lời nhanh.
+import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 
 const DATA_DIR = process.env.TCHC_DATA_DIR || "C:\\tchc\\site\\data";
 const NUMBER_IN_TEXT = /\d{1,4}\/\d{4}\/[\w\-]+/;
+const MAX_PASSAGES = 4;
+const MAX_PASSAGES_PER_DOC = 2;
+const PASSAGE_CHARS = 600;
+const NOTE_CHARS = 2500;
 
 // Từ không mang nghĩa tìm kiếm, bỏ qua khi chấm điểm.
 const STOPWORDS = new Set([
@@ -13,13 +18,30 @@ const STOPWORDS = new Set([
   "giay", "to", "can", "gi", "lam", "sao",
 ]);
 
-async function readJson(name) {
-  return JSON.parse(await readFile(path.join(DATA_DIR, name), "utf8"));
+const TEN_NGUON_TOAN_VAN = {
+  "vbpl.vn": "vbpl.vn",
+  chinh_phu: "Công báo Chính phủ",
+  tphcm: "Công báo TP.HCM",
+  bo_cong_an: "Cổng Bộ Công an",
+};
+
+// Bộ nhớ đệm theo đường dẫn: giá trị được đọc lại khi thời điểm sửa đổi thay đổi.
+const cache = new Map();
+
+async function cachedFile(relative) {
+  const file = path.join(DATA_DIR, relative);
+  const info = await stat(file);
+  const hit = cache.get(file);
+  if (hit && hit.mtime === info.mtimeMs) return hit.value;
+  const raw = await readFile(file, "utf8");
+  const value = relative.endsWith(".json") ? JSON.parse(raw) : raw;
+  cache.set(file, { mtime: info.mtimeMs, value });
+  return value;
 }
 
 export async function loadAll() {
   const [tthc, vanBan, meta] = await Promise.all(
-    ["tthc.json", "van_ban.json", "meta.json"].map(readJson),
+    ["tthc.json", "van_ban.json", "meta.json"].map((name) => cachedFile(name)),
   );
   return { tthc, vanBan, meta };
 }
@@ -31,6 +53,11 @@ export function normalize(text) {
     .replace(/đ/g, "d")
     .replace(/Đ/g, "D")
     .toLowerCase();
+}
+
+// Khóa so khớp số ký hiệu: không dấu cách, không phân biệt hoa thường, Đ và D như nhau.
+function numberKey(number) {
+  return normalize(number || "").replace(/\s+/g, "").toUpperCase();
 }
 
 function queryTerms(query) {
@@ -60,7 +87,7 @@ function scoreAll(items, query, { titleOf, textOf }, limit) {
     .map((entry) => entry.item);
 }
 
-// Tình trạng hiệu lực: ưu tiên vbpl.vn, rồi đối chiếu thủ công, rồi cổng.
+// Tình trạng hiệu lực: ưu tiên vbpl.vn, rồi đối chiếu thủ công, rồi công báo chính thức, rồi cổng.
 export function statusOf(doc) {
   if (doc.vbpl && doc.vbpl.tinh_trang) {
     const hasEffectiveDate = Boolean(doc.vbpl.ngay_hieu_luc);
@@ -88,6 +115,10 @@ export function statusOf(doc) {
   if (doc.nguon === "thu_cong") {
     return { tinh_trang: "Còn hiệu lực", nguon: "bổ sung thủ công", ngay_cap_nhat: null, kiem_tra_luc: null };
   }
+  if (doc.nguon === "chinh_thuc") {
+    // Văn bản từ công báo chính thức, chưa đối chiếu với vbpl.vn: không kết luận còn hay hết hiệu lực.
+    return { tinh_trang: "Chưa đối chiếu với vbpl.vn", nguon: "công báo chính thức", ngay_cap_nhat: null, kiem_tra_luc: null };
+  }
   return {
     tinh_trang: doc.hieu_luc_theo_cong ? "Cổng đánh dấu còn hiệu lực (chưa đối chiếu)" : "Cổng đánh dấu hết hiệu lực",
     nguon: "cổng Phòng CSQLHC",
@@ -98,8 +129,8 @@ export function statusOf(doc) {
 
 function findDocumentByNumber(data, number) {
   if (!number) return null;
-  const target = normalize(number);
-  return data.vanBan.find((doc) => normalize(doc.so_ky_hieu) === target) || null;
+  const target = numberKey(number);
+  return data.vanBan.find((doc) => numberKey(doc.so_ky_hieu) === target) || null;
 }
 
 export function searchProcedures(data, query, limit = 8) {
@@ -180,6 +211,182 @@ export function getLegalDocument(data, soKyHieu) {
     ngay_hieu_luc: doc.ngay_hieu_luc || null,
     tinh_trang: statusOf(doc),
     ghi_chu: doc.doi_chieu_thu_cong?.ghi_chu || doc.ghi_chu || null,
-    luu_y: "Chỉ có thông tin tóm tắt và tình trạng. Chưa có toàn văn điều khoản trong dữ liệu.",
+    luu_y: "Chỉ có thông tin tóm tắt và tình trạng. Muốn biết điều khoản cụ thể, dùng tìm trong toàn văn.",
   };
+}
+
+// ----- Ghi chú đọc hiểu (kien_thuc/tom_tat.json) -----
+
+// Ghi chú theo số ký hiệu đã chuẩn hóa. Không có tệp thì trả về bản đồ rỗng.
+export async function loadKnowledge() {
+  try {
+    const entries = await cachedFile("kien_thuc/tom_tat.json");
+    const byNumber = new Map();
+    for (const entry of entries) {
+      const key = numberKey(entry.so_ky_hieu);
+      if (!byNumber.has(key)) byNumber.set(key, []);
+      byNumber.get(key).push(entry);
+    }
+    return byNumber;
+  } catch {
+    return new Map();
+  }
+}
+
+// Thông tin đầy đủ của một văn bản: tình trạng, nguồn, ngày cập nhật và ghi chú đọc hiểu.
+export function getLegalDocumentDetail(data, knowledge, soKyHieu) {
+  const base = getLegalDocument(data, soKyHieu);
+  const notes = knowledge.get(numberKey(soKyHieu)) || [];
+  if (!base && notes.length === 0) return null;
+  const doc = findDocumentByNumber(data, soKyHieu);
+  return {
+    ...(base || { so_ky_hieu: soKyHieu, luu_y: "Số ký hiệu này chưa có trong danh mục theo dõi." }),
+    nguon_chinh_thuc: doc?.nguon_chinh_thuc || [],
+    ngay_cap_nhat: doc?.ngay_cap_nhat || null,
+    nguon_ngay_cap_nhat: doc?.nguon_ngay_cap_nhat || null,
+    ghi_chu_doc_hieu: notes.map((note) => note.ghi_chu.slice(0, NOTE_CHARS)),
+  };
+}
+
+// ----- Toàn văn (vbpl_text, nguon_text) -----
+
+// Danh mục toàn văn: mỗi mục có tệp .txt, nguồn và (nếu có) số ký hiệu.
+async function textCatalog() {
+  const items = [];
+  try {
+    const vbpl = await cachedFile("vbpl_text/index.json");
+    for (const [slug, entry] of Object.entries(vbpl)) {
+      if (!entry.tep) continue;
+      const file = entry.tep.endsWith(".txt") ? entry.tep : `${entry.tep}.txt`;
+      items.push({
+        so_ky_hieu: entry.so_ky_hieu && entry.so_ky_hieu !== "None" ? entry.so_ky_hieu : null,
+        ten: entry.tieu_de || slug,
+        nguon: TEN_NGUON_TOAN_VAN["vbpl.vn"],
+        url: entry.url || null,
+        tinh_trang: entry.tinh_trang || null,
+        tep: `vbpl_text/${file}`,
+      });
+    }
+  } catch {
+    // Chưa có toàn văn vbpl.vn: bỏ qua.
+  }
+  try {
+    const nguon = await cachedFile("nguon_text/index.json");
+    for (const entry of nguon) {
+      if (!entry.tep) continue;
+      items.push({
+        so_ky_hieu: entry.so_ky_hieu || null,
+        ten: entry.so_ky_hieu || "",
+        nguon: TEN_NGUON_TOAN_VAN[entry.nguon] || entry.nguon,
+        url: entry.url || null,
+        tinh_trang: null,
+        tep: `nguon_text/${entry.tep}`,
+      });
+    }
+  } catch {
+    // Chưa có toàn văn công báo: bỏ qua.
+  }
+  return items;
+}
+
+// Tách toàn văn thành đoạn, gắn số điều gần nhất phía trên mỗi đoạn (nếu có).
+const paragraphCache = new Map();
+
+function splitLong(text) {
+  if (text.length <= PASSAGE_CHARS) return [text];
+  const pieces = [];
+  let current = "";
+  for (const sentence of text.split(/(?<=[.;])\s+/)) {
+    if ((current + " " + sentence).length > PASSAGE_CHARS && current) {
+      pieces.push(current.trim());
+      current = sentence;
+    } else {
+      current = current ? `${current} ${sentence}` : sentence;
+    }
+  }
+  if (current.trim()) pieces.push(current.trim());
+  return pieces;
+}
+
+async function paragraphsOf(tep) {
+  const raw = await cachedFile(tep);
+  const hit = paragraphCache.get(tep);
+  if (hit && hit.raw === raw) return hit.paragraphs;
+
+  const full = raw.replace(/\r/g, "");
+  const headings = [...full.matchAll(/(?:^|\n)[ \t]*(Điều\s+\d+[a-z]?)\s*\./g)]
+    .map((match) => ({ at: match.index, dieu: match[1].replace(/^Điều\s+/, "Điều ") }));
+  const paragraphs = [];
+  let pointer = 0;
+  let headingIndex = -1;
+  for (const block of full.split(/\n\s*\n/)) {
+    const text = block.trim();
+    if (!text) continue;
+    const at = full.indexOf(block, pointer);
+    pointer = at + block.length;
+    while (headingIndex + 1 < headings.length && headings[headingIndex + 1].at <= at) headingIndex += 1;
+    const dieu = headingIndex >= 0 ? headings[headingIndex].dieu : null;
+    for (const piece of splitLong(text)) {
+      paragraphs.push({ text: piece, norm: normalize(piece), dieu });
+    }
+  }
+  paragraphCache.set(tep, { raw, paragraphs });
+  return paragraphs;
+}
+
+// Văn bản còn hiệu lực được ưu tiên; văn bản hết hiệu lực vẫn có thể hiện nhưng xếp sau.
+function trongSoTinhTrang(tinhTrang) {
+  if (!tinhTrang) return 1;
+  if (tinhTrang.startsWith("Còn hiệu lực") || tinhTrang.startsWith("Chưa có hiệu lực")) return 1.5;
+  if (tinhTrang.startsWith("Hết hiệu lực một phần")) return 1.2;
+  if (tinhTrang.startsWith("Chưa đối chiếu")) return 1.2;
+  if (tinhTrang.startsWith("Hết hiệu lực")) return 0.6;
+  return 1;
+}
+
+// Tìm đoạn trong toàn văn theo từ khóa. Mỗi văn bản góp tối đa vài đoạn để kết quả đa dạng.
+export async function timTrongToanVan(query, { soKyHieu = null, limit = MAX_PASSAGES } = {}) {
+  const terms = queryTerms(query);
+  if (terms.length === 0) return [];
+  const wanted = soKyHieu ? numberKey(soKyHieu) : null;
+  const hits = [];
+  for (const item of await textCatalog()) {
+    if (wanted && numberKey(item.so_ky_hieu) !== wanted) continue;
+    const paragraphs = await paragraphsOf(item.tep);
+    const weight = trongSoTinhTrang(item.tinh_trang);
+    paragraphs.forEach((para, index) => {
+      let score = 0;
+      let matched = 0;
+      for (const term of terms) {
+        if (para.norm.includes(term)) {
+          score += 1 + Math.min(term.length, 12) / 12;
+          matched += 1;
+        }
+      }
+      if (score === 0) return;
+      // Đoạn chứa đủ mọi từ khóa được ưu tiên hơn đoạn chỉ chứa một phần.
+      const complete = matched === terms.length ? 2 : 1;
+      hits.push({ item, para, score: score * weight * complete, index });
+    });
+  }
+  hits.sort((a, b) => b.score - a.score || a.index - b.index);
+
+  const perDoc = new Map();
+  const chosen = [];
+  for (const hit of hits) {
+    const count = perDoc.get(hit.item.tep) || 0;
+    if (count >= MAX_PASSAGES_PER_DOC) continue;
+    perDoc.set(hit.item.tep, count + 1);
+    chosen.push({
+      so_ky_hieu: hit.item.so_ky_hieu,
+      ten: hit.item.ten,
+      nguon: hit.item.nguon,
+      url: hit.item.url,
+      tinh_trang: hit.item.tinh_trang,
+      dieu: hit.para.dieu,
+      trich: hit.para.text.slice(0, PASSAGE_CHARS),
+    });
+    if (chosen.length >= limit) break;
+  }
+  return chosen;
 }

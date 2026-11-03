@@ -13,7 +13,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import export, normalize, sources, store, vbpl_sync, vbpl_text
+from . import export, normalize, nguon_chinh_thuc, nguon_text, sources, store, vbpl_sync, vbpl_text
 from .client import BlockedError, PortalClient
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,6 +65,10 @@ def run():
         change_count += store.sync_records(conn, "tthc", tthc, run_at, first_run)
         store.log_run(conn, run_at, "ok", len(van_ban), len(tthc), change_count)
 
+    if "--khong-chinh-thuc" not in sys.argv:
+        for giai_doan in _cac_giai_doan():
+            _sync_chinh_thuc(conn, run_at, giai_doan)
+        _sync_nguon_text(conn)
     if "--khong-vbpl" not in sys.argv:
         _sync_vbpl(conn, run_at)
     export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
@@ -74,11 +78,67 @@ def run():
     return 0
 
 
+def _cac_giai_doan():
+    """Các giai đoạn cần cập nhật: mặc định cả giai đoạn 1 (thủ tục và cư trú) và giai đoạn 2 (các lĩnh vực còn lại).
+    Chọn một giai đoạn bằng --giai-doan=1 hoặc --giai-doan=2."""
+    for arg in sys.argv:
+        if arg.startswith("--giai-doan="):
+            return [int(arg.split("=", 1)[1])]
+    return [1, 2]
+
+
+def _sync_chinh_thuc(conn, run_at, giai_doan):
+    """Đọc ba nguồn chính thức theo giai đoạn. Lần đầu của mỗi nguồn duyệt toàn bộ lịch sử;
+    lỗi một nguồn không chặn các nguồn khác."""
+    keywords = nguon_chinh_thuc.tu_khoa_giai_doan(
+        giai_doan, vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"]
+    )
+    fetcher = nguon_chinh_thuc.Fetcher()
+    for nguon, reader in nguon_chinh_thuc.READERS.items():
+        known = {row["url"]: row for row in store.load_chinh_thuc(conn, nguon)}
+        toan_bo = store.get_state(conn, nguon_chinh_thuc.khoa_nen(nguon, giai_doan)) is None
+        try:
+            found = reader(fetcher, keywords, known, toan_bo)
+            if found["tong"] == 0:
+                raise RuntimeError("không đọc được mục nào từ trang")
+            new = store.sync_chinh_thuc(conn, nguon, found["items"], run_at, giai_doan)
+            conn.commit()
+            che_do = "nạp đầu, duyệt toàn bộ" if toan_bo else "cập nhật"
+            print(f"Nguồn {nguon} (giai đoạn {giai_doan}, {che_do}): "
+                  f"{len(found['items'])} văn bản liên quan, {new} văn bản mới.")
+        except BlockedError as error:
+            conn.rollback()
+            print(f"Nguồn {nguon} từ chối truy cập: {error}. Bỏ qua lần này.")
+        except Exception as error:  # noqa: BLE001 - lỗi một nguồn không làm hỏng các nguồn khác
+            conn.rollback()
+            print(f"Nguồn {nguon} lỗi: {error}. Giữ dữ liệu cũ.")
+
+
+def _chinh_thuc_trong_pham_vi(conn):
+    """Văn bản chính thức đã lưu, bỏ thủ tục của ngành khác (không do công an). Dùng cho toàn văn và đối chiếu vbpl."""
+    tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(2, vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"])
+    return nguon_chinh_thuc.loc_pham_vi(store.load_chinh_thuc(conn), tu_khoa)
+
+
+def _sync_nguon_text(conn):
+    """Toàn văn của văn bản nguồn chính thức (PDF). Lỗi ở đây không chặn cập nhật dữ liệu."""
+    try:
+        done, failed = nguon_text.sync_nguon_text(
+            conn, nguon_chinh_thuc.Fetcher(), DOCS_DATA_DIR / "nguon_text", _chinh_thuc_trong_pham_vi(conn)
+        )
+        print(f"Toàn văn nguồn chính thức: thêm {done}, không đọc được {failed}.")
+    except BlockedError as error:
+        print(f"Toàn văn nguồn chính thức bị từ chối: {error}. Thử lại lần sau.")
+    except Exception as error:  # noqa: BLE001
+        print(f"Toàn văn nguồn chính thức lỗi: {error}. Giữ dữ liệu cũ.")
+
+
 def _sync_vbpl(conn, run_at):
     """Đọc trạng thái từ vbpl.vn. Lỗi ở bước này không chặn cập nhật từ cổng Phòng CSQLHC."""
     try:
         config = vbpl_sync.load_config()
         extra_numbers = [item["so_ky_hieu"] for item in json.loads(EXTRA_PATH.read_text(encoding="utf-8"))]
+        extra_numbers += [row["so_ky_hieu"] for row in _chinh_thuc_trong_pham_vi(conn)]
         run_date = datetime.fromisoformat(run_at).date()
         count = vbpl_sync.sync(conn, extra_numbers, run_at, run_date, config)
         conn.commit()

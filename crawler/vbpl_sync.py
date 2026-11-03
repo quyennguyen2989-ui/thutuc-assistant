@@ -22,9 +22,29 @@ def load_config():
     return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
 
 
+NAM_BAT_DAU_LICH_SU = 2025  # văn bản từ năm này trở đi là phạm vi nạp chính; trước đó chỉ lấy khi cần
+
+
+def _van_ban_thay_the(conn):
+    """Số ký hiệu từ 2025 trở đi nằm trong lịch sử sửa đổi, bổ sung, thay thế của văn bản cũ đã hết hiệu lực.
+
+    Đây là các văn bản mới cần tìm để thay cho văn bản cũ, kể cả khi văn bản cũ không còn được đưa vào dữ liệu.
+    """
+    numbers = set()
+    for row in store.load_vbpl(conn):
+        if not row["lich_su"] or not (row["tinh_trang"] or "").startswith("Hết hiệu lực"):
+            continue
+        for item in json.loads(row["lich_su"]):
+            for found in vbpl.NUMBER_IN_TEXT.findall(item.get("van_ban_nguon") or ""):
+                if int(found.split("/")[1]) >= NAM_BAT_DAU_LICH_SU:
+                    numbers.add(found)
+    return numbers
+
+
 def watched_numbers(conn, extra_numbers):
-    """Số ký hiệu cần theo dõi: văn bản của cổng, văn bản bổ sung, và căn cứ của các thủ tục."""
-    numbers = set(extra_numbers)
+    """Số ký hiệu cần theo dõi: văn bản của cổng, văn bản bổ sung, căn cứ của các thủ tục,
+    và văn bản mới thay thế các văn bản cũ đã hết hiệu lực."""
+    numbers = set(extra_numbers) | _van_ban_thay_the(conn)
     for record in store.load_records(conn, "van_ban"):
         if record["so_ky_hieu"]:
             numbers.add(record["so_ky_hieu"])
@@ -146,9 +166,25 @@ def sync(conn, extra_numbers, run_at, run_date, config):
     searched = set(json.loads(store.get_state(conn, SEARCHED_STATE, "[]")))
     new_numbers = [number for number in numbers if number not in searched]
 
-    if new_numbers or discovery_due(conn, run_date, config["chu_ky_tim_van_ban_moi_ngay"]):
+    full = bool(new_numbers) or discovery_due(conn, run_date, config["chu_ky_tim_van_ban_moi_ngay"])
+    if full:
         summary = discover(conn, numbers, config, run_date, delay)
         store.set_state(conn, SEARCHED_STATE, json.dumps(numbers, ensure_ascii=False))
         print(f"vbpl.vn: đã tìm văn bản — {summary}")
 
-    return read_statuses(conn, run_at, delay, config["tu_khoa_tim_van_ban_moi"])
+    # Lần đầu và mỗi chu kỳ tìm kiếm thì đọc lại toàn bộ tình trạng (đối chiếu đầy đủ).
+    # Các lần khác chỉ đọc văn bản chưa từng kiểm tra, đang lỗi, hoặc có ngày sửa trên sơ đồ trang
+    # mới hơn lần kiểm tra gần nhất, để việc cập nhật hằng ngày nhẹ hơn.
+    only_urls = None if full else _can_kiem_tra_lai(conn)
+    return read_statuses(conn, run_at, delay, config["tu_khoa_tim_van_ban_moi"], only_urls=only_urls)
+
+
+def _can_kiem_tra_lai(conn):
+    """Đường dẫn các văn bản cần đọc lại trạng thái trong lần chạy gia tăng."""
+    urls = set()
+    for row in store.load_vbpl(conn):
+        if row["loi"] or not row["kiem_tra_luc"]:
+            urls.add(row["url"])
+        elif row["lastmod"] and row["lastmod"][:10] > row["kiem_tra_luc"][:10]:
+            urls.add(row["url"])
+    return urls

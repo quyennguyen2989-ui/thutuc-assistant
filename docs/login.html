@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Đăng nhập</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+  <style>
+    /* Trang đăng nhập tự đủ kiểu và mã lệnh: không phụ thuộc tệp ngoài, để không bao giờ hiện trần. */
+    :root {
+      --paper: #eef1f4;
+      --surface: #ffffff;
+      --ink: #17202b;
+      --muted: #5b6675;
+      --rule: #cdd4dc;
+      --seal: #a4262c;
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    /* Chuyển sang tra cứu hoặc quay lại đăng nhập: trượt nhẹ giữa hai trang, khớp với style.css. */
+    @view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: 200ms ease-out both page-out; }
+    ::view-transition-new(root) { animation: 200ms ease-out both page-in; }
+    @keyframes page-out {
+      from { opacity: 1; transform: none; }
+      to { opacity: 0; transform: translateX(-24px); }
+    }
+    @keyframes page-in {
+      from { opacity: 0; transform: translateX(24px); }
+      to { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+    }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 20px 16px calc(20px + env(safe-area-inset-bottom));
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 16px/1.5 var(--sans);
+    }
+    .card {
+      width: 100%;
+      max-width: 400px;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      padding: 28px 24px 24px;
+    }
+    h1 { margin: 0 0 4px; font: 500 28px/1.15 var(--serif); }
+    .place { margin: 0 0 24px; font-size: 14px; color: var(--muted); }
+    .field { margin: 0 0 16px; }
+    label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 500; }
+    input[type="text"], input[type="password"] {
+      display: block;
+      width: 100%;
+      height: 48px;
+      padding: 0 12px;
+      font: 400 16px var(--sans);
+      color: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--muted);
+      border-radius: 2px;
+    }
+    input:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+    .reveal {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: -4px 0 18px;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .reveal input { width: 18px; height: 18px; margin: 0; accent-color: var(--ink); }
+    .btn {
+      display: block;
+      width: 100%;
+      height: 48px;
+      font: 500 16px var(--sans);
+      color: #ffffff;
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .btn:disabled { opacity: 0.6; cursor: wait; }
+    .error {
+      display: none;
+      margin: 0 0 16px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--seal);
+      color: var(--seal);
+      font-size: 15px;
+    }
+    .error.on { display: block; }
+    .help { margin: 20px 0 0; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Tra cứu thủ tục</h1>
+    <p class="place">Khu vực dân cư, TP.HCM</p>
+
+    <noscript><p class="error on">Cần bật JavaScript để đăng nhập.</p></noscript>
+
+    <form id="login-form" method="post" action="api/login" novalidate>
+      <div class="field">
+        <label for="username">Tài khoản</label>
+        <input id="username" name="username" type="text" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+      </div>
+      <div class="field">
+        <label for="password">Mật khẩu</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+      </div>
+      <label class="reveal" for="reveal">
+        <input id="reveal" type="checkbox"> Hiện mật khẩu
+      </label>
+      <p class="error" id="login-error" role="alert"></p>
+      <button class="btn" id="login-submit" type="submit">Đăng nhập</button>
+    </form>
+
+    <p class="help">Quên mật khẩu? Liên hệ người quản trị để được cấp lại.</p>
+  </main>
+
+  <script>
+    "use strict";
+    (function () {
+      var form = document.getElementById("login-form");
+      var error = document.getElementById("login-error");
+      var submit = document.getElementById("login-submit");
+      var reveal = document.getElementById("reveal");
+
+      function showError(text) {
+        error.textContent = text;
+        error.className = "error on";
+        form.password.value = "";
+        form.password.focus();
+      }
+
+      reveal.addEventListener("change", function () {
+        form.password.type = reveal.checked ? "text" : "password";
+      });
+
+      // Đã có phiên hợp lệ thì vào thẳng trang tra cứu.
+      fetch("api/me", { cache: "no-store" })
+        .then(function (response) {
+          if (response.ok) location.replace("./");
+        })
+        .catch(function () {});
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        error.className = "error";
+        var username = form.username.value.trim();
+        var password = form.password.value;
+        if (!username || !password) {
+          showError("Nhập tài khoản và mật khẩu.");
+          return;
+        }
+
+        submit.disabled = true;
+        submit.textContent = "Đang đăng nhập…";
+        try {
+          var response = await fetch("api/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username: username, password: password }),
+            cache: "no-store",
+          });
+          var payload = await response.json().catch(function () { return {}; });
+          if (!response.ok) {
+            showError(payload.loi || "Chưa đăng nhập được. Thử lại sau.");
+            return;
+          }
+          location.replace("./");
+        } catch (err) {
+          showError("Không kết nối được máy chủ. Kiểm tra mạng rồi thử lại.");
+        } finally {
+          submit.disabled = false;
+          submit.textContent = "Đăng nhập";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

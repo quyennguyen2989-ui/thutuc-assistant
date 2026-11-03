@@ -6,6 +6,7 @@ ghi lại các trường thay đổi. Bản ghi biến mất khỏi cổng đư�
 
 import json
 import sqlite3
+import zlib
 
 from .normalize import content_hash, diff_fields
 
@@ -51,6 +52,19 @@ CREATE TABLE IF NOT EXISTS state (
     key TEXT PRIMARY KEY,
     value TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS nguon_chinh_thuc (
+    nguon TEXT NOT NULL,
+    url TEXT NOT NULL,
+    so_ky_hieu TEXT NOT NULL,
+    loai TEXT,
+    trich_yeu TEXT,
+    co_quan_ban_hanh TEXT,
+    ngay_ban_hanh TEXT,
+    ngay_hieu_luc TEXT,
+    first_seen TEXT NOT NULL,
+    giai_doan INTEGER NOT NULL DEFAULT 1,
+    PRIMARY KEY (nguon, url)
+);
 """
 
 
@@ -63,6 +77,10 @@ def connect(path):
     vbpl_columns = {row["name"] for row in conn.execute("PRAGMA table_info(vbpl)")}
     if "lich_su" not in vbpl_columns:
         conn.execute("ALTER TABLE vbpl ADD COLUMN lich_su TEXT")
+    # Cơ sở dữ liệu cũ chưa có cột giai đoạn của nguồn chính thức.
+    chinh_thuc_columns = {row["name"] for row in conn.execute("PRAGMA table_info(nguon_chinh_thuc)")}
+    if "giai_doan" not in chinh_thuc_columns:
+        conn.execute("ALTER TABLE nguon_chinh_thuc ADD COLUMN giai_doan INTEGER NOT NULL DEFAULT 1")
     return conn
 
 
@@ -200,6 +218,88 @@ def set_state(conn, key, value):
         "INSERT INTO state (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value",
         (key, value),
     )
+
+
+def load_chinh_thuc(conn, nguon=None):
+    """Văn bản đã đọc từ các nguồn chính thức (có thể lọc theo một nguồn)."""
+    if nguon:
+        rows = conn.execute(
+            "SELECT * FROM nguon_chinh_thuc WHERE nguon = ? ORDER BY ngay_ban_hanh DESC, url", (nguon,)
+        )
+    else:
+        rows = conn.execute("SELECT * FROM nguon_chinh_thuc ORDER BY ngay_ban_hanh DESC, url")
+    return [dict(row) for row in rows]
+
+
+CAC_TRUONG_CHINH_THUC = ("so_ky_hieu", "loai", "trich_yeu", "co_quan_ban_hanh", "ngay_ban_hanh", "ngay_hieu_luc")
+
+
+def _cap_nhat_chinh_thuc(conn, run_at, nguon, row, item, first_time):
+    """Văn bản đã có: điền các trường còn trống, sửa trường khác giá trị mới từ nguồn chính thức.
+
+    Mỗi chỗ khác giá trị được ghi vào nhật ký (trừ lần nạp đầu), để việc sửa dữ liệu có thể kiểm tra lại.
+    """
+    diff = {}
+    for field in CAC_TRUONG_CHINH_THUC:
+        moi = item.get(field) or ""
+        cu = row[field] or ""
+        if moi and moi != cu:
+            diff[field] = {"cu": cu or None, "moi": moi}
+    if not diff:
+        return
+    assignments = ", ".join(f"{field} = ?" for field in diff)
+    conn.execute(
+        f"UPDATE nguon_chinh_thuc SET {assignments} WHERE nguon = ? AND url = ?",
+        [value["moi"] for value in diff.values()] + [nguon, item["url"]],
+    )
+    if not first_time:
+        name = f"{row['so_ky_hieu']}: {row['trich_yeu'] or ''}".strip(": ")
+        _log_change(conn, run_at, "chinh_thuc", zlib.crc32(item["url"].encode("utf-8")), "thay_doi",
+                    {"_ten": name[:200], "_nguon": nguon, **diff})
+
+
+def sync_chinh_thuc(conn, nguon, items, run_at, giai_doan=1):
+    """Ghi văn bản của một nguồn. Lần đầu của nguồn trong một giai đoạn chỉ ghi nền; các lần sau ghi nhận văn bản mới.
+
+    Văn bản đã có (cùng nguồn và đường dẫn) không ghi lại, nên không trùng. Trả về số văn bản mới được ghi nhận.
+    """
+    baseline_key = f"chinh_thuc_nen:{nguon}:{giai_doan}"
+    first_time = get_state(conn, baseline_key) is None
+    new_count = 0
+    for item in items:
+        row = conn.execute(
+            "SELECT * FROM nguon_chinh_thuc WHERE nguon = ? AND url = ?", (nguon, item["url"])
+        ).fetchone()
+        if row:
+            _cap_nhat_chinh_thuc(conn, run_at, nguon, row, item, first_time)
+            continue
+        conn.execute(
+            "INSERT INTO nguon_chinh_thuc (nguon, url, so_ky_hieu, loai, trich_yeu, co_quan_ban_hanh,"
+            " ngay_ban_hanh, ngay_hieu_luc, first_seen, giai_doan) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (nguon, item["url"], item["so_ky_hieu"], item.get("loai", ""), item.get("trich_yeu", ""),
+             item.get("co_quan_ban_hanh", ""), item.get("ngay_ban_hanh", ""),
+             item.get("ngay_hieu_luc", ""), run_at, giai_doan),
+        )
+        if not first_time:
+            name = f"{item['so_ky_hieu']}: {item.get('trich_yeu', '')}".strip(": ")
+            diff = {"_ten": name[:200], "_nguon": nguon}
+            _log_change(conn, run_at, "chinh_thuc", zlib.crc32(item["url"].encode("utf-8")), "moi", diff)
+            new_count += 1
+    set_state(conn, baseline_key, run_at)
+    return new_count
+
+
+def last_change_dates(conn, kind):
+    """Ngày ghi nhận thay đổi nội dung gần nhất của từng bản ghi (theo mã bản ghi).
+
+    Không tính lần ghi nền đầu tiên, vì khi đó chưa có thay đổi nào được phát hiện.
+    """
+    rows = conn.execute(
+        "SELECT record_id, MAX(run_at) AS run_at FROM changes"
+        " WHERE kind = ? AND change_type IN ('thay_doi', 'moi', 'quay_lai') GROUP BY record_id",
+        (kind,),
+    )
+    return {row["record_id"]: row["run_at"] for row in rows}
 
 
 def load_changes(conn, limit=200):
