@@ -52,6 +52,10 @@ Công chức tư pháp - hộ tịch hướng dẫn chọn nơi khám chữa b�
 - Nếu công an cấp xã được giao đăng ký thường trú cho trẻ dưới 6 tuổi (theo cách phân cấp hiện hành), thời hạn 15 ngày làm việc của cơ quan đăng ký cư trú áp dụng. Cần đối chiếu với văn bản hướng dẫn mới.
 - Lệ phí đăng ký thường trú cho trẻ em do UBND cấp xã tạm thu tại thời điểm nhận hồ sơ.
 
+## Áp dụng tại TP.HCM
+- QĐ 42/2016/QĐ-UBND của UBND TP.HCM (quy chế liên thông cùng nội dung) đã **bị bãi bỏ** bởi QĐ 48/2023/QĐ-UBND từ 01/12/2023 (xem `tp-hcm-le-phi-ho-tich-cu-tru-bai-bo.md`). Hiện không có quy chế địa phương riêng trên dữ liệu.
+- Thủ tục hộ tịch cấp phường tại TP.HCM: QĐ 1990/QĐ-UBND (03/04/2026) bãi bỏ QĐ 42/2010 về thủ tục hộ tịch tại UBND quận - huyện cũ.
+
 ## Liên kết
 - Hộ tịch khai sinh: `nd-82-2020-xu-phat-ho-tich-tu-phap.md`.
 - Cư trú và căn cước: `luat-can-cuoc-26-2023.md`, `nd-luat-cu-tru-68-2020.md`.
