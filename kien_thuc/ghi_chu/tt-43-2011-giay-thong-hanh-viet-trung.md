@@ -31,6 +31,8 @@ Tình trạng trên dữ liệu: TT 43/2011 **còn hiệu lực** (cập nhật 
 - Ban hành quy chế về tổ chức và quản lý **công dân Trung Quốc** sử dụng giấy phép nhập, xuất cảnh do Trung Quốc cấp để vào Việt Nam tham quan, du lịch.
 - Đây là quy định về người nước ngoài, không phải về công dân Việt Nam. Nội dung quy chế (điều khoản chi tiết) không có trong file đã đọc, nên không tóm tắt được. Chỉ dùng khi có vụ việc cụ thể và cần kiểm tra văn bản đầy đủ.
 
+**Cập nhật quan trọng:** NĐ 67/2024 (sửa NĐ 76/2020) đã thay đổi nơi nộp hồ sơ giấy thông hành Việt - Trung. Dân cư thường trú vùng biên nộp tại Công an cấp xã nơi thường trú, người làm việc tại cơ quan vùng biên nộp tại Công an cấp huyện nơi cơ quan làm việc. Thời hạn cấp 01 ngày làm việc. Chi tiết trong `nd-76-2020-giay-thong-hanh-bien-gioi.md`. Yêu cầu xác nhận của công an xã cho trẻ dưới 14 tuổi (Điều 4 TT này) cần được đối chiếu lại với NĐ 67/2024.
+
 ## Lưu ý cho cán bộ Công an cấp xã
 - **Có vai trò trực tiếp:** với trẻ em dưới 14 tuổi đi sang Trung Quốc, Công an xã/phường/thị trấn nơi trẻ thường trú hoặc tạm trú **xác nhận vào tờ khai TK8 và đóng dấu giáp lai ảnh**.
 - Công an cấp xã không cấp giấy thông hành. Việc cấp do Phòng Quản lý xuất nhập cảnh Công an tỉnh biên giới thực hiện.

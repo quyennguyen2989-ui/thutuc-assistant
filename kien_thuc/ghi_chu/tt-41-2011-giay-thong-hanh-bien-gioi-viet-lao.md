@@ -29,6 +29,8 @@ Tình trạng trên dữ liệu: **còn hiệu lực**. Có hiệu lực từ **
 - Cục Quản lý xuất nhập cảnh: in, quản lý ấn phẩm trắng giấy thông hành, hướng dẫn và kiểm tra Công an các tỉnh biên giới.
 - Công an tỉnh biên giới: bố trí lực lượng, cơ sở vật chất, truyền dữ liệu về Cục; in mẫu TK7, N24, N25.
 
+**Cập nhật quan trọng:** NĐ 67/2024 (sửa NĐ 76/2020) đã thay đổi nơi nộp hồ sơ giấy thông hành Việt - Lào. Công dân thường trú ở tỉnh biên giới nộp được tại Công an cấp xã nơi thường trú, Công an cấp huyện nơi thường trú hoặc Cơ quan QLXNC Công an tỉnh, hoặc trực tuyến. Thời hạn cấp 03 ngày làm việc. Chi tiết trong `nd-76-2020-giay-thong-hanh-bien-gioi.md`. Các nội dung dưới đây về nơi nộp chỉ còn giá trị lịch sử.
+
 ## Lưu ý cho cán bộ Công an cấp xã
 - Công an cấp xã **không** là cơ quan tiếp nhận và cấp giấy thông hành. Công dân nộp tại Phòng Quản lý xuất nhập cảnh Công an tỉnh (Điều 4 khoản 3).
 - Khi người dân cư trú ở xã, phường biên giới hỏi về giấy thông hành, cán bộ hướng dẫn đến Phòng Quản lý xuất nhập cảnh Công an tỉnh và cần xác nhận hộ khẩu thường trú (theo văn bản hiện hành).
