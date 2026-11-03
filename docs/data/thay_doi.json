@@ -1,5 +1,330 @@
 [
  {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2492333950,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Nghị định 89/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 625586392,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị quyết 54/2025/NQ-HĐND của HĐND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2939756158,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Quyết định 49/2026/QĐ-UBND của UBND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 3423004294,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 48/2025/TT-BCA của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 3223967156,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 347/2026/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 306546276,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 329/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 62372301,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Quyết định 31/2026/QĐ-UBND của UBND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 3392533034,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 30/2025/TT-BQP của Bộ Quốc phòng"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 3080201452,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 297/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 235890940,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 289/2026/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2630735294,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 5
+   },
+   "_ten": "Nghị định 282/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2857918745,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Chỉ thị 21/CT-TTg của Thủ tướng Chính phủ",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 3164942913,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 192/2026/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 31251398,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 185/2026/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2052689093,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 184/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 3905324126,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị quyết 18/2026/NQ-HĐND của HĐND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 1899204277,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị định 17/2026/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 1591859539,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 09/2025/TT-BTC của Bộ Tài chính",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2400912003,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Nghị quyết 15/2026/NQ-HĐND của HĐND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 1375100935,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Luật 118/2025/QH15 của Bộ Công an"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 240093485,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Nghị quyết 11/2026/NQ-HĐND của HĐND Tỉnh Phú Thọ",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2497893537,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 07/2026/TT-BNG của Bộ Ngoại giao",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 1641114360,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Thông tư 07/2025/TT-BNG của Bộ Ngoại giao"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 1156265496,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 5
+   },
+   "_ten": "Nghị định 07/2025/NĐ-CP của Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-03T11:41:51+07:00",
+  "kind": "vbpl",
+  "record_id": 2718513225,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Luật 03/2026/QH16 của Quốc hội"
+  }
+ },
+ {
   "run_at": "2026-11-03T10:15:36+07:00",
   "kind": "vbpl",
   "record_id": 2699104534,

@@ -10,6 +10,15 @@
   "ly_do": "PDF không có lớp chữ (có thể là bản quét ảnh)"
  },
  {
+  "nguon": "bo_cong_an",
+  "so_ky_hieu": "289/2026/NĐ-CP",
+  "url": "https://vanban.bocongan.gov.vn/co-so-du-lieu-van-ban/nghi-dinh-ve-quan-ly-bao-dam-an-ninh-trat-tu-tai-cua-khau-cang-do-bo-cong-an-quan-ly-1790320732",
+  "tep": "289-2026-nd-cp-bo-cong-an.txt",
+  "pdf": "https://bocongan.gov.vn/media/bca-media/library-20260925112104-6d97a94c-95df-4b02-a2ea-8da2603c3241-nd-289-2026-nd-cp.pdf",
+  "ky_tu": 6135,
+  "lay_luc": "2026-11-03T12:12:19+07:00"
+ },
+ {
   "nguon": "chinh_phu",
   "so_ky_hieu": "01/VBHN-VPQH",
   "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-01-vbhn-vpqh-44375.htm",
@@ -17,6 +26,24 @@
   "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/2/44375/55300-1-2025477-47801-vbhn-vpqh.pdf",
   "ky_tu": 52999,
   "lay_luc": "2026-11-03T10:48:48+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "02/VBHN-BCT",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-02-vbhn-bct-468881.htm",
+  "tep": "02-vbhn-bct-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/2/12/02bctsigned-17708639615092084150724.pdf",
+  "ky_tu": 131036,
+  "lay_luc": "2026-11-03T12:13:26+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "03/2026/QH16",
+  "url": "https://congbao.chinhphu.vn/van-ban/luat-so-03-2026-qh16-469530.htm",
+  "tep": "03-2026-qh16-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/27/469530-1779268193_v1_1779843006_signed.pdf",
+  "ky_tu": 32887,
+  "lay_luc": "2026-11-03T12:12:43+07:00"
  },
  {
   "nguon": "chinh_phu",
@@ -38,12 +65,39 @@
  },
  {
   "nguon": "chinh_phu",
+  "so_ky_hieu": "07/2025/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-07-2025-nd-cp-43907.htm",
+  "tep": "07-2025-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/1/43907/54364-1-2025191-19207-2025-nd-cp.pdf",
+  "ky_tu": 89658,
+  "lay_luc": "2026-11-03T12:14:48+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "07/2025/TT-BNG",
+  "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-07-2025-tt-bng-45298.htm",
+  "tep": "07-2025-tt-bng-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45298/57182-1-2025857-85807-2025-tt-bng.pdf",
+  "ky_tu": 6696,
+  "lay_luc": "2026-11-03T12:14:29+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
   "so_ky_hieu": "09/VBHN-VPQH",
   "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-09-vbhn-vpqh-468953.htm",
   "tep": "09-vbhn-vpqh-chinh-phu.txt",
   "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/2/09signed-1772430571541969928002.pdf",
   "ky_tu": 69032,
   "lay_luc": "2026-11-03T10:48:33+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "10/VBHN-BXD",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-10-vbhn-bxd-469137.htm",
+  "tep": "10-vbhn-bxd-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/3/27/469137-1774600561_v1_1774602372_signed.pdf",
+  "ky_tu": 91052,
+  "lay_luc": "2026-11-03T12:13:18+07:00"
  },
  {
   "nguon": "chinh_phu",
@@ -65,12 +119,30 @@
  },
  {
   "nguon": "chinh_phu",
+  "so_ky_hieu": "118/2025/QH15",
+  "url": "https://congbao.chinhphu.vn/van-ban/luat-so-118-2025-qh15-468680.htm",
+  "tep": "118-2025-qh15-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/23/118signed-17691635738211760822134.pdf",
+  "ky_tu": 68655,
+  "lay_luc": "2026-11-03T12:13:50+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
   "so_ky_hieu": "118/2026/TT-BCA",
   "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-118-2026-tt-bca-470080.htm",
   "tep": "118-2026-tt-bca-chinh-phu.txt",
   "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/24/470080-1784882562_v1_1784887723_signed.pdf",
   "ky_tu": 24909,
   "lay_luc": "2026-11-03T10:48:02+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "13/2026/QH16",
+  "url": "https://congbao.chinhphu.vn/van-ban/luat-so-13-2026-qh16-470448.htm",
+  "tep": "13-2026-qh16-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/9/21/470448-1789727832_v1_1789953026_signed.pdf",
+  "ky_tu": 69259,
+  "lay_luc": "2026-11-03T12:12:09+07:00"
  },
  {
   "nguon": "chinh_phu",
@@ -83,12 +155,93 @@
  },
  {
   "nguon": "chinh_phu",
+  "so_ky_hieu": "15/VBHN-BXD",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-15-vbhn-bxd-46301.htm",
+  "tep": "15-vbhn-bxd-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/9/46301/59154-1-20251431-143215-vbhn-bxd.pdf",
+  "ky_tu": 86710,
+  "lay_luc": "2026-11-03T12:14:13+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "16/VBHN-BQP",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-16-vbhn-bqp-468856.htm",
+  "tep": "16-vbhn-bqp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/2/6/16signed-17703650772342001063875.pdf",
+  "ky_tu": 69904,
+  "lay_luc": "2026-11-03T12:13:36+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "167/QĐ-TTg",
+  "url": "https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-167-qd-ttg-468872.htm",
+  "tep": "167-qd-ttg-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/2/10/167signed-17706974163051856930431.pdf",
+  "ky_tu": 12516,
+  "lay_luc": "2026-11-03T12:13:23+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "17/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-17-2026-nd-cp-468764.htm",
+  "tep": "17-2026-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/29/17signed-17696757382621653245992.pdf",
+  "ky_tu": 15005,
+  "lay_luc": "2026-11-03T12:14:52+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "184/2025/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-184-2025-nd-cp-45448.htm",
+  "tep": "184-2025-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45448/57472-1-2025927-928184-2025-nd-cp.pdf",
+  "ky_tu": 152073,
+  "lay_luc": "2026-11-03T12:14:20+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "185/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-185-2026-nd-cp-469629.htm",
+  "tep": "185-2026-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/5/29/469629-1780019685_v1_1780042610_signed.pdf",
+  "ky_tu": 36356,
+  "lay_luc": "2026-11-03T12:12:35+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "1870/QĐ-TTg",
+  "url": "https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-1870-qd-ttg-470604.htm",
+  "tep": "1870-qd-ttg-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/10/12/470604-1791343036_v1_1791767026_signed.pdf",
+  "ky_tu": 13333,
+  "lay_luc": "2026-11-03T12:12:06+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
   "so_ky_hieu": "1891/QĐ-TTg",
   "url": "https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-1891-qd-ttg-46120.htm",
   "tep": "1891-qd-ttg-chinh-phu.txt",
   "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/9/46120/58799-1-20251327-13281891-qd-ttg.pdf",
   "ky_tu": 47177,
   "lay_luc": "2026-11-03T10:48:38+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "192/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-192-2026-nd-cp-469673.htm",
+  "tep": "192-2026-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/6/12/469673-1781063066_v1_1781258677_signed.pdf",
+  "ky_tu": 28721,
+  "lay_luc": "2026-11-03T12:12:29+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "21/CT-TTg",
+  "url": "https://congbao.chinhphu.vn/van-ban/chi-thi-so-21-ct-ttg-469580.htm",
+  "tep": "21-ct-ttg-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/6/2/469580-1780306634_v1_1780362418_signed.pdf",
+  "ky_tu": 12722,
+  "lay_luc": "2026-11-03T12:12:39+07:00"
  },
  {
   "nguon": "chinh_phu",
@@ -101,12 +254,111 @@
  },
  {
   "nguon": "chinh_phu",
+  "so_ky_hieu": "282/2025/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-282-2025-nd-cp-46543.htm",
+  "tep": "282-2025-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/10/46543/59667-1-20251583-1584282-2025-nd-cp.pdf",
+  "ky_tu": 202277,
+  "lay_luc": "2026-11-03T12:14:04+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "2836/QĐ-TTg",
+  "url": "https://congbao.chinhphu.vn/van-ban/quyet-dinh-so-2836-qd-ttg-468598.htm",
+  "tep": "2836-qd-ttg-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/22/2836signed-1769071832948707490338.pdf",
+  "ky_tu": 42045,
+  "lay_luc": "2026-11-03T12:13:40+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "289/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-289-2026-nd-cp-470139.htm",
+  "tep": "289-2026-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/31/470139-1785404635_v1_1785465476_signed.pdf",
+  "ky_tu": 50716,
+  "lay_luc": "2026-11-03T12:12:14+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "297/2025/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-297-2025-nd-cp-46629.htm",
+  "tep": "297-2025-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/11/46629/59842-1-20251633-1634297-2025-nd-cp.pdf",
+  "ky_tu": 27921,
+  "lay_luc": "2026-11-03T12:13:54+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "30/2025/TT-BQP",
+  "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-30-2025-tt-bqp-45064.htm",
+  "tep": "30-2025-tt-bqp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/5/45064/56734-1-2025777-77830-2025-tt-bqp.pdf",
+  "ky_tu": 1402,
+  "lay_luc": "2026-11-03T12:14:32+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "30/2026/TT-BCA",
+  "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-30-2026-tt-bca-469866.htm",
+  "tep": "30-2026-tt-bca-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/7/8/469866-1783475928_v1_1783476845_signed.pdf",
+  "ky_tu": 148487,
+  "lay_luc": "2026-11-03T12:12:49+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
   "so_ky_hieu": "301/2026/NĐ-CP",
   "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-301-2026-nd-cp-470197.htm",
   "tep": "301-2026-nd-cp-chinh-phu.txt",
   "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/8/12/470197-1786434405_v1_1786526065_signed.pdf",
   "ky_tu": 60241,
   "lay_luc": "2026-11-03T10:47:47+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "329/2025/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-329-2025-nd-cp-46872.htm",
+  "tep": "329-2025-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/12/46872/60431-1-20251747-1748329-2025-nd-cp.pdf",
+  "ky_tu": 176234,
+  "lay_luc": "2026-11-03T12:13:43+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "347/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-347-2026-nd-cp-470418.htm",
+  "tep": "347-2026-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/9/18/470418-1789641294_v1_1789725260_signed.pdf",
+  "ky_tu": 66922,
+  "lay_luc": "2026-11-03T12:14:55+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "375/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-375-2026-nd-cp-470612.htm",
+  "tep": "375-2026-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/10/13/470612-1791878027_v1_1791886154_signed.pdf",
+  "ky_tu": 14082,
+  "lay_luc": "2026-11-03T12:12:02+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "392/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-392-2026-nd-cp-470847.htm",
+  "tep": "392-2026-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/10/30/470847-1793260356_v1_1793322377_signed.pdf",
+  "ky_tu": 92546,
+  "lay_luc": "2026-11-03T12:11:58+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "40/VBHN-VPQH",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-40-vbhn-vpqh-44486.htm",
+  "tep": "40-vbhn-vpqh-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/2/44486/55531-1-2025553-55440-vbhn-vpqh.pdf",
+  "ky_tu": 35758,
+  "lay_luc": "2026-11-03T12:14:43+07:00"
  },
  {
   "nguon": "chinh_phu",
@@ -119,12 +371,39 @@
  },
  {
   "nguon": "chinh_phu",
+  "so_ky_hieu": "4449/VBHN-BNG",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-4449-vbhn-bng-45725.htm",
+  "tep": "4449-vbhn-bng-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45725/58019-1-20251049-10504449-vbhn-bng.pdf",
+  "ky_tu": 51015,
+  "lay_luc": "2026-11-03T12:14:17+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "48/2025/TT-BCA",
+  "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-48-2025-tt-bca-45352.htm",
+  "tep": "48-2025-tt-bca-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45352/57294-1-2025883-88448-2025-tt-bca.pdf",
+  "ky_tu": 9773,
+  "lay_luc": "2026-11-03T12:14:26+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
   "so_ky_hieu": "55/2021/TT-BCA",
   "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-55-2021-tt-bca-45606.htm",
   "tep": "55-2021-tt-bca-chinh-phu.txt",
   "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/7/45606/57795-1-2025981-98255-2021-tt-bca.pdf",
   "ky_tu": 42747,
   "lay_luc": "2026-11-03T10:48:52+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "57/VBHN-VPQH",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-57-vbhn-vpqh-469187.htm",
+  "tep": "57-vbhn-vpqh-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/4/9/469187-1775627112_v1_1775697171_signed.pdf",
+  "ky_tu": 38254,
+  "lay_luc": "2026-11-03T12:13:13+07:00"
  },
  {
   "nguon": "chinh_phu",
@@ -164,11 +443,92 @@
  },
  {
   "nguon": "chinh_phu",
+  "so_ky_hieu": "78/VBHN-VPQH",
+  "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-78-vbhn-vpqh-469208.htm",
+  "tep": "78-vbhn-vpqh-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/4/10/469208-1775791787_v1_1775806835_signed.pdf",
+  "ky_tu": 161659,
+  "lay_luc": "2026-11-03T12:13:01+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
   "so_ky_hieu": "87/2026/TT-BCA",
   "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-87-2026-tt-bca-469804.htm",
   "tep": "87-2026-tt-bca-chinh-phu.txt",
   "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/6/30/469804-1782807276_v1_1782807749_signed.pdf",
   "ky_tu": 9596,
   "lay_luc": "2026-11-03T10:48:05+07:00"
+ },
+ {
+  "nguon": "chinh_phu",
+  "so_ky_hieu": "89/2025/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-89-2025-nd-cp-44724.htm",
+  "tep": "89-2025-nd-cp-chinh-phu.txt",
+  "pdf": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/4/44724/56028-1-2025657-65889-2025-nd-cp.pdf",
+  "ky_tu": 2479,
+  "lay_luc": "2026-11-03T12:14:40+07:00"
+ },
+ {
+  "nguon": "tphcm",
+  "so_ky_hieu": "11/2026/NQ-HĐND",
+  "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/11-2026-nq-hdnd/ngay/19-06-2026/noi-dung/49496",
+  "tep": "11-2026-nq-hdnd-tphcm.txt",
+  "pdf": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/11-2026-nq-hdnd/ngay/19-06-2026/tai-ve/49496",
+  "ky_tu": 6075,
+  "lay_luc": "2026-11-03T12:12:25+07:00"
+ },
+ {
+  "nguon": "tphcm",
+  "so_ky_hieu": "15/2026/NQ-HĐND",
+  "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/15-2026-nq-hdnd/ngay/19-06-2026/noi-dung/49506",
+  "tep": "15-2026-nq-hdnd-tphcm.txt",
+  "pdf": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/15-2026-nq-hdnd/ngay/19-06-2026/tai-ve/49506",
+  "ky_tu": 9661,
+  "lay_luc": "2026-11-03T12:12:26+07:00"
+ },
+ {
+  "nguon": "tphcm",
+  "so_ky_hieu": "18/2026/NQ-HĐND",
+  "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/18-2026-nq-hdnd/ngay/19-06-2026/noi-dung/49517",
+  "tep": "18-2026-nq-hdnd-tphcm.txt",
+  "pdf": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/18-2026-nq-hdnd/ngay/19-06-2026/tai-ve/49517",
+  "ky_tu": 6491,
+  "lay_luc": "2026-11-03T12:12:27+07:00"
+ },
+ {
+  "nguon": "tphcm",
+  "so_ky_hieu": "31/2026/QĐ-UBND",
+  "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/31-2026-qd-ubnd/ngay/30-05-2026/noi-dung/49420",
+  "tep": "31-2026-qd-ubnd-tphcm.txt",
+  "pdf": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/31-2026-qd-ubnd/ngay/30-05-2026/tai-ve/49420",
+  "ky_tu": 36807,
+  "lay_luc": "2026-11-03T12:12:34+07:00"
+ },
+ {
+  "nguon": "tphcm",
+  "so_ky_hieu": "42/2010/QĐ-UBND",
+  "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/1990-qd-ubnd/ngay/03-04-2026/noi-dung/49356",
+  "tep": "42-2010-qd-ubnd-tphcm.txt",
+  "pdf": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/1990-qd-ubnd/ngay/03-04-2026/tai-ve/49356",
+  "ky_tu": 2630,
+  "lay_luc": "2026-11-03T12:12:47+07:00"
+ },
+ {
+  "nguon": "tphcm",
+  "so_ky_hieu": "49/2026/QĐ-UBND",
+  "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/49-2026-qd-ubnd/ngay/16-07-2026/noi-dung/49607",
+  "tep": "49-2026-qd-ubnd-tphcm.txt",
+  "pdf": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/quyet-dinh/so/49-2026-qd-ubnd/ngay/16-07-2026/tai-ve/49607",
+  "ky_tu": 41323,
+  "lay_luc": "2026-11-03T12:12:23+07:00"
+ },
+ {
+  "nguon": "tphcm",
+  "so_ky_hieu": "54/2025/NQ-HĐND",
+  "url": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/54-2025-nq-hdnd/ngay/14-11-2025/noi-dung/48700",
+  "tep": "54-2025-nq-hdnd-tphcm.txt",
+  "pdf": "https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/nghi-quyet/so/54-2025-nq-hdnd/ngay/14-11-2025/tai-ve/48700",
+  "ky_tu": 12231,
+  "lay_luc": "2026-11-03T12:13:56+07:00"
  }
 ]
