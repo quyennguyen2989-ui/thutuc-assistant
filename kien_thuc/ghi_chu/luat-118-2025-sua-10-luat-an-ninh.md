@@ -6,7 +6,7 @@ chu_de: Luật sửa 10 luật an ninh trật tự (có hiệu lực 01/07/2026)
 
 Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 01/07/2026** (Điều 11 khoản 1). Riêng điểm a khoản 20 Điều 7 có hiệu lực từ 01/01/2026 (Điều 11 khoản 2).
 
-Đã đọc: Điều 4 (Luật Cư trú), Điều 5 (Luật Căn cước), Điều 6 (Luật Lực lượng bảo vệ ANTT ở cơ sở), Điều 9 khoản 1–16 (Luật Vũ khí; khoản 12 đọc đoạn đầu), Điều 10 (Luật PCCC), Điều 11 (hiệu lực). Đọc một phần: Điều 7 (Luật Trật tự, an toàn giao thông đường bộ, các khoản 1–8). Chưa đọc: Điều 1 (Luật Cảnh vệ), Điều 2 (Luật Nhập cảnh, xuất cảnh của người nước ngoài), Điều 3 (Luật Xuất cảnh, nhập cảnh công dân), Điều 7 khoản 9–20, Điều 8 (Luật Đường bộ).
+Đã đọc: Điều 1 (Luật Cảnh vệ), Điều 2 (Luật Nhập cảnh, cư trú của người nước ngoài), Điều 3 (Luật Xuất cảnh, nhập cảnh của công dân), Điều 4 (Luật Cư trú), Điều 5 (Luật Căn cước), Điều 6 (Luật Lực lượng bảo vệ ANTT ở cơ sở), Điều 9 khoản 1–16 (Luật Vũ khí; khoản 12 đọc đoạn đầu), Điều 10 (Luật PCCC), Điều 11 (hiệu lực). Đọc một phần: Điều 7 (Luật Trật tự, an toàn giao thông đường bộ, các khoản 1–8). Chưa đọc: Điều 7 khoản 9–20 và Điều 8 (Luật Đường bộ), thuộc giao thông, ngoài phạm vi công an dân cư.
 
 ## Cư trú (Điều 4, sửa Luật Cư trú 68/2020)
 
@@ -58,9 +58,33 @@ Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 01/07/20
 - Trẻ em dưới 10 tuổi, dưới 1,35 m: không ngồi cùng hàng ghế trên ô tô (Điều 7 khoản 3).
 - Phần đăng ký xe và sát hạch lái xe: xem văn bản riêng (Thông tư 79/2024 đăng ký xe; Thông tư 62/2026 phân cấp).
 
+## Người nước ngoài và xuất nhập cảnh (Điều 2, sửa Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài)
+
+- Điều 2 **không sửa** quy định khai báo tạm trú tại cơ sở lưu trú. Quy định đó nằm ở NĐ 282/2025 (Điều 21) và TT 87/2026.
+- Không yêu cầu nộp lại giấy tờ, thông tin đã có trong cơ sở dữ liệu quốc gia hoặc chuyên ngành mà cơ quan tiếp nhận khai thác được (Điều 6a mới, khoản 1).
+- Thị thực điện tử theo đề nghị của cơ quan, tổ chức đủ điều kiện (tài khoản định danh điện tử và chữ ký điện tử). Cơ quan quản lý xuất nhập cảnh trả lời trong **03 ngày làm việc** (Điều 16b, khoản 7).
+- Thị thực ký hiệu LS, ĐT1, ĐT2, UĐ1, UĐ2 có thời hạn không quá 05 năm (khoản 3). Thẻ tạm trú ĐT1, UĐ1, UĐ2 không quá 10 năm (khoản 10).
+- Thời hạn tạm trú theo điều ước quốc tế nếu điều ước quy định khác (khoản 8).
+- Bộ trưởng Bộ Công an quyết định trường hợp cấp, cấp đổi, cấp lại thẻ thường trú tại cơ quan quản lý xuất nhập cảnh vì lý do ngoại giao, quốc phòng, an ninh (khoản 11 điểm b).
+- UBND cấp tỉnh chỉ đạo cơ quan chuyên môn phối hợp quản lý cư trú của người nước ngoài ở địa phương (khoản 14, sửa Điều 51 khoản 2).
+- Thay "thị trấn" bằng "đặc khu" (khoản 16 điểm đ). Bãi bỏ Điều 16 khoản 6 và 7 (khoản 17).
+
+## Giấy tờ xuất nhập cảnh của công dân và giấy thông hành (Điều 3, sửa Luật Xuất cảnh, nhập cảnh của công dân)
+
+- **Công an xã, phường, đặc khu** và Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh tiếp giáp biên giới với nước láng giềng **cấp giấy thông hành** cho các trường hợp Điều 19 của luật (khoản 7, sửa Điều 20 khoản 2).
+- Hộ chiếu phổ thông cấp theo thủ tục rút gọn: **không quá 12 tháng**, không được gia hạn, chỉ dùng 01 lần để xuất cảnh hoặc nhập cảnh (khoản 1).
+- Người đề nghị cấp, gia hạn hộ chiếu xuất trình thẻ căn cước, căn cước điện tử hoặc hộ chiếu còn giá trị (khoản 4, 5).
+- Sau khi cấp hộ chiếu phổ thông mới, hủy giá trị hộ chiếu cũ còn hạn. Hộ chiếu cấp sai thông tin thì thu hồi, hủy giá trị. Hộ chiếu của người đang bị truy nã bị hủy (khoản 9, 10: Điều 27, 31a, 31b).
+- Thông tin có trong cơ sở dữ liệu thì không yêu cầu công dân cung cấp lại (khoản 11, sửa Điều 40 khoản 2).
+- Bãi bỏ khoản 9 Điều 11 và điểm đ khoản 2 Điều 12 (khoản 14).
+
+## Cảnh vệ (Điều 1, sửa Luật Cảnh vệ)
+
+- Sửa danh sách và chế độ cảnh vệ đối với lãnh đạo cấp cao của Đảng và Nhà nước (Điều 10, 11, 11a, 12). Không liên quan đến công an dân cư.
+
 ## Còn chưa đọc trong Luật 118/2025
 
-- Điều 1 (sửa Luật Cảnh vệ, 2 trang), Điều 2 (sửa Luật Nhập cảnh, cư trú người nước ngoài: liên quan khai báo tạm trú của người nước ngoài tại nơi lưu trú), Điều 3 (xuất cảnh công dân).
+- Ghi chú này đã đọc đủ Điều 1, 2, 3, 4, 5, 6, 9, 10, 11 của Luật 118/2025.
 - Điều 7 khoản 9–20 (đăng kiểm, giấy phép lái xe, sát hạch, cấp phép xe, Điều 42–43 đăng kiểm).
 - Điều 8 (sửa Luật Đường bộ; đoạn trong bản text từ dòng 765 đến 852).
 
