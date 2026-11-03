@@ -1,20 +1,20 @@
 ---
 so_ky_hieu: 282/2025/NĐ-CP
-chu_de: Xử phạt vi phạm hành chính an ninh, trật tự, an toàn xã hội; cư trú, căn cước, vũ khí, con dấu, thẩm quyền công an cấp xã
+chu_de: Xử phạt vi phạm hành chính an ninh, trật tự, an toàn xã hội; cư trú, căn cước, vũ khí, pháo, dao, con dấu, ngành nghề có điều kiện ANTT, thẩm quyền công an cấp xã
 ---
-# Nghị định 282/2025/NĐ-CP: xử phạt hành chính về an ninh, trật tự (đọc theo chương và điều liên quan đến công an dân cư)
+# Nghị định 282/2025/NĐ-CP: xử phạt hành chính về an ninh, trật tự (đã đọc Điều 3–29, 54, 55, 64, 65, 69–71; phần còn lại ở mục "Chưa đọc")
 
 Tình trạng vbpl.vn: hết hiệu lực một phần. Có hiệu lực từ 15/12/2025 (Điều 14 từ 01/01/2026). Thay thế NĐ 144/2021 (Điều 69 khoản 4). Bãi bỏ Điều 47 NĐ 82/2020 (Điều 69 khoản 5).
 
-Phạm vi đã đọc trong bản này: Điều 3–7, 10–12, 16, 21 (phần công dân), 54, 55, 64, 65, 69–71. Xem mục "Chưa đọc" để biết phần còn lại.
+Phạm vi đã đọc: Điều 3–29, 54, 55, 64, 65, 69–71. Các điều 8, 9, 13, 14, 17–29 được ghi ở nd-282-2025-dieu-khac.md (tách để không vượt giới hạn ghi chú). Mức phạt trong các mục dưới đây là mức của **cá nhân**; tổ chức gấp đôi (Điều 5 khoản 2).
 
 ## Quy định chung (Điều 3–7)
 
 - Hình thức phạt chính: cảnh cáo hoặc phạt tiền (Điều 3 khoản 1). Phạt bổ sung: tước giấy phép, đình chỉ, tịch thu tang vật, trục xuất (khoản 2).
 - Vi phạm nhiều lần: xử phạt từng hành vi; trường hợp đặc biệt được xử một lần kèm tình tiết tăng nặng (Điều 3 khoản 6).
 - Mức phạt tối đa lĩnh vực an ninh, trật tự, an toàn xã hội (Điều 5 khoản 1): cá nhân 40.000.000 đồng; tổ chức 80.000.000 đồng.
-- Mức phạt trong Chương II áp dụng cho cá nhân. Tổ chức gấp đôi (Điều 5 khoản 2). Hộ gia đình, hộ kinh doanh bị phạt như cá nhân (Điều 5 khoản 4).
-- **Thời hiệu xử phạt** lĩnh vực an ninh, trật tự, an toàn xã hội: 01 năm (Điều 6 khoản 1). Cách tính theo Luật Xử lý vi phạm hành chính Điều 6.
+- Hộ gia đình, hộ kinh doanh bị phạt như cá nhân (Điều 5 khoản 4).
+- **Thời hiệu xử phạt** lĩnh vực an ninh, trật tự, an toàn xã hội: 01 năm (Điều 6 khoản 1).
 
 ## Cư trú (Điều 10: vi phạm quy định đăng ký và quản lý cư trú)
 
@@ -36,16 +36,43 @@ Phạm vi đã đọc trong bản này: Điều 3–7, 10–12, 16, 21 (phần c
 ## Con dấu (Điều 16)
 
 - **500.000 – 1.000.000 đồng** (khoản 1): quá 02 ngày làm việc kể từ khi mất giấy chứng nhận đăng ký mẫu con dấu mà chưa cấp lại (điểm a); không đổi, nộp lại giấy khi hỏng (điểm b); không thông báo mẫu con dấu trước khi dùng (điểm c); không ban hành quy định nội bộ về quản lý con dấu (điểm d).
-- **2.000.000 – 3.000.000 đồng** (khoản 2): tự ý mang con dấu ra khỏi trụ sở (điểm a); không đăng ký lại mẫu khi có thay đổi (điểm b); không xuất trình con dấu khi kiểm tra (điểm c); mất con dấu mà quá 02 ngày không báo cơ quan đăng ký và **Công an cấp xã nơi xảy ra mất** (điểm d); dùng con dấu biến dạng, mòn, hỏng (điểm đ).
+- **2.000.000 – 3.000.000 đồng** (khoản 2): tự ý mang con dấu ra khỏi trụ sở (điểm a); không đăng ký lại mẫu khi có thay đổi (điểm b); không xuất trình con dấu khi kiểm tra (điểm c); **mất con dấu mà quá 02 ngày làm việc không báo bằng văn bản cho cơ quan đăng ký và Công an cấp xã nơi xảy ra mất (điểm d)**; dùng con dấu biến dạng, mòn, hỏng (điểm đ).
 - **3.000.000 – 5.000.000 đồng** (khoản 3): không nộp con dấu khi có quyết định; đóng dấu vào giấy chưa có chữ ký người có thẩm quyền; mượn, cho mượn con dấu; dùng con dấu hết giá trị; dùng con dấu chưa đăng ký mẫu.
 - **5.000.000 – 10.000.000 đồng** (khoản 4): làm giả hồ sơ để làm thêm con dấu; dùng con dấu giả; chiếm đoạt, mua bán con dấu trái phép; tiêu hủy trái phép.
 - Tịch thu: khoản 3 điểm c, e; khoản 4 điểm a, b. Buộc nộp lại con dấu: khoản 2 điểm b, đ; khoản 3 điểm a, d, đ, g; khoản 4 điểm c.
 
-## Thẩm quyền và lập biên bản (Điều 64, 65)
+## Ngành nghề kinh doanh có điều kiện về an ninh, trật tự (Điều 15)
+
+Đây là điều áp dụng cho karaoke, xoa bóp, cầm đồ, lưu trú, bảo vệ, in, pháo, súng bắn sơn, và cơ sở sản xuất con dấu.
+
+- **2.000.000 – 3.000.000 đồng** (khoản 1): báo cáo quý sai thời hạn hoặc không trung thực (điểm a); sổ quản lý sai (điểm b); **quá 05 ngày kể từ ngày hoạt động mà không gửi văn bản kèm bản sao Giấy chứng nhận đủ điều kiện ANTT cho Công an cấp xã nơi cơ sở hoạt động (điểm c)**; quá 10 ngày tạm ngừng không thông báo (điểm d); quá 03 ngày làm việc kể từ khi phát hiện mất Giấy chứng nhận không thông báo (điểm đ); dịch vụ bảo vệ triển khai mục tiêu ngoài tỉnh quá 05 ngày không thông báo cho Công an cấp xã nơi triển khai (điểm e); không niêm yết quy trình nhận hồ sơ sản xuất con dấu và giá khắc dấu (điểm g); không xuất trình bản chính Giấy chứng nhận khi có yêu cầu kiểm tra (điểm h).
+- **3.000.000 – 5.000.000 đồng** (khoản 2): không báo cáo đột xuất vụ việc an ninh, trật tự cho Công an đã cấp và **Công an cấp xã nơi cơ sở hoạt động (điểm b)**; sử dụng nhân viên không đủ điều kiện (điểm e); không lưu bản sao giấy tờ tùy thân người mang tài sản đến cầm cố (điểm h); cung cấp dịch vụ súng bắn sơn cho khách dưới 18 tuổi (điểm i); không lưu bản sao giấy tờ của khách phẫu thuật thẩm mỹ (điểm l); **quá 03 ngày làm việc kể từ khi thay đổi người chịu trách nhiệm ANTT mà không thông báo (điểm m)**; **không thông báo bằng văn bản chậm nhất 06 ngày trước khi nổ mìn (điểm n)**.
+- **5.000.000 – 10.000.000 đồng** (khoản 3): cung cấp thông tin không đúng thực tế hoặc làm giả hồ sơ để xin Giấy chứng nhận (điểm b, c); cầm cố không có hợp đồng (điểm i) hoặc không lưu bản chính giấy chứng nhận quyền sở hữu tài sản cầm cố (điểm k); **trực tiếp giao con dấu cho khách hàng mà không chuyển cho cơ quan Công an đăng ký (điểm g)**; không thực hiện đầy đủ kiểm tra, lưu thông tin khách lưu trú và người đến thăm (điểm v).
+- **10.000.000 – 20.000.000 đồng** (khoản 4): hoạt động khi chưa được cấp, bị thu hồi hoặc đang bị tước Giấy chứng nhận (điểm a); cho vay có cầm cố, hoặc lãi suất vượt mức Bộ luật Dân sự (điểm d); sản xuất con dấu khi chưa có Phiếu chuyển mẫu con dấu (điểm c); không chấp hành hoặc cản trở kiểm tra (điểm m).
+- **20.000.000 – 40.000.000 đồng** (khoản 5): nhận cầm cố tài sản do trộm cắp, lừa đảo mà có (điểm b); dùng vũ lực hoặc đe dọa để đòi nợ (điểm d); sử dụng Giấy chứng nhận giả (điểm đ).
+- Tước quyền sử dụng Giấy chứng nhận 03–06 tháng (khoản 7 điểm a) hoặc 06–09 tháng (khoản 7 điểm b). Tịch thu tang vật (khoản 7 điểm c). Buộc nộp lại Giấy chứng nhận hoặc số lợi bất hợp pháp (khoản 8).
+
+## Xuất nhập cảnh, cư trú của người nước ngoài (Điều 21)
+
+- Điều này áp dụng cho người nước ngoài và, với một số hành vi, cho công dân Việt Nam.
+- Người nước ngoài đi lại không mang hộ chiếu hoặc giấy tờ: 300.000–500.000 đồng (khoản 1).
+- Người nước ngoài dùng chứng nhận tạm trú, thẻ tạm trú hết hạn, theo số ngày quá hạn: dưới 16 ngày 500.000–2.000.000 đồng (khoản 2 điểm đ); 16 đến dưới 30 ngày 5.000.000–10.000.000 đồng (khoản 4 điểm b); 30 đến dưới 60 ngày 10.000.000–15.000.000 đồng (khoản 5 điểm b); 60 đến dưới 90 ngày 15.000.000–20.000.000 đồng (khoản 6 điểm b); 90 đến dưới 180 ngày 20.000.000–25.000.000 đồng (khoản 7 điểm d); 180 ngày đến dưới 01 năm 25.000.000–30.000.000 đồng (khoản 8); từ 01 năm trở lên 30.000.000–40.000.000 đồng (khoản 9 điểm e).
+- Công dân Việt Nam dùng giấy tờ xuất nhập cảnh hết hạn hoặc không có giấy tờ (khoản 2 điểm e): 500.000–2.000.000 đồng.
+- Khai sai để được cấp hộ chiếu, giấy thông hành (khoản 2 điểm b): 500.000–2.000.000 đồng.
+- **Cơ sở lưu trú không khai báo tạm trú cho người nước ngoài**, theo số người (Điều 21, khác với Điều 10 áp dụng cho công dân):
+  - từ 01 đến 03 người: **3.000.000–5.000.000 đồng** (khoản 3 điểm e);
+  - từ 04 đến 08 người: **10.000.000–15.000.000 đồng** (khoản 5 điểm c);
+  - từ 09 người trở lên: **15.000.000–20.000.000 đồng** (khoản 6 điểm đ).
+- Cơ sở lưu trú tạo tài khoản bằng thông tin sai để khai báo tạm trú cho người nước ngoài trên môi trường điện tử: khoản 3 điểm e.
+
+## Thẩm quyền và lập biên bản (Điều 54, 55, 64, 65)
 
 - Thẩm quyền xử phạt đối với tổ chức gấp đôi cá nhân (Điều 64 khoản 1).
-- Chủ tịch UBND các cấp xử phạt các hành vi Chương II theo Điều 54 (Điều 64 khoản 2). Chi tiết Điều 54 chưa đọc.
-- Công an nhân dân xử phạt theo Điều 55 trong lĩnh vực và địa bàn quản lý (Điều 64 khoản 3). Chi tiết Điều 55 chưa đọc.
+- **Chủ tịch UBND cấp xã** (Điều 54 khoản 1): phạt cảnh cáo; phạt tiền đến **20.000.000 đồng** đối với vi phạm an ninh, trật tự, an toàn xã hội; tước giấy phép có thời hạn; tịch thu tang vật, phương tiện; khắc phục hậu quả theo Điều 3 khoản 3.
+- **Trưởng Công an cấp xã** (Điều 55 khoản 4): cùng mức như Chủ tịch UBND cấp xã; phạt cảnh cáo; phạt tiền đến **20.000.000 đồng** đối với vi phạm an ninh, trật tự, an toàn xã hội; tước giấy phép có thời hạn; tịch thu; khắc phục hậu quả.
+- **Chiến sĩ Công an đang thi hành công vụ** (Điều 55 khoản 1): cảnh cáo; phạt tiền đến **4.000.000 đồng** (an ninh, trật tự).
+- **Trưởng đồn Công an** (Điều 55 khoản 3): đến 12.000.000 đồng (an ninh, trật tự); tước giấy phép; tịch thu.
+- Cấp cao hơn: Giám đốc Công an cấp tỉnh (Điều 55 khoản 7) và Chủ tịch UBND cấp tỉnh (Điều 54 khoản 2) đến 40.000.000 đồng; Trưởng phòng Quản lý xuất nhập cảnh cấp tỉnh (Điều 55 khoản 6) có thêm quyền trục xuất.
 - Người có thẩm quyền xử phạt và người thuộc lực lượng Công an đang thi hành nhiệm vụ đều có thể lập biên bản (Điều 65).
 
 ## Điều khoản thi hành và chuyển tiếp (Điều 69, 70, 71)
@@ -56,14 +83,11 @@ Phạm vi đã đọc trong bản này: Điều 3–7, 10–12, 16, 21 (phần c
 - Hành vi xảy ra và kết thúc trước 15/12/2025 xử theo nghị định cũ (Điều 70 khoản 1). Hành vi xảy ra trước nhưng còn diễn ra sau ngày đó áp dụng nghị định này (khoản 2).
 - Bộ trưởng Bộ Công an hướng dẫn thi hành (Điều 71 khoản 1).
 
-## Chưa đọc trong NĐ 282/2025 (cần đọc để hoàn tất)
+## Chưa đọc trong NĐ 282/2025
 
-- Điều 8 (trật tự công cộng), Điều 9 (yên tĩnh), Điều 13 (pháo), Điều 14 (dao, hiệu lực 01/01/2026), Điều 15 (ngành nghề kinh doanh có điều kiện về an ninh, trật tự).
-- Điều 17 (thi hành án, xử lý hành chính), Điều 18–20 (tài sản, họ hụi, công trình), Điều 22 (bí mật nhà nước), Điều 23–26 (lực lượng công an, bảo vệ an ninh cơ sở, cản trở công vụ).
-- Điều 27–29 (cơ sở dữ liệu dân cư, định danh điện tử, lý lịch tư pháp): cần đọc vì liên quan trực tiếp đến việc cấp tài khoản định danh.
-- Chương II Mục 2 và Mục 3 (ma túy, mại dâm, cờ bạc, bạo lực gia đình): ngoài phạm vi công an dân cư, chỉ đọc khi cần.
-- Điều 56–63 (thẩm quyền của Bộ đội Biên phòng, Cảnh sát biển, Hải quan, Kiểm lâm, Thanh tra, v.v.): không thuộc công an dân cư.
-- Chương IV Điều 66–68 (sửa đổi các nghị định khác).
+- Điều 30–53 (ma túy, cai nghiện, mại dâm, cờ bạc, bạo lực gia đình): ngoài phạm vi công an dân cư, chỉ đọc khi cần.
+- Điều 56–63 (thẩm quyền của Bộ đội Biên phòng, Cảnh sát biển, Hải quan, Kiểm lâm, Kiểm ngư, Quản lý thị trường, Thanh tra, cơ quan đại diện ngoại giao): không thuộc công an dân cư.
+- Chương IV Điều 66–68 (sửa đổi các nghị định khác): chưa đọc.
 
 ## Vũ khí, vật liệu nổ, công cụ hỗ trợ (Điều 12)
 
@@ -75,22 +99,9 @@ Phạm vi đã đọc trong bản này: Điều 3–7, 10–12, 16, 21 (phần c
 - Tịch thu: khoản 2 điểm b, h; khoản 3 điểm b, đ, k, l; khoản 4 điểm a, c, d, đ; khoản 5 điểm a–đ. Tước giấy phép 03–12 tháng: khoản 2 điểm i; khoản 3 điểm d; khoản 4 điểm d; khoản 5 điểm đ.
 - Vật liệu nổ công nghiệp, tiền chất thuốc nổ chưa quy định ở đây: xem nghị định về hóa chất, vật liệu nổ công nghiệp (khoản 6).
 
-## Xuất nhập cảnh, cư trú của người nước ngoài (Điều 21): chỉ đọc phạm vi công an dân cư
+## Trường hợp không đăng ký hoặc khai báo đúng hạn (trả lời cán bộ)
 
-- Điều này chủ yếu áp dụng cho người nước ngoài: đi lại không mang hộ chiếu (khoản 1: 300.000–500.000 đồng); tạm trú, thẻ tạm trú quá hạn (khoản 4–8: tăng theo số ngày quá hạn); cơ sở lưu trú không khai báo tạm trú người nước ngoài (khoản 3 điểm e, khoản 5 điểm c, khoản 6 điểm đ).
-- Công dân Việt Nam dùng giấy tờ xuất nhập cảnh hết hạn hoặc không có giấy tờ (khoản 2 điểm e): 500.000–2.000.000 đồng.
-- Khai báo sai để được cấp hộ chiếu, giấy thông hành (khoản 2 điểm b): 500.000–2.000.000 đồng.
-
-## Thẩm quyền xử phạt của công an cấp xã (Điều 54, 55)
-
-- **Chủ tịch UBND cấp xã** (Điều 54 khoản 1): phạt cảnh cáo; phạt tiền đến **20.000.000 đồng** đối với hành vi an ninh, trật tự, an toàn xã hội; tước giấy phép có thời hạn; tịch thu tang vật, phương tiện; áp dụng biện pháp khắc phục hậu quả theo Điều 3 khoản 3.
-- **Trưởng Công an cấp xã** (Điều 55 khoản 4): cùng mức như Chủ tịch UBND cấp xã: cảnh cáo; phạt tiền đến **20.000.000 đồng** (an ninh, trật tự); tước giấy phép có thời hạn; tịch thu; khắc phục hậu quả.
-- **Chiến sĩ Công an đang thi hành công vụ** (Điều 55 khoản 1): cảnh cáo; phạt tiền đến **4.000.000 đồng** (an ninh, trật tự); tịch thu tang vật có giá trị không quá 02 lần mức phạt.
-- **Trưởng đồn Công an** (Điều 55 khoản 3): đến 12.000.000 đồng (an ninh, trật tự); tước giấy phép; tịch thu.
-- Cấp cao hơn: Giám đốc Công an cấp tỉnh (khoản 7) đến 40.000.000 đồng; Chủ tịch UBND cấp tỉnh (Điều 54 khoản 2) đến 40.000.000 đồng; Trưởng phòng Quản lý xuất nhập cảnh cấp tỉnh (khoản 6) có thêm quyền trục xuất.
-
-## Trường hợp không đăng ký đúng hạn (trả lời cán bộ)
-
-- Chưa đăng ký thay đổi nơi cư trú sau khi đã có chỗ ở hợp pháp mới và đủ điều kiện: **khoản 2 điểm d, phạt 2.000.000 đến 4.000.000 đồng**. Đây là điều gần nhất với "quá hạn không đăng ký cư trú".
-- Không thực hiện đúng quy định đăng ký (thường trú, tạm trú, xóa, tách hộ, khai báo thông tin cư trú) hoặc khai báo tạm vắng, thông báo lưu trú: **khoản 1, phạt cảnh cáo hoặc 500.000 đến 1.000.000 đồng**.
-- Điều 10 không tách mức phạt theo số ngày trễ. Thời hạn cụ thể (ví dụ 07 ngày làm việc đối với thường trú, 03 ngày đối với tạm trú) nằm trong Luật Cư trú (xem ghi chú Luật 68/2020).
+- Chưa đăng ký thay đổi nơi cư trú sau khi đã có chỗ ở hợp pháp mới và đủ điều kiện: **Điều 10 khoản 2 điểm d, phạt 2.000.000 đến 4.000.000 đồng**. Đây là điều gần nhất với "quá hạn không đăng ký cư trú".
+- Không thực hiện đúng quy định đăng ký (thường trú, tạm trú, xóa, tách hộ, khai báo thông tin cư trú) hoặc khai báo tạm vắng, thông báo lưu trú cho công dân: **Điều 10 khoản 1, phạt cảnh cáo hoặc 500.000 đến 1.000.000 đồng**.
+- Cơ sở lưu trú chậm khai báo tạm trú cho **người nước ngoài**: áp dụng **Điều 21** (mức theo số người, xem mục trên), không áp dụng Điều 10.
+- Điều 10 và Điều 21 không tách mức phạt theo số ngày trễ. Thời hạn cụ thể (ví dụ 07 ngày làm việc đối với thường trú, 03 ngày đối với tạm trú, 12 giờ đối với phiếu NA17 theo TT 87/2026) nằm trong Luật Cư trú (xem ghi chú Luật 68/2020) và thông tư tương ứng.
