@@ -2,11 +2,11 @@
 so_ky_hieu: 282/2025/NĐ-CP
 chu_de: Xử phạt vi phạm hành chính an ninh, trật tự, an toàn xã hội; cư trú, căn cước, vũ khí, pháo, dao, con dấu, ngành nghề có điều kiện ANTT, thẩm quyền công an cấp xã
 ---
-# Nghị định 282/2025/NĐ-CP: xử phạt hành chính về an ninh, trật tự (đã đọc Điều 3–29, 54, 55, 64, 65, 69–71; phần còn lại ở mục "Chưa đọc")
+# Nghị định 282/2025/NĐ-CP: xử phạt hành chính về an ninh, trật tự (đã đọc toàn bộ Điều 3–71)
 
 Tình trạng vbpl.vn: hết hiệu lực một phần. Có hiệu lực từ 15/12/2025 (Điều 14 từ 01/01/2026). Thay thế NĐ 144/2021 (Điều 69 khoản 4). Bãi bỏ Điều 47 NĐ 82/2020 (Điều 69 khoản 5).
 
-Phạm vi đã đọc: Điều 3–29, 54, 55, 64, 65, 69–71. Các điều 8, 9, 13, 14, 17–29 được ghi ở nd-282-2025-dieu-khac.md (tách để không vượt giới hạn ghi chú). Mức phạt trong các mục dưới đây là mức của **cá nhân**; tổ chức gấp đôi (Điều 5 khoản 2).
+Phạm vi đã đọc: Điều 3–71. Các điều 8, 9, 13, 14, 17–29 được ghi ở nd-282-2025-dieu-khac.md; Điều 7 và Điều 30–53 (ma túy, mại dâm, đánh bạc, bạo lực gia đình) ghi ở nd-282-2025-ma-tuy-mai-dam-bao-luc-gia-dinh.md (tách để không vượt giới hạn ghi chú). Mức phạt trong các mục dưới đây là mức của **cá nhân**; tổ chức gấp đôi (Điều 64 khoản 1).
 
 ## Quy định chung (Điều 3–7)
 
@@ -68,8 +68,8 @@ Phạm vi đã đọc: Điều 3–29, 54, 55, 64, 65, 69–71. Các điều 8, 
 ## Thẩm quyền và lập biên bản (Điều 54, 55, 64, 65)
 
 - Thẩm quyền xử phạt đối với tổ chức gấp đôi cá nhân (Điều 64 khoản 1).
-- **Chủ tịch UBND cấp xã** (Điều 54 khoản 1): phạt cảnh cáo; phạt tiền đến **20.000.000 đồng** đối với vi phạm an ninh, trật tự, an toàn xã hội; tước giấy phép có thời hạn; tịch thu tang vật, phương tiện; khắc phục hậu quả theo Điều 3 khoản 3.
-- **Trưởng Công an cấp xã** (Điều 55 khoản 4): cùng mức như Chủ tịch UBND cấp xã; phạt cảnh cáo; phạt tiền đến **20.000.000 đồng** đối với vi phạm an ninh, trật tự, an toàn xã hội; tước giấy phép có thời hạn; tịch thu; khắc phục hậu quả.
+- **Chủ tịch UBND cấp xã** (Điều 54 khoản 1): phạt cảnh cáo; phạt tiền đến **15.000.000 đồng** đối với bạo lực gia đình, **20.000.000 đồng** đối với an ninh, trật tự, an toàn xã hội, **37.500.000 đồng** đối với tệ nạn xã hội; tước giấy phép có thời hạn; tịch thu tang vật, phương tiện; khắc phục hậu quả theo Điều 3 khoản 3.
+- **Trưởng Công an cấp xã** (Điều 55 khoản 4): cùng mức như Chủ tịch UBND cấp xã (15.000.000 / 20.000.000 / 37.500.000 đồng); phạt cảnh cáo; tước giấy phép có thời hạn; tịch thu; khắc phục hậu quả.
 - **Chiến sĩ Công an đang thi hành công vụ** (Điều 55 khoản 1): cảnh cáo; phạt tiền đến **4.000.000 đồng** (an ninh, trật tự).
 - **Trưởng đồn Công an** (Điều 55 khoản 3): đến 12.000.000 đồng (an ninh, trật tự); tước giấy phép; tịch thu.
 - Cấp cao hơn: Giám đốc Công an cấp tỉnh (Điều 55 khoản 7) và Chủ tịch UBND cấp tỉnh (Điều 54 khoản 2) đến 40.000.000 đồng; Trưởng phòng Quản lý xuất nhập cảnh cấp tỉnh (Điều 55 khoản 6) có thêm quyền trục xuất.
@@ -78,16 +78,18 @@ Phạm vi đã đọc: Điều 3–29, 54, 55, 64, 65, 69–71. Các điều 8, 
 ## Điều khoản thi hành và chuyển tiếp (Điều 69, 70, 71)
 
 - Hiệu lực 15/12/2025; Điều 14 (dao có tính sát thương cao) từ 01/01/2026 (Điều 69 khoản 1, 2).
-- **Thay thế NĐ 144/2021** (Điều 69 khoản 4). NĐ 144/2021 quy định phạt cả lĩnh vực phòng cháy, chữa cháy, cứu nạn, cứu hộ, nhưng **nội dung phạt PCCC không có trong bản NĐ 282/2025 đã đọc** (không có điều nào về PCCC). Cần đối chiếu với NĐ 105/2025 (PCCC) trước khi trả lời về phạt PCCC.
+- **Thay thế NĐ 144/2021** (Điều 69 khoản 4). NĐ 144/2021 quy định phạt cả lĩnh vực phòng cháy, chữa cháy, cứu nạn, cứu hộ, nhưng **nội dung phạt PCCC không có trong bản NĐ 282/2025 đã đọc** (không có điều nào về PCCC). Lĩnh vực PCCC và cứu nạn, cứu hộ do **NĐ 106/2025** quy định (có hiệu lực 01/07/2025, tình trạng trên dữ liệu: hết hiệu lực một phần); NĐ 106/2025 Điều 39 khoản 2 bãi bỏ mục 3 Chương II NĐ 144/2021. Cần đối chiếu với NĐ 106/2025 trước khi trả lời về phạt PCCC.
 - **Bãi bỏ Điều 47 NĐ 82/2020** (Điều 69 khoản 5). NĐ 82/2020 quy định phạt trong lĩnh vực hành chính tư pháp (hộ tịch, hôn nhân). Nội dung Điều 47 chưa đọc. Chưa có văn bản NĐ 82/2020 trong dữ liệu. Vì vậy **chưa kết luận được mức phạt khai sinh quá hạn**.
 - Hành vi xảy ra và kết thúc trước 15/12/2025 xử theo nghị định cũ (Điều 70 khoản 1). Hành vi xảy ra trước nhưng còn diễn ra sau ngày đó áp dụng nghị định này (khoản 2).
 - Bộ trưởng Bộ Công an hướng dẫn thi hành (Điều 71 khoản 1).
 
-## Chưa đọc trong NĐ 282/2025
+## Thẩm quyền của lực lượng khác và sửa đổi (Điều 56–63, 66–68)
 
-- Điều 30–53 (ma túy, cai nghiện, mại dâm, cờ bạc, bạo lực gia đình): ngoài phạm vi công an dân cư, chỉ đọc khi cần.
-- Điều 56–63 (thẩm quyền của Bộ đội Biên phòng, Cảnh sát biển, Hải quan, Kiểm lâm, Kiểm ngư, Quản lý thị trường, Thanh tra, cơ quan đại diện ngoại giao): không thuộc công an dân cư.
-- Chương IV Điều 66–68 (sửa đổi các nghị định khác): chưa đọc.
+- Điều 56–63: thẩm quyền xử phạt của Bộ đội Biên phòng, Cảnh sát biển, Hải quan, Kiểm lâm, Kiểm ngư, Quản lý thị trường, Thanh tra và cơ quan đại diện ngoại giao. Các mức phạt tối đa theo từng chức danh; không thuộc công an cấp xã.
+- Điều 64 khoản 2–3: Chủ tịch UBND các cấp xử phạt theo Điều 54 và chức năng được giao; Công an xử phạt theo Điều 55 trong lĩnh vực, địa bàn quản lý.
+- Điều 66: sửa Điều 7 và Điều 10 khoản 4 NĐ 142/2021 (trục xuất, cưỡng chế người nước ngoài).
+- Điều 67: thay thế Điều 34 NĐ 162/2018 (hàng không dân dụng) bằng quy định thẩm quyền Công an nhân dân.
+- Điều 68: sửa đoạn đầu khoản 5 và khoản 8 Điều 8 NĐ 189/2025 (danh sách chức danh Công an có thẩm quyền xử phạt).
 
 ## Vũ khí, vật liệu nổ, công cụ hỗ trợ (Điều 12)
 

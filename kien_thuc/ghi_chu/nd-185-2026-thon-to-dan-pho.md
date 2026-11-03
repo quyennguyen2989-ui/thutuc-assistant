@@ -2,7 +2,7 @@
 so_ky_hieu: 185/2026/NĐ-CP
 chu_de: Thôn, tổ dân phố (khu phố): tổ chức, Tổ trưởng, quy mô hộ (TP.HCM tổ dân phố từ 700 hộ), Bí thư Chi bộ và Trưởng Ban Công tác Mặt trận, khoán quỹ phụ cấp 6,5 hoặc 8,0 lần lương cơ sở
 ---
-# Nghị định 185/2026/NĐ-CP: tổ chức, hoạt động của thôn, tổ dân phố (đã đọc các điều chính; một số điều còn lại liệt kê ở mục chưa đọc)
+# Nghị định 185/2026/NĐ-CP: tổ chức, hoạt động của thôn, tổ dân phố (đã đọc đủ Điều 1–20; mục chưa đọc là quyết định địa phương)
 
 Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 26/05/2026** (Điều 20 khoản 1). Bãi bỏ các quy định về người hoạt động không chuyên trách ở thôn, tổ dân phố trong Nghị định 33/2023 (Điều 20 khoản 2).
 
@@ -27,8 +27,11 @@ Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 26/05/20
 - **Thẩm quyền**: HĐND cấp xã quyết định thành lập, sắp xếp, giải thể, đặt tên, đổi tên thôn, tổ dân phố (Điều 9 khoản 1).
 - **Tiêu chuẩn số hộ gia đình** (Điều 10 khoản 1):
   - **TP. Hà Nội và TP. Hồ Chí Minh**: thôn từ **500 hộ** trở lên; **tổ dân phố từ 700 hộ** trở lên.
-  - Vùng Đông Nam Bộ và Đồng bằng sông Cửu Long: thôn từ 400 hộ; tổ dân phố từ 550 hộ.
-  - Các vùng khác có ngưỡng riêng (Điều 10 khoản 1 điểm b–đ).
+  - Trung du và miền núi phía Bắc: thôn từ 150 hộ; tổ dân phố từ 300 hộ (điểm b).
+  - Đồng bằng sông Hồng: thôn từ 400 hộ; tổ dân phố từ 550 hộ (điểm c).
+  - Bắc Trung Bộ: thôn từ 350 hộ; tổ dân phố từ 450 hộ (điểm d).
+  - Duyên hải Nam Trung Bộ và Tây Nguyên: thôn từ 300 hộ; tổ dân phố từ 450 hộ (điểm đ).
+  - Đông Nam Bộ và Đồng bằng sông Cửu Long: thôn từ 400 hộ; tổ dân phố từ 550 hộ (điểm e, g).
   - Có yếu tố đặc thù (miền núi, vùng dân tộc, đặc biệt khó khăn...): ngưỡng thấp hơn theo hướng dẫn của UBND tỉnh (khoản 3).
 - **Hồ sơ thành lập, sắp xếp** (Điều 12 khoản 3): tờ trình của UBND cấp xã; đề án (sự cần thiết, hiện trạng quy mô hộ, phương án, tên gọi, điều kiện bảo đảm); báo cáo tổng hợp ý kiến nhân dân; dự thảo nghị quyết HĐND. UBND cấp xã phải lấy ý kiến nhân dân (Điều 12 khoản 2). HĐND xem xét tại kỳ họp gần nhất (Điều 12 khoản 4).
 
@@ -71,7 +74,23 @@ Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 26/05/20
 - **Nguồn kinh phí** (Điều 17): ngân sách nhà nước theo phân cấp; bảo hiểm y tế theo luật; bảo hiểm xã hội do Quỹ bảo hiểm xã hội chi trả.
 - **Trách nhiệm** (Điều 18): Bộ Nội vụ hướng dẫn, kiểm tra việc thực hiện và sắp xếp thôn, tổ dân phố; Bộ Tài chính kiểm tra việc sử dụng kinh phí. UBND cấp tỉnh ban hành quy chế tổ chức, hoạt động của thôn, tổ dân phố; quyết định hoặc trình HĐND các chế độ; bảo đảm điều kiện hoạt động.
 
+## Nguyên tắc, sắp xếp và thủ tục thay đổi thôn, tổ dân phố (Điều 8, 9, 11, 12, 13)
+
+- **Nguyên tắc** (Điều 8): tuân thủ pháp luật, bảo đảm dân chủ, công khai, minh bạch; xem xét địa hình, phong tục, dân tộc, tôn giáo, nguyện vọng nhân dân; bảo đảm quốc phòng, an ninh, trật tự, an toàn xã hội (khoản 3). Giải thể khi thay đổi yếu tố địa lý, sắp xếp lại, hoặc thực hiện phương án bồi thường, tái định cư (khoản 4). Đổi tên khi trùng tên trong cùng một xã, hoặc theo nguyện vọng nhân dân (khoản 5).
+- **Thẩm quyền đặc khu** (Điều 9 khoản 2): ở đặc khu không tổ chức chính quyền địa phương, UBND đặc khu quyết định thay HĐND cấp xã.
+- **Thành lập phường từ xã** (Điều 11 khoản 1): UBND cấp xã rà soát và lập phương án tổ chức lại thôn theo loại hình tổ dân phố ngay trong hồ sơ Đề án thành lập phường. HĐND phường quyết định sắp xếp và tên gọi kể từ khi Nghị quyết của Ủy ban Thường vụ Quốc hội thành lập phường có hiệu lực. Nếu chưa đủ tiêu chuẩn số hộ, phải lập kế hoạch, lộ trình sắp xếp sau khi thành lập phường.
+- **Khu dân cư mới hình thành** (Điều 11 khoản 2): chưa đủ điều kiện thành lập thôn, tổ dân phố thì UBND cấp xã trình HĐND cùng cấp quyết định ghép vào thôn, tổ dân phố hiện có.
+- **Xâm canh, xâm cư lâu đời** (Điều 11 khoản 3): khi chuyển giao cộng đồng dân cư giữa các xã trong cùng tỉnh, HĐND nơi có thôn bị chuyển giải thể hoặc điều chỉnh; nơi tiếp nhận thành lập thôn, tổ dân phố mới nếu đủ tiêu chí, không đủ thì ghép vào thôn, tổ dân phố hiện có.
+- **Thủ tục** (Điều 12): UBND cấp xã lập Đề án, lấy ý kiến nhân dân, rồi trình HĐND cấp xã ra nghị quyết tại kỳ họp gần nhất. Hồ sơ gồm tờ trình, đề án, báo cáo tiếp thu ý kiến nhân dân và dự thảo nghị quyết.
+- **Giải thể** (Điều 13 khoản 1): UBND cấp xã lập tờ trình kèm danh sách các hộ thuộc thôn, tổ dân phố bị giải thể; lấy ý kiến nhân dân; HĐND cấp xã ban hành nghị quyết.
+- **Đổi tên** (Điều 13 khoản 2): UBND cấp xã lập phương án đổi tên, nêu lý do và tên mới; lấy ý kiến nhân dân; HĐND cấp xã ban hành nghị quyết.
+- **Ghép cụm dân cư** (Điều 13 khoản 3): UBND cấp xã lập phương án, nêu sự cần thiết, phạm vi, số hộ và thôn, tổ dân phố tiếp nhận; lấy ý kiến nhân dân ở cụm được ghép và thôn tiếp nhận; HĐND cấp xã ban hành nghị quyết.
+
+## Điều 1 và Điều 3 (phạm vi và nguyên tắc)
+
+- Nghị định điều chỉnh tổ chức, hoạt động; thành lập, sắp xếp, giải thể, đặt tên, đổi tên; số lượng, chức danh và chế độ đối với người không chuyên trách (Điều 1).
+- Hoạt động phải tuân thủ Hiến pháp, pháp luật, hương ước, quy ước; phân định rõ nhiệm vụ tự quản với nhiệm vụ hỗ trợ quản lý nhà nước của UBND cấp xã; phối hợp chặt chẽ với Bí thư Chi bộ, Trưởng Ban Công tác Mặt trận, tổ chức chính trị - xã hội và lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở (Điều 3 khoản 3–4).
+
 ## Chưa đọc hoặc chưa đủ
 
-- Điều 8, 11 (nguyên tắc sắp xếp và trường hợp đặc biệt), Điều 13 (giải thể, đổi tên, ghép cụm dân cư): đã đọc khung; chi tiết cần đọc khi áp dụng.
 - Quyết định 49/2026/QĐ-UBND TP.HCM và quy chế khu phố (tệp đính kèm chưa đọc được): cần để biết mức phụ cấp và tiêu chuẩn cụ thể của TP.HCM.
