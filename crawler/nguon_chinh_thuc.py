@@ -135,7 +135,7 @@ THU_TUC_HANH_CHINH = "thu-tuc-hanh-chinh"
 TU_KHOA_CAN_CONG_AN = (
     THU_TUC_HANH_CHINH,
     "moi-sinh", "sinh-con", "khai-sinh",
-    "dang-ky-xe", "dang-ky-phuong-tien", "giay-phep-lai-xe",
+    "dang-ky-xe", "dang-ky-phuong-tien", "giay-phep-lai-xe", "bien-so-xe",
     "xuat-canh", "nhap-canh", "ho-chieu",
 )
 
@@ -148,6 +148,7 @@ GIAI_DOAN_3 = [
     "dang-ky-xe",
     "dang-ky-phuong-tien",
     "giay-phep-lai-xe",
+    "bien-so-xe",
     "xuat-canh",
     "nhap-canh",
     "ho-chieu",
@@ -172,6 +173,12 @@ def _khoa_so(so_ky_hieu):
     return re.sub(r"\s+", "", so_ky_hieu or "").upper().replace("Đ", "D")
 
 
+# Văn bản bị khớp từ khóa nhầm qua phần nhắc đến văn bản khác trong tên dài (đã rà soát):
+# 347/2026 sửa đổi nghị định về khoa học, công nghệ, dữ liệu (nhắc tới nghị định PCCC);
+# 17/2026 sửa đổi nghị định về hàng không dân dụng.
+BO_THEO_SO = ("347/2026/NĐ-CP", "17/2026/NĐ-CP")
+
+
 def ngoai_pham_vi_thu_tuc(ten, so_ky_hieu="", co_quan="", tu_khoa=()):
     """Văn bản của ngành khác: tên chỉ khớp các từ khóa dễ lẫn (TU_KHOA_CAN_CONG_AN) và không thuộc cơ quan công an.
 
@@ -180,6 +187,8 @@ def ngoai_pham_vi_thu_tuc(ten, so_ky_hieu="", co_quan="", tu_khoa=()):
     """
     if any(_khoa_so(so_ky_hieu) == _khoa_so(giu) for giu in GIU_THEO_SO):
         return False
+    if any(_khoa_so(so_ky_hieu) == _khoa_so(bo) for bo in BO_THEO_SO):
+        return True
     slugged = slug(ten)
     if not any(co_cum(slugged, keyword) for keyword in TU_KHOA_CAN_CONG_AN):
         return False

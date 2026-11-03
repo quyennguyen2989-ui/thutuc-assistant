@@ -9,16 +9,19 @@ import json
 import re
 from pathlib import Path
 
-from . import store, vbpl
+from . import nguon_chinh_thuc, store, vbpl
 
 INDEX_NAME = "index.json"
 CONFIG_PATH = Path(__file__).resolve().parent / "vbpl_config.json"
 IN_FORCE = ("Còn hiệu lực", "Chưa có hiệu lực")
 
 
-def _wanted(row, keywords):
-    """Lưu toàn văn: mọi văn bản đang theo dõi, và văn bản liên quan còn hiệu lực theo chủ đề."""
+def _wanted(row, keywords, tu_khoa):
+    """Lưu toàn văn: văn bản đang theo dõi trong phạm vi công an. Bot tìm trong toàn bộ toàn văn đã lưu,
+    nên văn bản ngoài phạm vi (ví dụ đăng ký xe của Bộ Giao thông) không được lưu."""
     if not row["tinh_trang"]:
+        return False
+    if nguon_chinh_thuc.ngoai_pham_vi_thu_tuc(row["tieu_de"] or "", row["so_ky_hieu"] or "", "", tu_khoa):
         return False
     if row["so_ky_hieu"]:
         return True
@@ -62,7 +65,8 @@ def sync_texts(conn, out_dir, delay_seconds):
     index = load_index(out_dir)
 
     keywords = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))["tu_khoa_tim_van_ban_moi"]
-    rows = [row for row in store.load_vbpl(conn) if _wanted(row, keywords)]
+    tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(3, keywords)
+    rows = [row for row in store.load_vbpl(conn) if _wanted(row, keywords, tu_khoa)]
     todo = [row for row in rows if index.get(_key(row), {}).get("ngay_cap_nhat") != row["ngay_cap_nhat"]]
     by_url = {row["url"]: row for row in todo}
     written = 0

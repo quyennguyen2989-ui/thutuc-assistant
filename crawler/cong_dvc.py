@@ -112,6 +112,12 @@ def trong_linh_vuc(item, tu_khoa):
     return nguon_chinh_thuc.phu_hop(item.get("name") or "", khoa)
 
 
+def la_khai_sinh(item):
+    """Thủ tục khai sinh và cấp bản sao khai sinh. Khai sinh do UBND cấp xã (Tư pháp) làm, không cần công an:
+    đây là bước đầu của đăng ký cư trú cho trẻ mới sinh, nên được đưa vào cùng danh mục."""
+    return nguon_chinh_thuc.co_cum(nguon_chinh_thuc.slug(item.get("name") or ""), "khai-sinh")
+
+
 def _ten_cac_muc(danh_sach, khoa="name"):
     return [str(x.get(khoa)).strip() for x in danh_sach or [] if x.get(khoa)]
 
@@ -171,7 +177,8 @@ def dong_bo(conn, run_at, client=None):
     ten_da_co = {nguon_chinh_thuc.slug(r["ten"]) for r in store.load_records(conn, "tthc") if r.get("ten")}
     chon = [
         it for it in items
-        if do_cong_an(it) and trong_linh_vuc(it, tu_khoa) and nguon_chinh_thuc.slug(it["name"]) not in ten_da_co
+        if (do_cong_an(it) and trong_linh_vuc(it, tu_khoa) or la_khai_sinh(it))
+        and nguon_chinh_thuc.slug(it["name"]) not in ten_da_co
     ]
     records = []
     ma_da_thay = set()

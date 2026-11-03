@@ -68,6 +68,22 @@ class PhamViTest(unittest.TestCase):
         tu_khoa = nguon.tu_khoa_giai_doan(3)
         self.assertTrue(nguon.phu_hop_pham_vi("Nghị định quy định về phòng cháy và chữa cháy", tu_khoa, "136/2020/NĐ-CP"))
 
+    def test_van_ban_bi_khop_nham_bi_loai(self):
+        tu_khoa = nguon.tu_khoa_giai_doan(3)
+        ten = "sửa đổi, bổ sung một số điều của Nghị định số 105/2025/NĐ-CP về phòng cháy, chữa cháy"
+        self.assertFalse(nguon.phu_hop_pham_vi(ten, tu_khoa, "347/2026/NĐ-CP"))
+        self.assertTrue(nguon.phu_hop_pham_vi(ten, tu_khoa, "301/2026/NĐ-CP"))
+
+    def test_toan_van_chi_luu_van_ban_trong_pham_vi(self):
+        from crawler import vbpl_text
+
+        tu_khoa = nguon.tu_khoa_giai_doan(3)
+        xe_bgtvt = {"tinh_trang": "Còn hiệu lực", "so_ky_hieu": "05/2024/TT-BGTVT",
+                    "tieu_de": "Thông tư quy định đăng ký xe", "url": "u1", "sheet": ""}
+        xe_bca = dict(xe_bgtvt, so_ky_hieu="58/2020/TT-BCA")
+        self.assertFalse(vbpl_text._wanted(xe_bgtvt, [], tu_khoa))
+        self.assertTrue(vbpl_text._wanted(xe_bca, [], tu_khoa))
+
     def test_loc_pham_vi_bo_dong_khong_co_tu_khoa(self):
         rows = [{"so_ky_hieu": "76/2018/NĐ-CP", "trich_yeu": "ngày 15 tháng 5 năm 2018 của Chính phủ quy định "
                  "chi tiết Luật Chuyển giao công nghệ", "co_quan_ban_hanh": ""}]

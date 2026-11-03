@@ -48,7 +48,8 @@ def watched_numbers(conn, extra_numbers):
     for record in store.load_records(conn, "van_ban"):
         if record["so_ky_hieu"]:
             numbers.add(record["so_ky_hieu"])
-    for procedure in store.load_records(conn, "tthc"):
+    # Căn cứ của thủ tục từ cổng TP.HCM và từ cổng quốc gia (phần công an) đều cần trạng thái vbpl.
+    for procedure in store.load_records(conn, "tthc") + store.load_records(conn, "tthc_qg"):
         for title in procedure["can_cu"]:
             numbers.update(vbpl.NUMBER_IN_TEXT.findall(title))
     return sorted(numbers)

@@ -490,6 +490,9 @@ function renderTthcDetail(id) {
     { class: "doc" },
     el("p", { class: "crumb" }, el("a", { href: "#tthc" }, "Tất cả thủ tục")),
     el("h1", {}, t.ten),
+    t.nguon === "cong_dvc_quoc_gia"
+      ? el("p", { class: "fine" }, "Nguồn: ", el("a", { href: t.url, target: "_blank", rel: "noopener" }, t.nguon_ten || "Cổng Dịch vụ công Quốc gia"))
+      : null,
     incomplete
       ? el("p", { class: "notice" }, "Cổng chưa có đủ hồ sơ và trình tự cho thủ tục này. Liên hệ bộ phận tiếp nhận để biết chi tiết.")
       : null,

@@ -38,6 +38,14 @@ class LocThuTucTest(unittest.TestCase):
         self.assertTrue(cong_dvc.trong_linh_vuc({"name": "Cấp, cấp đổi, cấp lại thẻ căn cước"}, TU_KHOA))
         self.assertFalse(cong_dvc.trong_linh_vuc({"name": "Cấp giấy phép khai thác khoáng sản"}, TU_KHOA))
 
+    def test_khai_sinh_duoc_chon_khong_can_cong_an(self):
+        self.assertTrue(cong_dvc.la_khai_sinh({"name": "Thủ tục đăng ký khai sinh"}))
+        self.assertTrue(cong_dvc.la_khai_sinh({"name": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh"}))
+        self.assertFalse(cong_dvc.la_khai_sinh({"name": "Đăng ký tạm trú"}))
+
+    def test_bien_so_xe_thuoc_linh_vuc_xe(self):
+        self.assertTrue(cong_dvc.trong_linh_vuc({"name": "Đăng ký biển số xe"}, TU_KHOA))
+
     def test_tu_khoa_chung_khong_tinh_la_linh_vuc(self):
         self.assertFalse(cong_dvc.trong_linh_vuc({"name": "Thủ tục hành chính về thuế"}, TU_KHOA))
 
