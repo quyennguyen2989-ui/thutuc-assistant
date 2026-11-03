@@ -2,7 +2,7 @@
 so_ky_hieu: 40/2024/NĐ-CP
 chu_de: Chi tiết Luật Lực lượng tham gia bảo vệ ANTT ở cơ sở: chế độ khi ốm đau, tai nạn (thủ tục qua UBND cấp xã, 02 ngày, 05 ngày, 02 ngày, 03 ngày), trợ cấp tai nạn, tử tuất, mai táng phí
 ---
-# Nghị định 40/2024/NĐ-CP: chi tiết Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở (đã đọc Điều 5, 6, 7, 8; Điều 3–4 chỉ đọc khung)
+# Nghị định 40/2024/NĐ-CP: chi tiết Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở (đã đọc toàn bộ văn bản trừ Phụ lục mẫu)
 
 Tình trạng trên vbpl.vn: còn hiệu lực. Nghị định này thi hành Luật 30/2023/QH15 (Luật Lực lượng tham gia bảo vệ an ninh, trật tự ở cơ sở).
 
@@ -39,7 +39,11 @@ Lực lượng này gồm tổ bảo vệ ANTT ở khu phố, ấp, khu dân cư
 
 ## Chưa đọc hoặc chưa đủ
 
-- Điều 3 (trang phục, huy hiệu, phù hiệu, biển hiệu, giấy chứng nhận): chỉ đọc khung, chưa đọc đủ danh mục và niên hạn.
-- Điều 4 (trang bị phương tiện, thiết bị): chỉ đọc khung.
-- Điều 7–8 (hiệu lực, trách nhiệm thi hành): chưa đọc chi tiết.
+- Điều 3 và Điều 4 đã đọc đủ trong phiên này. Chi tiết:
+  - **Trang phục** (Điều 3 khoản 1): danh mục trang bị lần đầu và niên hạn các năm sau (mũ, quần áo xuân hè, quần áo thu đông, áo ấm, áo sơ mi, ca ra vát, dây lưng, giày, dép, bít tất, quần áo mưa). Vải và màu theo quy định; UBND cấp tỉnh trình HĐND quyết định thêm nếu cần (khoản 1 điểm d).
+  - **Huy hiệu, biển hiệu, giấy chứng nhận** (Điều 3 khoản 2): mỗi thành viên Tổ bảo vệ an ninh, trật tự được cấp 01 biển hiệu và 01 giấy chứng nhận, **có thời hạn 05 năm kể từ ngày cấp**. **Chủ tịch UBND cấp xã** có thẩm quyền cấp, cấp đổi, cấp lại và thu hồi.
+  - **Phương tiện, thiết bị** (Điều 4 khoản 1): bàn làm việc, bàn họp, ghế, tủ đựng tài liệu và công cụ hỗ trợ, giường, văn phòng phẩm, theo số thành viên (3–5, 6–10, 11–15, 16–20, trên 20 người).
+  - **Lập kế hoạch trang bị** (Điều 4 khoản 2): hằng năm **Công an cấp xã** tổng hợp nhu cầu phương tiện, thiết bị gửi Công an cấp trên.
+  - **Quản lý** (Điều 4 khoản 3): **UBND cấp xã** quản lý phương tiện, thiết bị theo luật về tài sản công và quyết định số lượng cho từng thành viên hoặc Tổ dùng chung theo đề nghị của Công an cấp xã.
+- Điều 7 (hiệu lực): từ **01/07/2024**; hết hiệu lực Nghị định 38/2006 về Bảo vệ dân phố và Nghị định 73/2009 về Pháp lệnh Công an xã. Điều 8: trách nhiệm thi hành của các bộ và UBND cấp tỉnh.
 - Phụ lục III (các mẫu đơn): không có trong bản text.
