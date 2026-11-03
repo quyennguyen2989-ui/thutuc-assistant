@@ -5,6 +5,8 @@ import path from "node:path";
 
 const DATA_DIR = process.env.TCHC_DATA_DIR || "C:\\tchc\\site\\data";
 const NUMBER_IN_TEXT = /\d{1,4}\/\d{4}\/[\w\-]+/;
+// Số ký hiệu trong tiêu đề như "Nghị định 122/2018/NĐ-CP của Chính phủ" (có chữ Đ, nên không dùng \w).
+const SO_TRONG_TIEU_DE = /\d{1,4}\/\d{4}\/[^\s,;()]+/u;
 const MAX_PASSAGES = 4;
 const MAX_PASSAGES_PER_DOC = 2;
 const PASSAGE_CHARS = 600;
@@ -53,6 +55,11 @@ export function normalize(text) {
     .replace(/đ/g, "d")
     .replace(/Đ/g, "D")
     .toLowerCase();
+}
+
+// Tập từ của một đoạn: so khớp nguyên từ, để "sinh" không khớp "kinh" và "con" không khớp "công".
+function tokensOf(norm) {
+  return new Set(norm.split(/[^a-z0-9]+/).filter(Boolean));
 }
 
 // Khóa so khớp số ký hiệu: không dấu cách, không phân biệt hoa thường, Đ và D như nhau.
@@ -250,6 +257,12 @@ export function getLegalDocumentDetail(data, knowledge, soKyHieu) {
 
 // ----- Toàn văn (vbpl_text, nguon_text) -----
 
+// Số ký hiệu: lấy trường đã có, hoặc từ tiêu đề khi trường trống (phần lớn mục vbpl không có trường này).
+function soKyHieuCuaMuc(entry) {
+  if (entry.so_ky_hieu && entry.so_ky_hieu !== "None") return entry.so_ky_hieu;
+  return entry.tieu_de?.match(SO_TRONG_TIEU_DE)?.[0] ?? null;
+}
+
 // Danh mục toàn văn: mỗi mục có tệp .txt, nguồn và (nếu có) số ký hiệu.
 async function textCatalog() {
   const items = [];
@@ -259,7 +272,7 @@ async function textCatalog() {
       if (!entry.tep) continue;
       const file = entry.tep.endsWith(".txt") ? entry.tep : `${entry.tep}.txt`;
       items.push({
-        so_ky_hieu: entry.so_ky_hieu && entry.so_ky_hieu !== "None" ? entry.so_ky_hieu : null,
+        so_ky_hieu: soKyHieuCuaMuc(entry),
         ten: entry.tieu_de || slug,
         nguon: TEN_NGUON_TOAN_VAN["vbpl.vn"],
         url: entry.url || null,
@@ -340,7 +353,8 @@ async function paragraphsOf(tep) {
       if (!text) continue;
       const dieu = dieuTai(cuts[i]);
       for (const piece of splitLong(text)) {
-        paragraphs.push({ text: piece, norm: normalize(piece), dieu });
+        const norm = normalize(piece);
+        paragraphs.push({ text: piece, norm, tokens: tokensOf(norm), dieu });
       }
     }
   }
@@ -358,10 +372,19 @@ function trongSoTinhTrang(tinhTrang) {
   return 1;
 }
 
+// Cụm hai từ liền nhau trong câu hỏi (ví dụ "khai sinh"): đoạn có cả cụm được ưu tiên.
+function bigrams(terms) {
+  const phrases = [];
+  for (let i = 0; i + 1 < terms.length; i += 1) phrases.push(`${terms[i]} ${terms[i + 1]}`);
+  return [...new Set(phrases)];
+}
+
 // Tìm đoạn trong toàn văn theo từ khóa. Mỗi văn bản góp tối đa vài đoạn để kết quả đa dạng.
 export async function timTrongToanVan(query, { soKyHieu = null, limit = MAX_PASSAGES } = {}) {
   const terms = queryTerms(query);
   if (terms.length === 0) return [];
+  const unique = [...new Set(terms)];
+  const phrases = bigrams(terms);
   const wanted = soKyHieu ? numberKey(soKyHieu) : null;
   const hits = [];
   for (const item of await textCatalog()) {
@@ -371,15 +394,16 @@ export async function timTrongToanVan(query, { soKyHieu = null, limit = MAX_PASS
     paragraphs.forEach((para, index) => {
       let score = 0;
       let matched = 0;
-      for (const term of terms) {
-        if (para.norm.includes(term)) {
+      for (const term of unique) {
+        if (para.tokens.has(term)) {
           score += 1 + Math.min(term.length, 12) / 12;
           matched += 1;
         }
       }
       if (score === 0) return;
+      score += phrases.filter((phrase) => para.norm.includes(phrase)).length * 2;
       // Đoạn chứa đủ mọi từ khóa được ưu tiên hơn đoạn chỉ chứa một phần.
-      const complete = matched === terms.length ? 2 : 1;
+      const complete = matched === unique.length ? 2 : 1;
       hits.push({ item, para, score: score * weight * complete, index });
     });
   }

@@ -16,6 +16,19 @@ test("tìm đoạn toàn văn trả về số điều đúng với nội dung đ
   assert.match(hit.trich, /không phụ thuộc vào nơi cư trú/);
 });
 
+test("tìm toàn văn khớp nguyên từ: 'sinh' không khớp 'kinh', 'con' không khớp 'công'", async () => {
+  const hits = await data.timTrongToanVan("khai sinh");
+  assert.ok(hits.length > 0);
+  for (const hit of hits) assert.match(hit.trich, /(^|[^\p{L}])(khai|sinh)([^\p{L}]|$)/iu);
+});
+
+test("văn bản toàn văn không có trường số ký hiệu thì lấy số từ tiêu đề", async () => {
+  const hits = await data.timTrongToanVan("trong thời hạn 60 ngày kể từ ngày sinh con");
+  const hit = hits.find((item) => item.so_ky_hieu === "60/2014/QH13");
+  assert.ok(hit, "phải nhận ra Luật Hộ tịch 60/2014/QH13 từ tiêu đề");
+  assert.equal(hit.dieu, "Điều 15");
+});
+
 test("mỗi văn bản góp tối đa hai đoạn", async () => {
   const hits = await data.timTrongToanVan("thẻ căn cước", { limit: 10 });
   const counts = new Map();
