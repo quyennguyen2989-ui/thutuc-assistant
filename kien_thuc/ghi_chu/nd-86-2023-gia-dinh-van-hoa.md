@@ -4,7 +4,7 @@ chu_de: Nghị định 86/2023 (hiệu lực 30/01/2024) quy định khung tiêu
 ---
 # Nghị định 86/2023/NĐ-CP: danh hiệu "Gia đình văn hóa", "Thôn, tổ dân phố văn hóa", "Xã, phường, thị trấn tiêu biểu" (đã đọc đủ Điều 1–12)
 
-Tình trạng trên dữ liệu: **còn hiệu lực**. Ban hành 07/12/2023, có hiệu lực từ **30/01/2024**. Cập nhật 01/04/2026. Thay NĐ 122/2018/NĐ-CP (hết hiệu lực từ ngày này, Điều 12 khoản 2).
+Tình trạng trên dữ liệu: **còn hiệu lực**. Ban hành 07/12/2023, có hiệu lực từ **30/01/2024**. Cập nhật 01/04/2026. **Đã được sửa bởi NĐ 375/2026 (hiệu lực 01/10/2026):** bỏ Điều 7, 8 và Phụ lục IV, thay Phụ lục I–III; xem `nd-375-2026-sua-nd-86-2023-gia-dinh-van-hoa.md`. Thay NĐ 122/2018/NĐ-CP (hết hiệu lực từ ngày này, Điều 12 khoản 2).
 
 **Lưu ý:** các mức tiêu chuẩn chi tiết nằm ở Phụ lục I–IV (không có trong file đã đọc). Chỉ ghi các điều khoản loại trừ và trình tự.
 
