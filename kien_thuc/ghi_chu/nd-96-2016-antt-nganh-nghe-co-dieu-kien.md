@@ -6,7 +6,7 @@ chu_de: Điều kiện ANTT với ngành nghề kinh doanh có điều kiện (k
 
 Tình trạng trên vbpl.vn: **hết hiệu lực một phần** (đã sửa bởi NĐ 56/2023 và NĐ 58/2026). Có hiệu lực từ 01/07/2016 (Điều 51 khoản 1).
 
-Lưu ý khi trả lời: nghị định này được sửa nhiều lần. Điều kiện cấp Giấy chứng nhận và thẩm quyền cấp hiện hành theo NĐ 58/2026 Điều 1 khoản 14 (sửa Điều 24): **Công an cấp xã cấp cho karaoke, xoa bóp, cầm đồ, lưu trú từ 29 phòng trở xuống, in, pháo, súng bắn sơn**. Xem ghi chú NĐ 58/2026.
+Lưu ý khi trả lời: nghị định này được sửa nhiều lần. Điều kiện cấp Giấy chứng nhận và thẩm quyền cấp hiện hành theo NĐ 58/2026 Điều 1 khoản 14 (sửa Điều 24): **Công an cấp xã cấp cho karaoke, xoa bóp, cầm đồ, lưu trú từ 29 phòng trở xuống, in, pháo, súng bắn sơn**. Xem ghi chú NĐ 58/2026. Từ 15/11/2026, NĐ 392/2026 Điều 9 thay Điều 24 lần nữa (xem nd-392-2026-sua-antt-con-dau-phao-dinh-danh-can-cuoc.md).
 
 ## Trách nhiệm chung (Điều 25)
 
@@ -30,7 +30,7 @@ Lưu ý khi trả lời: nghị định này được sửa nhiều lần. Đi�
 - **Không nhận cầm cố tài sản không rõ nguồn gốc hoặc do vi phạm pháp luật mà có** (khoản 5).
 - Lãi suất không vượt mức theo Bộ luật Dân sự (khoản 6).
 - Bố trí kho bảo quản an toàn (khoản 7).
-- Điều 9: đoạn về người chịu trách nhiệm ANTT phải có **hộ khẩu thường trú 05 năm tại xã, phường** và không bị xử phạt về một số hành vi trong 05 năm liền kề. Bản text có ghi "Điều khoản được bãi bỏ" ngay sau đoạn này, nên **cần đối chiếu NĐ 56/2023 trước khi áp dụng điều kiện này**.
+- Điều 9 (cầm đồ) đã được NĐ 56/2023 Điều 1 khoản 1 **thay thế toàn bộ**: điều kiện hộ khẩu thường trú 05 năm không còn. Hiện chỉ còn điều kiện không bị xử phạt về một số hành vi trong 05 năm liền kề trước khi đăng ký kinh doanh (xem nd-56-2023-sua-nd-96-99-137.md).
 
 ## Lưu trú (Điều 44)
 
@@ -54,7 +54,7 @@ Lưu ý khi trả lời: nghị định này được sửa nhiều lần. Đi�
 - **Cấm** (Điều 6): kinh doanh khi chưa có Giấy chứng nhận; cho mượn, mua bán giấy; làm giả hồ sơ; dịch vụ bảo vệ dùng vũ lực; cản trở kiểm tra; lợi dụng chức vụ để gây khó khăn cấp giấy.
 - **Điều kiện chung** (Điều 7): người chịu trách nhiệm ANTT không đang bị khởi tố; không có tiền án về tội cố ý trên 03 năm tù chưa được xóa; không đang bị áp dụng biện pháp giáo dục tại xã, phường, thị trấn; không nghiện ma túy; đủ điều kiện PCCC.
 - **Phương án bảo đảm ANTT** (Điều 8): 14 nhóm ngành phải có phương án, gồm khu vực trọng điểm, biện pháp, lực lượng, phương tiện, phối hợp với chính quyền địa phương và tình huống giả định.
-- **Cầm đồ** (Điều 9): người chịu trách nhiệm ANTT phải có **hộ khẩu thường trú ít nhất 05 năm tại xã, phường** nơi đặt địa điểm, và trong 05 năm liền kề không bị xử phạt về một số hành vi (chống người thi hành công vụ, gây rối, cố ý gây thương tích, cho vay lãi nặng, đánh bạc, trộm cắp, lừa đảo, chiếm giữ trái phép tài sản). Điều này nằm trong khu vực có điều khoản bãi bỏ kèm theo; cần đối chiếu NĐ 56/2023 trước khi áp dụng.
+- **Cầm đồ** (Điều 9, theo NĐ 56/2023): người chịu trách nhiệm ANTT trong 05 năm liền kề trước khi đăng ký kinh doanh không bị xử phạt về một số hành vi (chống người thi hành công vụ, gây rối, cố ý gây thương tích, cho vay lãi nặng, đánh bạc, tổ chức đánh bạc hoặc gá bạc, trộm cắp, lừa đảo, chiếm giữ trái phép tài sản). Điều kiện hộ khẩu 05 năm của bản gốc 2016 đã bị bỏ.
 - **Đòi nợ** (Điều 10): người chịu trách nhiệm có hộ khẩu thường trú 05 năm tại quận, huyện, thị xã, thành phố thuộc tỉnh.
 - **Bảo vệ** (Điều 11): doanh nghiệp; người chịu trách nhiệm tốt nghiệp cao đẳng trở lên; doanh nghiệp nước ngoài góp vốn tối thiểu **1.000.000 USD** cho máy móc, phương tiện kỹ thuật.
 - **Đào tạo nhân viên bảo vệ** (Điều 12): trung tâm của trường Công an nhân dân, trung tâm bồi dưỡng từ cấp tỉnh trở lên, hoặc doanh nghiệp có đủ điều kiện (từ 300 nhân viên, từ 03 năm hoạt động); thời gian đào tạo tối thiểu **30 ngày**; giáo trình do Cục Cảnh sát quản lý hành chính thẩm duyệt.
@@ -112,5 +112,5 @@ Lưu ý khi trả lời: nghị định này được sửa nhiều lần. Đi�
 ## Chưa đọc
 
 - Đã đọc đủ 53 điều của NĐ 96/2016 trong phiên này (xem các mục trên). Mục 1 (Điều 1–13), Điều 14–24, Điều 25–44 và Điều 45–53 đã ghi chú.
-- Điều 9, 10 và 25 đã có điều khoản bãi bỏ kèm theo trong bản text; cần đối chiếu với NĐ 56/2023 trước khi áp dụng.
-- NĐ 56/2023 (sửa NĐ 96/2016): chưa đọc. Cần để biết các điều đã bị bãi bỏ.
+- Điều 9 đã được NĐ 56/2023 thay thế (xem nd-56-2023-sua-nd-96-99-137.md). Điều 10 và 25 có điều khoản bãi bỏ kèm theo trong bản text; cần đối chiếu trước khi áp dụng.
+- NĐ 56/2023 đã đọc Điều 1–5 (xem nd-56-2023-sua-nd-96-99-137.md).

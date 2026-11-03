@@ -79,7 +79,7 @@ Phạm vi đã đọc: Điều 3–71. Các điều 8, 9, 13, 14, 17–29 đư�
 
 - Hiệu lực 15/12/2025; Điều 14 (dao có tính sát thương cao) từ 01/01/2026 (Điều 69 khoản 1, 2).
 - **Thay thế NĐ 144/2021** (Điều 69 khoản 4). NĐ 144/2021 quy định phạt cả lĩnh vực phòng cháy, chữa cháy, cứu nạn, cứu hộ, nhưng **nội dung phạt PCCC không có trong bản NĐ 282/2025 đã đọc** (không có điều nào về PCCC). Lĩnh vực PCCC và cứu nạn, cứu hộ do **NĐ 106/2025** quy định (có hiệu lực 01/07/2025, tình trạng trên dữ liệu: hết hiệu lực một phần); NĐ 106/2025 Điều 39 khoản 2 bãi bỏ mục 3 Chương II NĐ 144/2021. Cần đối chiếu với NĐ 106/2025 trước khi trả lời về phạt PCCC.
-- **Bãi bỏ Điều 47 NĐ 82/2020** (Điều 69 khoản 5). NĐ 82/2020 quy định phạt trong lĩnh vực hành chính tư pháp (hộ tịch, hôn nhân). Nội dung Điều 47 chưa đọc. Chưa có văn bản NĐ 82/2020 trong dữ liệu. Vì vậy **chưa kết luận được mức phạt khai sinh quá hạn**.
+- **Bãi bỏ Điều 47 NĐ 82/2020** (Điều 69 khoản 5). Điều 47 đó quy định phạt về lý lịch tư pháp, không phải hộ tịch. NĐ 82/2020 có trong dữ liệu (xem nd-82-2020-xu-phat-ho-tich-tu-phap.md). Trong dữ liệu không có mức phạt khai sinh quá hạn.
 - Hành vi xảy ra và kết thúc trước 15/12/2025 xử theo nghị định cũ (Điều 70 khoản 1). Hành vi xảy ra trước nhưng còn diễn ra sau ngày đó áp dụng nghị định này (khoản 2).
 - Bộ trưởng Bộ Công an hướng dẫn thi hành (Điều 71 khoản 1).
 
