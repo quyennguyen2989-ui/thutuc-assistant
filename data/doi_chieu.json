@@ -1,0 +1,283 @@
+{
+ "giai_doan": 3,
+ "tu_khoa": [
+  "luat-cu-tru",
+  "dang-ky-cu-tru",
+  "tam-tru",
+  "tam-vang",
+  "thuong-tru",
+  "ho-khau",
+  "can-cuoc",
+  "thu-tuc-hanh-chinh",
+  "ho-tich",
+  "con-dau",
+  "vu-khi",
+  "cong-cu-ho-tro",
+  "an-ninh-trat-tu",
+  "kinh-doanh-co-dieu-kien",
+  "khu-pho",
+  "to-dan-pho",
+  "moi-sinh",
+  "sinh-con",
+  "khai-sinh",
+  "dang-ky-xe",
+  "dang-ky-phuong-tien",
+  "giay-phep-lai-xe",
+  "xuat-canh",
+  "nhap-canh",
+  "ho-chieu",
+  "phong-chay",
+  "chua-chay"
+ ],
+ "trung_so_ky_hieu": {},
+ "so_van_ban_chinh_thuc": {
+  "chinh_phu": 50,
+  "bo_cong_an": 2,
+  "tphcm": 7
+ },
+ "xac_nhan_boi_nhieu_nguon": [
+  "147/2026/TT-BCA",
+  "289/2026/ND-CP"
+ ],
+ "giai_doan_cua_van_ban": {
+  "2": 40,
+  "1": 19
+ },
+ "vbpl_co_nhung_nguon_chinh_thuc_khong_co": [
+  {
+   "so_ky_hieu": "05/2009/TTLT-BCA-BNG",
+   "tieu_de": "Thông tư liên tịch 05/2009/TTLT-BCA-BNG của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "07/2013/UBTVQH13",
+   "tieu_de": "Pháp lệnh 07/2013/UBTVQH13 của Uỷ ban Thường vụ Quốc hội",
+   "tinh_trang": "Hết hiệu lực một phần"
+  },
+  {
+   "so_ky_hieu": "07/2016/TT-BCA",
+   "tieu_de": "Thông tư 07/2016/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "07/2017/NQ-HĐND",
+   "tieu_de": "Nghị quyết 07/2017/NQ-HĐND của HĐND Thành phố Hồ Chí Minh",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "10/2016/TT-BCA",
+   "tieu_de": "Thông tư 10/2016/TT-BCA của Bộ Công an",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "100/2009/QĐ-UBND",
+   "tieu_de": "Quyết định 100/2009/QĐ-UBND của UBND Thành phố Hồ Chí Minh",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "11/2016/TT-BCA",
+   "tieu_de": "Thông tư 11/2016/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "137/2015/NĐ-CP",
+   "tieu_de": "Nghị định 137/2015/NĐ-CP của Chính phủ",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "14/2017/QH14",
+   "tieu_de": "Luật 14/2017/QH14 của Quốc hội",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "157/2015/TT-BTC",
+   "tieu_de": "Thông tư 157/2015/TT-BTC của Bộ Tài chính",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "16/2011/UBTVQH12",
+   "tieu_de": "Pháp lệnh 16/2011/UBTVQH12 của Uỷ ban Thường vụ Quốc hội",
+   "tinh_trang": "Hết hiệu lực một phần"
+  },
+  {
+   "so_ky_hieu": "17/2018/TT-BCA",
+   "tieu_de": "Thông tư 17/2018/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "19/2016/TT-BCA",
+   "tieu_de": "Thông tư 19/2016/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "193/2010/TT-BTC",
+   "tieu_de": "Thông tư 193/2010/TT-BTC của Bộ Tài chính",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "218/2016/TT-BTC",
+   "tieu_de": "Thông tư 218/2016/TT-BTC của Bộ Tài chính",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "23/2019/TT-BTC",
+   "tieu_de": "Thông tư 23/2019/TT-BTC của Bộ Tài chính",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "25/2012/NĐ-CP",
+   "tieu_de": "Nghị định 25/2012/NĐ-CP của Chính phủ",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "256/2016/TT-BTC",
+   "tieu_de": "Thông tư 256/2016/TT-BTC của Bộ Tài chính",
+   "tinh_trang": "Hết hiệu lực một phần"
+  },
+  {
+   "so_ky_hieu": "26/2012/NĐ-CP",
+   "tieu_de": "Nghị định 26/2012/NĐ-CP của Chính phủ",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "26/2023/QH15",
+   "tieu_de": "Luật 26/2023/QH15 của Quốc hội",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "30/2012/TT-BCA",
+   "tieu_de": "Thông tư 30/2012/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "31/2012/TT-BCA",
+   "tieu_de": "Thông tư 31/2012/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "31/2014/NĐ-CP",
+   "tieu_de": "Nghị định 31/2014/NĐ-CP của Chính phủ",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "331/2016/TT-BTC",
+   "tieu_de": "Thông tư 331/2016/TT-BTC của Bộ Tài chính",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "34/2012/TT-BCA",
+   "tieu_de": "Thông tư 34/2012/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "35/2014/TT-BCA",
+   "tieu_de": "Thông tư 35/2014/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "36/2013/QH13",
+   "tieu_de": "Luật 36/2013/QH13 của Quốc hội",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "37/2009/NQ-HĐND",
+   "tieu_de": "Nghị quyết 37/2009/NQ-HĐND của HĐND Thành phố Hồ Chí Minh",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "41/2019/TT-BCA",
+   "tieu_de": "Thông tư 41/2019/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "42/2017/TT-BCA",
+   "tieu_de": "Thông tư 42/2017/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực một phần"
+  },
+  {
+   "so_ky_hieu": "50/2014/TT-BCA",
+   "tieu_de": "Thông tư 50/2014/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "59/2014/QH13",
+   "tieu_de": "Luật 59/2014/QH13 của Quốc hội",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "59/2019/TT-BTC",
+   "tieu_de": "Thông tư 59/2019/TT-BTC của Bộ Tài chính",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "61/2015/TT-BCA",
+   "tieu_de": "Thông tư 61/2015/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "66/2014/TT-BCA",
+   "tieu_de": "Thông tư 66/2014/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "66/2015/TT-BCA",
+   "tieu_de": "Thông tư 66/2015/TT-BCA của Bộ Công an",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "68/2020/QH14",
+   "tieu_de": "Luật 68/2020/QH14 của Quốc hội",
+   "tinh_trang": "Còn hiệu lực"
+  },
+  {
+   "so_ky_hieu": "79/2014/NĐ-CP",
+   "tieu_de": "Nghị định 79/2014/NĐ-CP của Chính phủ",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "79/2018/NĐ-CP",
+   "tieu_de": "Nghị định 79/2018/NĐ-CP của Chính phủ",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "81/2006/QH11",
+   "tieu_de": "Luật 81/2006/QH11 của Quốc hội",
+   "tinh_trang": "Hết hiệu lực"
+  },
+  {
+   "so_ky_hieu": "96/2016/NĐ-CP",
+   "tieu_de": "Nghị định 96/2016/NĐ-CP của Chính phủ",
+   "tinh_trang": "Hết hiệu lực một phần"
+  },
+  {
+   "so_ky_hieu": "99/2016/NĐ-CP",
+   "tieu_de": "Nghị định 99/2016/NĐ-CP của Chính phủ",
+   "tinh_trang": "Còn hiệu lực"
+  }
+ ],
+ "chinh_thuc_chua_co_tinh_trang_vbpl": [
+  "01/VBHN-VPQH",
+  "02/VBHN-BCT",
+  "06/VBHN-VPQH",
+  "09/VBHN-VPQH",
+  "10/VBHN-BXD",
+  "13/2026/QH16",
+  "15/VBHN-BXD",
+  "16/VBHN-BQP",
+  "1870/QĐ-TTg",
+  "1891/QĐ-TTg",
+  "2836/QĐ-TTg",
+  "30/2026/TT-BCA",
+  "375/2026/NĐ-CP",
+  "392/2026/NĐ-CP",
+  "40/VBHN-VPQH",
+  "42/2010/QĐ-UBND",
+  "4446/VBHN-BNG",
+  "4449/VBHN-BNG",
+  "57/VBHN-VPQH",
+  "78/VBHN-VPQH"
+ ],
+ "chinh_thuc_chua_co_toan_van": [
+  "147/2026/TT-BCA (bo_cong_an)"
+ ]
+}
