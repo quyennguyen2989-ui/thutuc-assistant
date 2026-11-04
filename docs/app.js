@@ -126,6 +126,43 @@ function updateDetail(item) {
   return `${updateLabel(item)} · nguồn: ${item.nguon_ngay_cap_nhat || "không ghi"}`;
 }
 
+// Ghi nhận lần đầu chỉ là ngày hệ thống thấy thủ tục lần đầu, không phải ngày cổng cập nhật.
+const NGUON_GHI_NHAN_LAN_DAU = "ghi nhận lần đầu, cổng không ghi ngày cập nhật";
+const SO_NGAY_NHAN_NEW = 5;
+
+// Có cập nhật thật từ cổng hoặc nguồn chính thức (không tính ngày ghi nhận lần đầu).
+function isRealUpdate(item) {
+  return Boolean(item.ngay_cap_nhat) && item.nguon_ngay_cap_nhat !== NGUON_GHI_NHAN_LAN_DAU;
+}
+
+// Ngày của dữ liệu (lần kiểm tra gần nhất), để tính số ngày từ cập nhật; thiếu thì dùng ngày hôm nay.
+function ngayCuaDuLieu(meta) {
+  if (meta && meta.cap_nhat_luc) return meta.cap_nhat_luc.slice(0, 10);
+  return new Date().toISOString().slice(0, 10);
+}
+
+function soNgayGiua(isoTruoc, isoSau) {
+  const [y1, m1, d1] = isoTruoc.split("-").map(Number);
+  const [y2, m2, d2] = isoSau.split("-").map(Number);
+  return Math.round((Date.UTC(y2, m2 - 1, d2) - Date.UTC(y1, m1 - 1, d1)) / 86400000);
+}
+
+// NEW: có cập nhật thật trong vài ngày gần nhất so với ngày của dữ liệu.
+function laThuTucMoi(item, today) {
+  if (!isRealUpdate(item)) return false;
+  const songay = soNgayGiua(item.ngay_cap_nhat, today);
+  return songay >= 0 && songay <= SO_NGAY_NHAN_NEW;
+}
+
+// Thay đổi mới nhất lên trên; cùng ngày thì xếp theo tên. Thiếu ngày thì xuống cuối.
+function sapXepMoiNhatLenTren(items) {
+  return [...items].sort(
+    (a, b) =>
+      (b.ngay_cap_nhat || "").localeCompare(a.ngay_cap_nhat || "") ||
+      (a.ten || "").localeCompare(b.ten || "", "vi")
+  );
+}
+
 function fmtDateTime(iso) {
   if (!iso) return "chưa có";
   const date = new Date(iso);
@@ -402,7 +439,7 @@ function renderTthcList() {
     el(
       "section",
       { class: "hero" },
-      el("h1", {}, "Việc cần làm hôm nay?"),
+      el("h1", {}, "Bộ Đẹp cần mần rì today?"),
       el("p", { class: "lede" }, "Tìm thủ tục để xem hồ sơ, trình tự, thời hạn, lệ phí và căn cứ pháp lý đang có hiệu lực."),
       el("div", { class: "search-row" }, input, select),
       el(
@@ -434,8 +471,9 @@ function renderTthcList() {
 
 function updateTthcResults() {
   const { q, lv } = state.filters.tthc;
-  const matched = state.data.tthc.filter(
-    (t) => (!lv || t.linh_vuc === lv) && (!q || matchesQuery(haystackTthc(t), q))
+  const today = ngayCuaDuLieu(state.data.meta);
+  const matched = sapXepMoiNhatLenTren(
+    state.data.tthc.filter((t) => (!lv || t.linh_vuc === lv) && (!q || matchesQuery(haystackTthc(t), q)))
   );
   document.getElementById("results-count").textContent = `${matched.length} thủ tục`;
   document.getElementById("quick-start").hidden = Boolean(q || lv);
@@ -459,7 +497,12 @@ function updateTthcResults() {
         el(
           "span",
           { class: "row__main" },
-          el("span", { class: "row__title" }, t.ten),
+          el(
+            "span",
+            { class: "row__title" },
+            t.ten,
+            laThuTucMoi(t, today) ? el("span", { class: "row__new" }, "NEW") : null
+          ),
           el("span", { class: "row__sub" }, inlineParts([t.linh_vuc, t.co_quan_thuc_hien]))
         ),
         el(
