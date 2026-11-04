@@ -28,15 +28,30 @@ Tình trạng trên dữ liệu: còn hiệu lực. Có hiệu lực từ **01/0
 - **Công an cấp xã không được quy định là cơ quan đào tạo hoặc cấp giấy chứng nhận sử dụng** trong nghị định này. Thẩm quyền cấp giấy phép trang bị cho Công an cấp xã thuộc Trưởng phòng CSQLHC Công an tỉnh theo Thông tư 02/2026/TT-BCA (xem `tt-02-2026-va-03-2024-vu-khi-antt-con-dau.md`).
 - Kiểm tra, sát hạch để cấp giấy chứng nhận sử dụng (Điều 17) và cấp giấy chứng nhận (Điều 18): thực hiện theo cơ quan có thẩm quyền ở trên.
 
-## Trách nhiệm của UBND các cấp (Điều 22)
+## Kiểm tra, kinh doanh, xuất nhập khẩu (Điều 7–11)
 
-- Tuyên truyền, phổ biến, giáo dục pháp luật về quản lý, sử dụng vũ khí, VLN, công cụ hỗ trợ.
-- Tổ chức thực hiện các quy định của pháp luật về lĩnh vực này.
-- Kiểm tra, thanh tra, giải quyết kiến nghị, phản ánh, khiếu nại, tố cáo; khen thưởng và xử lý vi phạm.
+- **Dao có tính sát thương cao** (Điều 7): khi mất, thất lạc trong sản xuất, kinh doanh, xuất nhập khẩu, vận chuyển, tổ chức, doanh nghiệp, cá nhân phải thông báo cho cơ quan Công an nơi gần nhất. Cá nhân mang dao vào nơi công cộng phải bọc hoặc cất giữ chặt chẽ.
+- **Kiểm tra** (Điều 8): cơ quan Bộ Công an kiểm tra định kỳ 01 lần/năm hoặc đột xuất (khi có dấu hiệu vi phạm, khiếu nại, tố cáo). Thông báo trước ít nhất **03 ngày làm việc**.
+- **Điều kiện kinh doanh, xuất nhập khẩu vũ khí** (Điều 9): tổ chức thuộc Bộ Công an, Bộ Quốc phòng được Bộ trưởng giao nhiệm vụ. Vũ khí quân dụng cần Giấy chứng nhận đủ điều kiện về an ninh, trật tự.
+- **Giấy phép xuất nhập khẩu vũ khí** (Điều 10): Cục CSQLHC về trật tự xã hội (Bộ Công an) cấp trong **03 ngày làm việc**, giấy phép có thời hạn **90 ngày**. Điều 9–11 có hiệu lực từ **01/07/2025**.
+
+## Đào tạo, sát hạch, cấp giấy (Điều 13, 16–18, bổ sung)
+
+- Thời gian đào tạo: vũ khí quân dụng, VLN quân dụng **10 ngày làm việc**; vũ khí thể thao, công cụ hỗ trợ và quản lý kho **05 ngày làm việc** (Điều 13 khoản 3). Kinh phí do cơ quan đề nghị chịu (khoản 5).
+- Hồ sơ đề nghị đào tạo nộp trên Cổng dịch vụ công hoặc bưu chính. Cơ quan có thẩm quyền trong **03 ngày làm việc** kiểm tra hồ sơ và ra quyết định mở lớp (Điều 16 khoản 3).
+- **Kiểm tra sát hạch** (Điều 17): lý thuyết trắc nghiệm **30 câu trong 40 phút**, đạt từ **25 điểm** trở lên; thực hành; bắn đạn thật 03 viên đạt từ 15 điểm (nếu có).
+- **Cấp giấy chứng nhận sử dụng** trong **05 ngày làm việc** sau kiểm tra, có giá trị **05 năm** (Điều 18 khoản 1). **Cấp lại** khi hỏng hoặc mất trong **03 ngày làm việc**, giữ nguyên thời hạn (khoản 3 điểm c).
+
+## Trách nhiệm của các cơ quan (Điều 19–22)
+
+- **Bộ Công an** (Điều 19): thống nhất quản lý nhà nước về vũ khí, VLN quân dụng, công cụ hỗ trợ; ban hành tiêu chuẩn kho, biểu mẫu; tổ chức cấp, cấp lại, thu hồi giấy phép, giấy chứng nhận.
+- **Bộ Quốc phòng** (Điều 20): quản lý trong phạm vi Bộ Quốc phòng; phối hợp Bộ Công an về sửa chữa, thanh lý, tiêu hủy.
+- **Các bộ, ngành** (Điều 21): Bộ Khoa học và Công nghệ phối hợp thẩm định tiêu chuẩn kho; Bộ Thông tin và Truyền thông tuyên truyền, vận động nhân dân giao nộp vũ khí; Bộ Giáo dục và Đào tạo đưa nội dung vào giáo dục quốc phòng và an ninh.
+- **Ủy ban nhân dân các cấp** (Điều 22): tuyên truyền, phổ biến, giáo dục pháp luật; tổ chức thực hiện; kiểm tra, thanh tra, giải quyết kiến nghị và xử lý vi phạm.
 
 ## Lưu ý cho cán bộ công an cấp xã
 
 - Nhận báo cáo ngay khi có mất vũ khí, VLN hoặc sự cố kho từ cơ quan, tổ chức, doanh nghiệp đặt trụ sở trên địa bàn xã (Điều 4 khoản 2 điểm đ).
 - Giấy phép trang bị vũ khí và công cụ hỗ trợ cho Công an cấp xã: thẩm quyền ở Trưởng phòng CSQLHC Công an tỉnh (TT 02/2026), không ở cấp xã.
 - Khi xử lý vi phạm về vũ khí, căn cứ Luật quản lý, sử dụng vũ khí và xử phạt tại NĐ 282/2025 Điều 12 (xem nd-282-2025-xu-phat-cu-tru.md).
-- Chưa đọc chi tiết: các điều về kinh doanh, xuất nhập khẩu vũ khí (Điều 9–11), chi tiết đào tạo và kinh phí (Điều 13–14, 16), kiểm tra (Điều 8), trách nhiệm các bộ (Điều 19–21), điều khoản thi hành (Điều 23–24).
+- Đã đọc toàn văn 24 điều. Điều 23 (hiệu lực): NĐ có hiệu lực 01/01/2025; Điều 9, 10, 11 từ 01/07/2025; Điều 7 từ 01/01/2026. NĐ 79/2018 hết hiệu lực từ ngày này (có các điều tiếp tục đến 30/06/2025).

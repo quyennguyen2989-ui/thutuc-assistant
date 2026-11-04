@@ -2,9 +2,11 @@
 so_ky_hieu: 13/2019/TT-BNV
 chu_de: Thông tư 13/2019 của Bộ Nội vụ (còn hiệu lực từ 25/12/2019): nhiệm vụ từng chức danh công chức cấp xã (Trưởng Công an xã, Tư pháp - hộ tịch, Văn phòng - thống kê, Địa chính, Văn hóa - xã hội...), bố trí số lượng, xếp lương, kiêm nhiệm; khoán quỹ phụ cấp thôn, tổ dân phố (mức cũ 3,0 lần đã thay bằng NĐ 185/2026)
 ---
-# Thông tư 13/2019/TT-BNV: công chức cấp xã và người hoạt động không chuyên trách (đã đọc Điều 2, 9–13)
+# Thông tư 13/2019/TT-BNV: công chức cấp xã và người hoạt động không chuyên trách (đã đọc toàn văn, 16 điều)
 
-Tình trạng trên dữ liệu: còn hiệu lực. Có hiệu lực từ **25/12/2019**. Phần tuyển dụng công chức cấp xã (Điều 1, 3–8) chưa đọc chi tiết trong ghi chú này.
+Tình trạng trên dữ liệu: còn hiệu lực. Có hiệu lực từ **25/12/2019**. Đã đọc toàn văn. Điều 1 (tiêu chuẩn công chức: đủ 18 tuổi, THPT, đại học đúng ngành; tin học cơ bản), Điều 3–7 (tuyển dụng, hồ sơ, tiếp nhận không qua thi tuyển: cán bộ cấp xã đã giữ chức vụ ít nhất 05 năm), Điều 8 (miễn tập sự khi đã có thời gian đóng bảo hiểm xã hội bằng hoặc hơn thời gian tập sự; vùng khó khăn hưởng 100% bậc lương khởi điểm), Điều 14–15 (tinh giản, thôi việc, điều chuyển; hiệu lực 25/12/2019). Điều 15 khoản 2 bãi bỏ TT 06/2012 và một phần TT liên tịch 03/2010.
+
+**Lưu ý hiệu lực**: TT này hướng dẫn NĐ 34/2019 và NĐ 92/2009. NĐ 33/2023 (hiệu lực 01/08/2023, Điều 37 khoản 2) bãi bỏ NĐ 34/2019 và NĐ 92/2009, và danh sách chức danh công chức cấp xã trong NĐ 33/2023 không có Trưởng Công an xã. Khi trả lời về Trưởng Công an xã, đối chiếu với NĐ 33/2023 và Luật Công an nhân dân trước khi dùng thông tư này.
 
 ## Nhiệm vụ từng chức danh (Điều 2)
 

@@ -6,7 +6,7 @@ chu_de: Luật sửa 10 luật an ninh trật tự (có hiệu lực 01/07/2026)
 
 Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 01/07/2026** (Điều 11 khoản 1). Riêng điểm a khoản 20 Điều 7 có hiệu lực từ 01/01/2026 (Điều 11 khoản 2).
 
-Đã đọc: Điều 1 (Luật Cảnh vệ), Điều 2 (Luật Nhập cảnh, cư trú của người nước ngoài), Điều 3 (Luật Xuất cảnh, nhập cảnh của công dân), Điều 4 (Luật Cư trú), Điều 5 (Luật Căn cước), Điều 6 (Luật Lực lượng bảo vệ ANTT ở cơ sở), Điều 9 khoản 1–16 (Luật Vũ khí; khoản 12 đọc đoạn đầu), Điều 10 (Luật PCCC), Điều 11 (hiệu lực). Đọc một phần: Điều 7 (Luật Trật tự, an toàn giao thông đường bộ, các khoản 1–8). Chưa đọc: Điều 7 khoản 9–20 và Điều 8 (Luật Đường bộ), thuộc giao thông, ngoài phạm vi công an dân cư.
+Đã đọc toàn văn 11 điều: Điều 1 (Luật Cảnh vệ), Điều 2 (Luật Nhập cảnh, cư trú của người nước ngoài), Điều 3 (Luật Xuất cảnh, nhập cảnh của công dân), Điều 4 (Luật Cư trú), Điều 5 (Luật Căn cước), Điều 6 (Luật Lực lượng bảo vệ ANTT ở cơ sở), Điều 7 (Luật Trật tự, an toàn giao thông đường bộ, khoản 1–23), Điều 8 (Luật Đường bộ), Điều 9 (Luật Vũ khí, vật liệu nổ, công cụ hỗ trợ), Điều 10 (Luật PCCC), Điều 11 (hiệu lực).
 
 ## Cư trú (Điều 4, sửa Luật Cư trú 68/2020)
 
@@ -50,7 +50,7 @@ Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 01/07/20
 
 - **UBND các cấp** thực hiện quản lý nhà nước về phòng cháy, chữa cháy, cứu nạn, cứu hộ tại địa phương (Điều 10 khoản 1, sửa Điều 7 khoản 4). Điều này áp dụng cho UBND cấp xã.
 
-## Giao thông đường bộ (Điều 7, 8) — đọc một phần
+## Giao thông đường bộ (Điều 7, 8)
 
 - Bổ sung cơ sở dữ liệu về đào tạo lái xe, sát hạch, hành trình phương tiện, hình ảnh người lái xe, hình ảnh khoang chở khách (Điều 7 khoản 1).
 - Xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên, xe ô tô kinh doanh vận tải hàng hóa... phải lắp thiết bị giám sát hành trình và thiết bị ghi hình người lái (Điều 7 khoản 6).
@@ -82,9 +82,15 @@ Tình trạng trên vbpl.vn: còn hiệu lực. **Có hiệu lực từ 01/07/20
 
 - Sửa danh sách và chế độ cảnh vệ đối với lãnh đạo cấp cao của Đảng và Nhà nước (Điều 10, 11, 11a, 12). Không liên quan đến công an dân cư.
 
-## Còn chưa đọc trong Luật 118/2025
+## Giao thông đường bộ, phần còn lại (Điều 7 khoản 9–23, Điều 8; đã đọc, ngoài phạm vi công an dân cư)
 
-- Ghi chú này đã đọc đủ Điều 1, 2, 3, 4, 5, 6, 9, 10, 11 của Luật 118/2025.
-- Điều 7 khoản 9–20 (đăng kiểm, giấy phép lái xe, sát hạch, cấp phép xe, Điều 42–43 đăng kiểm).
-- Điều 8 (sửa Luật Đường bộ; đoạn trong bản text từ dòng 765 đến 852).
+- **Đăng kiểm** (Điều 7 khoản 9, sửa Điều 43): cơ sở đăng kiểm được từ chối kiểm định trong các trường hợp: theo yêu cầu tố tụng; chủ xe chưa thực hiện xong yêu cầu xử lý vi phạm hành chính; thông tin trên chứng nhận không khớp biển số; có căn cứ chủ xe làm giả giấy tờ.
+- **Giấy phép lái xe** (Điều 7 khoản 11, 12, 13, 14, sửa Điều 57, 60, 61, 62): Bộ trưởng Bộ Công an quy định mẫu, thủ tục cấp, đổi, cấp lại, thu hồi giấy phép lái xe; giấy phép cấp sai hoặc cấp do gian dối bị thu hồi. Trung tâm sát hạch phải chia sẻ kết quả sát hạch đến cơ quan quản lý.
+- **Thời gian lái xe** (Điều 7 khoản 15, sửa Điều 64): không quá 04 giờ lái liên tục.
+- **Hệ thống giám sát** (Điều 7 khoản 17, sửa Điều 71): hệ thống giám sát an ninh, trật tự đường bộ; hệ thống quản lý dữ liệu thiết bị giám sát hành trình do Cảnh sát giao thông quản lý; Bộ trưởng Bộ Công an ban hành quy chuẩn.
+- **Cơ quan quản lý** (Điều 7 khoản 19, sửa Điều 87): Bộ Công an là đầu mối quản lý nhà nước về trật tự, an toàn giao thông đường bộ, sát hạch và cấp giấy phép lái xe. Bộ Xây dựng quản lý đào tạo lái xe và đăng kiểm.
+- **Hiệu lực thiết bị** (Điều 7 khoản 20, sửa Điều 88): điều 10 khoản 3 (thiết bị an toàn cho trẻ em) có hiệu lực từ 01/07/2026. Thiết bị ghi hình người lái xe bắt buộc với xe kinh doanh vận tải hành khách dưới 08 chỗ và xe hàng hóa từ **01/01/2028**; thiết bị ghi hình khoang chở khách với xe từ 08 chỗ từ **01/01/2029**.
+- **Luật Đường bộ** (Điều 8, sửa Luật 35/2024): **Ủy ban nhân dân cấp xã là cơ quan quản lý đường bộ** (khoản 6 Điều 2). Phân loại theo cấp quản lý gồm quốc lộ, đường tỉnh, **đường xã** (nối trung tâm hành chính xã với thôn hoặc xã lân cận), **đường thôn**, đường đô thị, đường chuyên dùng (Điều 8 khoản 1). UBND cấp tỉnh **quy định việc quản lý đường đô thị, đường xã, đường thôn** (Điều 8 khoản 4 điểm b). Cơ quan chuyên môn UBND cấp tỉnh công bố tải trọng, khổ giới hạn đường địa phương (Điều 27 khoản 3 điểm b).
+- Người thuê xe tự lái không được dùng xe để vận tải có thu tiền, trừ xe máy hai bánh (Điều 78 khoản 3). Bãi bỏ khoản 4 Điều 10 và Điều 83 của Luật Đường bộ.
+- Đăng ký, sát hạch xe máy và phân cấp chi tiết: xem văn bản riêng (TT 51/2025 đăng ký xe công an cấp xã; TT 62/2026 phân cấp thủ tục).
 
