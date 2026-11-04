@@ -488,6 +488,16 @@
  },
  {
   "nguon": "chinh_phu",
+  "so_ky_hieu": "397/2026/NĐ-CP",
+  "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-397-2026-nd-cp-470875.htm",
+  "tep": null,
+  "pdf": "https://congbaocdn.chinhphu.vn/180507251028987904/2026/11/4/470875-1793265705_v1_1793754262_signed.pdf",
+  "ky_tu": 0,
+  "lay_luc": "2026-11-04T01:55:42+00:00",
+  "ly_do": "thiếu thư viện pypdf (pip install pypdf)"
+ },
+ {
+  "nguon": "chinh_phu",
   "so_ky_hieu": "40/VBHN-VPQH",
   "url": "https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-40-vbhn-vpqh-44486.htm",
   "tep": "40-vbhn-vpqh-chinh-phu.txt",

@@ -1,5 +1,15 @@
 [
  {
+  "run_at": "2026-11-04T01:48:21+00:00",
+  "kind": "chinh_thuc",
+  "record_id": 4167738913,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "397/2026/NĐ-CP: Sửa đổi, bổ sung một số điều của Nghị định số 101/2022/NĐ-CP ngày 08 tháng 12 năm 2022 của Chính phủ quy định về điều kiện đầu tư kinh doanh quân trang, quân dụng, vũ khí quân dụng, tr",
+   "_nguon": "chinh_phu"
+  }
+ },
+ {
   "run_at": "2026-11-03T16:38:09+07:00",
   "kind": "vbpl",
   "record_id": 3041737830,
@@ -3703,19 +3713,6 @@
     "moi": 2
    },
    "_ten": "Nghị quyết 66.17/2026/NQ-CP của Chính phủ"
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 2535552606,
-  "change_type": "thay_doi",
-  "diff": {
-   "lich_su": {
-    "cu": 0,
-    "moi": 4
-   },
-   "_ten": "Thông tư 17/2024/TT-BCA của Bộ Công an"
   }
  }
 ]
