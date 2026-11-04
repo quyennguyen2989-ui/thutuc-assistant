@@ -351,6 +351,16 @@ button, a, select, input, textarea {
 .row__title { display: block; font: 500 19px/1.35 var(--serif); text-wrap: balance; color: var(--ink); }
 .row__sub { display: flex; flex-wrap: wrap; gap: 2px 16px; font-size: 14px; color: var(--muted); margin-top: 4px; }
 .row__update { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
+.row__new {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font: 600 12px/1.6 var(--sans);
+  color: var(--ok);
+  background: var(--ok-soft);
+  vertical-align: middle;
+}
 .row__meta {
   font-size: 14px;
   color: var(--muted);
