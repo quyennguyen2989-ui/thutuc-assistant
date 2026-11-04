@@ -12,6 +12,7 @@
 | Toàn văn (PDF) của các văn bản trên | `nguon_text` | Đã tích hợp, giai đoạn 1 |
 | vbpl.vn (tình trạng hiệu lực) | `vbpl_sync` | Có sẵn từ trước; văn bản mới được đưa vào danh sách theo dõi |
 | Cổng Dịch vụ công Quốc gia (thủ tục do công an thực hiện hoặc có công an tham gia) | `cong_dvc` | Đã tích hợp: API công khai của trang tra cứu; chỉ lấy thủ tục có công an và thuộc lĩnh vực dân cư; bỏ thủ tục trùng tên với cổng TP.HCM |
+| Tin Công an TP.HCM (congan.hochiminhcity.gov.vn): tin nêu chỉ đạo, triển khai | `nguon_catp` | Đã tích hợp: đọc trang đầu của trang chủ, Tin chuyên ngành và Tin an ninh trật tự; lọc theo `catp_config.json` (chỉ đạo, triển khai, quán triệt, công văn). Lưu bảng `tin_catp`, xuất `docs/data/chi_dao_catp.json`. Chưa đọc các trang sau trang đầu (phân trang dùng đường dẫn dài) |
 
 ## Giai đoạn 1 (đang thực hiện): thủ tục hành chính và cư trú
 
@@ -53,6 +54,6 @@ Chạy: `python -m crawler.update --giai-doan=3`. Mặc định hằng ngày ch�
 ## Cách vận hành
 
 - Chạy hằng ngày qua `.github/workflows/cap-nhat-hang-ngay.yml` (cần `pypdf`).
-- Chạy thủ công không cần vbpl: `python -m crawler.update --khong-vbpl`. Tắt từng nguồn: `--khong-chinh-thuc`, `--khong-vbpl`.
+- Chạy thủ công không cần vbpl: `python -m crawler.update --khong-vbpl`. Tắt từng nguồn: `--khong-chinh-thuc`, `--khong-vbpl`, `--khong-catp`.
 - Lần chạy đầu của mỗi nguồn chỉ ghi nền (không báo thay đổi). Các lần sau báo văn bản mới trong mục "Cập nhật".
 - Toàn văn được lưu ở `docs/data/nguon_text/` (chỉ mục `index.json`), tối đa 300 văn bản mỗi lần chạy.

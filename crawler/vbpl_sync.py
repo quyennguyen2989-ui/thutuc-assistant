@@ -12,6 +12,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from . import store, vbpl
+from .client import BlockedError
 
 CONFIG_PATH = Path(__file__).resolve().parent / "vbpl_config.json"
 DISCOVERY_STATE = "vbpl_kham_pha_luc"
@@ -107,9 +108,12 @@ def read_statuses(conn, run_at, delay, keywords, only_urls=None):
     history_urls = frozenset(row["url"] for row in rows if row["so_ky_hieu"])
     # Lần đầu có trạng thái thì chỉ ghi nhận nền, không báo thay đổi.
     baseline = not any(row["tinh_trang"] for row in rows)
+    so_loi = 0
 
     def save(url, info):
+        nonlocal so_loi
         if info.get("loi"):
+            so_loi += 1
             store.upsert_vbpl(conn, {"url": url, "kiem_tra_luc": run_at, "loi": info["loi"]})
             return
         new = {
@@ -125,7 +129,7 @@ def read_statuses(conn, run_at, delay, keywords, only_urls=None):
             _record_change(conn, run_at, url, by_url.get(url, {}), new)
 
     vbpl.read_detail_pages(targets, save, delay_seconds=delay, history_urls=history_urls)
-    return len(targets)
+    return len(targets), so_loi
 
 
 def _record_change(conn, run_at, url, old, new):
@@ -161,23 +165,36 @@ def _count_history(raw):
 
 
 def sync(conn, extra_numbers, run_at, run_date, config):
-    """Chạy đồng bộ vbpl.vn. Trả về số văn bản đã đọc trạng thái."""
+    """Chạy đồng bộ vbpl.vn. Trả về (số văn bản đã đọc trạng thái, số văn bản đọc lỗi, lỗi khi tìm văn bản hoặc None).
+
+    Lỗi khi tìm văn bản (đọc sitemap) không chặn việc đọc trạng thái các văn bản đã theo dõi: trước đây
+    lỗi ở bước này làm bỏ qua cả việc đọc trạng thái, nên không có văn bản nào được cập nhật.
+    Bị chặn (BlockedError) thì dừng hẳn, không đọc tiếp.
+    """
     delay = config["do_tre_giua_cac_yeu_cau_giay"]
     numbers = watched_numbers(conn, extra_numbers)
     searched = set(json.loads(store.get_state(conn, SEARCHED_STATE, "[]")))
     new_numbers = [number for number in numbers if number not in searched]
 
     full = bool(new_numbers) or discovery_due(conn, run_date, config["chu_ky_tim_van_ban_moi_ngay"])
+    loi_tim = None
     if full:
-        summary = discover(conn, numbers, config, run_date, delay)
-        store.set_state(conn, SEARCHED_STATE, json.dumps(numbers, ensure_ascii=False))
-        print(f"vbpl.vn: đã tìm văn bản — {summary}")
+        try:
+            summary = discover(conn, numbers, config, run_date, delay)
+            store.set_state(conn, SEARCHED_STATE, json.dumps(numbers, ensure_ascii=False))
+            print(f"vbpl.vn: đã tìm văn bản — {summary}")
+        except BlockedError:
+            raise
+        except Exception as error:  # noqa: BLE001 - lỗi tìm văn bản không chặn việc đọc trạng thái
+            loi_tim = str(error)
+            print(f"vbpl.vn: lỗi khi tìm văn bản ({error}). Vẫn đọc trạng thái văn bản đã theo dõi.")
 
-    # Lần đầu và mỗi chu kỳ tìm kiếm thì đọc lại toàn bộ tình trạng (đối chiếu đầy đủ).
-    # Các lần khác chỉ đọc văn bản chưa từng kiểm tra, đang lỗi, hoặc có ngày sửa trên sơ đồ trang
-    # mới hơn lần kiểm tra gần nhất, để việc cập nhật hằng ngày nhẹ hơn.
-    only_urls = None if full else _can_kiem_tra_lai(conn)
-    return read_statuses(conn, run_at, delay, config["tu_khoa_tim_van_ban_moi"], only_urls=only_urls)
+    # Lần đầu và mỗi chu kỳ tìm kiếm thành công thì đọc lại toàn bộ tình trạng (đối chiếu đầy đủ).
+    # Các lần khác (kể cả khi tìm văn bản lỗi) chỉ đọc văn bản chưa từng kiểm tra, đang lỗi,
+    # hoặc có ngày sửa trên sơ đồ trang mới hơn lần kiểm tra gần nhất.
+    only_urls = None if full and loi_tim is None else _can_kiem_tra_lai(conn)
+    so_doc, so_loi = read_statuses(conn, run_at, delay, config["tu_khoa_tim_van_ban_moi"], only_urls=only_urls)
+    return so_doc, so_loi, loi_tim
 
 
 def _can_kiem_tra_lai(conn):

@@ -1,0 +1,22 @@
+{
+  "trang": [
+    {
+      "url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/trang-chu",
+      "muc": ["Tin hoạt động", "Cải cách hành chính"]
+    },
+    {
+      "url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/tin-chuyen-nganh-list",
+      "muc": ["Tin hoạt động", "Tuyên truyền pháp luật"]
+    },
+    {
+      "url": "https://congan.hochiminhcity.gov.vn/wps/portal/Home/an-ninh-trat-tu",
+      "muc": ["Tin tức an ninh trật tự"]
+    }
+  ],
+  "tu_khoa_chi_dao": [
+    "chỉ đạo",
+    "triển khai",
+    "quán triệt",
+    "công văn"
+  ]
+}
