@@ -6,7 +6,7 @@ chu_de: NĐ 238/2026/NĐ-CP (hiệu lực từ 15/08/2026) sửa NĐ 168/2024 v�
 
 Tình trạng trên dữ liệu: **còn hiệu lực**, có hiệu lực từ **15/08/2026**. Sửa đổi NĐ 168/2024/NĐ-CP (xử phạt VPHC về trật tự, an toàn giao thông đường bộ; trừ điểm, phục hồi điểm giấy phép lái xe).
 
-Đã đọc: các điều về thẩm quyền xử phạt (Điều 42 và Điều 43 của NĐ 168/2024 sau khi sửa đổi bởi NĐ 238/2026, Điều 14 của văn bản sửa đổi là điều sửa Điều 43). Các điều về hành vi và mức phạt chi tiết chưa đọc từng dòng.
+Đã đọc toàn văn (Điều 1–21). Các điều sửa mức phạt, hành vi và trừ điểm nằm ở Điều 1–12. Điều 13–14 là thẩm quyền xử phạt (Điều 42, 43). Điều 16–17 và 19–21: Trưởng phòng Cảnh sát giao thông Công an cấp tỉnh cập nhật dữ liệu trừ điểm khi Chủ tịch UBND cấp xã hoặc cấp tỉnh xử phạt có trừ điểm (Điều 17 khoản 2); hiệu lực các khoản thiết bị ghi nhận hình ảnh từ 01/01/2028 và 01/01/2029 (Điều 18); hành vi xảy ra trước 15/08/2026 vẫn áp dụng nghị định cũ (Điều 21).
 
 ## Thẩm quyền xử phạt của Trưởng Công an cấp xã (Điều 43 khoản 4, sau sửa đổi)
 

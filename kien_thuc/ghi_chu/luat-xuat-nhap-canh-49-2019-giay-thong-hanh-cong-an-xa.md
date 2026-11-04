@@ -6,7 +6,7 @@ chu_de: Luật Xuất cảnh, nhập cảnh của công dân Việt Nam 49/2019/
 
 Tình trạng trên dữ liệu: **còn hiệu lực**.
 
-Đã đọc: Điều 19 (đối tượng được cấp giấy thông hành) và Điều 20 (cấp giấy thông hành). Các điều khác không có nội dung cấp xã (không tìm thấy cụm từ cấp xã ngoài hai điều này).
+Đã đọc toàn văn (Điều 1–52). Nội dung cấp xã nằm ở Điều 19 (đối tượng được cấp giấy thông hành) và Điều 20 (cấp giấy thông hành). Các điều khác không giao việc cho Công an cấp xã hoặc UBND cấp xã.
 
 ## Giấy thông hành (Điều 19–20)
 
@@ -19,4 +19,5 @@ Tình trạng trên dữ liệu: **còn hiệu lực**.
 
 - Công an xã tiếp giáp biên giới có thẩm quyền cấp giấy thông hành cho công dân theo Điều 19–20. Xã không tiếp giáp biên giới không có thẩm quyền này.
 - Thủ tục cụ thể (hồ sơ, thời hạn, lệ phí) do Chính phủ quy định chi tiết. Tra thêm văn bản hướng dẫn trước khi trả lời người dân.
+- Cấp xã không có thẩm quyền tạm hoãn xuất cảnh (Điều 36–37) và không quyết định việc chưa cấp giấy tờ xuất nhập cảnh (Điều 21–22). Thẩm quyền tạm hoãn thuộc cơ quan tố tụng, cơ quan thi hành án, cơ quan thuế hoặc người đứng đầu nêu tại Điều 37.
 - Các giấy thông hành biên giới cấp xã (Việt - Lào, Việt - Trung) cũng có trong danh mục cắt giảm hồ sơ tại [[nq-66-7-2025-cat-giam-tthc-du-lieu]].

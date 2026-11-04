@@ -4,9 +4,9 @@ chu_de: Luật Phòng cháy, chữa cháy và cứu nạn, cứu hộ 55/2024/QH
 ---
 # Luật PCCC và CNCH 55/2024/QH15: quy định liên quan cấp xã
 
-Tình trạng: còn hiệu lực (Điều 54 quy định thời điểm có hiệu lực). Có VBHN **58/VBHN-VPQH** (chưa đọc riêng; cần đối chiếu nếu có sửa đổi sau này).
+Tình trạng: còn hiệu lực (Điều 54 quy định thời điểm có hiệu lực). Đã đối chiếu VBHN **58/VBHN-VPQH** (ngày 23/03/2026), bản đã cập nhật Luật 118/2025/QH15 có hiệu lực từ 01/07/2026.
 
-Đã đọc: Điều 6, 7, 10, 11, 25, 37, 39, 42, 45 (các đoạn có cấp xã) và mục lục điều.
+Đã đọc toàn văn VBHN 58/VBHN-VPQH (Điều 1–55). Phần cấp xã nằm ở các điều dưới đây.
 
 ## Báo cháy và tiếp nhận tin báo (Điều 6)
 
@@ -17,7 +17,7 @@ Tình trạng: còn hiệu lực (Điều 54 quy định thời điểm có hi�
 ## Quản lý nhà nước (Điều 7 khoản 4)
 
 - UBND các cấp thực hiện quản lý nhà nước về PCCC, CNCH tại địa phương.
-- Ở huyện không tổ chức đơn vị hành chính cấp xã, UBND cấp huyện thực hiện các nhiệm vụ của UBND cấp xã quy định trong Luật này.
+- VBHN 2026 không còn đoạn giao UBND cấp huyện thực hiện thay UBND cấp xã ở nơi không có đơn vị hành chính cấp xã (cụm từ này đã bị bãi bỏ theo Luật 118/2025).
 
 ## Phối hợp phương án cứu nạn, cứu hộ (Điều 10 khoản 3)
 
@@ -30,6 +30,15 @@ Tình trạng: còn hiệu lực (Điều 54 quy định thời điểm có hi�
 ## Chữa cháy (Điều 25 khoản 2)
 
 - Chủ tịch UBND cấp xã trở lên, Trưởng thôn, Tổ trưởng tổ dân phố có trách nhiệm tổ chức chữa cháy trong phạm vi quản lý; huy động lực lượng, người, phương tiện, tài sản theo thẩm quyền khi có đề nghị của người chỉ huy chữa cháy.
+
+## Chỉ huy chữa cháy, cứu nạn khi Công an chưa đến (Điều 28 khoản 2 điểm c; Điều 34 khoản 4)
+
+- Cháy tại thôn, tổ dân phố (không thuộc cơ sở hay phương tiện giao thông): **Trưởng thôn hoặc Tổ trưởng tổ dân phố** là người chỉ huy chữa cháy. Nếu vắng, Đội trưởng Đội dân phòng hoặc người được ủy quyền là người chỉ huy.
+- Tai nạn, sự cố cần cứu nạn, cứu hộ mà người chỉ huy thuộc Công an chưa có mặt: Trưởng thôn, Tổ trưởng tổ dân phố nơi xảy ra sự việc sử dụng lực lượng, người, phương tiện thuộc phạm vi quản lý để cứu nạn, cứu hộ.
+
+## Huy động lực lượng Công an cấp xã (Điều 26 khoản 5 điểm c; Điều 35 khoản 5 điểm c)
+
+- **Trưởng Công an cấp xã** được huy động lực lượng, người, phương tiện, tài sản của Công an nhân dân thuộc phạm vi quản lý khi chữa cháy và cứu nạn, cứu hộ. Đoạn này đã được sửa từ "huyện" sang "xã" theo Luật 118/2025/QH15.
 
 ## Lực lượng dân phòng (Điều 37 khoản 3)
 

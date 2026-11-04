@@ -4,9 +4,9 @@ chu_de: NĐ 17/2026/NĐ-CP (ký 14/01/2026, Công báo số 63 ngày 28/01/2026)
 ---
 # Nghị định 17/2026/NĐ-CP (xử phạt VPHC hàng không dân dụng): thẩm quyền Trưởng Công an cấp xã
 
-Tình trạng trên dữ liệu: **còn hiệu lực**. Văn bản sửa NĐ 162/2018/NĐ-CP (xử phạt VPHC lĩnh vực hàng không dân dụng, đã sửa bởi NĐ 123/2021).
+Tình trạng trên dữ liệu: **còn hiệu lực** từ **01/03/2026** (Điều 8 khoản 1). Văn bản sửa NĐ 162/2018/NĐ-CP (xử phạt VPHC lĩnh vực hàng không dân dụng, đã sửa bởi NĐ 123/2021). Đồng thời bãi bỏ Điều 35 NĐ 162/2018 và Điều 67 NĐ 282/2025.
 
-Đã đọc: Điều 4 (sửa Điều 33 về thẩm quyền Chủ tịch UBND các cấp), Điều 5 (sửa Điều 34 về thẩm quyền Công an nhân dân). Các điều khác chỉ rà soát tiêu đề.
+Đã đọc toàn văn (Điều 1–8). Điều 1–3 và 6–7 sửa thẩm quyền Thanh tra, Cảng vụ hàng không và thủ tục lập biên bản; không có nội dung cho cấp xã. Điều 4 (sửa Điều 33) và Điều 5 (sửa Điều 34) là phần liên quan cấp xã. Điều 5 khoản 10: lực lượng Công an nhân dân được xử phạt các hành vi hàng không nêu tại các điều của NĐ 162/2018.
 
 ## Trưởng Công an cấp xã (Điều 34 khoản 4, sau sửa đổi)
 

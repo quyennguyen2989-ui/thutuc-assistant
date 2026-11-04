@@ -6,7 +6,7 @@ chu_de: TT 79/2024/TT-BCA quy định cấp, thu hồi chứng nhận đăng ký
 
 Tình trạng trên dữ liệu: **hết hiệu lực một phần**. Chưa xác định phần nào hết hiệu lực. Trước khi trả lời người dân, phải đối chiếu vbpl.vn và văn bản sửa đổi sau này. Thông tư này thay TT 24/2023/TT-BCA (hết hiệu lực toàn bộ).
 
-Đã đọc: Điều 4 (cơ quan đăng ký xe, phần phân cấp Công an cấp xã), Điều 6 khoản 6 (chủ xe thu hồi), mục về biểu mẫu do Công an huyện đặt in cho cấp xã, và khoản chuyển tiếp. Các điều thủ tục chi tiết (Điều 7–33) chưa đọc từng dòng.
+Đã đọc toàn văn (Điều 1–39). Phần liên quan cấp xã: Điều 4 khoản 4–5, Điều 6 khoản 6, Điều 27 khoản 2 điểm b, Điều 34 khoản 3, Điều 39 khoản 5.
 
 **Lưu ý: TT 13/2025/TT-BCA (Điều 12) đã sửa khoản 4 và khoản 5 Điều 4 của thông tư này.** Phần "Công an cấp xã đăng ký xe mô tô" dưới đây là bản gốc. Bản sửa đổi xem [[tt-13-2025-bca-tai-nan-giao-thong-cap-xa]]. Theo bản sửa, cấp xã đã phân cấp đăng ký cả ô tô và xe máy chuyên dùng, và phải hoàn thành phân cấp trước 30/06/2026.
 
@@ -27,6 +27,12 @@ Loại trừ: xe có nguồn gốc tịch thu, xe có dung tích xi lanh từ 17
 
 - Trong **07 ngày làm việc** kể từ ngày xe hết niên hạn sử dụng, hư hỏng không sử dụng được, hoặc thải bỏ, chủ xe phải khai báo trên cổng dịch vụ công hoặc kê khai trực tiếp tại cơ quan đăng ký xe.
 - Chủ xe nộp chứng nhận đăng ký và biển số cho cơ quan đăng ký xe **hoặc Công an cấp xã** để làm thủ tục thu hồi, không phụ thuộc trụ sở hay nơi cư trú của chủ xe.
+
+## Thu hồi tại Công an cấp xã (Điều 27 khoản 2 điểm b)
+
+- Căn cứ danh sách xe ô tô hết niên hạn, xe thải bỏ, xe không được phép lưu hành do cơ quan đăng ký xe cung cấp, Công an cấp xã thông báo chủ xe hoặc người đang sử dụng xe có trụ sở, nơi cư trú trên địa bàn. Sau đó tiến hành thu hồi chứng nhận đăng ký, biển số và cấp chứng nhận thu hồi (bản giấy hoặc bản điện tử).
+- Công an cấp xã chưa được phân cấp đăng ký xe phải bàn giao chứng nhận và biển số cho Công an cấp huyện để thu hồi trên hệ thống đăng ký, quản lý xe.
+- Điểm b khoản 2 Điều 27 đã được sửa đổi, bổ sung. Đối chiếu văn bản sửa đổi trước khi trả lời người dân.
 
 ## Biểu mẫu và tổ chức (Điều 34 và phần khác)
 
