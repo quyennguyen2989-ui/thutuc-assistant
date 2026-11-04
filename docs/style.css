@@ -198,6 +198,15 @@ button, a, select, input, textarea {
 .brand__name { font: 600 20px/1.2 var(--serif); color: var(--ink); }
 .brand__place { font-size: 13px; color: var(--muted); }
 
+/* Bóng chữ mờ cho menu, tiêu đề và phần cần nhấn mạnh, để chữ nổi trên nền */
+.tabs a,
+.brand__name,
+h1, h2, h3,
+strong, b,
+.btn {
+  text-shadow: 0 1px 2px rgba(15, 23, 42, 0.18);
+}
+
 .site-head__tools { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; }
 
 .tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }

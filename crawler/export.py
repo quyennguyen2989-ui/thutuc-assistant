@@ -97,7 +97,8 @@ def _merge_vbpl(items, rows, keywords, cited=frozenset(), tu_khoa=()):
             continue
         if not (row["so_ky_hieu"] or vbpl.is_relevant(row["url"], row["sheet"], keywords)):
             continue
-        number = normalize.chuan_so_ky_hieu(row["so_ky_hieu"] or _number_from_title(row["tieu_de"]) or "") or row["url"]
+        # Văn bản không có số ký hiệu: lấy tiêu đề làm nhãn, không dùng đường dẫn vbpl.vn.
+        number = normalize.chuan_so_ky_hieu(row["so_ky_hieu"] or _number_from_title(row["tieu_de"]) or "") or (row["tieu_de"] or "").strip() or row["url"]
         vbpl_info = {
             "url": row["url"],
             "tinh_trang": row["tinh_trang"],

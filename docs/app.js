@@ -278,6 +278,8 @@ function route() {
   if (head === "capnhat") return { tab: "capnhat", id: null };
   if (head === "hoidap") return { tab: "hoidap", id: null };
   if (head === "taikhoan") return { tab: "taikhoan", id: null };
+  // Mở trang không có mục nào (ví dụ sau khi đăng nhập) thì vào Hỏi đáp.
+  if (!head) return { tab: "hoidap", id: null };
   return { tab: "tthc", id: head === "tthc" ? id : null };
 }
 
@@ -322,7 +324,7 @@ function updateBanner() {
 }
 
 // Thứ tự các tab để đoán chiều chuyển trang: đi tới trượt từ phải, quay lại trượt từ trái.
-const TAB_ORDER = { tthc: 0, vanban: 1, hoidap: 2, capnhat: 3, taikhoan: 4 };
+const TAB_ORDER = { hoidap: 0, tthc: 1, vanban: 2, capnhat: 3, taikhoan: 4 };
 
 function viewRank(key) {
   const tab = key.split("/")[0];
