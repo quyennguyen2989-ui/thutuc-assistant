@@ -1,11 +1,13 @@
 """Điểm vào chính: python -m crawler.update
 
-Tải dữ liệu từ cổng, so với lần chạy trước, ghi nhận thay đổi, rồi xuất JSON cho trang web.
+Tải dữ liệu từ cổng, so với lần trước, ghi nhận thay đổi, rồi xuất JSON cho trang web.
+Mỗi nguồn ghi trạng thái riêng (đọc được, lỗi, bị chặn, bỏ qua) vào meta.json, mục trang_thai_nguon.
 
 Mã thoát:
-  0  thành công
-  1  lỗi (mạng, dữ liệu bất thường) — không ghi gì vào DB
+  0  thành công, mọi nguồn đọc được (hoặc được bỏ qua theo tham số)
+  1  lỗi (mạng, dữ liệu bất thường) — cổng chính không ghi dữ liệu mới
   2  máy chủ từ chối truy cập (403/401/429) — dừng ngay, không thử lại
+  3  hoàn thành nhưng có nguồn lỗi hoặc bị chặn — dữ liệu các nguồn khác đã được ghi
 """
 
 import json
@@ -13,8 +15,9 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import cong_dvc, export, normalize, nguon_chinh_thuc, nguon_text, sources, store, vbpl_sync, vbpl_text
+from . import cong_dvc, export, nguon_catp, normalize, nguon_chinh_thuc, nguon_text, nguon_trang_thai, sources, store, vbpl_sync, vbpl_text
 from .client import BlockedError, PortalClient
+from .nguon_trang_thai import BI_CHAN, BO_QUA, LOI, OK
 
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "data" / "thutuc.db"
@@ -30,6 +33,17 @@ MIN_RATIO = 0.5
 def run():
     run_at = datetime.now().astimezone().isoformat(timespec="seconds")
     conn = store.connect(DB_PATH)
+    ghi = nguon_trang_thai.Ghi(conn, run_at)
+
+    code = _chay(conn, run_at, ghi)
+    ghi.tom_tat()
+    if code == 0 and ghi.co_loi():
+        print("Có nguồn lỗi hoặc bị chặn. Dữ liệu các nguồn khác đã được ghi; xem trang_thai_nguon trong meta.json.")
+        return 3
+    return code
+
+
+def _chay(conn, run_at, ghi):
     client = PortalClient()
 
     try:
@@ -39,10 +53,12 @@ def run():
             raw_tthc.append((item, sources.fetch_tthc_detail(client, item["ID"])))
     except BlockedError as error:
         _record_failure(conn, run_at, f"bi_chan: {error}")
+        ghi.ghi("cong_phong_csqlhc", BI_CHAN, str(error))
         print(f"DỪNG: {error}. Không thử lại để tránh bị chặn thêm.")
         return 2
     except Exception as error:  # noqa: BLE001 - ghi nhận mọi lỗi mạng/dữ liệu rồi thoát
         _record_failure(conn, run_at, f"loi: {error}")
+        ghi.ghi("cong_phong_csqlhc", LOI, str(error))
         print(f"LỖI: {error}")
         return 1
 
@@ -56,6 +72,7 @@ def run():
         _check_sanity(conn, "tthc", len(tthc))
     except RuntimeError as error:
         _record_failure(conn, run_at, f"bat_thuong: {error}")
+        ghi.ghi("cong_phong_csqlhc", LOI, f"bất thường: {error}")
         print(f"BẤT THƯỜNG: {error}. Không ghi dữ liệu.")
         return 1
 
@@ -64,20 +81,36 @@ def run():
         change_count = store.sync_records(conn, "van_ban", van_ban, run_at, first_run)
         change_count += store.sync_records(conn, "tthc", tthc, run_at, first_run)
         store.log_run(conn, run_at, "ok", len(van_ban), len(tthc), change_count)
+    ghi.ghi("cong_phong_csqlhc", OK, f"{len(van_ban)} văn bản, {len(tthc)} thủ tục")
 
     if "--khong-chinh-thuc" not in sys.argv:
         for giai_doan in _cac_giai_doan():
-            _sync_chinh_thuc(conn, run_at, giai_doan)
-        _sync_nguon_text(conn)
+            _sync_chinh_thuc(conn, run_at, giai_doan, ghi)
+        _sync_nguon_text(conn, ghi)
+    else:
+        _bo_qua(ghi, list(nguon_chinh_thuc.READERS) + ["toan_van"], "--khong-chinh-thuc")
     if "--khong-cong-dvc" not in sys.argv:
-        _sync_cong_dvc(conn, run_at)
+        _sync_cong_dvc(conn, run_at, ghi)
+    else:
+        _bo_qua(ghi, ["cong_dvc_quoc_gia"], "--khong-cong-dvc")
+    if "--khong-catp" not in sys.argv:
+        _sync_congan_tin(conn, run_at, ghi)
+    else:
+        _bo_qua(ghi, ["congan_tin"], "--khong-catp")
     if "--khong-vbpl" not in sys.argv:
-        _sync_vbpl(conn, run_at)
+        _sync_vbpl(conn, run_at, ghi)
+    else:
+        _bo_qua(ghi, ["vbpl"], "--khong-vbpl")
     export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
 
     label = "lần đầu, ghi nhận nền" if first_run else f"{change_count} thay đổi"
     print(f"Xong. Văn bản: {len(van_ban)}, thủ tục: {len(tthc)}. {label}.")
     return 0
+
+
+def _bo_qua(ghi, nguon_list, tham_so):
+    for nguon in nguon_list:
+        ghi.ghi(nguon, BO_QUA, f"bỏ qua theo tham số {tham_so}")
 
 
 def _cac_giai_doan():
@@ -89,7 +122,7 @@ def _cac_giai_doan():
     return [1, 2, 3]
 
 
-def _sync_chinh_thuc(conn, run_at, giai_doan):
+def _sync_chinh_thuc(conn, run_at, giai_doan, ghi):
     """Đọc ba nguồn chính thức theo giai đoạn. Lần đầu của mỗi nguồn duyệt toàn bộ lịch sử;
     lỗi một nguồn không chặn các nguồn khác."""
     keywords = nguon_chinh_thuc.tu_khoa_giai_doan(
@@ -108,12 +141,15 @@ def _sync_chinh_thuc(conn, run_at, giai_doan):
             che_do = "nạp đầu, duyệt toàn bộ" if toan_bo else "cập nhật"
             print(f"Nguồn {nguon} (giai đoạn {giai_doan}, {che_do}): "
                   f"{len(found['items'])} văn bản liên quan, {new} văn bản mới.")
+            ghi.ghi(nguon, OK, f"giai đoạn {giai_doan}: {len(found['items'])} văn bản liên quan, {new} mới")
         except BlockedError as error:
             conn.rollback()
             print(f"Nguồn {nguon} từ chối truy cập: {error}. Bỏ qua lần này.")
+            ghi.ghi(nguon, BI_CHAN, f"giai đoạn {giai_doan}: {error}")
         except Exception as error:  # noqa: BLE001 - lỗi một nguồn không làm hỏng các nguồn khác
             conn.rollback()
             print(f"Nguồn {nguon} lỗi: {error}. Giữ dữ liệu cũ.")
+            ghi.ghi(nguon, LOI, f"giai đoạn {giai_doan}: {error}")
 
 
 def _chinh_thuc_trong_pham_vi(conn):
@@ -122,53 +158,87 @@ def _chinh_thuc_trong_pham_vi(conn):
     return nguon_chinh_thuc.loc_pham_vi(store.load_chinh_thuc(conn), tu_khoa)
 
 
-def _sync_nguon_text(conn):
+def _sync_nguon_text(conn, ghi):
     """Toàn văn của văn bản nguồn chính thức (PDF). Lỗi ở đây không chặn cập nhật dữ liệu."""
     try:
         done, failed = nguon_text.sync_nguon_text(
             conn, nguon_chinh_thuc.Fetcher(), DOCS_DATA_DIR / "nguon_text", _chinh_thuc_trong_pham_vi(conn)
         )
         print(f"Toàn văn nguồn chính thức: thêm {done}, không đọc được {failed}.")
+        ghi.ghi("toan_van", OK, f"thêm {done} văn bản, không đọc được {failed}")
     except BlockedError as error:
         print(f"Toàn văn nguồn chính thức bị từ chối: {error}. Thử lại lần sau.")
+        ghi.ghi("toan_van", BI_CHAN, str(error))
     except Exception as error:  # noqa: BLE001
         print(f"Toàn văn nguồn chính thức lỗi: {error}. Giữ dữ liệu cũ.")
+        ghi.ghi("toan_van", LOI, str(error))
 
 
-def _sync_cong_dvc(conn, run_at):
+def _sync_cong_dvc(conn, run_at, ghi):
     """Thủ tục do công an từ Cổng Dịch vụ công Quốc gia. Lỗi ở đây không chặn các nguồn khác."""
     try:
         tong, chon, moi = cong_dvc.dong_bo(conn, run_at)
         print(f"Cổng quốc gia: {tong} thủ tục công khai; chọn {chon} thủ tục có công an; {moi} thay đổi.")
+        ghi.ghi("cong_dvc_quoc_gia", OK, f"{tong} thủ tục công khai, chọn {chon} có công an, {moi} thay đổi")
     except BlockedError as error:
         conn.rollback()
         print(f"Cổng quốc gia từ chối truy cập: {error}. Giữ dữ liệu cũ.")
+        ghi.ghi("cong_dvc_quoc_gia", BI_CHAN, str(error))
     except Exception as error:  # noqa: BLE001 - lỗi một nguồn không làm hỏng các nguồn khác
         conn.rollback()
         print(f"Cổng quốc gia lỗi: {error}. Giữ dữ liệu cũ.")
+        ghi.ghi("cong_dvc_quoc_gia", LOI, str(error))
 
 
-def _sync_vbpl(conn, run_at):
+def _sync_congan_tin(conn, run_at, ghi):
+    """Tin nêu chỉ đạo, triển khai trên cổng Công an TP.HCM. Lỗi ở đây không chặn các nguồn khác."""
+    try:
+        ket_qua = nguon_catp.doc_tin(nguon_chinh_thuc.Fetcher(), nguon_catp.load_config())
+        moi = store.sync_tin_catp(conn, ket_qua["chi_dao"], run_at)
+        conn.commit()
+        print(f"Tin Công an TP.HCM: {ket_qua['tong']} tin đọc được, {len(ket_qua['chi_dao'])} có chỉ đạo, {moi} mới.")
+        ghi.ghi("congan_tin", OK, f"{ket_qua['tong']} tin đọc được, {len(ket_qua['chi_dao'])} có chỉ đạo, {moi} mới")
+    except BlockedError as error:
+        conn.rollback()
+        print(f"Tin Công an TP.HCM từ chối truy cập: {error}. Giữ dữ liệu cũ.")
+        ghi.ghi("congan_tin", BI_CHAN, str(error))
+    except Exception as error:  # noqa: BLE001 - lỗi một nguồn không làm hỏng các nguồn khác
+        conn.rollback()
+        print(f"Tin Công an TP.HCM lỗi: {error}. Giữ dữ liệu cũ.")
+        ghi.ghi("congan_tin", LOI, str(error))
+
+
+def _sync_vbpl(conn, run_at, ghi):
     """Đọc trạng thái từ vbpl.vn. Lỗi ở bước này không chặn cập nhật từ cổng Phòng CSQLHC."""
     try:
         config = vbpl_sync.load_config()
         extra_numbers = [item["so_ky_hieu"] for item in json.loads(EXTRA_PATH.read_text(encoding="utf-8"))]
         extra_numbers += [row["so_ky_hieu"] for row in _chinh_thuc_trong_pham_vi(conn)]
         run_date = datetime.fromisoformat(run_at).date()
-        count = vbpl_sync.sync(conn, extra_numbers, run_at, run_date, config)
+        so_doc, so_loi, loi_tim = vbpl_sync.sync(conn, extra_numbers, run_at, run_date, config)
         conn.commit()
-        print(f"vbpl.vn: đã đọc trạng thái {count} văn bản.")
+        thong_bao = f"đọc trạng thái {so_doc} văn bản, {so_loi} không đọc được"
+        print(f"vbpl.vn: {thong_bao}.")
+        if loi_tim:
+            ghi.ghi("vbpl", LOI, f"không tìm được văn bản mới ({loi_tim}); {thong_bao}")
+        elif so_doc and so_loi == so_doc:
+            ghi.ghi("vbpl", LOI, f"không đọc được văn bản nào: {thong_bao}")
+        else:
+            ghi.ghi("vbpl", OK, thong_bao)
         texts = vbpl_text.sync_texts(conn, DOCS_DATA_DIR / "vbpl_text", config["do_tre_giua_cac_yeu_cau_giay"])
         print(f"vbpl.vn: đã lưu toàn văn {texts} văn bản có thay đổi.")
     except ImportError as error:
         conn.rollback()
         print(f"Bỏ qua vbpl.vn: thiếu thư viện ({error}). Cài Playwright để bật bước này.")
+        ghi.ghi("vbpl", LOI, f"thiếu thư viện ({error})")
     except BlockedError as error:
         conn.commit()
         print(f"vbpl.vn chặn truy cập: {error}. Giữ dữ liệu cũ, không thử lại.")
+        ghi.ghi("vbpl", BI_CHAN, str(error))
     except Exception as error:  # noqa: BLE001 - lỗi vbpl không làm hỏng dữ liệu của cổng
         conn.commit()
         print(f"vbpl.vn lỗi: {error}. Giữ dữ liệu cũ.")
+        ghi.ghi("vbpl", LOI, str(error))
 
 
 def _check_sanity(conn, kind, fresh_count):

@@ -10,7 +10,7 @@ import json
 import re
 from pathlib import Path
 
-from . import nguon_chinh_thuc, normalize, store, vbpl, vbpl_sync
+from . import nguon_chinh_thuc, nguon_trang_thai, normalize, store, vbpl, vbpl_sync
 
 SOURCE_PORTAL = {
     "ten": "Trang thông tin điện tử Phòng Cảnh sát quản lý hành chính về trật tự xã hội (Công an TP.HCM)",
@@ -228,6 +228,29 @@ def _last_ok_run(conn):
     return row["run_at"] if row else None
 
 
+def _chi_dao_catp(conn):
+    """Tin nêu chỉ đạo, triển khai của Công an TP.HCM, mới nhất trước. Tóm tắt rút gọn để trang web nhẹ."""
+    return [
+        {**tin, "tom_tat": tin["tom_tat"][:300]}
+        for tin in store.load_tin_catp(conn)
+    ]
+
+
+def _trang_thai_nguon(conn):
+    """Trạng thái gần nhất của từng nguồn: đọc được, lỗi, bị chặn; kèm lần đọc thành công gần nhất."""
+    status = store.load_nguon_status(conn)
+    return {
+        nguon: {
+            "ten": nguon_trang_thai.ten(nguon),
+            "trang_thai": item["trang_thai"],
+            "thong_bao": item["thong_bao"],
+            "luc": item["luc"],
+            "thanh_cong_gan_nhat": item["thanh_cong_gan_nhat"],
+        }
+        for nguon, item in sorted(status.items())
+    }
+
+
 def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -254,6 +277,7 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     meta = {
         "cap_nhat_luc": run_at,
         "lan_chay_thanh_cong_gan_nhat": _last_ok_run(conn),
+        "trang_thai_nguon": _trang_thai_nguon(conn),
         "so_van_ban": len(van_ban),
         "so_thu_tuc": len(tthc),
         "nguon": SOURCE_PORTAL,
@@ -269,6 +293,7 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     _write(out_dir / "tthc.json", tthc)
     _write(out_dir / "thay_doi.json", changes)
     _write(out_dir / "meta.json", meta)
+    _write(out_dir / "chi_dao_catp.json", _chi_dao_catp(conn))
 
 
 def _write(path, payload):
