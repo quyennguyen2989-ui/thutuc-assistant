@@ -18,27 +18,53 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Cài Playwright và Chromium cho vbpl.vn
+      - name: Cài Playwright (vbpl.vn) và pypdf (toàn văn PDF)
         run: |
-          pip install playwright
+          pip install playwright pypdf
           python -m playwright install --with-deps chromium
 
-      - name: Chạy crawler
+      - name: Chạy crawler (tự chạy lại tối đa 3 lần khi lỗi tạm thời)
         id: crawler
-        run: python -m crawler.update
+        shell: bash
+        run: |
+          set +e
+          for lan in 1 2 3; do
+            python -m crawler.update
+            ma=$?
+            if [ "$ma" -eq 0 ]; then exit 0; fi
+            # Mã 2 (cổng từ chối truy cập) và mã 4 (nguồn bị chặn): không chạy lại, tránh bị chặn thêm.
+            if [ "$ma" -eq 2 ] || [ "$ma" -eq 4 ] || [ "$lan" -eq 3 ]; then
+              echo "Lần $lan kết thúc với mã $ma, không chạy lại."
+              exit "$ma"
+            fi
+            echo "::warning::Lần $lan lỗi (mã $ma). Chờ 15 phút rồi chạy lại."
+            sleep 900
+          done
         continue-on-error: true   # lỗi một nguồn vẫn lưu dữ liệu các nguồn khác; bước cuối báo lỗi
 
       - name: Lưu thay đổi nếu có
         if: always()
+        shell: bash
         run: |
           git config user.name "cap-nhat-tu-dong"
           git config user.email "actions@users.noreply.github.com"
           git add docs/data data/thutuc.db
-          git diff --cached --quiet || git commit -m "Cập nhật dữ liệu tự động"
-          git push
+          if git diff --cached --quiet; then
+            echo "Không có thay đổi để lưu."
+            exit 0
+          fi
+          git commit -m "Cập nhật dữ liệu tự động"
+          for lan in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "::warning::Đẩy lên thất bại (lần $lan), thử lại sau 30 giây."
+            git pull --rebase -q || git rebase --abort || true
+            sleep 30
+          done
+          echo "::error::Không đẩy được dữ liệu lên GitHub sau 3 lần."
+          exit 1
 
       - name: Báo lỗi nếu có nguồn không đọc được
         if: steps.crawler.outcome == 'failure'
         run: |
-          echo "::error::Có nguồn lỗi hoặc bị chặn. Xem bảng Trạng thái từng nguồn trong phần tóm tắt của lần chạy."
+          echo "::error::Có nguồn lỗi hoặc bị chặn sau khi thử lại. Xem bảng Trạng thái từng nguồn trong phần tóm tắt của lần chạy."
           exit 1

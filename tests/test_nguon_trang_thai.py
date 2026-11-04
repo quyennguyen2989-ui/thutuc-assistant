@@ -49,6 +49,13 @@ class TrangThaiNguonTest(unittest.TestCase):
         ghi = nguon_trang_thai.Ghi(self.conn, "2026-11-04T08:00:00+07:00")
         ghi.ghi("tphcm", nguon_trang_thai.BI_CHAN, "HTTP 403")
         self.assertTrue(ghi.co_loi())
+        self.assertTrue(ghi.co_bi_chan())
+
+    def test_loi_thuong_khong_phai_bi_chan(self):
+        ghi = nguon_trang_thai.Ghi(self.conn, "2026-11-04T08:00:00+07:00")
+        ghi.ghi("vbpl", nguon_trang_thai.LOI, "timeout")
+        self.assertTrue(ghi.co_loi())
+        self.assertFalse(ghi.co_bi_chan())
 
     def test_trang_thai_gan_nhat_va_lan_thanh_cong_gan_nhat(self):
         ghi_1 = nguon_trang_thai.Ghi(self.conn, "2026-11-03T08:00:00+07:00")

@@ -55,6 +55,9 @@ class Ghi:
     def co_loi(self):
         return any(item["trang_thai"] in (LOI, BI_CHAN) for item in self.ket_qua.values())
 
+    def co_bi_chan(self):
+        return any(item["trang_thai"] == BI_CHAN for item in self.ket_qua.values())
+
     def tom_tat(self):
         """In bảng trạng thái ra màn hình và, khi chạy trên GitHub Actions, vào phần tóm tắt của lần chạy."""
         dong = [f"| {ten(nguon)} | {item['trang_thai']} | {item['thong_bao']} |"

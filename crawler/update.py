@@ -7,7 +7,8 @@ Mã thoát:
   0  thành công, mọi nguồn đọc được (hoặc được bỏ qua theo tham số)
   1  lỗi (mạng, dữ liệu bất thường) — cổng chính không ghi dữ liệu mới
   2  máy chủ từ chối truy cập (403/401/429) — dừng ngay, không thử lại
-  3  hoàn thành nhưng có nguồn lỗi hoặc bị chặn — dữ liệu các nguồn khác đã được ghi
+  3  hoàn thành nhưng có nguồn lỗi (có thể thử lại) — dữ liệu các nguồn khác đã được ghi
+  4  hoàn thành nhưng có nguồn bị chặn truy cập — không thử lại
 """
 
 import json
@@ -37,8 +38,11 @@ def run():
 
     code = _chay(conn, run_at, ghi)
     ghi.tom_tat()
+    if code == 0 and ghi.co_bi_chan():
+        print("Có nguồn bị chặn truy cập. Không thử lại để tránh bị chặn thêm.")
+        return 4
     if code == 0 and ghi.co_loi():
-        print("Có nguồn lỗi hoặc bị chặn. Dữ liệu các nguồn khác đã được ghi; xem trang_thai_nguon trong meta.json.")
+        print("Có nguồn lỗi. Dữ liệu các nguồn khác đã được ghi; xem trang_thai_nguon trong meta.json.")
         return 3
     return code
 
