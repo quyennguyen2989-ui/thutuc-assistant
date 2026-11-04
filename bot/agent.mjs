@@ -128,14 +128,17 @@ async function runTool(name, input, data, sources) {
 }
 
 // Lượt cuối không cho gọi công cụ nữa: buộc bot trả lời từ dữ liệu đã có, không báo "quá nhiều bước".
-export async function answer(client, message, history, data) {
+// Trả lời theo luồng: chữ của mô hình được chuyển cho onEvent ngay khi sinh ra ("delta").
+// Nếu mô hình đã nói trước rồi mới gọi công cụ, gửi "reset" để bỏ phần đã nói; lượt sau viết lại.
+export async function answerStream(client, message, history, data, onEvent = () => {}) {
   const messages = [...history, { role: "user", content: message }];
   const sources = [];
+  let daPhatChu = false;
 
   for (let round = 1; round <= MAX_TOOL_ROUNDS + 1; round++) {
     const finalRound = round > MAX_TOOL_ROUNDS;
     if (finalRound) messages.at(-1).content.push({ type: "text", text: HET_LUOT_TRA_CUU });
-    const response = await client.messages.create({
+    const luong = client.messages.stream({
       model: MODEL,
       max_tokens: 4000,
       system: [{ type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } }],
@@ -143,8 +146,17 @@ export async function answer(client, message, history, data) {
       tool_choice: finalRound ? { type: "none" } : { type: "auto" },
       messages,
     });
+    luong.on("text", (delta) => {
+      daPhatChu = true;
+      onEvent({ type: "delta", text: delta });
+    });
+    const response = await luong.finalMessage();
 
     if (response.stop_reason === "tool_use" && !finalRound) {
+      if (daPhatChu) {
+        onEvent({ type: "reset" });
+        daPhatChu = false;
+      }
       messages.push({ role: "assistant", content: response.content });
       const results = [];
       for (const block of response.content.filter((item) => item.type === "tool_use")) {
@@ -159,7 +171,7 @@ export async function answer(client, message, history, data) {
     }
 
     if (response.stop_reason === "refusal") {
-      return { answer: "Mình không thể trả lời câu hỏi này. Bạn thử diễn đạt lại theo việc cần làm.", sources };
+      return { answer: "Mình không thể trả lời câu hỏi này. Bạn thử diễn đạt lại theo việc cần làm.", sources, co_noi_dung: false };
     }
 
     const text = response.content
@@ -169,8 +181,13 @@ export async function answer(client, message, history, data) {
       .trim();
     const note = response.stop_reason === "max_tokens" ? "\n\n(Câu trả lời bị cắt ngắn, hãy hỏi cụ thể hơn.)" : "";
     const fallback = "Mình chưa tìm đủ dữ liệu để trả lời. Bạn nêu cụ thể hơn tên thủ tục hoặc số văn bản.";
-    return { answer: (text || fallback) + note, sources: dedupe(sources) };
+    return { answer: (text || fallback) + note, sources: dedupe(sources), co_noi_dung: Boolean(text) };
   }
+}
+
+// Bản không luồng, giữ cho các nơi gọi cũ.
+export async function answer(client, message, history, data) {
+  return answerStream(client, message, history, data);
 }
 
 function dedupe(sources) {

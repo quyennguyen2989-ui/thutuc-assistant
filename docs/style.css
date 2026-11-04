@@ -581,6 +581,19 @@ button, a, select, input, textarea {
 .view--back { animation: view-in-left 200ms ease-out both; }
 .view--fade { animation: view-fade 200ms ease-out both; }
 .msg--enter { animation: msg-rise 180ms ease-out both; }
+.msg--settle { animation: settle-in 200ms ease-out both; }
+.msg__live { margin: 0; white-space: pre-wrap; }
+.chunk-in { animation: chunk-in 180ms ease-out both; }
+.msg__wait { color: var(--muted); }
+
+@keyframes chunk-in {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes settle-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 @keyframes view-in-right {
   from { opacity: 0; transform: translateX(24px); }

@@ -2,9 +2,11 @@
 // Chỉ lắng nghe trên 127.0.0.1. Caddy chuyển tiếp /tchc vào đây; bot tự kiểm tra đăng nhập và phục vụ tệp tĩnh.
 import http from "node:http";
 import Anthropic from "@anthropic-ai/sdk";
-import { answer, MODEL } from "./agent.mjs";
-import { loadAll, loadKnowledge } from "./data.mjs";
+import { answer, answerStream, MODEL } from "./agent.mjs";
+import { loadAll, loadKnowledge, normalize } from "./data.mjs";
 import { serveSite } from "./site.mjs";
+import { chonLoiChao, chonLoiNhac } from "./giong.mjs";
+import { cacheKey, createAnswerCache } from "./cache.mjs";
 import {
   DUMMY_RECORD,
   MAX_PASSWORD_LENGTH,
@@ -174,11 +176,78 @@ async function chat(req, res, session) {
     const result = await answer(client, message, sanitizeHistory(parsed.history), data);
     // Không ghi nội dung câu hỏi vào nhật ký, chỉ ghi thời gian xử lý.
     console.log(`chat ok in ${Date.now() - started} ms`);
-    return send(res, 200, result);
+    const noiDung = result.co_noi_dung && result.sources.length
+      ? `${chonLoiChao()}\n\n${result.answer}\n\n${chonLoiNhac()}`
+      : result.answer;
+    return send(res, 200, { answer: noiDung, sources: result.sources });
   } catch (error) {
     console.error(`chat failed: ${error.status ?? ""} ${error.name}`);
     return send(res, 500, { loi: "Hệ thống đang gặp lỗi, bạn thử lại sau." });
   }
+}
+
+// Câu trả lời lặp lại (câu hỏi đầu tiên, dữ liệu chưa đổi) được lấy từ bộ nhớ đệm, không gọi Claude lại.
+const answerCache = createAnswerCache();
+
+// Trả lời theo luồng (NDJSON): mỗi dòng là một sự kiện. Chữ hiện dần khi Claude viết, không đợi cả câu.
+// Sự kiện: opener (lời chào), delta (chữ), reset (bỏ chữ đã nói trước khi gọi công cụ), closer (lời nhắc), done, error.
+async function chatStream(req, res, session) {
+  const user = await findUser(AUTH_FILE, session.username);
+  if (user?.phai_doi_mat_khau) {
+    return send(res, 403, { loi: "Cần đổi mật khẩu trước khi dùng Hỏi đáp.", phai_doi_mat_khau: true });
+  }
+  const parsed = await readJson(req, MAX_BODY_BYTES);
+  const message = typeof parsed.message === "string" ? parsed.message.trim() : "";
+  if (!message || message.length > MAX_MESSAGE_CHARS) {
+    return send(res, 400, { loi: "câu hỏi trống hoặc quá dài" });
+  }
+  const history = sanitizeHistory(parsed.history);
+
+  res.writeHead(200, {
+    "Content-Type": "application/x-ndjson; charset=utf-8",
+    "Cache-Control": "no-store",
+    "X-Accel-Buffering": "no",
+  });
+  const write = (event) => res.write(`${JSON.stringify(event)}\n`);
+  const started = Date.now();
+  try {
+    const data = { ...(await loadAll()), knowledge: await loadKnowledge() };
+    const khoa = history.length === 0 ? cacheKey(message, data, normalize) : null;
+    const daLuu = khoa ? answerCache.get(khoa) : undefined;
+    if (daLuu) {
+      const loiChao = chonLoiChao();
+      const loiNhac = chonLoiNhac();
+      write({ type: "opener", text: `${loiChao}\n\n` });
+      write({ type: "delta", text: daLuu.answer });
+      write({ type: "closer", text: `\n\n${loiNhac}` });
+      write({ type: "done", answer: `${loiChao}\n\n${daLuu.answer}\n\n${loiNhac}`, sources: daLuu.sources });
+      console.log(`chat cache hit in ${Date.now() - started} ms`);
+      return res.end();
+    }
+
+    let loiChao = null;
+    const result = await answerStream(client, message, history, data, (event) => {
+      if (event.type === "delta" && loiChao === null) {
+        loiChao = chonLoiChao();
+        write({ type: "opener", text: `${loiChao}\n\n` });
+      }
+      write(event);
+    });
+    let loiNhac = null;
+    if (result.co_noi_dung && result.sources.length) {
+      loiNhac = chonLoiNhac();
+      write({ type: "closer", text: `\n\n${loiNhac}` });
+      if (khoa) answerCache.set(khoa, { answer: result.answer, sources: result.sources });
+    }
+    const noiDung = `${loiChao ? `${loiChao}\n\n` : ""}${result.answer}${loiNhac ? `\n\n${loiNhac}` : ""}`;
+    write({ type: "done", answer: noiDung, sources: result.sources });
+    // Không ghi nội dung câu hỏi vào nhật ký, chỉ ghi thời gian xử lý.
+    console.log(`chat stream ok in ${Date.now() - started} ms`);
+  } catch (error) {
+    console.error(`chat stream failed: ${error.status ?? ""} ${error.name}`);
+    write({ type: "error", loi: "Hệ thống đang gặp lỗi, bạn thử lại sau." });
+  }
+  return res.end();
 }
 
 async function handleApi(req, res, pathname) {
@@ -194,6 +263,7 @@ async function handleApi(req, res, pathname) {
   if (req.method === "POST" && pathname === "/api/change-password") return changePassword(req, res, session);
   if (req.method === "GET" && pathname === "/api/health") return send(res, 200, { ok: true, model: MODEL });
   if (req.method === "POST" && pathname === "/api/chat") return chat(req, res, session);
+  if (req.method === "POST" && pathname === "/api/chat/stream") return chatStream(req, res, session);
   return send(res, 404, { loi: "không tìm thấy" });
 }
 

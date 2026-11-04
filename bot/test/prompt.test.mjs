@@ -17,7 +17,7 @@ test("lời nhắc buộc lấy trình tự trước khi hướng dẫn thủ t�
   assert.ok(SYSTEM_PROMPT.includes("get_procedure"));
 });
 
-test("lời nhắc có giọng hài nhẹ gọi người dùng là Bộ Đẹp, và cấm đùa về nội dung pháp lý", () => {
-  assert.ok(SYSTEM_PROMPT.includes('"Bộ Đẹp"'));
-  assert.ok(SYSTEM_PROMPT.includes("Không đùa về công dân, thủ tục"));
+test("lời nhắc để máy chủ thêm lời chào và lời nhắc, nội dung không có câu đùa", () => {
+  assert.ok(SYSTEM_PROMPT.includes("Hệ thống tự thêm lời chào và lời nhắc nhẹ"));
+  assert.ok(SYSTEM_PROMPT.includes("không thêm câu đùa vào nội dung"));
 });

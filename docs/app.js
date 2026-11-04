@@ -869,14 +869,34 @@ function chatMessage(message) {
   const enter = message.shown ? "" : " msg--enter";
   message.shown = true;
   if (message.role === "user") return el("div", { class: `msg msg--user${enter}` }, message.text);
+  if (message.streaming) return liveBotMessage(message, enter);
+  // Tin vừa trả lời xong: nội dung đã định dạng hiện mờ dần một lần, không xuất hiện đột ngột.
+  const settle = message.settleOnce ? " msg--settle" : "";
+  message.settleOnce = false;
   const base = message.error ? "msg msg--bot msg--error" : "msg msg--bot";
   return el(
     "div",
-    { class: `${base}${enter}` },
+    { class: `${base}${enter}${settle}` },
     formatAnswer(message.text),
     message.sources && message.sources.length
       ? el("p", { class: "msg__src" }, `Nguồn: ${message.sources.map((source) => source.ten).join("; ")}`)
       : null
+  );
+}
+
+// Tin đang trả lời: mỗi đoạn mới hiện dần (chunk-in); đoạn đã hiện trước đó không chạy lại.
+function liveBotMessage(message, enter) {
+  const daHien = message.renderedTo || 0;
+  let cao = daHien;
+  const doan = message.segments.map((segment) => {
+    if (segment.id > cao) cao = segment.id;
+    return el("span", { class: segment.id > daHien ? "chunk-in" : null }, segment.text);
+  });
+  message.renderedTo = cao;
+  return el(
+    "div",
+    { class: `msg msg--bot msg--live${enter}` },
+    el("p", { class: "msg__live" }, doan.length ? doan : el("span", { class: "msg__wait" }, "Đang tra cứu…"))
   );
 }
 
@@ -923,42 +943,92 @@ async function sendQuestion(text) {
 
   state.chatBusy = true;
   state.chat.push({ role: "user", text: question });
-  state.chat.push({ role: "bot", text: "Đang tra cứu…", pending: true });
+  // Tin trả lời được điền dần khi bot gửi từng đoạn (xem docCauTraLoi).
+  const bot = { role: "bot", text: "", streaming: true, segments: [], nextId: 1, renderedTo: 0, sources: [] };
+  state.chat.push(bot);
   renderChat();
 
   try {
-    const response = await fetch("api/chat", {
+    const response = await fetch("api/chat/stream", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: question, history }),
     });
-    const payload = await response.json().catch(() => ({}));
     if (response.status === 401) {
       location.replace("login.html");
       return;
     }
-    if (response.status === 403 && payload.phai_doi_mat_khau) {
-      state.chat.pop();
-      state.user.phai_doi_mat_khau = true;
-      location.hash = "#taikhoan";
-      return;
+    if (response.status === 403) {
+      const payload = await response.json().catch(() => ({}));
+      if (payload.phai_doi_mat_khau) {
+        state.chat.pop();
+        state.user.phai_doi_mat_khau = true;
+        location.hash = "#taikhoan";
+        return;
+      }
+      throw new Error(payload.loi || "lỗi 403");
     }
     if (response.status === 404) throw new Error("trang này chưa kết nối bot");
-    if (!response.ok) throw new Error(payload.loi || `lỗi ${response.status}`);
-    state.chat.pop();
-    state.chat.push({ role: "bot", text: payload.answer, sources: payload.sources || [] });
+    if (!response.ok) {
+      const payload = await response.json().catch(() => ({}));
+      throw new Error(payload.loi || `lỗi ${response.status}`);
+    }
+    await docCauTraLoi(response, bot);
   } catch (error) {
-    state.chat.pop();
-    state.chat.push({
-      role: "bot",
-      text: `Chưa trả lời được: ${error.message.replace(/\.$/, "")}. Thử lại sau, hoặc tra cứu trực tiếp ở mục Thủ tục.`,
-      error: true,
-    });
+    bot.streaming = false;
+    bot.error = true;
+    bot.segments = [];
+    bot.sources = [];
+    bot.settleOnce = true;
+    bot.text = `Chưa trả lời được: ${error.message.replace(/\.$/, "")}. Thử lại sau, hoặc tra cứu trực tiếp ở mục Thủ tục.`;
   } finally {
     state.chatBusy = false;
   }
   // Người dùng có thể đã chuyển tab khi đang chờ; chỉ vẽ lại nếu vẫn ở Hỏi đáp.
   if (route().tab === "hoidap") renderChat();
+}
+
+// Đọc luồng NDJSON từ bot: mỗi dòng là một sự kiện (opener, delta, reset, closer, done, error).
+// Chữ mới được thêm vào tin đang trả lời và hiện dần; chữ đã hiện không chạy lại.
+async function docCauTraLoi(response, bot) {
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+  let daXong = false;
+
+  const xuLy = (line) => {
+    if (!line.trim()) return;
+    const event = JSON.parse(line);
+    if (event.type === "error") throw new Error(event.loi || "bot gặp lỗi");
+    if (event.type === "reset") {
+      // Bỏ phần đã nói trước khi gọi công cụ; lời chào và lời nhắc được giữ lại.
+      bot.segments = bot.segments.filter((segment) => segment.keep);
+    } else if (event.type === "done") {
+      bot.streaming = false;
+      bot.text = event.answer || "";
+      bot.sources = event.sources || [];
+      bot.settleOnce = true;
+      daXong = true;
+    } else if (event.type === "opener" || event.type === "delta" || event.type === "closer") {
+      bot.segments.push({ id: bot.nextId++, text: event.text, keep: event.type !== "delta" });
+    }
+    // Người dùng có thể đã chuyển tab khi đang chờ; chỉ vẽ lại nếu vẫn ở Hỏi đáp.
+    if (route().tab === "hoidap") renderChat();
+  };
+
+  for (;;) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    buffer += decoder.decode(value, { stream: true });
+    let cut = buffer.indexOf("\n");
+    while (cut >= 0) {
+      xuLy(buffer.slice(0, cut));
+      buffer = buffer.slice(cut + 1);
+      cut = buffer.indexOf("\n");
+    }
+  }
+  xuLy(buffer + decoder.decode());
+  if (!daXong) throw new Error("kết nối bị ngắt giữa chừng");
 }
 
 // ----- Tài khoản -----

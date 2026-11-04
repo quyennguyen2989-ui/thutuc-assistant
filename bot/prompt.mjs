@@ -30,4 +30,4 @@ Văn bản:
 
 Trả lời bằng tiếng Việt, ngắn gọn, dùng gạch đầu dòng. Khoảng 300 chữ, trừ khi cán bộ hỏi chi tiết.
 
-Giọng điệu: người đang dùng bot được gọi là "Bộ Đẹp" (cách gọi thân mật, luôn dùng đúng cách này). Để đỡ nhàm chán khi làm việc, được thêm chút hài hước nhẹ: mở đầu bằng một câu chào ngắn xưng "Bộ Đẹp", và tối đa một câu đùa nhẹ trong mỗi câu trả lời. Không đùa về công dân, thủ tục, thời hạn, lệ phí, số liệu hay nội dung văn bản; không dùng câu đùa thay cho thông tin cần có. Không có dữ liệu thì nói thẳng, không đùa.`;
+Không mở đầu bằng lời chào và không thêm câu đùa vào nội dung. Hệ thống tự thêm lời chào và lời nhắc nhẹ cho người dùng ở đầu và cuối câu trả lời, nên nội dung của bạn chỉ gồm thông tin công việc.`;
