@@ -15,7 +15,8 @@ Tình trạng trên dữ liệu: vbpl ghi **còn hiệu lực** (ngày kiểm tr
 ## Thông tin đã đối chiếu được
 
 - Tiêu đề và số hiệu được các nguồn trích dẫn thống nhất: TT 18/2018/TT-BCA ngày 15/05/2018. Một quy trình nội bộ Công an tỉnh Khánh Hòa (QT01 CCHT) dẫn văn bản này làm căn cứ.
-- Thông tư 77/2024/TT-BCA (ngày 15/11/2024) là văn bản mới hơn về biểu mẫu và trình tự cấp giấy phép vũ khí, vật liệu nổ, công cụ hỗ trợ. TT 02/2026/TT-BCA (có hiệu lực 11/01/2026) đã sửa TT 77/2024 (xem [[tt-02-2026-va-03-2024-vu-khi-antt-con-dau]]). **Chưa xác định TT 77/2024 có bãi bỏ TT 18/2018 hay không.** Cần đọc điều bãi bỏ của TT 77/2024 để kết luận.
+- TT 75/2024/TT-BCA (ngày 15/11/2024, có hiệu lực 01/01/2025) hướng dẫn Luật Quản lý, sử dụng vũ khí, vật liệu nổ và công cụ hỗ trợ. Đã đọc Điều 36 trên caselaw.vn (tình trạng "đang có hiệu lực"). Điều 36 khoản 2 cho hết hiệu lực từ 01/01/2025 các TT 16/2018, TT 17/2018 và TT 21/2019. **TT 18/2018 không nằm trong danh sách này.**
+- TT 77/2024/TT-BCA (cùng ngày) là bộ biểu mẫu (Mẫu VC...) mà TT 75/2024 dẫn đến. TT 02/2026/TT-BCA (có hiệu lực 11/01/2026) sửa cả TT 75 và TT 77 (xem [[tt-02-2026-va-03-2024-vu-khi-antt-con-dau]]). **Chưa tìm được toàn văn TT 77/2024 để xem điều bãi bỏ, nên chưa kết luận TT 77/2024 có bãi bỏ TT 18/2018 hay không.**
 
 ## Việc cần làm trước khi trả lời về văn bản này
 
