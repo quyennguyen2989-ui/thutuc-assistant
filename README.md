@@ -47,8 +47,6 @@ Rồi vào http://localhost:8000.
 
 **Cách 1: GitHub Actions (khuyến nghị).** Đưa dự án lên GitHub, bật GitHub Pages từ thư mục `/docs` của nhánh chính. Workflow `.github/workflows/cap-nhat-hang-ngay.yml` chạy mỗi ngày lúc 08:00, cập nhật `docs/data` và `data/thutuc.db`, rồi commit nếu có thay đổi.
 
-**Theo dõi từng nguồn.** Mỗi lần chạy ghi trạng thái của từng nguồn (cổng Phòng CSQLHC, Cổng Dịch vụ công Quốc gia, Công báo Chính phủ, Công báo TP.HCM, Bộ Công an, toàn văn, vbpl.vn) vào `docs/data/meta.json`, mục `trang_thai_nguon`: `ok`, `loi`, `bi_chan` hoặc `bo_qua`, kèm thông báo và lần đọc thành công gần nhất. Nếu có nguồn lỗi hoặc bị chặn, dữ liệu các nguồn khác vẫn được ghi, nhưng lần chạy được đánh dấu thất bại để GitHub gửi thông báo. Bảng trạng thái cũng hiện trong phần tóm tắt của mỗi lần chạy trên tab Actions.
-
 **Cách 2: Windows Task Scheduler** trên máy cá nhân:
 
 ```bash

@@ -65,23 +65,6 @@ CREATE TABLE IF NOT EXISTS nguon_chinh_thuc (
     giai_doan INTEGER NOT NULL DEFAULT 1,
     PRIMARY KEY (nguon, url)
 );
-CREATE TABLE IF NOT EXISTS tin_catp (
-    url TEXT PRIMARY KEY,
-    tieu_de TEXT NOT NULL,
-    ngay_dang TEXT NOT NULL,
-    muc TEXT NOT NULL,
-    tom_tat TEXT NOT NULL DEFAULT '',
-    tu_khoa TEXT NOT NULL DEFAULT '[]',
-    first_seen TEXT NOT NULL,
-    last_seen TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS nguon_run (
-    run_at TEXT NOT NULL,
-    nguon TEXT NOT NULL,
-    trang_thai TEXT NOT NULL,
-    thong_bao TEXT NOT NULL DEFAULT '',
-    PRIMARY KEY (run_at, nguon)
-);
 """
 
 
@@ -186,63 +169,6 @@ def log_run(conn, run_at, status, van_ban_count, tthc_count, change_count):
         "INSERT OR REPLACE INTO runs (run_at, status, van_ban_count, tthc_count, change_count) VALUES (?, ?, ?, ?, ?)",
         (run_at, status, van_ban_count, tthc_count, change_count),
     )
-
-
-def sync_tin_catp(conn, items, run_at):
-    """Ghi các tin chỉ đạo của Công an TP.HCM. Tin đã có thì chỉ cập nhật lần thấy gần nhất. Trả về số tin mới."""
-    new = 0
-    for item in items:
-        if conn.execute("SELECT 1 FROM tin_catp WHERE url = ?", (item["url"],)).fetchone():
-            conn.execute("UPDATE tin_catp SET last_seen = ? WHERE url = ?", (run_at, item["url"]))
-            continue
-        conn.execute(
-            "INSERT INTO tin_catp (url, tieu_de, ngay_dang, muc, tom_tat, tu_khoa, first_seen, last_seen)"
-            " VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-            (item["url"], item["tieu_de"], item["ngay_dang"], item["muc"], item.get("tom_tat", ""),
-             json.dumps(item.get("tu_khoa", []), ensure_ascii=False), run_at, run_at),
-        )
-        new += 1
-    return new
-
-
-def load_tin_catp(conn, limit=300):
-    """Tin chỉ đạo mới nhất trước, theo ngày đăng."""
-    rows = conn.execute(
-        "SELECT url, tieu_de, ngay_dang, muc, tom_tat, tu_khoa, first_seen FROM tin_catp"
-        " ORDER BY ngay_dang DESC, url LIMIT ?",
-        (limit,),
-    )
-    return [{**dict(row), "tu_khoa": json.loads(row["tu_khoa"])} for row in rows]
-
-
-def log_nguon(conn, run_at, nguon, trang_thai, thong_bao):
-    """Trạng thái một nguồn trong một lần chạy. Ghi lại cùng khóa thì thay thế."""
-    conn.execute(
-        "INSERT OR REPLACE INTO nguon_run (run_at, nguon, trang_thai, thong_bao) VALUES (?, ?, ?, ?)",
-        (run_at, nguon, trang_thai, thong_bao),
-    )
-
-
-def load_nguon_status(conn):
-    """Với mỗi nguồn: trạng thái của lần chạy gần nhất, và lần chạy thành công gần nhất (nếu có)."""
-    status = {}
-    latest = conn.execute(
-        "SELECT r.nguon, r.run_at, r.trang_thai, r.thong_bao FROM nguon_run r"
-        " JOIN (SELECT nguon, MAX(run_at) AS run_at FROM nguon_run GROUP BY nguon) m"
-        " ON r.nguon = m.nguon AND r.run_at = m.run_at"
-    )
-    for row in latest:
-        status[row["nguon"]] = {
-            "luc": row["run_at"],
-            "trang_thai": row["trang_thai"],
-            "thong_bao": row["thong_bao"],
-            "thanh_cong_gan_nhat": None,
-        }
-    for row in conn.execute(
-        "SELECT nguon, MAX(run_at) AS run_at FROM nguon_run WHERE trang_thai = 'ok' GROUP BY nguon"
-    ):
-        status.setdefault(row["nguon"], {})["thanh_cong_gan_nhat"] = row["run_at"]
-    return status
 
 
 def load_records(conn, kind):

@@ -24,21 +24,12 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Chạy crawler
-        id: crawler
         run: python -m crawler.update
-        continue-on-error: true   # lỗi một nguồn vẫn lưu dữ liệu các nguồn khác; bước cuối báo lỗi
 
       - name: Lưu thay đổi nếu có
-        if: always()
         run: |
           git config user.name "cap-nhat-tu-dong"
           git config user.email "actions@users.noreply.github.com"
           git add docs/data data/thutuc.db
           git diff --cached --quiet || git commit -m "Cập nhật dữ liệu tự động"
           git push
-
-      - name: Báo lỗi nếu có nguồn không đọc được
-        if: steps.crawler.outcome == 'failure'
-        run: |
-          echo "::error::Có nguồn lỗi hoặc bị chặn. Xem bảng Trạng thái từng nguồn trong phần tóm tắt của lần chạy."
-          exit 1
