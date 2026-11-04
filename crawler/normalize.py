@@ -3,6 +3,13 @@
 import hashlib
 import json
 
+# Cổng đôi khi gõ chữ Cyrillic giống hệt chữ Latin trong số ký hiệu (ví dụ "NĐ-СР", "BTС").
+# Số ký hiệu chỉ có chữ Latin, nên đổi về Latin để tra cứu khớp.
+CYRILLIC_THANH_LATIN = str.maketrans({
+    "А": "A", "В": "B", "Е": "E", "К": "K", "М": "M", "Н": "H", "О": "O", "Р": "P", "С": "C", "Т": "T", "Х": "X",
+    "а": "a", "е": "e", "о": "o", "р": "p", "с": "c", "х": "x",
+})
+
 
 def _text(value):
     return (value or "").strip()
@@ -17,10 +24,14 @@ def _drop_ids(record):
     return {key: value for key, value in record.items() if not key.startswith("ID")}
 
 
+def chuan_so_ky_hieu(so):
+    return so.translate(CYRILLIC_THANH_LATIN)
+
+
 def normalize_van_ban(raw):
     return {
         "id": raw["ID"],
-        "so_ky_hieu": _text(raw.get("SO_KY_HIEU")),
+        "so_ky_hieu": chuan_so_ky_hieu(_text(raw.get("SO_KY_HIEU"))),
         "loai": _text(raw.get("LOAI_VB")),
         "linh_vuc": _text(raw.get("LINH_VUC")),
         "co_quan_ban_hanh": _text(raw.get("CQ_BAN_HANH")),

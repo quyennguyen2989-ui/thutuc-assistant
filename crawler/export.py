@@ -10,7 +10,7 @@ import json
 import re
 from pathlib import Path
 
-from . import nguon_chinh_thuc, store, vbpl, vbpl_sync
+from . import nguon_chinh_thuc, normalize, store, vbpl, vbpl_sync
 
 SOURCE_PORTAL = {
     "ten": "Trang thông tin điện tử Phòng Cảnh sát quản lý hành chính về trật tự xã hội (Công an TP.HCM)",
@@ -38,6 +38,7 @@ def _van_ban_view(conn, overrides, extra):
     items = []
     for record in store.load_records(conn, "van_ban"):
         record["nguon"] = "cong_tu_dong"
+        record["so_ky_hieu"] = normalize.chuan_so_ky_hieu(record["so_ky_hieu"] or "")
         override = overrides.get(record["so_ky_hieu"])
         if override:
             record["doi_chieu_thu_cong"] = override
@@ -96,7 +97,7 @@ def _merge_vbpl(items, rows, keywords, cited=frozenset(), tu_khoa=()):
             continue
         if not (row["so_ky_hieu"] or vbpl.is_relevant(row["url"], row["sheet"], keywords)):
             continue
-        number = row["so_ky_hieu"] or _number_from_title(row["tieu_de"]) or row["url"]
+        number = normalize.chuan_so_ky_hieu(row["so_ky_hieu"] or _number_from_title(row["tieu_de"]) or "") or row["url"]
         vbpl_info = {
             "url": row["url"],
             "tinh_trang": row["tinh_trang"],
