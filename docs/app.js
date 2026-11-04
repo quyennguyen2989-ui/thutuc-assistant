@@ -1260,6 +1260,20 @@ async function loadJson(name) {
   return response.json();
 }
 
+// Chân trang: liệt kê mọi nơi dự án thu thập thông tin, mỗi nơi là một liên kết (lấy từ meta.nguon_thu_thap).
+function renderNguonThuThap(nguon) {
+  const dong = document.getElementById("nguon-thu-thap");
+  if (!dong || !nguon.length) return;
+  dong.replaceChildren(
+    "Nguồn thu thập: ",
+    ...nguon.flatMap((item, index) => [
+      index ? ", " : "",
+      el("a", { href: item.url, target: "_blank", rel: "noopener" }, item.ten),
+    ]),
+    "."
+  );
+}
+
 async function init() {
   if (!(await loadMe())) return;
   app.replaceChildren(
@@ -1289,8 +1303,7 @@ async function init() {
     : null;
 
   document.getElementById("disclaimer").textContent = data.meta.luu_y;
-  document.getElementById("source-link").href = data.meta.nguon.url;
-  document.getElementById("vbpl-link").href = data.meta.nguon_van_ban.url;
+  renderNguonThuThap(data.meta.nguon_thu_thap || []);
 
   // Đổi tab thì đưa lên đầu trang và chuyển focus vào nội dung; gửi câu hỏi thì giữ nguyên vị trí.
   window.addEventListener("hashchange", () => {

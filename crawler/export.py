@@ -22,6 +22,17 @@ SOURCE_VBPL = {
     "url": vbpl.SITE,
 }
 
+# Mọi nơi dự án thu thập thông tin; trang web hiển thị danh sách này ở chân trang.
+NGUON_THU_THAP = [
+    {"ten": "Cổng Phòng CSQLHC Công an TP.HCM (thủ tục, văn bản pháp quy)", "url": SOURCE_PORTAL["url"]},
+    {"ten": "Cổng thông tin Công an TP.HCM (tin nêu chỉ đạo, triển khai)", "url": "https://congan.hochiminhcity.gov.vn/"},
+    {"ten": "Cổng Dịch vụ công Quốc gia (thủ tục có Công an)", "url": "https://dichvucong.gov.vn/"},
+    {"ten": "Công báo điện tử Chính phủ", "url": "https://congbao.chinhphu.vn/"},
+    {"ten": "Công báo TP.HCM", "url": "https://congbao.hochiminhcity.gov.vn/"},
+    {"ten": "Cổng thông tin Bộ Công an (hệ thống văn bản)", "url": "https://vanban.bocongan.gov.vn/"},
+    {"ten": "Cơ sở dữ liệu quốc gia về pháp luật (vbpl.vn)", "url": vbpl.SITE},
+]
+
 DISCLAIMER = (
     "Công cụ hỗ trợ tra cứu, không thay thế văn bản pháp luật chính thức và không phải ý kiến pháp lý. "
     "Trước khi áp dụng, đối chiếu với văn bản gốc trên Cơ sở dữ liệu quốc gia về văn bản pháp luật hoặc Công báo."
@@ -283,6 +294,7 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
         "so_thu_tuc": len(tthc),
         "nguon": SOURCE_PORTAL,
         "nguon_van_ban": SOURCE_VBPL,
+        "nguon_thu_thap": NGUON_THU_THAP,
         "nguon_chinh_thuc": [
             {"ten": nguon_chinh_thuc.TEN_NGUON[nguon], "url": url}
             for nguon, url in nguon_chinh_thuc.DIA_CHI_TRANG.items()
