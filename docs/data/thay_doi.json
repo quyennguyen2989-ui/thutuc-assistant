@@ -1,5 +1,158 @@
 [
  {
+  "run_at": "2026-11-05T04:22:29+00:00",
+  "kind": "vbpl",
+  "record_id": 2609273430,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 24/2025/TT-BTP của Bộ Tư pháp",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 2501907959,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Chỉ thị 902/CT-TTg của Thủ tướng Chính phủ"
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 924320258,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 60/2026/TT-BKHCN của Bộ Khoa học và Công nghệ",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Chưa có hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 3880619487,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 2
+   },
+   "_ten": "Quyết định 5168/QĐ-UB-NC của UBND Thành phố Hồ Chí Minh"
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 3782812508,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Nghị quyết 23/2025/NQ-HĐND của HĐND Thành phố Hồ Chí Minh",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 3380287680,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Nghị định 137/2020/NĐ-CP của Chính phủ",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 90747602,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 12/2025/TT-BTP của Bộ Tư pháp",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 1207813003,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 11/2025/TT-BTP của Bộ Tư pháp",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Hết hiệu lực một phần"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 4213505235,
+  "change_type": "thay_doi",
+  "diff": {
+   "lich_su": {
+    "cu": 0,
+    "moi": 3
+   },
+   "_ten": "Thông tư 09/2017/TT-BNV của Bộ Nội vụ"
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 1933963798,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư 05/2025/TT-BNG của Bộ Ngoại giao",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "vbpl",
+  "record_id": 3580657669,
+  "change_type": "thay_doi",
+  "diff": {
+   "ngay_cap_nhat": {
+    "cu": "2026-04-18",
+    "moi": "2026-11-03"
+   },
+   "_ten": "Thông tư liên tịch 63/2016/TTLT-BTC-BGTVT của Bộ Tài chính"
+  }
+ },
+ {
+  "run_at": "2026-11-05T01:56:21+00:00",
+  "kind": "chinh_thuc",
+  "record_id": 2048712443,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "23/2025/NQ-HĐND: Nghị quyết quy định điều kiện về diện tích nhà ở tối thiểu để đăng ký thường trú tại chỗ ở hợp pháp do thuê, mượn, ở nhờ trên địa bàn tỉnh Đồng Tháp",
+   "_nguon": "bo_cong_an"
+  }
+ },
+ {
   "run_at": "2026-11-04T01:48:21+00:00",
   "kind": "chinh_thuc",
   "record_id": 4167738913,
@@ -3553,166 +3706,6 @@
     "cu": null,
     "moi": "Hết hiệu lực một phần"
    }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 1727115798,
-  "change_type": "thay_doi",
-  "diff": {
-   "tinh_trang": {
-    "cu": "Hết hiệu lực",
-    "moi": "Hết hiệu lực một phần"
-   },
-   "lich_su": {
-    "cu": 0,
-    "moi": 2
-   },
-   "_ten": "Thông tư 28/2026/TT-BTC của Bộ Tài chính"
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 411365188,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Luật 28/2009/QH12 của Quốc hội",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Hết hiệu lực một phần"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 1196767077,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Thông tư 24/2023/TT-BCA của Bộ Công an",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Hết hiệu lực"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 3789605400,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Quyết định 235/QĐ-TTg của Bộ Tài chính",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Còn hiệu lực"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 3115290376,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Nghị quyết 222/2025/QH15 của Quốc hội",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Hết hiệu lực một phần"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 2561416656,
-  "change_type": "thay_doi",
-  "diff": {
-   "lich_su": {
-    "cu": 0,
-    "moi": 2
-   },
-   "_ten": "Thông tư 22/2023/TT-BCA của Bộ Công an"
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 2556217101,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Nghị định 208/2026/NĐ-CP của Chính phủ",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Còn hiệu lực"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 1345363813,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Nghị định 191/2025/NĐ-CP của Chính phủ",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Hết hiệu lực một phần"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 3692520860,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Nghị định 184/2004/NĐ-CP của Chính phủ",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Hết hiệu lực"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 1153388965,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Nghị định 18/2026/NĐ-CP của Chính phủ",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Hết hiệu lực một phần"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 1899118091,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Nghị quyết 18/2026/NQ-CP của Chính phủ",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Còn hiệu lực"
-   }
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 2729286274,
-  "change_type": "thay_doi",
-  "diff": {
-   "lich_su": {
-    "cu": 0,
-    "moi": 2
-   },
-   "_ten": "Nghị quyết 66.17/2026/NQ-CP của Chính phủ"
   }
  }
 ]

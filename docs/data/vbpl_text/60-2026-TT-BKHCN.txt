@@ -1,0 +1,3981 @@
+Trang chủ
+>
+Văn bản quy phạm pháp luật Trung ương
+>
+Thông tư số 60/2026/TT-BKHCN Quy định về yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính, hướng dẫn việc đo lường, thống kê, đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính
+TRANG CHỦ
+GIỚI THIỆU
+VĂN BẢN PHÁP LUẬT TRUNG ƯƠNG
+VĂN BẢN PHÁP LUẬT ĐỊA PHƯƠNG
+Trang chủ
+>
+Văn bản quy phạm pháp luật Trung ương
+>
+Thông tư số 60/2026/TT-BKHCN Quy định về yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính, hướng dẫn việc đo lường, thống kê, đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính
+Nội dung
+Thuộc tính
+Lược đồ
+Lịch sử
+Văn bản gốc
+Tải về
+100%
+Hiển thị chi tiết cập nhật
+Thông tư số 60/2026/TT-BKHCN Quy định về yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính, hướng dẫn việc đo lường, thống kê, đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính
+Chưa có hiệu lực
+Ngày có hiệu lực:
+01/12/2026
+Ngày cập nhật:
+03/11/2026
+2
+lượt xem
+Nội dung
+Thuộc tính
+Lược đồ
+Lịch sử
+Văn bản gốc
+Tải về
+
+BỘ KHOA HỌC VÀ CÔNG NGHỆ
+
+
+	
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+
+Độc lập - Tự do - Hạnh phúc
+
+ 
+
+
+
+
+Số: 60/2026/TT-BKHCN
+
+	
+
+Hà Nội, ngày 13 tháng 10 năm 2026
+
+ 
+
+THÔNG TƯ
+Quy định về yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính, hướng dẫn việc đo lường, thống kê, đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính
+
+ 
+
+Căn cứ Luật Chuyển đổi số số 148/2025/QH15;
+
+Căn cứ Nghị định số 225/2026/NĐ-CP ngày 24 tháng 6 năm 2026 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Khoa học và Công nghệ;
+
+Căn cứ Nghị định số 224/2026/NĐ-CP ngày 24 tháng 6 năm 2026 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Chuyển đổi số;
+
+Căn cứ Nghị định số 118/2025/NĐ-CP ngày 09 tháng 6 năm 2025 của Chính phủ về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia, được sửa đổi, bổ sung bởi Nghị định số 367/2025/NĐ-CP và Nghị định số 309/2026/NĐ-CP;
+
+Căn cứ Nghị định số 45/2020/NĐ-CP ngày 08 tháng 4 năm 2020 của Chính phủ về thực hiện thủ tục hành chính trên môi trường điện tử, được sửa đổi, bổ sung bởi Nghị định số 68/2024/NĐ-CP, Nghị định số 69/2024/NĐ-CP, Nghị định số 118/2025/NĐ-CP và Nghị định số 310/2026/NĐ-CP;
+
+Căn cứ Quyết định số 29/2026/QĐ-TTg ngày 04 tháng 6 năm 2026 của Thủ tướng Chính phủ ban hành Quy chế quản lý, vận hành, khai thác Cổng Dịch vụ công quốc gia;
+
+Theo đề nghị của Cục trưởng Cục Chuyển đổi số quốc gia;
+
+Bộ trưởng Bộ Khoa học và Công nghệ ban hành Thông tư quy định về yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính, hướng dẫn việc đo lường, thống kê, đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính.
+
+Chương I
+
+QUY ĐỊNH CHUNG
+
+Điều 1. Phạm vi điều chỉnh
+
+Thông tư này quy định về công bố, công khai dịch vụ công trực tuyến; kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính; yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính; tổ chức thực hiện việc đánh giá dịch vụ công trực tuyến; quy định kỹ thuật về tích hợp chữ ký số hoặc ứng dụng ký số trên Cổng Dịch vụ công quốc gia; hướng dẫn việc đo lường, thống kê, đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính.
+
+Chức năng, tính năng kỹ thuật quy định trong Thông tư này là cơ bản, tối thiểu. Hệ thống thông tin giải quyết thủ tục hành chính có thể được bổ sung các chức năng, tính năng kỹ thuật khác đáp ứng yêu cầu đặc thù riêng.
+
+Điều 2. Đối tượng áp dụng
+
+1. Các cơ quan giải quyết thủ tục hành chính
+
+a) Bộ, cơ quan ngang bộ; cục, vụ, các đơn vị thuộc bộ, cơ quan ngang bộ có nhiệm vụ, quyền hạn giải quyết thủ tục hành chính và tham gia vào quá trình giải quyết thủ tục hành chính;
+
+b) Ủy ban nhân dân cấp tỉnh, Ủy ban nhân dân cấp xã; các cơ quan chuyên môn thuộc Ủy ban nhân dân cấp tỉnh, Ủy ban nhân dân cấp xã; các ban quản lý khu công nghiệp, khu chế xuất, khu kinh tế, khu công nghệ cao có nhiệm vụ, quyền hạn giải quyết thủ tục hành chính;
+
+c) Các cơ quan, đơn vị khác có nhiệm vụ, quyền hạn giải quyết thủ tục hành chính hoặc tham gia vào quá trình giải quyết thủ tục hành chính theo quy định của pháp luật.
+
+2. Cán bộ, công chức, viên chức, người lao động có trách nhiệm giải quyết thủ tục hành chính thuộc các cơ quan quy định tại khoản 1 Điều này.
+
+3. Các tổ chức, cá nhân có liên quan trong việc giải quyết thủ tục hành chính, cung cấp giải pháp, xây dựng, phát triển, vận hành Hệ thống thông tin giải quyết thủ tục hành chính.
+
+4. Các tổ chức, cá nhân có liên quan trong việc kết nối các hệ thống khác với Hệ thống thông tin giải quyết thủ tục hành chính.
+
+ 
+
+Điều 3. Giải thích từ ngữ
+
+Trong Thông tư này, những từ ngữ dưới đây được hiểu như sau:
+
+1. Hệ thống giám sát, đo lường mức độ cung cấp và sử dụng dịch vụ Chính phủ số (sau đây gọi là Hệ thống EMC) là hợp phần của Nền tảng thống kê, đo lường, giám sát, đánh giá triển khai chuyển đổi số; thực hiện thống kê, đo lường hoạt động cung cấp thông tin và dịch vụ công trực tuyến của cơ quan nhà nước trên môi trường mạng.
+
+2. Cơ quan quản lý Hệ thống EMC là Cục Chuyển đổi số quốc gia (Bộ Khoa học và Công nghệ).
+
+3. Người dùng là tổ chức, cá nhân sử dụng Hệ thống thông tin giải quyết thủ tục hành chính để khai thác thông tin, thực hiện các dịch vụ phục vụ nhu cầu của mình.
+
+Chương II
+
+QUY ĐỊNH KIẾN TRÚC HỆ THỐNG THÔNG TIN
+GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH VÀ QUY ĐỊNH KỸ THUẬT VỀ TÍCH HỢP CHỮ KÝ SỐ HOẶC ỨNG DỤNG KÝ SỐ TRÊN
+CỔNG DỊCH VỤ CÔNG QUỐC GIA
+
+Điều 4. Kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính và quy định kỹ thuật về tích hợp chữ ký số hoặc ứng dụng ký số trên Cổng Dịch vụ công quốc gia
+
+1. Kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính theo điểm i khoản 1 Điều 15 Nghị định số 224/2026/NĐ-CP ngày 24 tháng 6 năm 2026 của Chính phủ, bao gồm các nội dung về vị trí, vai trò, mối quan hệ của các thành phần trong kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính, nội dung chi tiết tại Phụ lục I kèm theo Thông tư này.
+
+2. Việc tích hợp chữ ký số hoặc ứng dụng ký số trên Cổng Dịch vụ công quốc gia thực hiện theo Quy chế quản lý, vận hành, khai thác Cổng Dịch vụ công quốc gia ban hành kèm theo Quyết định số 29/2026/QĐ-TTg ngày 04 tháng 6 năm 2026 của Thủ tướng Chính phủ và pháp luật về chữ ký điện tử, dịch vụ tin cậy.
+
+Chương III
+
+QUY ĐỊNH YÊU CẦU, TÍNH NĂNG KỸ THUẬT CỦA HỆ THỐNG THÔNG TIN GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH VÀ CÔNG BỐ, CÔNG KHAI DỊCH VỤ CÔNG TRỰC TUYẾN
+
+Điều 5. Yêu cầu chung
+
+Việc xây dựng Hệ thống thông tin giải quyết thủ tục hành chính bảo đảm đáp ứng các yêu cầu sau:
+
+1. Bảo đảm các yêu cầu quy định tại khoản 2 Điều 15 Nghị định số 224/2026/NĐ-CP ngày 24 tháng 6 năm 2026 của Chính phủ.
+
+2. Tuân thủ quy định pháp luật về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia, thực hiện thủ tục hành chính trên môi trường điện tử.
+
+3. Tuân thủ kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính, Khung kiến trúc tổng thể quốc gia số, Khung kiến trúc dữ liệu quốc gia theo quy định hiện hành.
+
+4. Có khả năng kết nối, chia sẻ, khai thác dữ liệu với các hệ thống thông tin, cơ sở dữ liệu của các cơ quan nhà nước (gồm Cổng Dịch vụ công quốc gia; các hệ thống thông tin nội bộ và phần mềm chuyên ngành của bộ, tỉnh; các cơ sở dữ liệu quốc gia; cơ sở dữ liệu chuyên ngành; hệ thống thông tin có quy mô, phạm vi từ trung ương đến địa phương) theo phạm vi chức năng, nhiệm vụ và yêu cầu phục vụ giải quyết thủ tục hành chính, cung cấp dịch vụ công trực tuyến để sử dụng lại thông tin, dữ liệu đã có, phục vụ giải quyết thủ tục hành chính trên môi trường mạng.
+
+5. Hồ sơ điện tử sau khi giải quyết thủ tục hành chính phải được hình thành đầy đủ thành phần hồ sơ điện tử phục vụ công tác lưu trữ theo quy định của pháp luật về lưu trữ.
+
+6. Hệ thống thông tin giải quyết thủ tục hành chính không được yêu cầu cá nhân, tổ chức cung cấp hoặc khai báo lại thông tin, dữ liệu mà cơ quan nhà nước đã có hoặc có thể khai thác từ cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành, hệ thống thông tin có kết nối, chia sẻ dữ liệu theo quy định của pháp luật, trừ trường hợp pháp luật có quy định khác.
+
+7. Bảo đảm tính thống nhất, đồng bộ, hiệu quả, hạn chế trùng lặp, chồng chéo trong đầu tư, xây dựng và vận hành Hệ thống thông tin giải quyết thủ tục hành chính.
+
+Điều 6. Yêu cầu về giao diện
+
+1. Giao diện tương tác với người dùng bảo đảm cấu trúc, bố cục thống nhất trên tất cả các trang, giúp người dùng dễ điều hướng và tiếp cận thông tin, gồm ba phần chính:
+
+a) Phần đầu trang (Header);
+
+b) Phần nội dung (Body);
+
+c) Phần chân trang (Footer).
+
+2. Giao diện dành cho cán bộ, công chức, viên chức thực hiện giải quyết thủ tục hành chính và quản trị hệ thống phải bảo đảm thuận tiện, hỗ trợ hiệu quả công việc và đáp ứng các yêu cầu sau:
+
+a) Cách sắp xếp, trình bày phải khoa học và hợp lý, bảo đảm thuận tiện;
+
+b) Sử dụng bộ nhận diện bảo đảm tuân thủ các quy định hiện hành của pháp luật.
+
+3. Các yêu cầu đáp ứng về giao diện quy định tại Phụ lục II ban hành kèm theo Thông tư này.
+
+Điều 7. Yêu cầu chức năng
+
+1. Hệ thống thông tin giải quyết thủ tục hành chính gồm các chức năng cơ bản, tối thiểu như sau:
+
+a) Xác thực và quản lý tài khoản;
+
+b) Sử dụng dịch vụ công trực tuyến và biểu mẫu điện tử;
+
+c) Ký số và tích hợp với dịch vụ chứng thực chữ ký số chuyên dùng công vụ; Cổng kết nối dịch vụ chứng thực chữ ký số công cộng do Bộ Khoa học và Công nghệ xây dựng (sau đây gọi là Cổng eSign);
+
+d) Quản lý danh mục, hồ sơ;
+
+đ) Tiếp nhận và giải quyết thủ tục hành chính;
+
+e) Các tiện ích;
+
+g) Báo cáo;
+
+h) Đo lường, thống kê, giám sát và đánh giá;
+
+i) Điều hành, tác nghiệp;
+
+k) Kho quản lý dữ liệu điện tử của tổ chức và cá nhân;
+
+l) Liên thông, tích hợp và chia sẻ thông tin.
+
+2. Ngoài các chức năng cơ bản, tối thiểu tại khoản 1 Điều này, Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành phải đáp ứng các chức năng sau:
+
+a) Quản lý tập trung, thống nhất danh mục thủ tục hành chính, dịch vụ công trực tuyến, quy trình điện tử và biểu mẫu điện tử từ trung ương đến địa phương;
+
+b) Quản lý tập trung tài khoản, phân quyền người dùng theo cơ quan, đơn vị, địa phương và thẩm quyền giải quyết;
+
+c) Tổng hợp, theo dõi, thống kê, giám sát tình hình tiếp nhận, giải quyết thủ tục hành chính thuộc phạm vi quản lý của bộ, ngành trên toàn quốc;
+
+d) Bảo đảm cán bộ, công chức, viên chức, người lao động có trách nhiệm giải quyết thủ tục hành chính cấp tỉnh, cấp xã có thể đăng nhập một lần (SSO) để truy cập Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành và các phần mềm chuyên ngành có liên quan.
+
+3. Các yêu cầu đáp ứng về chức năng của Hệ thống thông tin giải quyết thủ tục hành chính quy định tại Phụ lục III ban hành kèm theo Thông tư này.
+
+Điều 8. Yêu cầu hiệu năng
+
+1. Hệ thống thông tin giải quyết thủ tục hành chính bảo đảm hiệu năng tải trang dành cho trải nghiệm người dùng và hiệu năng hệ thống.
+
+2. Các yêu cầu đáp ứng về hiệu năng của Hệ thống thông tin giải quyết thủ tục hành chính quy định tại Phụ lục IV ban hành kèm theo Thông tư này.
+
+Điều 9. Yêu cầu bảo đảm an ninh mạng
+
+1. Bộ, ngành, địa phương bảo đảm an ninh mạng cho Hệ thống thông tin giải quyết thủ tục hành chính theo hướng dẫn của Bộ Công an.
+
+2. Các yêu cầu đáp ứng về an ninh mạng của Hệ thống thông tin giải quyết thủ tục hành chính quy định tại Phụ lục V ban hành kèm theo Thông tư này.
+
+Điều 10. Yêu cầu khác
+
+Ngoài việc đáp ứng các yêu cầu được quy định từ Điều 5 đến Điều 9 Thông tư này, Hệ thống thông tin giải quyết thủ tục hành chính phải đáp ứng các yêu cầu khác được quy định tại Phụ lục VI ban hành kèm theo Thông tư này.
+
+Điều 11. Yêu cầu công bố, công khai dịch vụ công trực tuyến
+
+1. Công bố, công khai đầy đủ thông tin dịch vụ công trực tuyến bảo đảm đồng bộ, thống nhất với việc công bố, công khai thủ tục hành chính theo quy định về kiểm soát thủ tục hành chính.
+
+2. Công bố, công khai đầy đủ thông tin dịch vụ công trực tuyến bao gồm tối thiểu các yêu cầu sau:
+
+a) Tên dịch vụ công trực tuyến: bảo đảm phải tương ứng với tên thủ tục hành chính; trường hợp một thủ tục hành chính có nhiều dịch vụ công trực tuyến thì tên dịch vụ công trực tuyến được bổ sung thông tin để phân biệt;
+
+b) Mã dịch vụ công trực tuyến: bảo đảm phải tương ứng với mã thủ tục hành chính; trường hợp một thủ tục hành chính có nhiều dịch vụ công trực tuyến thì mã dịch vụ công trực tuyến được bổ sung thông tin để phân biệt;
+
+c) Lĩnh vực thủ tục hành chính;
+
+d) Mức độ cung cấp dịch vụ công trực tuyến bao gồm: dịch vụ công trực tuyến toàn trình, dịch vụ công trực tuyến một phần;
+
+đ) Trình tự thực hiện;
+
+e) Cách thức thực hiện;
+
+g) Thành phần, số lượng hồ sơ;
+
+h) Thời hạn giải quyết;
+
+i) Đối tượng thực hiện dịch vụ công trực tuyến;
+
+k) Cơ quan giải quyết dịch vụ công trực tuyến;
+
+l) Cấp thực hiện dịch vụ công trực tuyến;
+
+m) Kết quả thực hiện dịch vụ công trực tuyến: ghi rõ kết quả cuối cùng của việc thực hiện dịch vụ công trực tuyến;
+
+n) Thông tin về mẫu đơn, mẫu tờ khai hành chính, mẫu kết quả thực hiện dịch vụ công trực tuyến, yêu cầu, điều kiện, phí, lệ phí (nếu có);
+
+o) Hình thức nhận hồ sơ, trả kết quả (trực tiếp, qua dịch vụ bưu chính, qua môi trường mạng);
+
+p) Yêu cầu, điều kiện thực hiện dịch vụ công trực tuyến (nếu có);
+
+q) Căn cứ pháp lý thực hiện dịch vụ công trực tuyến (văn bản quy phạm pháp luật quy định trực tiếp về thủ tục hành chính, quyết định công bố thủ tục hành chính).
+
+3. Các cơ quan giải quyết thủ tục hành chính có trách nhiệm cập nhật, kiểm tra, bảo đảm tính chính xác, thống nhất của thông tin dịch vụ công trực tuyến được công bố, đồng bộ thông tin giữa Hệ thống thông tin giải quyết thủ tục hành chính với Cổng Dịch vụ công quốc gia và các hệ thống liên quan.
+
+Chương IV
+
+QUY ĐỊNH VỀ ĐO LƯỜNG, THỐNG KÊ
+
+Điều 12. Quy định chung về kết nối, thu thập dữ liệu phục vụ đo lường, thống kê
+
+1. Việc kết nối, thu thập dữ liệu phục vụ đo lường, thống kê phải bảo đảm không ảnh hưởng đến hoạt động ổn định, liên tục, hiệu năng và an ninh mạng của Hệ thống thông tin giải quyết thủ tục hành chính.
+
+2. Hệ thống EMC kết nối, tiếp nhận thông tin, số liệu từ Cổng Dịch vụ công quốc gia và Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành, địa phương để đo lường, thống kê, giám sát và đánh giá độc lập chất lượng cung cấp thông tin và dịch vụ công trực tuyến của cơ quan nhà nước trên môi trường mạng.
+
+Điều 13. Quy định về kết nối Hệ thống EMC phục vụ đo lường, thống kê
+
+1. Cơ quan chủ quản Hệ thống thông tin giải quyết thủ tục hành chính kết nối Hệ thống thông tin giải quyết thủ tục hành chính với Hệ thống EMC thông qua việc tích hợp mã nhúng do cơ quan quản lý Hệ thống EMC cung cấp để phục vụ theo dõi, đo lường hoạt động của người dùng dịch vụ công trực tuyến.
+
+2. Việc tích hợp mã nhúng được thực hiện để hiển thị thông tin của Hệ thống EMC trên Hệ thống thông tin giải quyết thủ tục hành chính và trên từng dịch vụ công trực tuyến.
+
+3. Thông tin của Hệ thống EMC được cập nhật tự động, không hiển thị trong thời gian kết nối giữa hai hệ thống bị gián đoạn hoặc tạm dừng do sự cố.
+
+4. Mức độ phức tạp của dịch vụ công trực tuyến được hiển thị theo thông tin do Hệ thống EMC công bố.
+
+Điều 14. Trách nhiệm của cơ quan, tổ chức thực hiện kết nối Hệ thống EMC
+
+1. Phối hợp với cơ quan quản lý Hệ thống EMC định kỳ rà soát, đánh giá việc bảo đảm duy trì kết nối Hệ thống EMC.
+
+2. Cung cấp thông tin để thực hiện kết nối Hệ thống EMC theo mẫu phiếu cung cấp thông tin tại Phụ lục VII ban hành kèm theo Thông tư này.
+
+3. Thông báo cho Cơ quan quản lý Hệ thống EMC trong thời hạn không quá 01 ngày làm việc kể từ khi phát hiện thay đổi về mã giám sát, cấu hình hệ thống, cấu hình kết nối hoặc sự cố gây gián đoạn, mất kết nối phát sinh từ phía Hệ thống thông tin giải quyết thủ tục hành chính.
+
+4. Bảo đảm công tác theo dõi, giám sát an ninh mạng và bảo mật dữ liệu khi kết nối Hệ thống EMC.
+
+Điều 15. Trách nhiệm của cơ quan quản lý Hệ thống giám sát, đo lường mức độ cung cấp và sử dụng dịch vụ Chính phủ số
+
+1. Hướng dẫn và hỗ trợ kỹ thuật thực hiện kết nối Hệ thống EMC với Hệ thống thông tin giải quyết thủ tục hành chính.
+
+2. Công bố danh sách phân loại dịch vụ công trực tuyến theo mức độ phức tạp của dịch vụ công trực tuyến trên Hệ thống EMC để cơ quan chủ quản Hệ thống thông tin giải quyết thủ tục hành chính thực hiện tích hợp mã nhúng của Hệ thống EMC.
+
+3. Chủ trì, phối hợp với cơ quan chủ quản Hệ thống thông tin giải quyết thủ tục hành chính và tổ chức, cá nhân có liên quan trong giải quyết, xử lý sự cố, vướng mắc phát sinh trong quá trình kết nối.
+
+4. Bảo đảm an ninh mạng đối với dữ liệu mà Hệ thống EMC thu thập.
+
+Chương V
+
+QUY ĐỊNH VỀ ĐÁNH GIÁ CHẤT LƯỢNG HỆ THỐNG THÔNG TIN GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH VÀ
+DỊCH VỤ CÔNG TRỰC TUYẾN
+
+Điều 16. Quy định về đánh giá chất lượng
+
+Đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính và dịch vụ công trực tuyến bao gồm 02 nội dung, cụ thể như sau:
+
+1. Đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính đáp ứng yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính.
+
+2. Đánh giá dịch vụ công trực tuyến trên cơ sở xác định mức độ phức tạp để áp dụng các yêu cầu chất lượng tương ứng; kết quả xác định mức độ phức tạp là cơ sở để cơ quan cung cấp dịch vụ công trực tuyến rà soát, đơn giản hóa, cắt giảm thành phần hồ sơ, yêu cầu và thông tin kê khai.
+
+Điều 17. Đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính
+
+1. Đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính đáp ứng yêu cầu, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính bao gồm các nội dung:
+
+a) Yêu cầu về giao diện đáp ứng Phụ lục II ban hành kèm theo Thông tư này;
+
+b) Yêu cầu về chức năng đáp ứng Phụ lục III ban hành kèm theo Thông tư này;
+
+c) Yêu cầu về hiệu năng đáp ứng Phụ lục IV ban hành kèm theo Thông tư này;
+
+d) Yêu cầu về an ninh mạng đáp ứng Phụ lục V ban hành kèm theo Thông tư này;
+
+đ) Yêu cầu khác đáp ứng Phụ lục VI ban hành kèm theo Thông tư này.
+
+2. Kết quả đánh giá đối với từng nội dung tại khoản 1 Điều này được xác định theo một trong hai mức: Đạt hoặc Không đạt.
+
+Điều 18. Đánh giá dịch vụ công trực tuyến
+
+1. Đánh giá dịch vụ công trực tuyến thực hiện theo quy định tại mục 5 Tiêu chuẩn quốc gia TCVN 14656:2026 về Dịch vụ công trực tuyến – Yêu cầu về chất lượng của trải nghiệm người dùng.
+
+2. Phương thức xác định mức độ phức tạp của dịch vụ công trực tuyến thực hiện theo Phụ lục B Tiêu chuẩn quốc gia TCVN 14656:2026 về Dịch vụ công trực tuyến – Yêu cầu về chất lượng của trải nghiệm người dùng.
+
+Điều 19. Công bố kết quả
+
+1. Bộ Khoa học và Công nghệ (Cục Chuyển đổi số quốc gia) hướng dẫn tổ chức thực hiện việc đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính; nội dung hướng dẫn được rà soát, cập nhật định kỳ hằng năm hoặc khi có thay đổi của quy định có liên quan.
+
+2. Kết quả đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính và dịch vụ công trực tuyến được tổng hợp, công bố trên Hệ thống EMC.
+
+Chương VI
+
+ĐIỀU KHOẢN THI HÀNH
+
+Điều 20. Hiệu lực thi hành và điều khoản chuyển tiếp
+
+1. Thông tư này có hiệu lực thi hành kể từ ngày 01 tháng 12 năm 2026.
+
+2. Thông tư số 21/2023/TT-BTTTT ngày 31 tháng 12 năm 2023 của Bộ trưởng Bộ Thông tin và Truyền thông quy định về chức năng, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh và Thông tư số 11/2025/TT-BKHCN ngày 30 tháng 6 năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ sửa đổi, bổ sung một số điều của Thông tư số 21/2023/TT-BTTTT ngày 31 tháng 12 năm 2023 của Bộ trưởng Bộ Thông tin và Truyền thông quy định về chức năng, tính năng kỹ thuật của Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hết hiệu lực thi hành kể từ ngày Thông tư này có hiệu lực thi hành, trừ các trường hợp áp dụng theo khoản 3 Điều này.
+
+3. Đối với Hệ thống thông tin giải quyết thủ tục hành chính đã được xây dựng và đang vận hành trước ngày Thông tư này có hiệu lực thi hành, trong thời gian chưa hoàn thành việc chỉnh sửa, nâng cấp, các quy định về chức năng, tính năng kỹ thuật tại Thông tư số 21/2023/TT-BTTTT và Thông tư số 11/2025/TT-BKHCN được tiếp tục áp dụng cho đến khi hoàn thành nâng cấp, nhưng không quá 06 tháng kể từ ngày Thông tư này có hiệu lực thi hành.
+
+4. Cơ quan chủ quản Hệ thống thông tin giải quyết thủ tục hành chính có trách nhiệm rà soát, xây dựng lộ trình và hoàn thành việc chỉnh sửa, nâng cấp trong thời hạn 06 tháng kể từ ngày Thông tư này có hiệu lực thi hành; khuyến khích áp dụng các quy định tương ứng tại Thông tư này ngay từ ngày Thông tư này có hiệu lực thi hành.
+
+Điều 21. Tổ chức thực hiện
+
+1. Các bộ, cơ quan ngang bộ, Ủy ban nhân dân cấp tỉnh và các tổ chức, cá nhân có liên quan có trách nhiệm:
+
+a) Tuân thủ các quy định tại Thông tư này trong việc cung cấp giải pháp, xây dựng, phát triển, nâng cấp, mở rộng, vận hành, đánh giá chất lượng Hệ thống thông tin giải quyết thủ tục hành chính;
+
+b) Trong thời gian chuyển tiếp, Hệ thống thông tin giải quyết thủ tục hành chính tiếp tục vận hành để bảo đảm việc tiếp nhận, giải quyết thủ tục hành chính và cung cấp dịch vụ công trực tuyến không bị gián đoạn; việc chuyển đổi, nâng cấp phải bảo đảm kế thừa, toàn vẹn dữ liệu và hồ sơ giải quyết thủ tục hành chính.
+
+2. Bộ Khoa học và Công nghệ (Cục Chuyển đổi số quốc gia):
+
+a) Thực hiện các nhiệm vụ, trách nhiệm quy định tại Điều 15 và Điều 19 Thông tư này;
+
+b) Kiểm tra, giám sát, đánh giá, xếp hạng và công bố kết quả đánh giá chất lượng của Hệ thống thông tin giải quyết thủ tục hành chính định kỳ hằng năm và đột xuất theo yêu cầu của cơ quan, người có thẩm quyền.
+
+3. Trong quá trình thực hiện, nếu có vướng mắc, đề nghị phản ánh kịp thời về Bộ Khoa học và Công nghệ (Cục Chuyển đổi số quốc gia) để nghiên cứu, sửa đổi, bổ sung./.
+
+Nơi nhận:
+
+- Thủ tướng, các Phó Thủ tướng Chính phủ;
+
+- Các bộ, cơ quan ngang bộ;
+
+- UBND các tỉnh, thành phố;
+
+- Đơn vị chuyên trách chuyển đổi số các bộ, cơ quan ngang bộ;
+
+- Sở Khoa học và Công nghệ các tỉnh, thành phố;
+
+- Cục Kiểm tra văn bản và Tổ chức thi hành pháp luật (Bộ Tư pháp);
+
+- Công báo, Cổng thông tin điện tử Chính phủ;
+
+- Bộ KHCN: Bộ trưởng và các Thứ trưởng; các cơ quan,
+
+đơn vị thuộc bộ; Cổng Thông tin điện tử của Bộ KHCN;
+
+- Lưu: VT, CĐSQG (2b).
+
+	
+
+BỘ TRƯỞNG
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Vũ Hải Quân
+
+PHỤ LỤC I
+
+KIẾN TRÚC HỆ THỐNG THÔNG TIN GIẢI QUYẾT
+
+THỦ TỤC HÀNH CHÍNH
+
+(Ban hành kèm theo Thông tư số …/2026/TT-BKHCN ngày … tháng … năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ)
+
+ 
+
+I. VỊ TRÍ, VAI TRÒ, MỐI QUAN HỆ CỦA CÁC THÀNH PHẦN TRONG KIẾN TRÚC HỆ THỐNG THÔNG TIN GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH
+
+Sơ đồ kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính
+
+Kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính mô tả vị trí, vai trò, mối quan hệ của các thành phần trong kiến trúc, nhằm tổ chức, kết nối và vận hành các hệ thống thông tin phục vụ giải quyết thủ tục hành chính theo mô hình tập trung từ trung ương đến địa phương, trong đó:
+
+1. Cổng Dịch vụ công quốc gia được quy định tại khoản 1 Điều 1 Nghị định số 309/2026/NĐ-CP ngày 05 tháng 8 năm 2026 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 118/2025/NĐ-CP ngày 09 tháng 6 năm 2025 của Chính phủ về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia, được sửa đổi, bổ sung bởi Nghị định số 367/2025/NĐ-CP;
+
+Hệ thống điều phối giải quyết thủ tục hành chính là hợp phần của Cổng Dịch vụ công quốc gia, được quy định tại khoản 4 Điều 3 Chương I Quyết định số 29/2026/QĐ-TTg ngày 04 tháng 6 năm 2026 của Thủ tướng Chính phủ ban hành Quy chế quản lý, vận hành, khai thác Cổng Dịch vụ công quốc gia. Hệ thống có vai trò như sau:
+
+a) Giao diện dùng chung để cán bộ giải quyết thủ tục hành chính đăng nhập, tiếp nhận hồ sơ và điều hướng giải quyết thủ tục hành chính;
+
+b) Hỗ trợ cán bộ tiếp nhận thủ tục hành chính, xử lý hồ sơ đăng nhập Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành thông qua VNeID;
+
+c) Lưu trữ danh mục và chi tiết phân quyền cho cán bộ tiếp nhận, xử lý hồ sơ. Sau khi cán bộ hoàn thành đăng nhập vào Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành, bộ phân quyền sẽ được gửi từ Hệ thống điều phối giải quyết thủ tục hành chính đến Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành để cá nhân hóa giao diện phù hợp với vai trò, thẩm quyền của cán bộ;
+
+d) Xử lý nhật ký (log) và thông báo đến cán bộ: lưu trữ nhật ký khai thác, sử dụng hệ thống và nhóm chức năng đẩy thông báo đến người dùng (notification);
+
+đ) Theo dõi điều phối dịch vụ công liên thông: Hệ thống điều phối giải quyết thủ tục hành chính cho phép thiết lập, cấu hình luồng quy trình giải quyết dịch vụ công liên thông gồm các bước xử lý được thực hiện trên Hệ thống thông tin giải quyết thủ tục hành chính của các bộ, ngành có liên quan.
+
+Sau khi hoàn thành bước xử lý thuộc trách nhiệm của mình, Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành đứng đầu hoặc liền trước trong chuỗi liên thông có trách nhiệm chuyển kết quả xử lý về Hệ thống điều phối giải quyết thủ tục hành chính. Trên cơ sở kết quả nhận được, Hệ thống điều phối giải quyết thủ tục hành chính cập nhật trạng thái hồ sơ và chuyển hồ sơ liên thông đến Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành tiếp theo để tiếp tục xử lý theo quy trình đã được thiết lập.
+
+Kết quả giải quyết dịch vụ công liên thông được tập trung tại cơ quan có trách nhiệm trả kết quả cho tổ chức, cá nhân theo quy định; đồng thời được lưu trữ vào Kho quản lý dữ liệu điện tử của tổ chức, cá nhân và gửi về Cổng Dịch vụ công quốc gia.
+
+Đối với thủ tục hành chính thực hiện theo Cơ chế một cửa quốc gia, Cơ chế một cửa ASEAN, kết quả xử lý được chuyển đến Hệ thống thông tin giải quyết thủ tục hành chính của Bộ Tài chính để tiếp tục thực hiện các bước theo quy định;
+
+e) Báo cáo, thống kê, giám sát, đo lường: hỗ trợ cán bộ giải quyết thủ tục hành chính và các cán bộ có liên quan trong công tác báo cáo, thống kê, giám sát, đo lường; đồng bộ thông tin tiếp nhận, xử lý hồ sơ với Hệ thống thông tin giải quyết thủ tục hành chính của địa phương để phục vụ hoạt động chỉ đạo, điều hành của các tỉnh, thành phố; đồng bộ thông tin giám sát, đo lường tập trung với Nền tảng thống kê, đo lường, giám sát, đánh giá triển khai chuyển đổi số.
+
+2. Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ (còn gọi là Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành) tích hợp với Cổng Dịch vụ công quốc gia để cung cấp, giải quyết dịch vụ công trực tuyến thống nhất từ trung ương đến địa phương.
+
+Đối với Hệ thống thông tin giải quyết thủ tục hành chính của Bộ Công an, Bộ Quốc phòng, Ngân hàng Nhà nước Việt Nam, Bộ Tài chính (Cổng thông tin Một cửa Quốc gia) là các hệ thống đặc thù, vận hành theo mô hình ngành dọc, không thông qua Trung tâm Phục vụ hành chính công. Các hệ thống này không bắt buộc điều hướng qua giao diện của Hệ thống điều phối giải quyết thủ tục hành chính nhưng phải kết nối, tích hợp, chia sẻ dữ liệu với Cổng Dịch vụ công quốc gia và Hệ thống điều phối giải quyết thủ tục hành chính các thông tin về trạng thái xử lý hồ sơ, kết quả giải quyết thủ tục hành chính và dữ liệu cần thiết theo quy định của pháp luật, bảo đảm không ảnh hưởng đến an toàn, an ninh quốc gia.
+
+3. Hệ thống thông tin giải quyết thủ tục hành chính của địa phương chỉ cung cấp, giải quyết các dịch vụ công trực tuyến chưa được cung cấp trên Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ và Cổng Dịch vụ công quốc gia.
+
+4. Phần mềm chuyên ngành là phần mềm phục vụ yêu cầu đặc thù của một ngành, lĩnh vực hoặc một cơ quan cụ thể.
+
+5. Nền tảng thống kê, đo lường, giám sát, đánh giá triển khai chuyển đổi số (hợp phần Hệ thống EMC) kết nối, tiếp nhận thông tin, số liệu từ Cổng Dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành, địa phương theo quy định tại điểm c, d khoản 3 Điều 19 Nghị định số 224/2026/NĐ-CP ngày 24 tháng 6 năm 2026 của Chính phủ.
+
+ 
+
+6. Cá nhân, tổ chức thực hiện thủ tục hành chính thông qua các hình thức sau:
+
+a) Nộp hồ sơ trực tuyến qua Cổng Dịch vụ công quốc gia hoặc Ứng dụng định danh quốc gia (VNeID), hồ sơ chuyển đến Hệ thống thông tin giải quyết thủ tục hành chính của các bộ, ngành, địa phương để giải quyết;
+
+b) Nộp hồ sơ trực tiếp tại Bộ phận Một cửa cấp bộ, Trung tâm Phục vụ hành chính công cấp tỉnh, Trung tâm Phục vụ hành chính công cấp xã, các điểm tiếp nhận hồ sơ theo đặc thù các ngành, nghề, lĩnh vực;
+
+c) Thông qua dịch vụ bưu chính công ích theo quy định của Thủ tướng Chính phủ, qua thuê dịch vụ của doanh nghiệp, cá nhân hoặc qua ủy quyền theo quy định của pháp luật.
+
+II. PHƯƠNG THỨC TRIỂN KHAI
+
+1. Nộp hồ sơ trực tuyến
+
+a) Đối với các dịch vụ công trực tuyến triển khai biểu mẫu điện tử tương tác (eForm) trên Cổng Dịch vụ công quốc gia
+
+Thực hiện theo các bước như sau:
+
+Bước 1: Cá nhân, tổ chức đăng nhập vào Cổng Dịch vụ công quốc gia thông qua VNeID.
+
+Bước 2: Cá nhân, tổ chức lựa chọn thủ tục hành chính cần nộp hồ sơ trực tuyến và điền thông tin vào biểu mẫu điện tử tương tác trên Cổng Dịch vụ công quốc gia.
+
+Bước 3: Cá nhân, tổ chức nộp hồ sơ thành công trên Cổng Dịch vụ công quốc gia. Hồ sơ được chuyển về Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành chủ quản tương ứng với dịch vụ công trực tuyến cá nhân, tổ chức lựa chọn.
+
+Bước 4: Cán bộ tiếp nhận hồ sơ vào Hệ thống điều phối giải quyết thủ tục hành chính (hoặc Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành đối với các hệ thống đặc thù tại khoản 2 Mục I Phụ lục I) để tiếp nhận và chuyển xử lý hồ sơ theo quy định.
+
+Bước 5: Hồ sơ được xử lý trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành theo quy trình, nghiệp vụ thông qua các phần mềm chuyên ngành, các cơ sở dữ liệu chuyên ngành và hình thành cơ sở dữ liệu tập trung của bộ, ngành bảo đảm đúng, đủ, sạch, sống, thống nhất, dùng chung. Trường hợp không có phần mềm chuyên ngành, cán bộ sẽ xử lý, luân chuyển và số hóa kết quả giải quyết thủ tục hành chính trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành.
+
+Bước 6: 
+
+Kết quả giải quyết thủ tục hành chính được đồng bộ về Cổng Dịch vụ công quốc gia/Hệ thống điều phối giải quyết thủ tục hành chính bao gồm bản điện tử của kết quả giải quyết thủ tục hành chính và dữ liệu số hóa kết quả giải quyết thủ tục hành chính, phục vụ trả kết quả cho cá nhân, tổ chức tập trung.
+
+Kết quả giải quyết thủ tục hành chính của bộ, ngành, địa phương bao gồm kết quả giải quyết thủ tục hành chính bản điện tử được đồng bộ về Kho quản lý dữ liệu điện tử của tổ chức, cá nhân trên Cổng Dịch vụ công quốc gia, phục vụ khai thác dùng chung, hiển thị thông tin trên VNeID phục vụ cá nhân, tổ chức tra cứu, chia sẻ khi cần thiết.
+
+Dữ liệu, thông tin tiến trình, kết quả xử lý hồ sơ đồng bộ từ Hệ thống điều phối giải quyết thủ tục hành chính đến Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh/các cơ sở dữ liệu địa phương.
+
+Hệ thống thông tin giải quyết thủ tục hành chính của địa phương đồng bộ dữ liệu giải quyết thủ tục hành chính từ Cổng Dịch vụ công quốc gia để tra cứu, khai thác cho các nhu cầu quản lý tại địa phương, không thực hiện giải quyết thủ tục hành chính đối với các thủ tục hành chính triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ.
+
+b) Đối với các dịch vụ công trực tuyến không triển khai biểu mẫu điện tử tương tác (eForm) trên Cổng Dịch vụ công quốc gia
+
+b1) Trường hợp 1: Dịch vụ công trực tuyến triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành theo mô hình tập trung từ trung ương đến địa phương.
+
+Bước 1: Cá nhân, tổ chức đăng nhập vào Cổng Dịch vụ công quốc gia thông qua VNeID.
+
+Bước 2: Cá nhân, tổ chức lựa chọn thủ tục hành chính cần nộp hồ sơ trực tuyến và được điều hướng về Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành. Cá nhân, tổ chức điền thông tin vào biểu mẫu điện tử tương tác trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành.
+
+Bước 3: Cán bộ tiếp nhận hồ sơ vào Hệ thống điều phối giải quyết thủ tục hành chính (hoặc Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành đối với các hệ thống đặc thù tại khoản 2 Mục I Phụ lục I) để tiếp nhận và chuyển xử lý hồ sơ theo quy định.
+
+Bước 4: Hồ sơ được xử lý trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành theo quy trình, nghiệp vụ thông qua các phần mềm chuyên ngành, các cơ sở dữ liệu chuyên ngành và hình thành cơ sở dữ liệu tập trung của bộ, ngành bảo đảm đúng, đủ, sạch, sống, thống nhất, dùng chung. Trường hợp không có phần mềm chuyên ngành, cán bộ sẽ xử lý, luân chuyển và số hóa kết quả giải quyết thủ tục hành chính trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành. Trường hợp có phần mềm chuyên ngành, hồ sơ được tạo lập trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành và được đồng bộ đến phần mềm chuyên ngành thông qua giao diện lập trình ứng dụng (API) theo đặc tả kỹ thuật của bộ, ngành. Cán bộ xử lý, luân chuyển hồ sơ trên phần mềm chuyên ngành. Khi trạng thái hồ sơ thay đổi hoặc có kết quả giải quyết, phần mềm chuyên ngành đồng bộ trạng thái, kết quả về Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành qua API theo đặc tả kỹ thuật tương ứng.
+
+Bước 5: 
+
+Kết quả giải quyết thủ tục hành chính được đồng bộ về Cổng Dịch vụ công quốc gia/Hệ thống điều phối giải quyết thủ tục hành chính bao gồm bản điện tử của kết quả giải quyết thủ tục hành chính và dữ liệu số hóa kết quả giải quyết thủ tục hành chính, phục vụ trả kết quả cho cá nhân, tổ chức tập trung.
+
+Kết quả giải quyết thủ tục hành chính của bộ, ngành, địa phương bao gồm kết quả giải quyết thủ tục hành chính bản điện tử được đồng bộ về Kho quản lý dữ liệu điện tử của tổ chức, cá nhân trên Cổng Dịch vụ công quốc gia, phục vụ khai thác dùng chung, hiển thị thông tin trên VNeID phục vụ cá nhân, tổ chức tra cứu, chia sẻ khi cần thiết.
+
+Dữ liệu, thông tin tiến trình, kết quả xử lý hồ sơ đồng bộ từ Hệ thống điều phối giải quyết thủ tục hành chính đến Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh/các cơ sở dữ liệu địa phương.
+
+Hệ thống thông tin giải quyết thủ tục hành chính của địa phương đồng bộ dữ liệu giải quyết thủ tục hành chính từ Cổng Dịch vụ công quốc gia để tra cứu, khai thác cho các nhu cầu quản lý tại địa phương, không thực hiện giải quyết thủ tục hành chính đối với các thủ tục hành chính triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ.
+
+b2) Trường hợp 2: Dịch vụ công trực tuyến chưa triển khai tập trung trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành.
+
+Bước 1: Cá nhân, tổ chức đăng nhập vào Cổng Dịch vụ công quốc gia thông qua VNeID.
+
+Bước 2: Cá nhân, tổ chức lựa chọn thủ tục hành chính cần nộp hồ sơ trực tuyến và được điều hướng về Hệ thống thông tin giải quyết thủ tục hành chính của địa phương. Cá nhân, tổ chức điền thông tin vào biểu mẫu điện tử tương tác trên Hệ thống thông tin giải quyết thủ tục hành chính của địa phương.
+
+Bước 3: Cán bộ tiếp nhận hồ sơ vào Hệ thống điều phối giải quyết thủ tục hành chính để tiếp nhận và chuyển xử lý hồ sơ theo quy định.
+
+Bước 4: Hồ sơ được xử lý trên Hệ thống thông tin giải quyết thủ tục hành chính của địa phương theo quy trình, nghiệp vụ và thông qua các phần mềm chuyên ngành, các cơ sở dữ liệu chuyên ngành (nếu có). Hồ sơ được luân chuyển, xử lý theo đúng quy trình điện tử đã được thiết lập, bảo đảm liên thông cập nhật trạng thái, vết xử lý hồ sơ giữa các cơ quan, đơn vị tham gia giải quyết.
+
+Bước 5:
+
+Kết quả giải quyết thủ tục hành chính được đồng bộ về Cổng Dịch vụ công quốc gia/Hệ thống điều phối giải quyết thủ tục hành chính bao gồm bản điện tử của kết quả giải quyết thủ tục hành chính và dữ liệu số hóa kết quả giải quyết thủ tục hành chính, phục vụ trả kết quả cho cá nhân, tổ chức tập trung.
+
+Kết quả giải quyết thủ tục hành chính của bộ, ngành, địa phương bao gồm kết quả giải quyết thủ tục hành chính bản điện tử được đồng bộ về Kho quản lý dữ liệu điện tử của tổ chức, cá nhân trên Cổng Dịch vụ công quốc gia, phục vụ khai thác dùng chung, hiển thị thông tin trên VNeID phục vụ cá nhân, tổ chức tra cứu, chia sẻ khi cần thiết.
+
+Dữ liệu, thông tin tiến trình, kết quả xử lý hồ sơ đồng bộ từ Hệ thống điều phối giải quyết thủ tục hành chính đến Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh/các cơ sở dữ liệu địa phương.
+
+Hệ thống thông tin giải quyết thủ tục hành chính của địa phương đồng bộ dữ liệu giải quyết thủ tục hành chính từ Cổng Dịch vụ công quốc gia để tra cứu, khai thác cho các nhu cầu quản lý tại địa phương, không thực hiện giải quyết thủ tục hành chính đối với các thủ tục hành chính triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ.
+
+c) Nộp hồ sơ trực tuyến thông qua VNeID
+
+Việc nộp hồ sơ trực tuyến thông qua VNeID tuân thủ theo quy định, hướng dẫn của Bộ Công an và bảo đảm kết nối, liên thông với Cổng Dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính theo Kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính.
+
+2. Nộp hồ sơ trực tiếp và nộp hồ sơ thông qua dịch vụ bưu chính công ích, qua thuê dịch vụ của doanh nghiệp, cá nhân hoặc qua ủy quyền theo quy định của pháp luật
+
+a) Trường hợp 1: Thủ tục hành chính triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ.
+
+Cán bộ tiếp nhận hồ sơ truy cập vào Hệ thống điều phối giải quyết thủ tục hành chính (hoặc Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành đối với các hệ thống đặc thù tại khoản 2 Mục I Phụ lục I) để nhập thông tin hồ sơ thủ tục hành chính của cá nhân, tổ chức nộp trực tiếp và thực hiện theo các bước như sau:
+
+Bước 1: Cá nhân, tổ chức đến nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công/Bộ phận Một cửa cấp tỉnh, cấp xã hoặc Bộ phận Một cửa cấp bộ, các điểm tiếp nhận hồ sơ theo đặc thù ngành, nghề, lĩnh vực.
+
+Bước 2: Cán bộ tiếp nhận hồ sơ trực tiếp đăng nhập Hệ thống điều phối giải quyết thủ tục hành chính bằng tài khoản VNeID (hoặc Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành đối với các hệ thống đặc thù tại khoản 2 Mục I Phụ lục I). Căn cứ lĩnh vực, chuyên môn và thẩm quyền đã được phân quyền, hệ thống cho phép truy cập trực tiếp vào màn hình tiếp nhận của Hệ thống thông tin giải quyết thủ tục hành chính thuộc bộ, ngành liên quan để nhập thông tin và thực hiện tiếp nhận hồ sơ.
+
+Bước 3: Hồ sơ được nhập vào Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành để xử lý theo quy trình, nghiệp vụ thông qua các phần mềm chuyên ngành, các cơ sở dữ liệu chuyên ngành và hình thành cơ sở dữ liệu tập trung của bộ, ngành bảo đảm đúng, đủ, sạch, sống, thống nhất, dùng chung. Trường hợp không có phần mềm chuyên ngành, cán bộ sẽ xử lý theo quy trình.
+
+Bước 4: 
+
+Kết quả giải quyết thủ tục hành chính được đồng bộ về Cổng Dịch vụ công quốc gia/Hệ thống điều phối giải quyết thủ tục hành chính bao gồm bản điện tử của kết quả giải quyết thủ tục hành chính và dữ liệu số hóa kết quả giải quyết thủ tục hành chính, phục vụ trả kết quả cho cá nhân, tổ chức tập trung.
+
+Kết quả giải quyết thủ tục hành chính của bộ, ngành, địa phương bao gồm kết quả giải quyết thủ tục hành chính bản điện tử được đồng bộ về Kho quản lý dữ liệu điện tử của tổ chức, cá nhân trên Cổng Dịch vụ công quốc gia, phục vụ khai thác dùng chung, hiển thị thông tin trên VNeID phục vụ cá nhân, tổ chức tra cứu, chia sẻ khi cần thiết.
+
+Dữ liệu, thông tin tiến trình, kết quả xử lý hồ sơ đồng bộ từ Hệ thống điều phối giải quyết thủ tục hành chính đến Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh/các cơ sở dữ liệu địa phương.
+
+Hệ thống thông tin giải quyết thủ tục hành chính của địa phương đồng bộ dữ liệu giải quyết thủ tục hành chính từ Cổng Dịch vụ công quốc gia để tra cứu, khai thác cho các nhu cầu quản lý tại địa phương, không thực hiện giải quyết thủ tục hành chính đối với các thủ tục hành chính triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ.
+
+b) Trường hợp 2: Thủ tục hành chính triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính của địa phương.
+
+Bước 1: Cá nhân, tổ chức đến nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công/Bộ phận Một cửa cấp tỉnh, cấp xã hoặc Bộ phận Một cửa cấp bộ, các điểm tiếp nhận hồ sơ theo đặc thù ngành, nghề, lĩnh vực.
+
+Bước 2: Cán bộ tiếp nhận hồ sơ trực tiếp đăng nhập Hệ thống điều phối giải quyết thủ tục hành chính bằng tài khoản VNeID. Căn cứ lĩnh vực, chuyên môn và thẩm quyền đã được phân quyền, hệ thống cho phép truy cập trực tiếp vào màn hình tiếp nhận trên Hệ thống thông tin giải quyết thủ tục hành chính của địa phương để nhập thông tin, thực hiện tiếp nhận và chuyển xử lý hồ sơ.
+
+Bước 3: Hồ sơ được xử lý trên Hệ thống thông tin giải quyết thủ tục hành chính của địa phương theo quy trình, nghiệp vụ và thông qua các phần mềm chuyên ngành, các cơ sở dữ liệu chuyên ngành (nếu có). Hồ sơ được luân chuyển, xử lý theo đúng quy trình điện tử đã được thiết lập, bảo đảm liên thông cập nhật trạng thái, vết xử lý hồ sơ giữa các cơ quan, đơn vị tham gia giải quyết.
+
+Bước 4:
+
+Kết quả giải quyết thủ tục hành chính được đồng bộ về Cổng Dịch vụ công quốc gia/Hệ thống điều phối giải quyết thủ tục hành chính bao gồm bản điện tử của kết quả giải quyết thủ tục hành chính và dữ liệu số hóa kết quả giải quyết thủ tục hành chính, phục vụ trả kết quả cho cá nhân, tổ chức tập trung.
+
+Kết quả giải quyết thủ tục hành chính của bộ, ngành, địa phương bao gồm kết quả giải quyết thủ tục hành chính bản điện tử được đồng bộ về Kho quản lý dữ liệu điện tử của tổ chức, cá nhân trên Cổng Dịch vụ công quốc gia, phục vụ khai thác dùng chung, hiển thị thông tin trên VNeID phục vụ cá nhân, tổ chức tra cứu, chia sẻ khi cần thiết.
+
+Dữ liệu, thông tin tiến trình, kết quả xử lý hồ sơ đồng bộ từ Hệ thống điều phối giải quyết thủ tục hành chính đến Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh/các cơ sở dữ liệu địa phương.
+
+Hệ thống thông tin giải quyết thủ tục hành chính của địa phương đồng bộ dữ liệu giải quyết thủ tục hành chính từ Cổng Dịch vụ công quốc gia để tra cứu, khai thác cho các nhu cầu quản lý tại địa phương, không thực hiện giải quyết thủ tục hành chính đối với các thủ tục hành chính triển khai trên Hệ thống thông tin giải quyết thủ tục hành chính tập trung cấp bộ.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHỤ LỤC II
+
+YÊU CẦU GIAO DIỆN
+
+(Ban hành kèm theo Thông tư số …/2026/TT-BKHCN ngày … tháng … năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ)
+
+STT
+
+	
+
+Yêu cầu
+
+	
+
+Yêu cầu cụ thể
+
+	
+
+Đánh giá
+
+
+
+
+I
+
+	
+
+Giao diện tương tác với người dùng
+
+
+
+
+1
+
+ 
+
+	
+
+Phần đầu trang
+
+(Header)
+
+	
+
+- Nằm phía trên cùng, cố định trên mọi trang.
+
+- Góc trái: Biểu tượng (logo): Quốc huy (đối với cơ quan nhà nước) hoặc logo của đơn vị. Bên cạnh là Tên đơn vị (ví dụ: Bộ Khoa học và Công nghệ).
+
+- Đường dẫn trang chủ: Gắn vào nút "Trang chủ" và gắn trực tiếp vào logo và tên đơn vị (nhấn vào biểu tượng sẽ về trang chủ).
+
+- Thanh điều hướng: Đặt ở vị trí cuối header, chứa các đường dẫn đến chức năng của Hệ thống thông tin giải quyết thủ tục hành chính. Thanh này phải dễ nhìn, có khả năng tự động tương thích với kích thước màn hình khác nhau (đặc biệt là thiết bị di động).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2
+
+	
+
+Phần nội dung
+
+(Body)
+
+	
+
+- Nằm giữa phần đầu trang và phần chân trang.
+
+- Bảo đảm nội dung rõ ràng, dễ đọc, hiển thị các nội dung chính phục vụ người dùng như: Thông tin thủ tục hành chính, biểu mẫu điện tử tương tác, …
+
+	
+
+Đạt/Không đạt
+
+
+
+
+3
+
+ 
+
+	
+
+Phần chân trang
+
+(Footer)
+
+	
+
+Nằm ở dưới cùng, hiển thị thống nhất trên mọi trang, bao gồm các thông tin sau:
+
+- Tên cơ quan chủ quản (ví dụ: Bộ Khoa học và Công nghệ);
+
+- Địa chỉ cơ quan;
+
+- Hỗ trợ: số tổng đài hoặc số điện thoại, thư điện tử;
+
+- Thông tin liên hệ (Đơn vị giải quyết thủ tục);
+
+- Các thông tin khác nếu có.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+II
+
+	
+
+Giao diện dành cho cán bộ, công chức, viên chức thực hiện giải quyết thủ tục hành chính và quản trị hệ thống
+
+
+
+
+1
+
+	
+
+Sắp xếp, trình bày
+
+	
+
+Khoa học và hợp lý, bảo đảm thuận tiện.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2
+
+	
+
+Giao diện
+
+	
+
+Sử dụng bộ nhận diện bảo đảm tuân thủ các quy định hiện hành của pháp luật.
+
+	
+
+Đạt/Không đạt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHỤ LỤC III
+
+YÊU CẦU CHỨC NĂNG CỦA HỆ THỐNG THÔNG TIN GIẢI QUYẾT THỦ TỤC HÀNH CHÍNH
+
+(Ban hành kèm theo Thông tư số …/2026/TT-BKHCN ngày … tháng … năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ)
+
+TT
+
+	
+
+Yêu cầu
+
+	
+
+Yêu cầu cụ thể
+
+	
+
+Đánh giá
+
+
+
+
+I
+
+	
+
+Xác thực, quản lý và phân quyền tài khoản
+
+	
+
+ 
+
+
+
+
+1
+
+	
+
+Xác thực người dùng
+
+ 
+
+	
+
+Cho phép xác thực điện tử tổ chức, cá nhân để phục vụ giải quyết thủ tục hành chính và dịch vụ công trực tuyến, bảo đảm tuân thủ quy định tại Nghị định số 69/2024/NĐ-CP ngày 25 tháng 6 năm 2024 của Chính phủ quy định về định danh và xác thực điện tử.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2
+
+	
+
+Quản lý tài khoản
+
+	
+
+1. Quản lý tài khoản của cán bộ; kích hoạt, khóa, xóa tài khoản; cho phép tìm kiếm, kết xuất thông tin cán bộ phục vụ báo cáo;
+
+2. Quản trị nhóm người sử dụng và người sử dụng: Tên, chức danh, phòng, ban, đơn vị, thông tin cá nhân, quyền truy cập hệ thống;
+
+3. Phân quyền bảo đảm tuân thủ mô hình tập trung từ trung ương đến địa phương của kiến trúc Hệ thống thông tin giải quyết thủ tục hành chính hiện hành:
+
+a) Cho phép phân quyền người dùng cho các cấp, các đơn vị theo đúng chức năng, nhiệm vụ, thẩm quyền của từng nhóm cán bộ;
+
+b) Cho phép phân quyền theo quy trình xử lý thủ tục hành chính (phân quyền theo nhóm, theo cá nhân, theo chức vụ).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+II
+
+	
+
+Sử dụng dịch vụ công trực tuyến và biểu mẫu điện tử
+
+	
+
+ 
+
+
+
+
+3
+
+	
+
+Tạo lập hồ sơ điện tử
+
+	
+
+1. Kết nối với các cơ sở dữ liệu quốc gia, chuyên ngành và Cổng Dịch vụ công quốc gia để kiểm tra tính hợp lệ, đầy đủ của hồ sơ theo quy định pháp luật, khai thác dữ liệu điện tử có sẵn, tránh yêu cầu tổ chức, cá nhân cung cấp lại thông tin.
+
+2. Dữ liệu của giấy tờ được bóc tách bao gồm tối thiểu các trường dữ liệu đặc tả sau: Mã loại giấy tờ; mã định danh của tổ chức, cá nhân (nếu có); tên giấy tờ; số, ký hiệu giấy tờ; ngày, tháng, năm cấp; cơ quan cấp giấy tờ; trích yếu nội dung chính của giấy tờ; thời hạn có hiệu lực (nếu có); phạm vi có hiệu lực (nếu có); các thông tin, dữ liệu khác theo quy định của pháp luật chuyên ngành.
+
+3. Số hóa các thành phần hồ sơ theo quy định của pháp luật về thực hiện thủ tục hành chính trên môi trường điện tử, bảo đảm tính đầy đủ, chính xác, ký số trước khi chuyển xử lý.
+
+4. Phải bảo đảm khi in ra hiển thị tương đương như biểu mẫu giấy và người sử dụng điền thông tin được dễ dàng, chính xác.
+
+5. Định dạng tệp tin trong hồ sơ điện tử sau khi số hóa: Định dạng văn bản hoặc hình ảnh.
+
+6. Cho phép quản lý hồ sơ điện tử như: nhập hồ sơ, tìm kiếm hồ sơ, xem danh sách hồ sơ, nhập bổ sung hồ sơ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+4
+
+	
+
+Tải ảnh, hồ sơ, tài liệu
+
+	
+
+Cho phép tải ảnh, hồ sơ, tài liệu theo định dạng do Hệ thống thông tin giải quyết thủ tục hành chính quy định với giới hạn dung lượng phù hợp (tối thiểu định dạng .jpeg, .png với hình ảnh; định dạng .pdf, .docx với hồ sơ, tài liệu; hỗ trợ định dạng .zip đối với nhiều tệp tin hoặc tổng dung lượng lớn).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+5
+
+	
+
+Tiếp nhận hồ sơ, trả kết quả giải quyết thủ tục hành chính qua dịch vụ bưu chính/ bưu chính công ích
+
+	
+
+1. Người dùng có thể sử dụng dịch vụ bưu chính/bưu chính công ích sau:
+
+a) Nộp hồ sơ;
+
+b) Nhận kết quả;
+
+c) Cả hai dịch vụ trên.
+
+2. Có biểu mẫu điện tử để người dùng cung cấp thông tin sử dụng dịch vụ bưu chính/bưu chính công ích. Thông tin tối thiểu:
+
+a) Thông tin người nộp hồ sơ:
+
+- Họ và tên;
+
+- Số điện thoại;
+
+- Địa chỉ nộp hồ sơ (chọn tỉnh/thành phố, phường/xã/đặc khu và địa chỉ chi tiết);
+
+b) Thông tin người nhận kết quả:
+
+- Họ và tên;
+
+- Số điện thoại;
+
+- Địa chỉ trả kết quả (chọn tỉnh/thành phố, phường/xã/đặc khu và địa chỉ chi tiết).
+
+c) Các tùy chọn:
+
+- Sử dụng dịch vụ thu lệ phí giải quyết thủ tục hành chính (nếu có);
+
+- Thông tin cước phí dịch vụ tương ứng.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+6
+
+	
+
+Thanh toán trực tuyến
+
+	
+
+Bảo đảm kết nối, tích hợp với Hệ thống thanh toán trực tuyến của Cổng Dịch vụ công quốc gia để thực hiện thanh toán phí, lệ phí, thuế hoặc các nghĩa vụ tài chính khác theo quy định.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+7
+
+	
+
+Thông báo tình trạng giải quyết thủ tục hành chính, dịch vụ công trực tuyến
+
+	
+
+1. Thông báo tình trạng giải quyết thủ tục hành chính, dịch vụ công trực tuyến cho tổ chức, cá nhân theo quy định của pháp luật gồm tối thiểu các thông tin: cơ quan, cán bộ, công chức, viên chức, người lao động, thời gian tiếp nhận, xử lý và trả kết quả cho tổ chức, cá nhân theo quy định của pháp luật. Hình thức thông báo tối thiểu qua 03 hình thức: thông báo qua Cổng Dịch vụ công quốc gia, thông báo qua Ứng dụng định danh quốc gia và thông báo qua thư điện tử.
+
+2. Trường hợp có thay đổi tình trạng giải quyết thủ tục hành chính, dịch vụ công trực tuyến, cơ quan nhà nước phải thông báo ngay cho tổ chức, cá nhân biết để theo dõi.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+8
+
+	
+
+Biểu mẫu điện tử không tương tác
+
+	
+
+1. Quản lý, lưu trữ các biểu mẫu hồ sơ thủ tục hành chính dưới dạng điện tử; cung cấp giao diện để cán bộ nhập liệu và tổ chức, cá nhân theo dõi.
+
+2. Quản lý căn cứ pháp lý của biểu mẫu.
+
+3. Biểu mẫu có định dạng thống nhất, tuân thủ quy định pháp luật, bảo đảm khả năng tra cứu, lưu trữ và chia sẻ dữ liệu, cung cấp đầy đủ thông tin và cho phép tải biểu mẫu để hỗ trợ tổ chức, cá nhân trong quá trình thực hiện thủ tục hành chính.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+9
+
+	
+
+Biểu mẫu điện tử tương tác
+
+	
+
+1. Cung cấp ở chế độ chọn hoặc tra cứu để người dùng không phải nhập lại với các dữ liệu đã có trong cơ sở dữ liệu của Hệ thống thông tin giải quyết thủ tục hành chính (gồm cả các cơ sở dữ liệu của các hệ thống thông tin nội bộ của các bộ, tỉnh và các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành, hệ thống thông tin có quy mô, phạm vi từ trung ương đến địa phương đã kết nối, chia sẻ cho Hệ thống thông tin giải quyết thủ tục hành chính) tại biểu mẫu điện tử.
+
+2. Cung cấp chức năng hướng dẫn trực tiếp ngay tại từng nơi nhập dữ liệu của biểu mẫu điện tử để người dùng có thể xem khi cần thiết.
+
+3. Cung cấp chức năng lưu trữ những thông tin người dùng đã nhập vào biểu mẫu điện tử tương tác, cho phép xuất ra tệp tin hoặc in ra giấy.
+
+4. Cung cấp chức năng ký số trực tiếp trên biểu mẫu điện tử trong trường hợp pháp luật chuyên ngành có quy định.
+
+5. Bảo đảm đáp ứng các yêu cầu tối thiểu theo quy định về biểu mẫu điện tử tương tác.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+10
+
+	
+
+Biểu mẫu trong giải quyết thủ tục hành chính
+
+	
+
+1. Quản lý, lưu trữ và sử dụng các biểu mẫu trong giải quyết thủ tục hành chính dưới dạng điện tử theo quy định của pháp luật; cung cấp giao diện để cán bộ nhập, cập nhật và khai thác thông tin trên biểu mẫu, cho phép in trên khổ giấy A4 khi cần thiết.
+
+2. Cung cấp chức năng quản lý, cấu hình và sử dụng tối thiểu các biểu mẫu gồm:
+
+a) Mẫu Giấy tiếp nhận hồ sơ và hẹn trả kết quả;
+
+b) Mẫu Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ;
+
+c) Mẫu Phiếu từ chối tiếp nhận giải quyết hồ sơ;
+
+d) Mẫu Văn bản xin lỗi và đề nghị gia hạn thời gian giải quyết;
+
+đ) Mẫu Thông báo dừng giải quyết hồ sơ;
+
+e) Mẫu Phiếu kiểm soát quá trình giải quyết hồ sơ;
+
+g) Mẫu Sổ theo dõi hồ sơ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+III
+
+	
+
+Ký số và tích hợp với dịch vụ chứng thực chữ ký số chuyên dùng công vụ; Cổng eSign
+
+	
+
+ 
+
+
+
+
+11
+
+	
+
+Ký số
+
+	
+
+Bảo đảm đáp ứng yêu cầu tối thiểu như sau:
+
+1. Cho phép xác thực chủ thể ký và ký số.
+
+2. Cho phép kiểm tra hiệu lực chứng thư chữ ký số.
+
+3. Cho phép lưu trữ và hủy bỏ các thông tin kèm theo thông điệp dữ liệu ký số.
+
+4. Cho phép thay đổi, thêm bớt chứng thư chữ ký số của cơ quan, tổ chức tạo lập cấp, phát hành chứng thư chữ ký số.
+
+5. Thông báo bằng chữ hoặc ký hiệu cho chủ thể ký biết việc ký số vào thông điệp dữ liệu thành công hay không thành công.
+
+6. Chữ ký số tuân thủ tiêu chuẩn, quy chuẩn kỹ thuật quốc gia về chữ ký số theo quy định của pháp luật.
+
+7. Có chức năng chuyển đổi biểu mẫu điện tử trước khi ký thành các định dạng tập tin phổ biến như: .pdf, .xml, .json.
+
+8. Cho phép xem tài liệu đã ký số sau khi hoàn thành ký số để kiểm tra tính chính xác thông tin của người ký.
+
+9. Cho phép người ký tải tài liệu đã ký số về thiết bị.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+12
+
+	
+
+Tích hợp dịch vụ chứng thực chữ ký số chuyên dùng công vụ
+
+	
+
+Bảo đảm tích hợp dịch vụ chứng thực chữ ký số chuyên dùng công vụ phục vụ cơ quan nhà nước, cán bộ, công chức, viên chức trong quá trình giải quyết thủ tục hành chính.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+13
+
+	
+
+Tích hợp với Cổng eSign
+
+	
+
+Bảo đảm đáp ứng yêu cầu tối thiểu như sau:
+
+1. Cho phép tích hợp chữ ký số (công cộng, chuyên dùng công vụ).
+
+2. Bảo đảm đáp ứng các yêu cầu quy định tại Điều 8 Thông tư số 15/2025/TT-BKHCN ngày 15 tháng 8 năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+IV
+
+	
+
+Quản lý danh mục, theo dõi hồ sơ
+
+	
+
+ 
+
+
+
+
+14
+
+	
+
+Quản lý danh mục điện tử
+
+	
+
+1. Bảo đảm đồng bộ với hệ thống danh mục điện tử dùng chung theo quy định.
+
+2. Quản lý các danh mục điện tử trong nội bộ hệ thống.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+15
+
+	
+
+Danh mục thủ tục hành chính, dịch vụ công trực tuyến
+
+	
+
+1. Hiển thị danh mục thủ tục hành chính, dịch vụ công trực tuyến của cơ quan, của các đơn vị thuộc, trực thuộc; đồng bộ từ Cơ sở dữ liệu quốc gia về thủ tục hành chính.
+
+2. Chuẩn hóa về mã, tên thủ tục hành chính, dịch vụ công trực tuyến; đồng bộ với Cơ sở dữ liệu quốc gia về thủ tục hành chính.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+16
+
+	
+
+Quản lý danh mục trạng thái xử lý thủ tục hành chính
+
+	
+
+Cho phép cấu hình trạng thái hồ sơ đáp ứng bộ quy tắc đồng bộ và chuyển trạng thái, cụ thể:
+
+1. Bảng trạng thái hồ sơ
+
+Hệ thống định nghĩa 10 trạng thái hồ sơ. Cột "Loại" phân biệt trạng thái trung gian (có thể chuyển tiếp) và trạng thái kết thúc (không chuyển sang trạng thái khác).
+
+Mã trạng thái
+
+	
+
+Tên trạng thái
+
+	
+
+Mô tả
+
+	
+
+Loại
+
+
+
+
+1
+
+	
+
+Mới đăng ký
+
+	
+
+Người dùng nộp hồ sơ trực tuyến thành công trên Hệ thống thông tin giải quyết thủ tục hành chính của bộ, ngành, địa phương hoặc trên Cổng Dịch vụ công quốc gia; chưa được cán bộ tiếp nhận.
+
+	
+
+Trung gian – khởi đầu
+
+
+
+
+2
+
+	
+
+Được tiếp nhận
+
+	
+
+Hồ sơ được tiếp nhận để xử lý.
+
+	
+
+Trung gian
+
+
+
+
+3
+
+	
+
+Không được tiếp nhận
+
+	
+
+Hồ sơ mới đăng ký và bị từ chối tiếp nhận hồ sơ.
+
+	
+
+Kết thúc
+
+
+
+
+4
+
+	
+
+Đang xử lý
+
+	
+
+Hồ sơ được chuyển đến phòng ban chuyên môn để thẩm định, xử lý.
+
+	
+
+Trung gian
+
+
+
+
+5
+
+	
+
+Yêu cầu bổ sung giấy tờ
+
+	
+
+Cán bộ yêu cầu bổ sung giấy tờ/thông tin để đủ điều kiện xử lý.
+
+	
+
+Trung gian
+
+
+
+
+6
+
+	
+
+Yêu cầu thực hiện nghĩa vụ tài chính (NVTC)
+
+	
+
+Yêu cầu người dùng thực hiện nghĩa vụ tài chính: thuế, phí, lệ phí…
+
+ 
+
+Bắt buộc phải thanh toán để tiếp tục xử lý hồ sơ.
+
+	
+
+Trung gian
+
+
+
+
+7
+
+	
+
+Yêu cầu rút hồ sơ
+
+	
+
+Người dùng yêu cầu rút, hủy hồ sơ và đã được phê duyệt (nếu hồ sơ đã được tiếp nhận).
+
+	
+
+Kết thúc
+
+
+
+
+8
+
+	
+
+Từ chối xử lý
+
+	
+
+Cán bộ thẩm định xác định hồ sơ không đủ điều kiện tiếp tục xử lý.
+
+	
+
+Kết thúc
+
+
+
+
+9
+
+	
+
+Đã xử lý xong
+
+	
+
+Hồ sơ đã xử lý xong, cơ quan chuyên môn đã chuyển trả kết quả.
+
+	
+
+Trung gian/Kết thúc
+
+
+
+
+10
+
+	
+
+Đã trả kết quả
+
+	
+
+Kết quả giải quyết thủ tục hành chính được trả cho người dùng.
+
+	
+
+Kết thúc
+
+Trạng thái kết thúc (3, 7, 8, 10): theo bộ quy tắc, khi hồ sơ vào các trạng thái này hệ thống phải ghi nhận thêm thời gian kết thúc xử lý và không chuyển sang bất kỳ trạng thái nào khác.
+
+2. Ma trận chuyển trạng thái hồ sơ
+
+Y là được chuyển; – là không được chuyển.
+
+Mã trạng thái
+
+Tên trạng thái
+
+	
+
+1
+
+	
+
+2
+
+	
+
+3
+
+	
+
+4
+
+	
+
+5
+
+	
+
+6
+
+	
+
+7
+
+	
+
+8
+
+	
+
+9
+
+	
+
+10
+
+
+
+
+1. Mới đăng ký
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+
+
+
+2. Được tiếp nhận
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+–
+
+
+
+
+3. Không được tiếp nhận
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+
+
+
+4. Đang xử lý
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+–
+
+
+
+
+5. Yêu cầu bổ sung hồ sơ (đã bổ sung)
+
+	
+
+Y
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+–
+
+	
+
+–
+
+
+
+
+6. Yêu cầu thực hiện NVTC (đã thanh toán)
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+Y
+
+	
+
+–
+
+
+
+
+7. Yêu cầu rút hồ sơ
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+
+
+
+8. Từ chối xử lý
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+
+
+
+9. Đã xử lý xong
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+Y
+
+
+
+
+10. Đã trả kết quả
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+	
+
+–
+
+3. Bảng chuyển trạng thái chi tiết
+
+Trạng thái hiện tại
+
+	
+
+Trạng thái có thể chuyển sang
+
+	
+
+Điều kiện/Trường hợp sử dụng
+
+
+
+
+1. Mới đăng ký
+
+	
+
+2. Được tiếp nhận
+
+	
+
+Hồ sơ hợp lệ; cán bộ Một cửa tiếp nhận
+
+
+
+
+3. Không được tiếp nhận
+
+	
+
+Hồ sơ không hợp lệ; cán bộ từ chối tiếp nhận.
+
+
+
+
+5. Yêu cầu bổ sung giấy tờ
+
+	
+
+Thiếu thành phần hồ sơ, eForm.
+
+
+
+
+7. Yêu cầu rút hồ sơ
+
+	
+
+Người dùng rút hồ sơ. Hồ sơ chưa được tiếp nhận nên rút ngay, không cần cán bộ phê duyệt.
+
+
+
+
+2. Được tiếp nhận
+
+	
+
+4. Đang xử lý
+
+	
+
+Bắt đầu xử lý; chuyển hồ sơ đến cơ quan có thẩm quyền, phân công cán bộ thẩm định
+
+
+
+
+9. Đã xử lý xong
+
+	
+
+Hồ sơ được tiếp nhận và trả kết quả ngay
+
+
+
+
+3. Không được tiếp nhận
+
+	
+
+Kết thúc
+
+	
+
+Không chuyển sang trạng thái khác.
+
+
+
+
+4. Đang xử lý
+
+	
+
+4. Đang xử lý
+
+	
+
+Chuyển bước xử lý nội bộ, cập nhật thông tin xử lý hoặc gia hạn thời gian xử lý
+
+
+
+
+5. Yêu cầu bổ sung giấy tờ
+
+	
+
+Cần bổ sung thành phần hồ sơ, chỉnh sửa eForm.
+
+
+
+
+6. Yêu cầu thực hiện NVTC
+
+	
+
+Phát sinh phí/lệ phí hoặc các khoản thu khác trong quá trình giải quyết.
+
+Điều kiện: Tổ chức, cá nhân phải hoàn thành nghĩa vụ tài chính để tiếp tục xử lý hồ sơ.
+
+
+
+
+7. Yêu cầu rút hồ sơ
+
+	
+
+Người dùng yêu cầu rút trong quá trình xử lý và đã được cán bộ chấp thuận.
+
+
+
+
+8. Từ chối xử lý
+
+	
+
+Hồ sơ không đủ điều kiện để tiếp tục xử lý.
+
+
+
+
+9. Đã xử lý xong
+
+	
+
+Đã xử lý xong hồ sơ.
+
+
+
+
+5. Yêu cầu bổ sung hồ sơ
+
+	
+
+Trường hợp “Hủy yêu cầu bổ sung hồ sơ”. Hệ thống tự động chuyển trạng thái hồ sơ về trạng thái trước yêu cầu bổ sung.
+
+
+
+
+1. Mới đăng ký
+
+	
+
+Hồ sơ được yêu cầu bổ sung khi chưa được tiếp nhận, tuy nhiên sau đó cán bộ thực hiện “Hủy yêu cầu bổ sung”.
+
+ 
+
+Hệ thống sẽ chuyển trạng thái hồ sơ về trạng thái trước đó.
+
+
+
+
+3. Không được tiếp nhận
+
+	
+
+Trạng thái hồ sơ trước khi chuyển sang Yêu cầu bổ sung hồ sơ là “Mới đăng ký” và hồ sơ không được tiếp nhận do người dùng không bổ sung hoặc quá hạn bổ sung.
+
+ 
+
+Việc không tiếp nhận do quá hạn bổ sung tùy thuộc vào quy định của từng đơn vị.
+
+
+
+
+4. Đang xử lý
+
+	
+
+Hồ sơ đang xử lý hoặc đã được tiếp nhận. Tất cả yêu cầu bổ sung đã hoàn thành; Cán bộ thực hiện các bước xử lý tiếp theo.
+
+ 
+
+Yêu cầu hoàn thành bổ sung hồ sơ để chuyển trạng thái.
+
+
+
+
+5. Yêu cầu bổ sung giấy tờ
+
+	
+
+Hồ sơ bổ sung vẫn thiếu và được yêu cầu bổ sung tiếp. Điều kiện: yêu cầu bổ sung trước đó phải hoàn thành trước khi tạo yêu cầu mới.
+
+ 
+
+Yêu cầu hoàn thành bổ sung hồ sơ để chuyển trạng thái
+
+
+
+
+6. Yêu cầu thực hiện NVTC
+
+	
+
+Người dùng hoàn thành tất cả yêu cầu bổ sung hồ sơ và được yêu cầu thực hiện NVTC.
+
+ 
+
+Yêu cầu hoàn thành bổ sung hồ sơ để chuyển trạng thái.
+
+
+
+
+7. Yêu cầu rút hồ sơ
+
+	
+
+Người dùng yêu cầu rút khi chưa hoàn thành bổ sung (có phê duyệt của cán bộ nếu hồ sơ đã được tiếp nhận).
+
+
+
+
+8. Từ chối xử lý
+
+	
+
+Hồ sơ đã được tiếp nhận, không đủ điều kiện tiếp tục xử lý (điển hình là công dân không bổ sung, quá hạn bổ sung).
+
+
+
+
+6. Yêu cầu thực hiện NVTC
+
+	
+
+Trường hợp “Hủy yêu cầu thực hiện NVTC”. Hệ thống tự động chuyển trạng thái hồ sơ về trạng thái trước yêu cầu.
+
+
+
+
+4. Đang xử lý
+
+	
+
+Tất cả yêu cầu NVTC đã được thanh toán hoặc đã bị cán bộ hủy; cập nhật thông tin xử lý và tiếp tục luồng xử lý
+
+
+
+
+5. Yêu cầu bổ sung giấy tờ
+
+	
+
+Hoàn thành tất cả yêu cầu và được yêu cầu bổ sung hồ sơ.
+
+
+
+
+6. Yêu cầu thực hiện NVTC
+
+	
+
+Hoàn thành tất cả yêu cầu NVTC và tiếp tục có yêu cầu NVTC
+
+
+
+
+7. Yêu cầu rút hồ sơ
+
+	
+
+Người dùng yêu cầu rút hồ sơ và được phê duyệt.
+
+Hủy NVTC chưa thanh toán.
+
+
+
+
+8. Từ chối xử lý
+
+	
+
+Không đủ điều kiện để tiếp tục xử lý.
+
+ 
+
+Hủy NVTC chưa thanh toán.
+
+
+
+
+9. Đã xử lý xong
+
+	
+
+Hoàn thành tất cả yêu cầu NVTC và đã hoàn thành xử lý hồ sơ.
+
+
+
+
+7. Yêu cầu rút hồ sơ
+
+	
+
+Kết thúc
+
+	
+
+Không chuyển sang trạng thái khác.
+
+
+
+
+8. Từ chối xử lý
+
+	
+
+Kết thúc
+
+	
+
+Không chuyển sang trạng thái khác.
+
+
+
+
+9. Đã xử lý xong
+
+	
+
+10. Đã trả kết quả
+
+	
+
+Cán bộ đã trả kết quả cho người dùng
+
+
+
+
+10. Đã trả kết quả
+
+	
+
+Kết thúc
+
+	
+
+Cập nhật kết quả xử lý hồ sơ (bổ sung giấy tờ kết quả, đổi hình thức trả, đổi thông tin người nhận).
+
+ 
+
+	
+
+Đạt/Không đạt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+17
+
+	
+
+Luân chuyển hồ sơ
+
+	
+
+1. Cho phép luân chuyển hồ sơ giữa các đơn vị trong cơ quan phục vụ việc phối hợp thẩm định hồ sơ.
+
+2. Cập nhật trạng thái xử lý trong quá trình xử lý thủ tục hành chính.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+18
+
+	
+
+Chu trình lưu chuyển, xử lý của thủ tục
+
+	
+
+1. Thiết lập/thiết kế và quản trị chu trình lưu chuyển, xử lý hồ sơ thủ tục hành chính giữa các phòng, ban chức năng và nhóm các cán bộ xử lý. Quy trình phải cho phép điều chỉnh động (linh hoạt trong việc thiết lập/thiết kế quy trình, thủ tục, đáp ứng nhu cầu đặc thù và mô hình tổ chức riêng của các địa phương).
+
+2. Trường hợp quy trình xác định thời gian: Cho phép thiết lập thời hạn xử lý tại các bước xử lý của chu trình (lưu ý tổng thời gian xử lý của tất cả các bước phải nhỏ hơn hoặc bằng thời hạn giải quyết; cho phép thiết lập thời gian xử lý tại các bước của chu trình xử lý chi tiết đến đơn vị phút). Trường hợp quy trình không thời hạn thì không ràng buộc điều kiện tổng thời gian của các bước với thời gian toàn quy trình.
+
+3. Chu trình lưu chuyển, xử lý phải bao gồm chức năng yêu cầu cá nhân, tổ chức bổ sung hồ sơ (nếu hồ sơ chưa đủ điều kiện).
+
+4. Chu trình lưu chuyển, xử lý phải thể hiện được việc giải quyết thủ tục hành chính khi tiếp nhận hồ sơ thông qua Hệ thống thông tin giải quyết thủ tục hành chính, Cổng Dịch vụ công quốc gia.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+19
+
+	
+
+Theo dõi quá trình xử lý hồ sơ thủ tục hành chính
+
+	
+
+1. Cho phép lưu vết quá trình xử lý hồ sơ thủ tục hành chính theo thời gian.
+
+2. Tra cứu tình trạng hồ sơ, kết quả giải quyết hồ sơ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+20
+
+	
+
+Hiển thị trực quan chu trình lưu chuyển thủ tục hành chính
+
+	
+
+Trong quá trình định nghĩa và quản trị cũng như báo cáo, các chu trình lưu chuyển, xử lý hồ sơ thủ tục hành chính được hiển thị dưới dạng sơ đồ trực quan.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+V
+
+	
+
+Tiếp nhận và giải quyết thủ tục hành chính
+
+	
+
+ 
+
+
+
+
+21
+
+	
+
+Tiếp nhận hồ sơ thủ tục hành chính
+
+	
+
+1. Đối với hồ sơ tiếp nhận theo cách thức quy định tại khoản 1 và khoản 2 Điều 15 Nghị định số 118/2025/NĐ-CP ngày 09 tháng 6 năm 2025 của Chính phủ, bảo đảm:
+
+a) Kết nối, chia sẻ dữ liệu với hệ thống định danh và xác thực điện tử để kiểm tra, xác thực thông tin theo điểm a khoản 1 Điều 17 Nghị định số 118/2025/NĐ-CP ngày 09 tháng 6 năm 2025 của Chính phủ;
+
+b) Kết nối, chia sẻ dữ liệu với các cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành, hệ thống thông tin dùng chung, Cổng Dịch vụ công quốc gia để khai thác thông tin thành phần hồ sơ thủ tục hành chính đã có dữ liệu điện tử mà không cần khai lại, nộp lại;
+
+c) Hỗ trợ cán bộ tiếp nhận và trả kết quả: Hiển thị danh mục hồ sơ cần nộp tương ứng với thủ tục hành chính cần giải quyết;
+
+d) Nhập mới hồ sơ (theo mẫu đơn, mẫu tờ khai và các giấy tờ, tài liệu liên quan): Các thông tin yêu cầu, thông tin định danh và các tài liệu đính kèm. Kiểm tra được tính đầy đủ, đúng quy định của các trường thông tin đã nhập.
+
+2. Đối với hồ sơ nộp trực tuyến tại Cổng Dịch vụ công quốc gia, bảo đảm:
+
+a) Xem danh sách hồ sơ thủ tục hành chính tổ chức, cá nhân nộp trực tuyến tại Cổng Dịch vụ công quốc gia gửi về Hệ thống thông tin giải quyết thủ tục hành chính;
+
+b) Cho phép tìm kiếm đơn giản, tìm kiếm nâng cao hồ sơ nộp trực tuyến;
+
+c) Từ chối không tiếp nhận hồ sơ, nhập lý do từ chối (khi chưa tiếp nhận bởi cán bộ tiếp nhận);
+
+d) Yêu cầu chỉnh sửa, bổ sung hồ sơ (trường hợp hồ sơ chưa đầy đủ, chính xác), nêu rõ nội dung, lý do và hướng dẫn cụ thể một lần;
+
+đ) Cán bộ tiếp nhận hồ sơ trực tuyến và chuyển cán bộ xử lý tiếp nhận;
+
+e) Hiển thị danh mục các hồ sơ đã tiếp nhận theo loại hồ sơ với các thông tin: Loại thủ tục hành chính, mã hồ sơ, nội dung hồ sơ, ngày hẹn trả…;
+
+g) Hỗ trợ khả năng xác minh, khai thác hồ sơ tổ chức, cá nhân đã có để hỗ trợ đơn giản hóa thành phần hồ sơ, giấy tờ liên quan đến tổ chức, cá nhân;
+
+h) Hỗ trợ thông báo gửi đến tài khoản Hệ thống thông tin giải quyết thủ tục hành chính của cán bộ, công chức, viên chức, nhân viên tiếp nhận hồ sơ tại Bộ phận Một cửa.
+
+3. Yêu cầu chung khi tiếp nhận hồ sơ thủ tục hành chính, dịch vụ công trực tuyến:
+
+a) Mã số hồ sơ thủ tục hành chính do Hệ thống thông tin giải quyết thủ tục hành chính cấp tự động, được sử dụng thống nhất trong hoạt động giao dịch giữa các cơ quan, đơn vị với tổ chức, cá nhân; giữa các cơ quan, đơn vị và giữa các hệ thống với nhau. Cấu trúc mã số hồ sơ thủ tục hành chính theo khoản 2 Điều 28 Nghị định số 118/2025/NĐ-CP ngày 09 tháng 6 năm 2025 của Chính phủ;
+
+b) Sau khi hồ sơ được tiếp nhận, hệ thống có cơ chế phân biệt hồ sơ tiếp nhận trên Cổng Dịch vụ công quốc gia; hồ sơ tiếp nhận trực tiếp tại Bộ phận Một cửa hoặc thông qua dịch vụ bưu chính công ích theo quy định, qua thuê dịch vụ của doanh nghiệp, cá nhân, qua ủy quyền theo quy định của pháp luật hoặc tiếp nhận hồ sơ thủ tục hành chính lưu động hoặc tại chỗ (kiểm tra, đánh giá ngoài trụ sở) theo quy định pháp luật;
+
+c) Chuyển hồ sơ đến cơ quan có thẩm quyền giải quyết theo quy định hiện hành về thực hiện thủ tục hành chính trên môi trường điện tử và thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+22
+
+	
+
+Tiếp nhận bổ sung hồ sơ
+
+	
+
+1. Hiển thị danh sách hồ sơ chờ bổ sung.
+
+2. Cho phép cập nhật các thông tin bổ sung khi tổ chức, cá nhân bổ sung đầy đủ các thông tin, giấy tờ cần thiết.
+
+3. Chuyển xử lý: Theo quy định của pháp luật (theo phòng, ban hoặc cá nhân).
+
+4. Hỗ trợ thông báo gửi đến tài khoản Hệ thống thông tin giải quyết thủ tục hành chính của cán bộ tiếp nhận khi tổ chức, cá nhân đã bổ sung thông tin hồ sơ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+23
+
+	
+
+Phân công thẩm định hồ sơ
+
+	
+
+1. Cho phép người đứng đầu cơ quan có thẩm quyền, lãnh đạo phòng, ban phân công cán bộ xử lý xem xét, thẩm định hồ sơ với những hồ sơ được chuyển xử lý về cơ quan, phòng, ban.
+
+2. Phân công thẩm định lại.
+
+3. Sẵn sàng liên thông, cập nhật trạng thái, vết xử lý hồ sơ điện tử với các Bộ phận Một cửa các cấp và các cơ quan khác thuộc phạm vi quản lý của bộ, cơ quan ngang bộ hoặc Ủy ban nhân dân cấp tỉnh (liên thông nội bộ) qua nền tảng chia sẻ, tích hợp dùng chung cấp bộ, cấp tỉnh.
+
+4. Cho phép đính kèm nhiều hồ sơ và thực hiện ký số nhiều hồ sơ (nếu có).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+24
+
+	
+
+Thẩm định hồ sơ
+
+	
+
+1. Hiển thị danh sách các hồ sơ đang giải quyết: Mã hồ sơ, tên thủ tục hành chính, nội dung hồ sơ, ngày hẹn trả, trạng thái hồ sơ.
+
+2. Hiển thị đầy đủ thông tin của hồ sơ được chọn xử lý và các thành phần hồ sơ, tài liệu đính kèm.
+
+3. Hỗ trợ xử lý hồ sơ theo danh mục công việc đã được quy định: Hồ sơ chờ xử lý, hồ sơ yêu cầu bổ sung, hồ sơ đã bổ sung chờ xử lý.
+
+4. Tra cứu theo danh mục: Hồ sơ chờ xử lý, hồ sơ yêu cầu bổ sung, hồ sơ đã bổ sung chờ xử lý, hồ sơ đã tham gia xử lý.
+
+5. Hỗ trợ xử lý ủy quyền, gia hạn thời gian xử lý hồ sơ (nếu được phép).
+
+6. Bóc tách, cập nhật thông tin, dữ liệu điện tử của giấy tờ.
+
+7. Số hóa, cập nhật vào hệ thống.
+
+8. Chuyển bộ phận Tiếp nhận và Trả kết quả hồ sơ không đủ điều kiện (nếu có): thông báo lý do và nội dung cần bổ sung, thời hạn giải quyết được tính lại sau khi nhận đủ hồ sơ.
+
+9. Yêu cầu phối hợp xử lý đối với hồ sơ có quy định phải lấy ý kiến của các cơ quan, đơn vị liên quan:
+
+a) Cho phép gửi văn bản điện tử, nêu rõ nội dung, thời hạn lấy ý kiến và phương thức trả lời;
+
+b) Cho phép cập nhật nội dung, kết quả tham gia ý kiến vào Hệ thống thông tin giải quyết thủ tục hành chính.
+
+10. Chuyển xử lý trong trường hợp không cần phối hợp.
+
+11. Trình phê duyệt.
+
+12. Liên thông cập nhật trạng thái, vết xử lý hồ sơ điện tử với các cơ quan khác liên quan trong nội bộ của bộ, tỉnh (liên thông nội bộ) qua nền tảng chia sẻ, tích hợp dùng chung cấp bộ, cấp tỉnh.
+
+13. Cho phép đính kèm nhiều hồ sơ và thực hiện ký số nhiều hồ sơ (nếu có).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+25
+
+	
+
+Phê duyệt hồ sơ
+
+	
+
+1. Hiển thị danh sách các hồ sơ chờ được phê duyệt. Cho phép chuyển luồng về phòng ban hoặc cán bộ xử lý nếu dự thảo kết quả giải quyết thủ tục hành chính chưa đạt yêu cầu, cần trình lại.
+
+2. Cho phép ký duyệt nhiều lần (trong trường hợp hồ sơ phải luân chuyển nhiều lần tới các cơ quan khác để phối hợp xử lý).
+
+3. Cho phép ký duyệt nhiều hồ sơ (nếu có).
+
+4. Trả lại (Từ chối) hồ sơ, cập nhật ý kiến chỉ đạo.
+
+5. Hiển thị danh sách các hồ sơ đã được ký duyệt. Hiển thị danh sách hồ sơ trả lại.
+
+6. Hỗ trợ thông báo cho tổ chức, cá nhân hồ sơ quá hạn giải quyết qua thư điện tử, tin nhắn, điện thoại hoặc mạng xã hội được cấp có thẩm quyền cho phép (nếu có).
+
+7. Liên thông cập nhật trạng thái, vết xử lý hồ sơ điện tử với các cơ quan khác liên quan trong nội bộ của bộ, tỉnh (liên thông nội bộ) qua nền tảng chia sẻ, tích hợp dùng chung cấp bộ, cấp tỉnh.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+26
+
+	
+
+Dừng thực hiện thủ tục hành chính
+
+	
+
+Lưu đầy đủ trạng thái về việc xử lý hồ sơ và dừng thực hiện thủ tục hành chính đối với trường hợp tổ chức, cá nhân yêu cầu dừng thực hiện thủ tục hành chính theo Điều 21 Nghị định số 118/2025/NĐ-CP ngày 09 tháng 6 năm 2025 của Chính phủ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+27
+
+	
+
+Trả kết quả giải quyết thủ tục hành chính
+
+	
+
+1. Cho phép ký số kết quả giải quyết thủ tục hành chính, phát hành theo quy định pháp luật về công tác văn thư để trả bản điện tử cho tổ chức, cá nhân.
+
+2. Hiển thị thông tin các hồ sơ đã giải quyết, tình trạng trả kết quả của hồ sơ; thời điểm hoàn thành xử lý hồ sơ, chờ giao trả kết quả (dùng để tính việc đúng hạn hay quá hạn của hồ sơ).
+
+3. Hỗ trợ thông báo thời gian thực hiện nghĩa vụ tài chính đối với các thủ tục hành chính bắt buộc phải thực hiện nghĩa vụ tài chính (nếu có).
+
+4. Cập nhật thông tin trả kết quả cho tổ chức, cá nhân, thời gian trả kết quả và biên lai nộp lệ phí theo quy định.
+
+5. Cập nhật thông tin người nhận kết quả (trong trường hợp nhận thay hoặc được ủy quyền nhận).
+
+6. Cập nhật các dữ liệu trả kết quả vào hệ thống. Trong trường hợp đã có kết quả nhưng tổ chức, cá nhân không mang đủ hồ sơ bản chính để đối soát thì cập nhật dữ liệu về việc chưa trả kết quả đến khi đáp ứng đủ các điều kiện về việc trả kết quả theo quy định. Trường hợp trả lại hồ sơ, cho phép nhập thông báo nêu rõ lý do không giải quyết vào mục trả kết quả.
+
+7. Kết quả giải quyết thủ tục hành chính bản điện tử bảo đảm thông điệp dữ liệu đáp ứng quy định của pháp luật, kết quả này được gắn mã số giấy tờ và lưu trữ trong Cơ sở dữ liệu quốc gia hoặc Cơ sở dữ liệu chuyên ngành hoặc Kho dữ liệu hồ sơ thủ tục hành chính của Hệ thống giải quyết thủ tục hành chính.
+
+8. Thời hạn bảo quản hồ sơ thủ tục hành chính điện tử được thực hiện theo quy định của pháp luật về lưu trữ và pháp luật chuyên ngành.
+
+9. Liên thông thông tin trả kết quả điện tử với các cơ quan khác liên quan trong nội bộ của bộ, tỉnh (liên thông nội bộ) qua nền tảng chia sẻ, tích hợp dùng chung cấp bộ, cấp tỉnh.
+
+10. Đồng bộ kết quả giải quyết thủ tục hành chính bản điện tử, tình trạng trả kết quả của hồ sơ lên Cổng Dịch vụ công quốc gia để trả kết quả cho tổ chức, cá nhân.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+VI
+
+	
+
+Các tiện ích
+
+	
+
+ 
+
+
+
+
+28
+
+	
+
+Chức năng in
+
+	
+
+In trực tiếp từ phần mềm (có thể in ngay tại bước đang giải quyết và in lại, in sau) các loại giấy tờ sau:
+
+1. Mẫu Giấy tiếp nhận hồ sơ và hẹn trả kết quả.
+
+2. Mẫu Phiếu yêu cầu bổ sung, hoàn thiện hồ sơ.
+
+3. Mẫu Phiếu từ chối tiếp nhận giải quyết hồ sơ.
+
+4. Mẫu Văn bản xin lỗi và đề nghị gia hạn thời gian giải quyết.
+
+5. Mẫu Thông báo dừng giải quyết hồ sơ.
+
+6. Mẫu Phiếu kiểm soát quá trình giải quyết hồ sơ.
+
+7. Mẫu Sổ theo dõi hồ sơ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+29
+
+	
+
+Thông báo, nhắc việc
+
+	
+
+Chức năng thông báo tổng thể tình hình hồ sơ thuộc thẩm quyền xử lý, giải quyết của cán bộ, hiển thị theo loại hồ sơ ở giao diện làm việc của cán bộ:
+
+1. Với cán bộ Tiếp nhận và Trả kết quả:
+
+a) Số hồ sơ chờ tiếp nhận;
+
+b) Số hồ sơ chờ bổ sung;
+
+c) Số hồ sơ chờ trả kết quả;
+
+d) Số hồ sơ đã bổ sung, chờ tiếp nhận;
+
+đ) Số hồ sơ đang xử lý;
+
+e) Số hồ sơ từ chối;
+
+g) Số hồ sơ sắp hết hạn;
+
+h) Tất cả hồ sơ.
+
+2. Với cán bộ thẩm định:
+
+a) Số hồ sơ đang thẩm định chờ giải quyết (trong hạn/quá hạn);
+
+b) Số hồ sơ chờ bổ sung;
+
+c) Số hồ sơ đang trình ký.
+
+3. Với các trưởng phòng, ban:
+
+a) Số hồ sơ chờ phân công thẩm định (trong hạn/quá hạn);
+
+b) Số hồ sơ chờ duyệt;
+
+c) Số hồ sơ chờ lãnh đạo đơn vị ký duyệt;
+
+d) Số hồ sơ tham gia xử lý.
+
+4. Với lãnh đạo đơn vị: Chức năng thông báo số hồ sơ chờ duyệt.
+
+5. Nhắc các công việc quá thời hạn xử lý. Nhắc khi có công việc chuyển đến cần xử lý.
+
+6. Hỗ trợ khả năng tích hợp nhắc việc trên các hệ thống dùng chung khác như các hệ thống thông tin nội bộ dùng chung của bộ, tỉnh (nếu có).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+30
+
+	
+
+Tìm kiếm
+
+	
+
+1. Tìm kiếm thông tin theo các thuộc tính cơ bản gắn với hồ sơ thủ tục hành chính như: Khoảng thời gian tiếp nhận, lĩnh vực, đơn vị giải quyết, thời hạn giải quyết, trạng thái giải quyết, thủ tục hành chính, tên cá nhân, tên tổ chức.
+
+2. Có thể tìm kiếm theo từng tiêu chí hoặc kết hợp các tiêu chí với nhau.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+31
+
+	
+
+Trợ lý ảo
+
+	
+
+Cung cấp hoặc tích hợp trợ lý ảo hỗ trợ cán bộ, công chức, viên chức thực hiện giải quyết thủ tục hành chính, dịch vụ công trực tuyến.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+32
+
+	
+
+Ghi lưu nhật ký, thống kê, báo cáo truy cập
+
+	
+
+1. Ghi lưu nhật ký sử dụng của các đối tượng sử dụng dịch vụ công trực tuyến, nhật ký đồng bộ hồ sơ (Thời gian lưu trữ nhật ký thực hiện theo quy định của pháp luật về an ninh mạng, bảo vệ dữ liệu cá nhân, lưu trữ và các quy định pháp luật có liên quan).
+
+2. Thống kê, báo cáo lượng truy cập sử dụng dịch vụ công trực tuyến.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+VII
+
+	
+
+Báo cáo
+
+	
+
+ 
+
+
+
+
+33
+
+	
+
+Báo cáo
+
+	
+
+1. Báo cáo thống kê theo nhiều tiêu chí: Lĩnh vực, thời gian, đơn vị xử lý, trạng thái, quá trình xử lý, cán bộ xử lý.
+
+2. Hỗ trợ chức năng tạo, kết xuất báo cáo các định dạng phổ biến theo danh mục tiêu chuẩn kỹ thuật hiện hành như văn bản, bảng tính, trình diễn.
+
+3. Thông tin công khai tình trạng xử lý các hồ sơ theo kỳ.
+
+4. In báo cáo thống kê trực tiếp từ phần mềm.
+
+5. Cho phép tìm kiếm, kết xuất thông tin tổ chức, cá nhân sử dụng dịch vụ công để phục vụ báo cáo hoặc khảo sát.
+
+6. Báo cáo thống kê trực quan kết quả giải quyết thủ tục hành chính dưới dạng đồ họa (biểu đồ, sơ đồ, hình ảnh…).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+34
+
+	
+
+Biểu mẫu báo cáo
+
+	
+
+1. Cho phép định nghĩa biểu mẫu báo cáo theo tất cả các thuộc tính gắn với hồ sơ thủ tục hành chính, báo cáo tình hình xử lý, báo cáo định kỳ.
+
+2. Cá nhân hóa các biểu mẫu báo cáo. Cho phép người sử dụng lưu các dạng báo cáo của riêng họ và tái sử dụng khi cần thiết.
+
+3. Tùy chỉnh báo cáo trực quan bằng giao diện.
+
+4. Cho phép kết xuất báo cáo theo các định dạng văn bản, bảng tính, trình diễn theo Thông tư số 39/2017/TT-BTTTT ngày 15 tháng 12 năm 2017 của Bộ Thông tin và Truyền thông (ví dụ: .docx, .xlsx, .pdf...) và theo yêu cầu về chế độ báo cáo định kỳ, đột xuất thuộc thẩm quyền ban hành của bộ, ngành, địa phương.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+VIII
+
+	
+
+Đo lường, thống kê, giám sát và đánh giá
+
+	
+
+ 
+
+
+
+
+35
+
+	
+
+Đo lường, thống kê, giám sát và đánh giá
+
+	
+
+1. Đo lường, thống kê, giám sát và đánh giá tình trạng giải quyết hồ sơ thủ tục hành chính tối thiểu:
+
+a) Theo đơn vị;
+
+b) Theo thời gian: tháng, quý, năm và từ đầu năm tới thời điểm hiện tại;
+
+c) Theo lĩnh vực thủ tục hành chính.
+
+2. Đo lường, thống kê, giám sát và đánh giá tình trạng giải quyết hồ sơ thủ tục hành chính bao gồm:
+
+a) Tỷ lệ dịch vụ công trực tuyến toàn trình;
+
+b) Tỷ lệ hồ sơ được tiếp nhận, xử lý trực tuyến, trực tuyến toàn trình;
+
+c) Mức độ tự động hóa quy trình (mức độ phức tạp của dịch vụ công trực tuyến);
+
+d) Thời gian xử lý;
+
+đ) Tỷ lệ giải quyết đúng hạn;
+
+e) Mức độ hài lòng của người dân, doanh nghiệp;
+
+g) Chỉ tiêu đo lường, thống kê, giám sát với dịch vụ công trực tuyến chủ động, các chỉ tiêu khác theo yêu cầu quản lý và chỉ tiêu theo quy định của pháp luật.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+IX
+
+	
+
+Điều hành, tác nghiệp
+
+	
+
+ 
+
+
+
+
+36
+
+	
+
+Tra cứu tình trạng hồ sơ
+
+	
+
+1. Tra cứu tình trạng hồ sơ, kết quả giải quyết hồ sơ của tổ chức, cá nhân.
+
+2. Hỗ trợ tra cứu qua: QR Code, mã số hồ sơ, các ứng dụng trên nền tảng di động hoặc ứng dụng OTT theo quy định của pháp luật. Yêu cầu tối thiểu phải có khả năng tra cứu qua mã số hồ sơ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+37
+
+	
+
+Chỉ đạo, điều hành
+
+	
+
+Cung cấp các thông tin về chỉ đạo, điều hành:
+
+1. Thông tin tác nghiệp hồ sơ cần xử lý.
+
+2. Thông tin công khai tình trạng xử lý các hồ sơ theo kỳ: số hồ sơ xử lý đúng hạn, số hồ sơ quá hạn.
+
+3. Tra cứu, hướng dẫn về thủ tục hành chính cho tổ chức, cá nhân.
+
+4. Thông tin chi tiết quá trình xử lý hồ sơ như: Trạng thái hồ sơ; hồ sơ đang ở bộ phận nào; hồ sơ đã qua các bước xử lý nào; bộ phận nào bị quá hạn, cán bộ nào trực tiếp xử lý (nếu có); hồ sơ sắp đến hạn trả.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+X
+
+	
+
+Kho quản lý dữ liệu điện tử của tổ chức và cá nhân
+
+	
+
+ 
+
+
+
+
+38
+
+	
+
+Quản trị Kho quản lý dữ liệu điện tử của tổ chức và cá nhân
+
+	
+
+Kho quản lý dữ liệu điện tử của tổ chức và cá nhân bảo đảm:
+
+1. Có thể cấu hình đồng bộ danh mục thủ tục hành chính, kết quả và thành phần hồ sơ giấy tờ.
+
+2. Có thể tái sử dụng giấy tờ từ Kho quản lý dữ liệu điện tử cấp bộ, cấp tỉnh; trường hợp không có giấy tờ thì Kho quản lý dữ liệu điện tử cấp bộ, cấp tỉnh mới có yêu cầu truy vấn từ Kho quản lý dữ liệu điện tử của Cổng Dịch vụ công quốc gia.
+
+3. Thống kê được tình hình lưu trữ và tái sử dụng giấy tờ trên Kho quản lý dữ liệu điện tử của tổ chức và cá nhân.
+
+4. Có thể thiết kế biểu mẫu động cho các loại giấy tờ lưu trữ trên Kho để lưu trữ các trường thông tin quan trọng của giấy tờ.
+
+5. Có thể thống kê dung lượng lưu trữ của từng tổ chức và cá nhân.
+
+6. Đáp ứng khả năng lưu trữ hồ sơ tiếp nhận và kết quả giải quyết thủ tục hành chính theo các quy định về lưu trữ của pháp luật hiện hành.
+
+7. Đáp ứng khả năng chuyển đổi hồ sơ, kết quả giải quyết thủ tục hành chính điện tử ra văn bản giấy theo quy định hiện hành về thực hiện thủ tục hành chính trên môi trường điện tử.
+
+8. Các thông tin sẵn có được đồng bộ với Cổng Dịch vụ công quốc gia.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+39
+
+	
+
+Sử dụng Kho quản lý dữ liệu điện tử của tổ chức và cá nhân
+
+ 
+
+	
+
+1. Cho phép lưu và tái sử dụng các thành phần hồ sơ, kết quả giải quyết thủ tục hành chính bản điện tử.
+
+2. Cho phép lưu hồ sơ bị từ chối tiếp nhận của tổ chức, cá nhân.
+
+3. Cung cấp Kho quản lý dữ liệu điện tử của tổ chức, cá nhân để hỗ trợ tổ chức, cá nhân quản lý, lưu giữ thông tin, dữ liệu điện tử liên quan đến giao dịch hành chính của tổ chức, cá nhân theo quy định tại khoản 3, khoản 4 Điều 16 Nghị định số 45/2020/NĐ-CP ngày 08 tháng 4 năm 2020 của Chính phủ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+XI
+
+	
+
+Kết nối, liên thông, tích hợp và chia sẻ thông tin
+
+	
+
+ 
+
+
+
+
+40
+
+	
+
+Liên thông, tích hợp và chia sẻ thông tin với các hệ thống
+
+	
+
+1. Bảo đảm khả năng tích hợp thanh toán điện tử.
+
+2. Bảo đảm khả năng tích hợp Cổng eSign.
+
+3. Bảo đảm khả năng tích hợp hóa đơn điện tử.
+
+4. Bảo đảm khả năng tích hợp dịch vụ bưu chính/bưu chính công ích.
+
+5. Bảo đảm khả năng tích hợp các phần mềm, cơ sở dữ liệu (ví dụ: Cơ sở dữ liệu quốc gia về dân cư, phần mềm quản lý văn bản, phần mềm Lý lịch tư pháp, hộ tịch, đăng ký kinh doanh, tra cứu thông tin hồ sơ doanh nghiệp, cơ sở dữ liệu của địa phương…).
+
+6. Bảo đảm khả năng tích hợp các dịch vụ trao đổi thông tin, tối thiểu bao gồm:
+
+a) Dịch vụ thư điện tử (email);
+
+b) Dịch vụ cung cấp qua internet (ứng dụng OTT được cấp có thẩm quyền cho phép);
+
+c) Dịch vụ tin nhắn SMS;
+
+d) Ứng dụng của bộ, ngành, địa phương (nếu có): Các ứng dụng, nền tảng số do các bộ, ngành, địa phương quản lý, giúp trao đổi thông tin, dữ liệu giữa tổ chức, cá nhân với cơ quan chính phủ.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+41
+
+	
+
+Liên thông, tích hợp và chia sẻ thông tin với Cổng Dịch vụ công quốc gia
+
+	
+
+1. Thực hiện liên thông, tích hợp và chia sẻ thông tin với Cổng Dịch vụ công quốc gia theo quy định hiện hành về thực hiện thủ tục hành chính theo cơ chế một cửa, một cửa liên thông tại Bộ phận Một cửa và Cổng Dịch vụ công quốc gia.
+
+2. Bảo đảm đồng bộ đầy đủ thông tin, trạng thái về tình hình tiếp nhận, giải quyết và kết quả giải quyết thủ tục hành chính với Cổng Dịch vụ công quốc gia.
+
+	
+
+Đạt/Không đạt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHỤ LỤC IV
+
+YÊU CẦU HIỆU NĂNG
+
+(Ban hành kèm theo Thông tư số …/2026/TT-BKHCN ngày … tháng … năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ)
+
+Hiệu năng chịu tải trong điều kiện môi trường thực hiện có băng thông kết nối từ thiết bị đầu cuối đến hệ thống tối thiểu 100 Mbps.
+
+1. Yêu cầu hiệu năng tải trang dành cho trải nghiệm người dùng
+
+TT
+
+	
+
+Yêu cầu
+
+	
+
+Yêu cầu cụ thể
+
+	
+
+Đánh giá
+
+
+
+
+1
+
+	
+
+Thời gian hiển thị nội dung đầu tiên
+
+	
+
+Là thời gian mà người dùng phải đợi để nhìn thấy nội dung đầu tiên trên hệ thống sau khi trang bắt đầu được tải. Yêu cầu dưới 3 giây.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2
+
+	
+
+Thời gian hiển thị nội dung lớn nhất
+
+	
+
+Là thời gian mà trình duyệt cần để hiển thị phần nội dung lớn nhất của hệ thống (có thể là một hình ảnh, video...). Yêu cầu dưới 4 giây.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+3
+
+	
+
+Tốc độ tải nội dung
+
+	
+
+Là thời gian cần thiết để nội dung của trang được hiển thị trên màn hình người dùng trong quá trình tải trang. Chỉ số này phản ánh tốc độ các thành phần nội dung có thể nhìn thấy của trang được hiển thị dần cho đến khi trang đạt trạng thái gần hoàn chỉnh. Yêu cầu dưới 5,8 giây.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+4
+
+	
+
+Tổng thời gian chặn
+
+	
+
+Là tổng thời gian trong quá trình tải trang mà luồng chính (main thread) bị chiếm dụng quá lâu (do JavaScript hoặc tác vụ nặng), khiến trình duyệt không thể phản hồi tương tác của người dùng (như nhấp chuột, gõ phím...). Yêu cầu dưới 0,6 giây.
+
+	
+
+Đạt/Không đạt
+
+ 
+
+2. Yêu cầu hiệu năng hệ thống
+
+Các bộ, cơ quan ngang bộ, Ủy ban nhân dân các tỉnh, thành phố xác định số lượng người dùng đồng thời (Concurrent Users) phù hợp theo tình hình triển khai thực tế Hệ thống thông tin giải quyết thủ tục hành chính của đơn vị để đánh giá hiệu năng hệ thống.
+
+TT
+
+	
+
+Yêu cầu
+
+	
+
+Yêu cầu cụ thể
+
+	
+
+Đánh giá
+
+
+
+
+1
+
+	
+
+Thời gian phản hồi trung bình
+
+	
+
+Hệ thống có thời gian phản hồi trung bình dưới 2,5 giây đối với mỗi luồng công việc chính riêng rẽ (thời gian phản hồi được tính từ khi người dùng gửi yêu cầu tới hệ thống cho đến khi nhận được dữ liệu phản hồi từ hệ thống).
+
+Yêu cầu về thời gian phản hồi trung bình không áp dụng đối với các thao tác, quy trình xử lý có phát sinh việc kết nối, xác thực, đồng bộ hoặc khai thác dữ liệu từ các hệ thống thông tin, cơ sở dữ liệu của cơ quan, tổ chức khác thông qua các nền tảng tích hợp, chia sẻ dữ liệu.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2
+
+	
+
+Thời gian phản hồi chậm nhất
+
+	
+
+Hệ thống có thời gian phản hồi chậm nhất dưới 10 giây đối với toàn bộ các thao tác trên toàn trang.
+
+	
+
+Đạt/Không đạt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHỤ LỤC V
+
+YÊU CẦU AN NINH MẠNG
+
+(Ban hành kèm theo Thông tư số …/2026/TT-BKHCN ngày … tháng … năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ)
+
+TT
+
+	
+
+Yêu cầu
+
+	
+
+Đánh giá
+
+
+
+
+1
+
+	
+
+Hệ thống thông tin giải quyết thủ tục hành chính được xác định cấp độ an ninh mạng tối thiểu là hệ thống thông tin cấp độ 3.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2
+
+	
+
+Hệ thống thông tin giải quyết thủ tục hành chính phải được kiểm tra an ninh mạng theo quy định của pháp luật.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+3
+
+	
+
+Bảo đảm tuân thủ các quy định về an ninh mạng; bảo vệ dữ liệu cá nhân trong hoạt động thiết kế, xây dựng, vận hành, kết nối, chia sẻ dữ liệu, quản lý tài khoản và xác thực.
+
+	
+
+Đạt/Không đạt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHỤ LỤC VI
+
+YÊU CẦU KHÁC
+
+(Ban hành kèm theo Thông tư số …/2026/TT-BKHCN ngày … tháng … năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ)
+
+TT
+
+	
+
+Yêu cầu
+
+	
+
+Yêu cầu cụ thể
+
+	
+
+Đánh giá
+
+
+
+
+1
+
+	
+
+Giao diện cho người dùng
+
+	
+
+1. Giao diện trên trình duyệt máy tính bảo đảm thân thiện, thuận tiện cho người dùng, các vùng thông tin được phân biệt rõ ràng.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2. Giao diện hỗ trợ người dùng trên thiết bị di động (mobile-first) bảo đảm tối thiểu:
+
+a) Tối ưu, tương thích với thiết bị di động, cỡ chữ dễ nhìn, dễ đọc;
+
+b) Kích thước hiển thị nội dung phù hợp, không phải phóng to, xoay ngang;
+
+c) Các liên kết, đường dẫn được đặt cách nhau giúp các thao tác bằng ngón tay dễ dàng.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2
+
+	
+
+Hỗ trợ IPv6, DNSSEC, HTTPS sử dụng giao thức TLS v1.2 trở lên
+
+	
+
+Bảo đảm khả năng truy cập qua IPv6; triển khai HTTPS sử dụng TLS v1.2 trở lên, khuyến nghị TLS v1.3, với chứng thư số hợp lệ và bộ mã hóa an toàn trong xác thực người dùng và truyền nhận các thông tin nhạy cảm (thông tin cá nhân, thông tin thanh toán). Tên miền phục vụ hệ thống cần triển khai DNSSEC và được kiểm tra, giám sát định kỳ nhằm bảo đảm an toàn, tin cậy trong truy cập dịch vụ công trực tuyến.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+3
+
+	
+
+Tín hiệu thể hiện trạng thái hệ thống
+
+	
+
+Có tín hiệu thể hiện trạng thái hệ thống đang xử lý thông tin. Tín hiệu này phải được sử dụng thống nhất trong toàn bộ màn hình xử lý của Hệ thống (tín hiệu có thể là hình quay tròn, đồng hồ cát...).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+4
+
+	
+
+Định dạng tập tin
+
+	
+
+Các định dạng tập tin (tập tin nhập vào hệ thống, tập tin được xuất ra từ hệ thống, tập tin lưu trữ trong hồ sơ điện tử...) tuân thủ theo các định dạng tập tin (về văn bản, hình ảnh...) được quy định tại Thông tư số 39/2017/TT-BTTTT ngày 15 tháng 12 năm 2017 của Bộ Thông tin và Truyền thông.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+5
+
+	
+
+Khả năng lưu trữ
+
+	
+
+Có khả năng lưu trữ với dung lượng lớn, trong thời gian lâu dài (tương thích hoặc sử dụng các hệ quản trị cơ sở dữ liệu phổ biến).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+6
+
+ 
+
+	
+
+Chuẩn hóa dữ liệu để lưu trữ
+
+	
+
+1. Có khả năng lưu trữ được nhiều định dạng dữ liệu khác nhau như dữ liệu có cấu trúc, bán cấu trúc, phi cấu trúc dưới dạng tệp gắn kèm (dữ liệu tệp văn bản, dữ liệu phim, ảnh, âm thanh).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2. Chuẩn hóa dữ liệu để lưu trữ theo chuẩn ký tự Unicode.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+7
+
+	
+
+Trình duyệt
+
+	
+
+Tương thích với các trình duyệt thông dụng hiện nay: Chrome, Safari, Edge, Firefox, Cốc Cốc.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+8
+
+	
+
+Bộ mã ký tự tiếng Việt
+
+	
+
+Hỗ trợ hiển thị tiếng Việt theo chuẩn Unicode.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+9
+
+	
+
+Tuân thủ các quy định về chuẩn nội dung web
+
+	
+
+Tuân thủ các quy định về chuẩn nội dung web theo Thông tư số 39/2017/TT-BTTTT ngày 15 tháng 12 năm 2017 của Bộ Thông tin và Truyền thông.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+10
+
+	
+
+Định dạng hiển thị ngày, giờ
+
+	
+
+Hiển thị ngày, giờ theo định dạng DD/MM/YYYY và hh:mm:ss.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+11
+
+ 
+
+	
+
+Kết nối thiết bị
+
+ 
+
+	
+
+1. Cho phép kết nối với thiết bị đọc, in mã vạch, mã QR.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+2. Cho phép kết nối với máy quét, máy in.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+3. Cho phép kết nối với thiết bị đầu cuối hỗ trợ cá nhân, tổ chức có khả năng thực hiện được các chức năng, tính năng cơ bản của Cổng Dịch vụ công quốc gia và Hệ thống thông tin giải quyết thủ tục hành chính (Kiosk) bảo đảm:
+
+a) Cho phép tra cứu các thông tin, hướng dẫn sử dụng thủ tục hành chính, dịch vụ công trực tuyến;
+
+b) Kiosk cần có cơ chế tự động đăng xuất sau một thời gian không hoạt động, xóa dữ liệu phiên làm việc sau khi kết thúc giao dịch, không lưu thông tin đăng nhập, thông tin xác thực của người dùng, hỗ trợ giám sát, quản lý thiết bị từ xa và đáp ứng yêu cầu về khả năng tiếp cận đối với người khuyết tật.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+4. Cho phép kết nối tự động với hệ thống xếp hàng, cấp số.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+5. Cho phép kết nối tự động với hệ thống đánh giá hài lòng.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+6. Cho phép kết nối đến các thiết bị phục vụ Hệ thống thông tin giải quyết thủ tục hành chính.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+12
+
+	
+
+Chuẩn dữ liệu
+
+	
+
+Cung cấp các dữ liệu đầu ra theo chuẩn XML hoặc JSON để phục vụ công tác lập báo cáo theo quy định hiện hành, theo quy định nội bộ của đơn vị, đồng thời cung cấp dữ liệu theo các khuôn dạng thống nhất phục vụ quy trình trao đổi thông tin với các hệ thống khác (cấu trúc dữ liệu của tệp XML hoặc JSON được xác định tùy thuộc vào nhu cầu thực tế trao đổi thông tin của các hệ thống trừ khi có quy định khác).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+13
+
+	
+
+Khả năng hoạt động
+
+	
+
+Hệ thống phải được thiết kế, triển khai và vận hành bảo đảm cung cấp dịch vụ liên tục 24/7, với tỷ lệ sẵn sàng tối thiểu 99,5% trong kỳ đánh giá (trừ các trường hợp tạm dừng hệ thống để bảo trì, nâng cấp, cập nhật theo kế hoạch).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+14
+
+	
+
+Kiểm soát việc truy cập đồng thời
+
+	
+
+Cho phép kiểm soát việc truy cập đồng thời của cùng một tài khoản người dùng trên nhiều máy tính/thiết bị khác nhau.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+15
+
+	
+
+Đính kèm định dạng phổ biến
+
+	
+
+Cho phép xem trực tiếp trên trình duyệt các tệp đính kèm với một số định dạng phổ biến (ví dụ: .docx; .xlsx; .pdf).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+16
+
+	
+
+Chống gửi thông tin rác
+
+	
+
+Có các cơ chế chống gửi thông tin rác (dưới dạng captcha, audio...).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+17
+
+	
+
+Hỗ trợ khả năng truy cập thông tin thuận tiện và hỗ trợ người khuyết tật
+
+	
+
+Áp dụng mức A tiêu chuẩn Web Content Accessibility Guidelines 2.2 (WCAG 2.2).
+
+	
+
+Đạt/Không đạt
+
+
+
+
+18
+
+	
+
+Truy cập thuận tiện trên nhiều thiết bị
+
+	
+
+Bảo đảm người dùng có thể truy cập thuận tiện từ các thiết bị khác nhau: Máy tính để bàn, máy tính bảng, điện thoại.
+
+	
+
+Đạt/Không đạt
+
+
+
+
+19
+
+	
+
+Tự động trích xuất, bóc tách dữ liệu từ hồ sơ, tài liệu điện tử
+
+	
+
+Việc áp dụng các công nghệ nhận dạng ký tự quang học (OCR), trí tuệ nhân tạo hoặc các giải pháp kỹ thuật tương đương được thực hiện phù hợp với nhu cầu nghiệp vụ và điều kiện triển khai của từng hệ thống.
+
+	
+
+Đạt/Không đạt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHỤ LỤC VII
+
+MẪU PHIẾU CUNG CẤP THÔNG TIN
+
+(Ban hành kèm theo Thông tư số …/2026/TT-BKHCN ngày … tháng … năm 2026 của Bộ trưởng Bộ Khoa học và Công nghệ)
+
+ 
+
+TÊN CƠ QUAN
+-------
+
+	
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập - Tự do - Hạnh phúc
+---------------
+
+
+
+
+Số: ………….
+V/v cung cấp thông tin kết nối Hệ thống giám sát, đo lường mức độ cung cấp và sử dụng dịch vụ Chính phủ số
+
+	
+
+……, ngày …… tháng …… năm ………….
+
+Kính gửi: Cục Chuyển đổi số quốc gia - Bộ Khoa học và Công nghệ
+
+1. Cơ quan cung cấp thông tin:
+
+- Tên cơ quan: …………………………………………………………………….
+
+- Địa chỉ cơ quan:………………………………………………………………...
+
+- Số điện thoại liên hệ của cơ quan:………………………………………………
+
+- Đầu mối liên hệ làm việc:
+
++ Tên người liên hệ:………………………………………………………………
+
++ Điện thoại:……………………………………………………………..………..
+
++ Thư điện tử:……………………………………………………………………..
+
+2. Nội dung thông tin:
+
+STT
+
+	
+
+Tên Hệ thống kết nối
+
+	
+
+Tên miền
+
+	
+
+Thông tin khác (nếu có)
+
+
+
+
+…
+
+	
+
+ 
+
+	
+
+ 
+
+	
+
+ 
+
+3. Hình thức nhận thông tin trả lời:
+
+- Nhận thông tin trả lời tại địa chỉ thư điện tử (Thư điện tử công vụ): …………
+
+Trân trọng./.
+
+Nơi nhận:
+- Như trên;
+- Cơ quan đề nghị;
+- Lưu:…
+
+	
+
+ĐẠI DIỆN CƠ QUAN
+
+(Ký, ghi rõ họ tên và đóng dấu)
+
+ 
