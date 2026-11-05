@@ -23,23 +23,26 @@ jobs:
           pip install playwright pypdf
           python -m playwright install --with-deps chromium
 
-      - name: Chạy crawler (tự chạy lại tối đa 3 lần khi lỗi tạm thời)
+      - name: Chạy crawler (chạy lại tối đa 2 lần khi lỗi bất thường)
         id: crawler
         shell: bash
-        timeout-minutes: 180   # hôm nay một lần chạy kẹt quá lâu ở bước vbpl; dữ liệu đã xuất trước đó vẫn được lưu
+        timeout-minutes: 180   # giới hạn an toàn; một lần chạy bình thường chỉ cần khoảng 1 đến 2 giờ
         run: |
           set +e
           for lan in 1 2 3; do
             python -m crawler.update
             ma=$?
-            if [ "$ma" -eq 0 ]; then exit 0; fi
-            # Mã 2 (cổng từ chối truy cập) và mã 4 (nguồn bị chặn): không chạy lại, tránh bị chặn thêm.
-            if [ "$ma" -eq 2 ] || [ "$ma" -eq 4 ] || [ "$lan" -eq 3 ]; then
-              echo "Lần $lan kết thúc với mã $ma, không chạy lại."
+            # Mã 0: xong. Mã 3: một số nguồn lỗi tạm thời, dữ liệu đã được xuất và lưu nên không chạy lại
+            # (chạy lại chỉ làm lần chạy kéo dài thêm hàng giờ). Mã 2 và 4: cổng hoặc nguồn chặn, không chạy lại.
+            if [ "$ma" -eq 0 ] || [ "$ma" -eq 2 ] || [ "$ma" -eq 3 ] || [ "$ma" -eq 4 ]; then
               exit "$ma"
             fi
-            echo "::warning::Lần $lan lỗi (mã $ma). Chờ 15 phút rồi chạy lại."
-            sleep 900
+            if [ "$lan" -eq 3 ]; then
+              echo "Lần $lan vẫn lỗi (mã $ma), dừng."
+              exit "$ma"
+            fi
+            echo "::warning::Lần $lan lỗi bất thường (mã $ma). Chờ 5 phút rồi chạy lại."
+            sleep 300
           done
         continue-on-error: true   # lỗi một nguồn vẫn lưu dữ liệu các nguồn khác; bước cuối báo lỗi
 

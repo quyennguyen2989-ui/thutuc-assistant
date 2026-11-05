@@ -130,11 +130,6 @@ function updateDetail(item) {
 const NGUON_GHI_NHAN_LAN_DAU = "ghi nhận lần đầu, cổng không ghi ngày cập nhật";
 const SO_NGAY_NHAN_NEW = 5;
 
-// Có cập nhật thật từ cổng hoặc nguồn chính thức (không tính ngày ghi nhận lần đầu).
-function isRealUpdate(item) {
-  return Boolean(item.ngay_cap_nhat) && item.nguon_ngay_cap_nhat !== NGUON_GHI_NHAN_LAN_DAU;
-}
-
 // Ngày của dữ liệu (lần kiểm tra gần nhất), để tính số ngày từ cập nhật; thiếu thì dùng ngày hôm nay.
 function ngayCuaDuLieu(meta) {
   if (meta && meta.cap_nhat_luc) return meta.cap_nhat_luc.slice(0, 10);
@@ -147,10 +142,10 @@ function soNgayGiua(isoTruoc, isoSau) {
   return Math.round((Date.UTC(y2, m2 - 1, d2) - Date.UTC(y1, m1 - 1, d1)) / 86400000);
 }
 
-// NEW: có cập nhật thật trong vài ngày gần nhất so với ngày của dữ liệu.
-function laThuTucMoi(item, today) {
-  if (!isRealUpdate(item)) return false;
-  const songay = soNgayGiua(item.ngay_cap_nhat, today);
+// NEW: nội dung đổi so với bản đang hiển thị (do crawler đánh dấu), phát hiện trong vài ngày gần nhất.
+function laMoi(item, today) {
+  if (!item.ngay_phat_hien_moi) return false;
+  const songay = soNgayGiua(item.ngay_phat_hien_moi, today);
   return songay >= 0 && songay <= SO_NGAY_NHAN_NEW;
 }
 
@@ -503,7 +498,7 @@ function updateTthcResults() {
             "span",
             { class: "row__title" },
             t.ten,
-            laThuTucMoi(t, today) ? el("span", { class: "row__new" }, "NEW") : null
+            laMoi(t, today) ? el("span", { class: "row__new" }, "NEW") : null
           ),
           el("span", { class: "row__sub" }, inlineParts([t.linh_vuc, t.co_quan_thuc_hien]))
         ),
@@ -678,7 +673,12 @@ function updateVanBanResults() {
         el(
           "span",
           { class: "row__main" },
-          el("span", { class: "row__title" }, shorten(v.trich_yeu || v.so_ky_hieu, 180)),
+          el(
+            "span",
+            { class: "row__title" },
+            shorten(v.trich_yeu || v.so_ky_hieu, 180),
+            laMoi(v, ngayCuaDuLieu(state.data.meta)) ? el("span", { class: "row__new" }, "NEW") : null
+          ),
           el("span", { class: "row__sub" }, inlineParts([v.so_ky_hieu, v.loai, v.co_quan_ban_hanh]))
         ),
         el(

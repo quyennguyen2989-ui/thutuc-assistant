@@ -229,8 +229,9 @@ def _sync_vbpl(conn, run_at, ghi):
         print(f"vbpl.vn: {thong_bao}.")
         if loi_tim:
             ghi.ghi("vbpl", LOI, f"không tìm được văn bản mới ({loi_tim}); {thong_bao}")
-        elif so_doc and so_loi == so_doc:
-            ghi.ghi("vbpl", LOI, f"không đọc được văn bản nào: {thong_bao}")
+        elif so_doc and so_loi * 2 > so_doc:
+            # Quá nửa số văn bản không đọc được thì báo lỗi, không báo "ok" như trước.
+            ghi.ghi("vbpl", LOI, f"quá nửa số văn bản không đọc được: {thong_bao}")
         else:
             ghi.ghi("vbpl", OK, thong_bao)
         texts = vbpl_text.sync_texts(conn, DOCS_DATA_DIR / "vbpl_text", config["do_tre_giua_cac_yeu_cau_giay"])

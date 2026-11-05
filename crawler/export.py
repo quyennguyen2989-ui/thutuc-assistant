@@ -8,6 +8,7 @@ Mỗi mục đều ghi nguồn và ngày đối chiếu, để người dùng t�
 
 import json
 import re
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import nguon_chinh_thuc, nguon_trang_thai, normalize, store, vbpl, vbpl_sync
@@ -263,6 +264,56 @@ def _trang_thai_nguon(conn):
     }
 
 
+# Nhãn NEW chỉ gắn cho nội dung đổi so với bản đang hiển thị, từ thời điểm quy tắc có hiệu lực.
+NGAY_BAT_DAU_NHAN_NEW = "2026-11-04"
+_GIO_VIET_NAM = timezone(timedelta(hours=7))
+
+# Các trường không phải nội dung (ngày kiểm tra, ngày đối chiếu, dấu hệ thống): đổi các trường này không tính là cập nhật.
+_TRUONG_KHONG_NOI_DUNG = {"id", "ngay_cap_nhat", "nguon_ngay_cap_nhat", "ngay_phat_hien_moi"}
+_TRUONG_VBPL_KHONG_NOI_DUNG = {"kiem_tra_luc"}
+
+
+def _van_tay_noi_dung(item):
+    """Chuỗi đại diện nội dung của một mục; hai bản có cùng nội dung thì cùng chuỗi."""
+    noi_dung = {
+        k: v for k, v in item.items() if not k.startswith("_") and k not in _TRUONG_KHONG_NOI_DUNG
+    }
+    if isinstance(noi_dung.get("vbpl"), dict):
+        noi_dung["vbpl"] = {
+            k: v for k, v in noi_dung["vbpl"].items() if k not in _TRUONG_VBPL_KHONG_NOI_DUNG
+        }
+    return json.dumps(noi_dung, ensure_ascii=False, sort_keys=True)
+
+
+def _ngay_viet_nam(run_at):
+    return datetime.fromisoformat(run_at).astimezone(_GIO_VIET_NAM).date().isoformat()
+
+
+def _khoa_so_sanh(item):
+    """Khóa ổn định để ghép mục giữa hai lần xuất: số ký hiệu (văn bản) hoặc mã nội bộ (thủ tục)."""
+    return "ky_hieu:" + item["so_ky_hieu"] if item.get("so_ky_hieu") else "id:" + str(item.get("id"))
+
+
+def _danh_dau_moi(items, ban_cu, run_at):
+    """Gắn ngay_phat_hien_moi (ngày YYYY-MM-DD) cho mục mới hoặc có nội dung đổi so với bản đã xuất trước đó.
+
+    - Mục không đổi giữ nguyên ngày đã gắn trước đó.
+    - Chưa có bản cũ (lần xuất đầu tiên) thì không gắn gì, vì không có gì để so sánh.
+    - Chỉ gắn cho phát hiện từ NGAY_BAT_DAU_NHAN_NEW trở đi.
+    """
+    ngay_chay = _ngay_viet_nam(run_at)
+    cu = {_khoa_so_sanh(item): item for item in (ban_cu or [])}
+    for item in items:
+        truoc = cu.get(_khoa_so_sanh(item))
+        if ban_cu is None:
+            ngay = None
+        elif truoc is not None and _van_tay_noi_dung(truoc) == _van_tay_noi_dung(item):
+            ngay = truoc.get("ngay_phat_hien_moi")
+        else:
+            ngay = ngay_chay
+        item["ngay_phat_hien_moi"] = ngay if ngay and ngay >= NGAY_BAT_DAU_NHAN_NEW else None
+
+
 def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -285,6 +336,10 @@ def write_outputs(conn, out_dir, overrides_path, extra_path, run_at):
     thay_doi_tthc = store.last_change_dates(conn, "tthc")
     for item in tthc:
         item["ngay_cap_nhat"], item["nguon_ngay_cap_nhat"] = _ngay_cap_nhat(item, thay_doi_tthc)
+
+    # So với bản đang hiển thị (tệp đã xuất trước lần này) để đánh dấu NEW đúng quy tắc.
+    _danh_dau_moi(van_ban, _read_json(out_dir / "van_ban.json", None), run_at)
+    _danh_dau_moi(tthc, _read_json(out_dir / "tthc.json", None), run_at)
 
     meta = {
         "cap_nhat_luc": run_at,
