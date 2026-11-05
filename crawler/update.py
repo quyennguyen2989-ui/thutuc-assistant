@@ -101,10 +101,14 @@ def _chay(conn, run_at, ghi):
         _sync_congan_tin(conn, run_at, ghi)
     else:
         _bo_qua(ghi, ["congan_tin"], "--khong-catp")
+    # Xuất dữ liệu trước khi đọc vbpl.vn: bước vbpl chậm không được làm chậm việc công bố dữ liệu mới.
+    # Nếu tiến trình bị dừng giữa chừng, bản xuất này vẫn được lưu (workflow luôn chạy bước lưu dữ liệu).
+    export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
     if "--khong-vbpl" not in sys.argv:
         _sync_vbpl(conn, run_at, ghi)
     else:
         _bo_qua(ghi, ["vbpl"], "--khong-vbpl")
+    # Xuất lần hai để tình trạng vbpl.vn vừa đọc được đưa vào dữ liệu.
     export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
 
     label = "lần đầu, ghi nhận nền" if first_run else f"{change_count} thay đổi"

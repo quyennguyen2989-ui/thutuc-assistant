@@ -26,6 +26,7 @@ jobs:
       - name: Chạy crawler (tự chạy lại tối đa 3 lần khi lỗi tạm thời)
         id: crawler
         shell: bash
+        timeout-minutes: 180   # hôm nay một lần chạy kẹt quá lâu ở bước vbpl; dữ liệu đã xuất trước đó vẫn được lưu
         run: |
           set +e
           for lan in 1 2 3; do
