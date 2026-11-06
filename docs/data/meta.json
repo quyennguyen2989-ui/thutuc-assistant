@@ -1,61 +1,61 @@
 {
- "cap_nhat_luc": "2026-11-05T06:31:45+00:00",
- "lan_chay_thanh_cong_gan_nhat": "2026-11-05T06:31:45+00:00",
+ "cap_nhat_luc": "2026-11-06T01:56:06+00:00",
+ "lan_chay_thanh_cong_gan_nhat": "2026-11-06T01:56:06+00:00",
  "trang_thai_nguon": {
   "bo_cong_an": {
    "ten": "Cổng Thông tin điện tử Bộ Công an (Hệ thống văn bản)",
    "trang_thai": "ok",
    "thong_bao": "giai đoạn 1: 1 văn bản liên quan, 0 mới; giai đoạn 2: 1 văn bản liên quan, 0 mới; giai đoạn 3: 1 văn bản liên quan, 0 mới",
-   "luc": "2026-11-05T06:31:45+00:00",
-   "thanh_cong_gan_nhat": "2026-11-05T06:31:45+00:00"
+   "luc": "2026-11-06T01:56:06+00:00",
+   "thanh_cong_gan_nhat": "2026-11-06T01:56:06+00:00"
   },
   "chinh_phu": {
    "ten": "Công báo điện tử Chính phủ",
    "trang_thai": "ok",
    "thong_bao": "giai đoạn 1: 1 văn bản liên quan, 0 mới; giai đoạn 2: 2 văn bản liên quan, 0 mới; giai đoạn 3: 2 văn bản liên quan, 0 mới",
-   "luc": "2026-11-05T06:31:45+00:00",
-   "thanh_cong_gan_nhat": "2026-11-05T06:31:45+00:00"
+   "luc": "2026-11-06T01:56:06+00:00",
+   "thanh_cong_gan_nhat": "2026-11-06T01:56:06+00:00"
   },
   "cong_dvc_quoc_gia": {
    "ten": "Cổng Dịch vụ công Quốc gia",
    "trang_thai": "loi",
    "thong_bao": "gọi /submitting/formality/list-all-public-formality-by-citizen thất bại sau 3 lần: <urlopen error timed out>",
-   "luc": "2026-11-05T06:31:45+00:00",
+   "luc": "2026-11-06T01:56:06+00:00",
    "thanh_cong_gan_nhat": null
   },
   "cong_phong_csqlhc": {
    "ten": "Cổng Phòng CSQLHC (Công an TP.HCM)",
    "trang_thai": "ok",
    "thong_bao": "31 văn bản, 42 thủ tục",
-   "luc": "2026-11-05T06:31:45+00:00",
-   "thanh_cong_gan_nhat": "2026-11-05T06:31:45+00:00"
+   "luc": "2026-11-06T01:56:06+00:00",
+   "thanh_cong_gan_nhat": "2026-11-06T01:56:06+00:00"
   },
   "congan_tin": {
    "ten": "Tin Công an TP.HCM (chỉ đạo, triển khai)",
    "trang_thai": "ok",
    "thong_bao": "14 tin đọc được, 2 có chỉ đạo, 0 mới",
-   "luc": "2026-11-05T06:31:45+00:00",
-   "thanh_cong_gan_nhat": "2026-11-05T06:31:45+00:00"
+   "luc": "2026-11-06T01:56:06+00:00",
+   "thanh_cong_gan_nhat": "2026-11-06T01:56:06+00:00"
   },
   "toan_van": {
    "ten": "Toàn văn văn bản chính thức",
    "trang_thai": "ok",
    "thong_bao": "thêm 0 văn bản, không đọc được 0",
-   "luc": "2026-11-05T06:31:45+00:00",
-   "thanh_cong_gan_nhat": "2026-11-05T06:31:45+00:00"
+   "luc": "2026-11-06T01:56:06+00:00",
+   "thanh_cong_gan_nhat": "2026-11-06T01:56:06+00:00"
   },
   "tphcm": {
    "ten": "Công báo Thành phố Hồ Chí Minh",
-   "trang_thai": "loi",
-   "thong_bao": "giai đoạn 1: 0 văn bản liên quan, 0 mới; giai đoạn 2: 0 văn bản liên quan, 0 mới; giai đoạn 3: tải https://congbao.hochiminhcity.gov.vn/cong-bao/van-ban/van-ban-moi thất bại sau 3 lần: <urlopen error timed out>",
-   "luc": "2026-11-05T06:31:45+00:00",
-   "thanh_cong_gan_nhat": "2026-11-05T04:22:29+00:00"
+   "trang_thai": "ok",
+   "thong_bao": "giai đoạn 1: 0 văn bản liên quan, 0 mới; giai đoạn 2: 0 văn bản liên quan, 0 mới; giai đoạn 3: 0 văn bản liên quan, 0 mới",
+   "luc": "2026-11-06T01:56:06+00:00",
+   "thanh_cong_gan_nhat": "2026-11-06T01:56:06+00:00"
   },
   "vbpl": {
    "ten": "vbpl.vn",
-   "trang_thai": "ok",
-   "thong_bao": "đọc trạng thái 8 văn bản, 7 không đọc được",
-   "luc": "2026-11-05T06:31:45+00:00",
+   "trang_thai": "loi",
+   "thong_bao": "quá nửa số văn bản không đọc được: đọc trạng thái 7 văn bản, 7 không đọc được",
+   "luc": "2026-11-06T01:56:06+00:00",
    "thanh_cong_gan_nhat": "2026-11-05T06:31:45+00:00"
   }
  },
