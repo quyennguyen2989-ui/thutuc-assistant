@@ -24,6 +24,7 @@ Nhóm văn bản này cho biết khoản thu nào đã bị bãi bỏ ở TP.HCM
 ## 4. QĐ 1990/QĐ-UBND ngày 03/04/2026 (Công báo số 195+196, 15/06/2026)
 - **Bãi bỏ toàn bộ QĐ 42/2010/QĐ-UBND** (ngày 13/07/2010) về việc thay thế thủ tục hành chính áp dụng tại UBND quận - huyện trong lĩnh vực hộ tịch.
 - Hiệu lực **từ ngày ký** (03/04/2026). Điều 2 khoản 2 giao Chủ tịch UBND **các phường, xã, đặc khu** tổ chức thi hành.
+- Đã đối chiếu toàn văn (PDF đính kèm trang Công báo, số 1990/QĐ-UBND, 2 trang): Điều 1 bãi bỏ toàn bộ QĐ 42/2010; Điều 2 khoản 1 có hiệu lực kể từ ngày ký. Toàn văn QĐ 42/2010 chưa đọc được.
 - **Lưu ý:** trên dữ liệu trước đó, QĐ 42/2010 còn hiệu lực. Nay không còn hiệu lực. Các thủ tục hộ tịch áp dụng tại cấp xã phải theo văn bản hiện hành (Luật Hộ tịch 60/2014 và luật sửa đổi 03/2026 đã ghi trong kho).
 
 ## 5. QĐ 48/2023/QĐ-UBND ngày 20/11/2023 (còn hiệu lực trên dữ liệu; có hiệu lực từ 01/12/2023)

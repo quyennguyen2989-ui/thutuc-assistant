@@ -17,6 +17,7 @@ from .client import BlockedError
 CONFIG_PATH = Path(__file__).resolve().parent / "vbpl_config.json"
 DISCOVERY_STATE = "vbpl_kham_pha_luc"
 SEARCHED_STATE = "vbpl_so_da_tim"
+DOC_DAY_DU_STATE = "vbpl_doc_day_du_luc"  # ngày đọc lại toàn bộ tình trạng gần nhất
 
 
 def load_config():
@@ -70,26 +71,41 @@ def discover(conn, numbers, config, run_date, delay):
         xml = vbpl.fetch_text(f"{vbpl.SITE}/sitemap/{sheet}.xml", delay)
         entries.extend(vbpl.read_urlset(xml, sheet))
 
+    known = {row["url"] for row in store.load_vbpl(conn)}
+    url_moi = set()  # đường dẫn chưa từng có trong dữ liệu: cần đọc ngay trong lần chạy này
     matched = 0
     for number in numbers:
         hit = vbpl.find_by_number(entries, number)
         if hit:
+            if hit["url"] not in known:
+                url_moi.add(hit["url"])
             store.upsert_vbpl(conn, {
                 "url": hit["url"], "so_ky_hieu": number, "sheet": hit["sheet"], "lastmod": hit["lastmod"],
             })
             matched += 1
 
-    known = {row["url"] for row in store.load_vbpl(conn)}
     new_found = 0
     for hit in vbpl.discover(entries, config["tu_khoa_tim_van_ban_moi"], config["tu_ngay_tim_van_ban_moi"]):
         if hit["url"] not in known:
             store.upsert_vbpl(conn, {
                 "url": hit["url"], "sheet": hit["sheet"], "lastmod": hit["lastmod"],
             })
+            url_moi.add(hit["url"])
             new_found += 1
 
     store.set_state(conn, DISCOVERY_STATE, run_date.isoformat())
-    return {"so_sanh_duoc": len(entries), "theo_so_ky_hieu": matched, "van_ban_moi": new_found}
+    return {
+        "so_sanh_duoc": len(entries), "theo_so_ky_hieu": matched, "van_ban_moi": new_found,
+        "url_moi": sorted(url_moi),
+    }
+
+
+def _can_doc_day_du(conn, run_date, chu_ky_ngay):
+    """Đến kỳ đọc lại toàn bộ tình trạng (mặc định mỗi 7 ngày). Việc phát hiện văn bản mới vẫn chạy mỗi ngày."""
+    last = store.get_state(conn, DOC_DAY_DU_STATE)
+    if not last:
+        return True
+    return date.fromisoformat(last) + timedelta(days=chu_ky_ngay) <= run_date
 
 
 def read_statuses(conn, run_at, delay, keywords, only_urls=None):
@@ -182,26 +198,31 @@ def sync(conn, extra_numbers, run_at, run_date, config):
     searched = set(json.loads(store.get_state(conn, SEARCHED_STATE, "[]")))
     new_numbers = [number for number in numbers if number not in searched]
 
-    full = bool(new_numbers) or discovery_due(conn, run_date, config["chu_ky_tim_van_ban_moi_ngay"])
+    # Phát hiện văn bản mới mỗi ngày (sơ đồ trang, khoảng vài phút), để văn bản mới được đọc ngay trong ngày.
+    tim_hom_nay = bool(new_numbers) or discovery_due(conn, run_date, config["chu_ky_tim_van_ban_moi_ngay"])
     loi_tim = None
-    if full:
+    url_moi = set()
+    if tim_hom_nay:
         try:
             summary = discover(conn, numbers, config, run_date, delay)
+            url_moi = set(summary.pop("url_moi"))
             store.set_state(conn, SEARCHED_STATE, json.dumps(numbers, ensure_ascii=False))
-            print(f"vbpl.vn: đã tìm văn bản — {summary}")
+            print(f"vbpl.vn: đã tìm văn bản — {summary}; văn bản mới cần đọc: {len(url_moi)}")
         except BlockedError:
             raise
         except Exception as error:  # noqa: BLE001 - lỗi tìm văn bản không chặn việc đọc trạng thái
             loi_tim = str(error)
             print(f"vbpl.vn: lỗi khi tìm văn bản ({error}). Vẫn đọc trạng thái văn bản đã theo dõi.")
 
-    # Lần đầu và mỗi chu kỳ tìm kiếm thành công thì đọc lại toàn bộ tình trạng (đối chiếu đầy đủ).
-    # Các lần khác (kể cả khi tìm văn bản lỗi) chỉ đọc văn bản chưa từng kiểm tra, đang lỗi,
-    # hoặc có ngày sửa trên sơ đồ trang mới hơn lần kiểm tra gần nhất.
-    only_urls = None if full and loi_tim is None else _can_kiem_tra_lai(conn)
+    # Đọc lại toàn bộ tình trạng mỗi chu kỳ (mặc định 7 ngày) để đối chiếu đầy đủ. Các ngày khác chỉ đọc:
+    # văn bản chưa từng kiểm tra, đang lỗi, có ngày sửa mới hơn lần kiểm tra, và văn bản mới vừa phát hiện.
+    doc_day_du = loi_tim is None and _can_doc_day_du(conn, run_date, config.get("chu_ky_doc_day_du_ngay", 7))
+    only_urls = None if doc_day_du else (_can_kiem_tra_lai(conn) | url_moi)
     so_doc, so_loi, so_khong_con = read_statuses(
         conn, run_at, delay, config["tu_khoa_tim_van_ban_moi"], only_urls=only_urls
     )
+    if doc_day_du:
+        store.set_state(conn, DOC_DAY_DU_STATE, run_date.isoformat())
     return so_doc, so_loi, loi_tim, so_khong_con
 
 
