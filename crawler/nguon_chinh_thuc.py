@@ -19,6 +19,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
+from . import trinh_duyet
 from .client import BlockedError
 
 USER_AGENT = "thutuc-assistant/0.1 (open-source, cong cu tra cuu van ban cho can bo dan cu)"
@@ -95,7 +96,15 @@ class Fetcher:
                 except (urllib.error.URLError, TimeoutError, OSError) as error:
                     last_error = error
                     time.sleep(5 * attempt)
-            raise RuntimeError(f"tải {url} thất bại sau {RETRIES} lần: {last_error}")
+            # Kết nối trực tiếp thất bại hết (thường là quá giờ trên máy chủ CI): thử qua trình duyệt một lần.
+            try:
+                return trinh_duyet.tai_bytes(url, accept=accept)
+            except BlockedError:
+                raise
+            except Exception as error:  # noqa: BLE001 - ghi cả hai lỗi để biết đường nào hỏng
+                raise RuntimeError(
+                    f"tải {url} thất bại sau {RETRIES} lần ({last_error}) và qua trình duyệt ({error})"
+                ) from error
         finally:
             self._last = time.monotonic()
 

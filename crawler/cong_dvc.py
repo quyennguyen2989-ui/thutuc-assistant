@@ -16,7 +16,7 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-from . import nguon_chinh_thuc, store, vbpl_sync
+from . import nguon_chinh_thuc, store, trinh_duyet, vbpl_sync
 from .client import BlockedError
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -75,7 +75,19 @@ class DvcClient:
                 self._last = time.monotonic()
                 last_error = error
             time.sleep(5 * attempt)
-        raise RuntimeError(f"gọi {path} thất bại sau {THU_LAI} lần: {last_error}")
+        # Kết nối trực tiếp thất bại hết (thường là quá giờ trên máy chủ CI): thử qua trình duyệt một lần.
+        try:
+            payload = trinh_duyet.goi_post_json(BASE_URL + path, body)
+        except BlockedError:
+            raise
+        except Exception as error:  # noqa: BLE001 - ghi cả hai lỗi để biết đường nào hỏng
+            raise RuntimeError(
+                f"gọi {path} thất bại sau {THU_LAI} lần ({last_error}) và qua trình duyệt ({error})"
+            ) from error
+        if payload.get("code") != "OK":
+            raise RuntimeError(f"{path} trả về mã {payload.get('code')} (qua trình duyệt)")
+        self._last = time.monotonic()
+        return payload["data"]
 
 
 def liet_ke(client):
