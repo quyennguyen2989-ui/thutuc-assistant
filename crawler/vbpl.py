@@ -285,18 +285,53 @@ def _read_history(page, url, timeout_ms):
         return None
 
 
+# Liên kết cũ: vbpl.vn không còn văn bản ở đường dẫn này (404, hoặc trang báo "Văn bản không tồn tại").
+# Khác với lỗi tạm thời, các liên kết này không đọc lại mỗi ngày và không tính vào tỷ lệ lỗi.
+KHONG_CON_PREFIX = "không còn trên vbpl"
+KHONG_TON_TAI_TEXT = "Văn bản không tồn tại"
+DETAIL_READY = "Ngày cập nhật"
+
+
+def la_khong_con(loi):
+    """Lỗi đánh dấu văn bản không còn trên vbpl.vn (liên kết cũ)."""
+    return bool(loi) and loi.startswith(KHONG_CON_PREFIX)
+
+
+
+
+def _tu_choi_cookie(page):
+    """Bấm "Từ chối" ở biểu mẫu cookie của vbpl.vn (lựa chọn chỉ dùng cookie cần thiết). Không có thì bỏ qua."""
+    try:
+        nut = page.locator("button").filter(has_text="Từ chối")
+        for i in range(nut.count()):
+            if nut.nth(i).is_visible():
+                nut.nth(i).click(timeout=5000)
+                return True
+    except Exception:  # noqa: BLE001 - biểu mẫu không hiện thì không cần từ chối
+        pass
+    return False
+
+
 def _read_one(page, url, timeout_ms):
     try:
         response = page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
         status_code = response.status if response else None
         if status_code in (403, 429):
             return {"http_status": status_code, "loi": f"HTTP {status_code}"}
+        if status_code == 404:
+            return {"http_status": 404, "khong_con": True, "loi": f"{KHONG_CON_PREFIX} (HTTP 404)"}
+        _tu_choi_cookie(page)
+        # Chờ đến khi trang có nội dung văn bản hoặc báo không tồn tại, không chờ hết thời gian như trước.
         page.wait_for_function(
-            "document.body && document.body.innerText.includes('Ngày cập nhật')",
+            "document.body && (document.body.innerText.includes('Ngày cập nhật')"
+            " || document.body.innerText.includes('Văn bản không tồn tại'))",
             timeout=timeout_ms,
         )
         main = page.query_selector("main") or page.query_selector("body")
-        info = parse_detail_text(main.inner_text())
+        text = main.inner_text()
+        if DETAIL_READY not in text and KHONG_TON_TAI_TEXT in text:
+            return {"http_status": status_code, "khong_con": True, "loi": f"{KHONG_CON_PREFIX} (trang báo không tồn tại)"}
+        info = parse_detail_text(text)
         info["tieu_de"] = page.title().split(" | ")[0].strip()
         info["loi"] = None
         info["http_status"] = status_code

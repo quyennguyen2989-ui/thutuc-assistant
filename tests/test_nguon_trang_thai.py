@@ -87,11 +87,11 @@ class TrangThaiNguonTest(unittest.TestCase):
 
         with mock.patch("crawler.vbpl_sync.discover", side_effect=RuntimeError("sitemap lỗi")), \
                 mock.patch("crawler.vbpl.read_detail_pages", side_effect=fake_read):
-            so_doc, so_loi, loi_tim = vbpl_sync.sync(
+            so_doc, so_loi, loi_tim, so_khong_con = vbpl_sync.sync(
                 self.conn, ["1/2025/TT-BCA"], "2026-11-04T08:00:00+07:00", date(2026, 11, 4), CONFIG,
             )
 
-        self.assertEqual((so_doc, so_loi, loi_tim), (1, 0, "sitemap lỗi"))
+        self.assertEqual((so_doc, so_loi, loi_tim, so_khong_con), (1, 0, "sitemap lỗi", 0))
         row = store.load_vbpl(self.conn)[0]
         self.assertEqual(row["tinh_trang"], "Còn hiệu lực")
         self.assertIsNone(store.get_state(self.conn, vbpl_sync.SEARCHED_STATE))

@@ -109,9 +109,15 @@ def read_statuses(conn, run_at, delay, keywords, only_urls=None):
     # Lần đầu có trạng thái thì chỉ ghi nhận nền, không báo thay đổi.
     baseline = not any(row["tinh_trang"] for row in rows)
     so_loi = 0
+    so_khong_con = 0
 
     def save(url, info):
-        nonlocal so_loi
+        nonlocal so_loi, so_khong_con
+        if info.get("khong_con"):
+            # Liên kết không còn trên vbpl.vn: giữ trạng thái đã biết, không tính là lỗi tạm thời.
+            so_khong_con += 1
+            store.upsert_vbpl(conn, {"url": url, "kiem_tra_luc": run_at, "loi": info["loi"]})
+            return
         if info.get("loi"):
             so_loi += 1
             store.upsert_vbpl(conn, {"url": url, "kiem_tra_luc": run_at, "loi": info["loi"]})
@@ -129,7 +135,7 @@ def read_statuses(conn, run_at, delay, keywords, only_urls=None):
             _record_change(conn, run_at, url, by_url.get(url, {}), new)
 
     vbpl.read_detail_pages(targets, save, delay_seconds=delay, history_urls=history_urls)
-    return len(targets), so_loi
+    return len(targets), so_loi, so_khong_con
 
 
 def _record_change(conn, run_at, url, old, new):
@@ -193,14 +199,21 @@ def sync(conn, extra_numbers, run_at, run_date, config):
     # Các lần khác (kể cả khi tìm văn bản lỗi) chỉ đọc văn bản chưa từng kiểm tra, đang lỗi,
     # hoặc có ngày sửa trên sơ đồ trang mới hơn lần kiểm tra gần nhất.
     only_urls = None if full and loi_tim is None else _can_kiem_tra_lai(conn)
-    so_doc, so_loi = read_statuses(conn, run_at, delay, config["tu_khoa_tim_van_ban_moi"], only_urls=only_urls)
-    return so_doc, so_loi, loi_tim
+    so_doc, so_loi, so_khong_con = read_statuses(
+        conn, run_at, delay, config["tu_khoa_tim_van_ban_moi"], only_urls=only_urls
+    )
+    return so_doc, so_loi, loi_tim, so_khong_con
 
 
 def _can_kiem_tra_lai(conn):
-    """Đường dẫn các văn bản cần đọc lại trạng thái trong lần chạy gia tăng."""
+    """Đường dẫn các văn bản cần đọc lại trạng thái trong lần chạy gia tăng.
+
+    Liên kết đã xác định là không còn trên vbpl.vn không đọc lại mỗi ngày (chỉ đọc trong đợt đối chiếu đầy đủ).
+    """
     urls = set()
     for row in store.load_vbpl(conn):
+        if vbpl.la_khong_con(row["loi"]):
+            continue
         if row["loi"] or not row["kiem_tra_luc"]:
             urls.add(row["url"])
         elif row["lastmod"] and row["lastmod"][:10] > row["kiem_tra_luc"][:10]:

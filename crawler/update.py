@@ -223,9 +223,12 @@ def _sync_vbpl(conn, run_at, ghi):
         extra_numbers = [item["so_ky_hieu"] for item in json.loads(EXTRA_PATH.read_text(encoding="utf-8"))]
         extra_numbers += [row["so_ky_hieu"] for row in _chinh_thuc_trong_pham_vi(conn)]
         run_date = datetime.fromisoformat(run_at).date()
-        so_doc, so_loi, loi_tim = vbpl_sync.sync(conn, extra_numbers, run_at, run_date, config)
+        so_doc, so_loi, loi_tim, so_khong_con = vbpl_sync.sync(conn, extra_numbers, run_at, run_date, config)
         conn.commit()
-        thong_bao = f"đọc trạng thái {so_doc} văn bản, {so_loi} không đọc được"
+        thong_bao = (
+            f"đọc trạng thái {so_doc} văn bản, {so_loi} không đọc được, "
+            f"{so_khong_con} không còn trên vbpl.vn (liên kết cũ)"
+        )
         print(f"vbpl.vn: {thong_bao}.")
         if loi_tim:
             ghi.ghi("vbpl", LOI, f"không tìm được văn bản mới ({loi_tim}); {thong_bao}")
