@@ -21,6 +21,7 @@ MUC_DO = {BO_QUA: 0, OK: 1, BI_CHAN: 2, LOI: 3}
 TEN = {
     "cong_phong_csqlhc": "Cổng Phòng CSQLHC (Công an TP.HCM)",
     "cong_dvc_quoc_gia": "Cổng Dịch vụ công Quốc gia",
+    "phaplyvn": "vanban.phaplyvn.com (nguồn thứ cấp, toàn văn)",
     **TEN_NGUON,
     "toan_van": "Toàn văn văn bản chính thức",
     "vbpl": "vbpl.vn",

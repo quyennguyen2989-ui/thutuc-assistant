@@ -16,7 +16,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from . import cong_dvc, export, nguon_catp, normalize, nguon_chinh_thuc, nguon_text, nguon_trang_thai, sources, store, vbpl_sync, vbpl_text
+from . import cong_dvc, export, nguon_phaplyvn, nguon_catp, normalize, nguon_chinh_thuc, nguon_text, nguon_trang_thai, sources, store, vbpl_sync, vbpl_text
 from .client import BlockedError, PortalClient
 from .nguon_trang_thai import BI_CHAN, BO_QUA, LOI, OK
 
@@ -34,7 +34,7 @@ MIN_RATIO = 0.5
 # Cổng Dịch vụ công Quốc gia thường quá giờ khi chạy trên máy chủ CI (đã thử qua trình duyệt nhưng vẫn quá giờ).
 # Lỗi của nguồn này chỉ ghi vào trang_thai_nguon, không làm lần chạy báo lỗi, để khỏi có thư lỗi mỗi ngày.
 # Nếu cổng từ chối truy cập (bị chặn) thì vẫn báo lỗi như thường.
-NGUON_CHI_GHI_NHAN = frozenset({"cong_dvc_quoc_gia"})
+NGUON_CHI_GHI_NHAN = frozenset({"cong_dvc_quoc_gia", "phaplyvn"})
 
 
 def run():
@@ -103,6 +103,10 @@ def _chay(conn, run_at, ghi):
         _sync_cong_dvc(conn, run_at, ghi)
     else:
         _bo_qua(ghi, ["cong_dvc_quoc_gia"], "--khong-cong-dvc")
+    if "--khong-phaplyvn" not in sys.argv:
+        _sync_phaplyvn(ghi)
+    else:
+        _bo_qua(ghi, ["phaplyvn"], "--khong-phaplyvn")
     if "--khong-catp" not in sys.argv:
         _sync_congan_tin(conn, run_at, ghi)
     else:
@@ -186,6 +190,21 @@ def _sync_nguon_text(conn, ghi):
     except Exception as error:  # noqa: BLE001
         print(f"Toàn văn nguồn chính thức lỗi: {error}. Giữ dữ liệu cũ.")
         ghi.ghi("toan_van", LOI, str(error))
+
+
+def _sync_phaplyvn(ghi):
+    """Văn bản mới từ vanban.phaplyvn.com (nguồn thứ cấp). Lỗi ở đây không làm lần chạy báo lỗi."""
+    keywords = vbpl_sync.load_config()["tu_khoa_tim_van_ban_moi"]
+    try:
+        done, failed, moi = nguon_phaplyvn.dong_bo(nguon_chinh_thuc.Fetcher(delay_seconds=2.0), DOCS_DATA_DIR / "nguon_text", keywords)
+        print(f"vanban.phaplyvn.com: {moi} đường dẫn mới; {done} có toàn văn; {failed} không đọc được.")
+        ghi.ghi("phaplyvn", OK, f"{moi} văn bản mới liên quan; {done} có toàn văn; {failed} không đọc được")
+    except BlockedError as error:
+        print(f"vanban.phaplyvn.com từ chối truy cập: {error}")
+        ghi.ghi("phaplyvn", BI_CHAN, str(error))
+    except Exception as error:  # noqa: BLE001 - nguồn thứ cấp không làm hỏng các nguồn khác
+        print(f"vanban.phaplyvn.com lỗi: {error}")
+        ghi.ghi("phaplyvn", LOI, str(error))
 
 
 def _sync_cong_dvc(conn, run_at, ghi):

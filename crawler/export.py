@@ -32,6 +32,7 @@ NGUON_THU_THAP = [
     {"ten": "Công báo TP.HCM", "url": "https://congbao.hochiminhcity.gov.vn/"},
     {"ten": "Cổng thông tin Bộ Công an (hệ thống văn bản)", "url": "https://vanban.bocongan.gov.vn/"},
     {"ten": "Cơ sở dữ liệu quốc gia về pháp luật (vbpl.vn)", "url": vbpl.SITE},
+    {"ten": "Cơ sở dữ liệu văn bản vanban.phaplyvn.com (nguồn thứ cấp, toàn văn)", "url": "https://vanban.phaplyvn.com/"},
 ]
 
 DISCLAIMER = (
