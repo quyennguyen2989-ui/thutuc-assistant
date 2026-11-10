@@ -31,6 +31,12 @@ EXTRA_PATH = ROOT / "crawler" / "van_ban_bo_sung.json"
 MIN_RATIO = 0.5
 
 
+# Cổng Dịch vụ công Quốc gia thường quá giờ khi chạy trên máy chủ CI (đã thử qua trình duyệt nhưng vẫn quá giờ).
+# Lỗi của nguồn này chỉ ghi vào trang_thai_nguon, không làm lần chạy báo lỗi, để khỏi có thư lỗi mỗi ngày.
+# Nếu cổng từ chối truy cập (bị chặn) thì vẫn báo lỗi như thường.
+NGUON_CHI_GHI_NHAN = frozenset({"cong_dvc_quoc_gia"})
+
+
 def run():
     run_at = datetime.now().astimezone().isoformat(timespec="seconds")
     conn = store.connect(DB_PATH)
@@ -41,7 +47,7 @@ def run():
     if code == 0 and ghi.co_bi_chan():
         print("Có nguồn bị chặn truy cập. Không thử lại để tránh bị chặn thêm.")
         return 4
-    if code == 0 and ghi.co_loi():
+    if code == 0 and ghi.co_loi(bo_qua=NGUON_CHI_GHI_NHAN):
         print("Có nguồn lỗi. Dữ liệu các nguồn khác đã được ghi; xem trang_thai_nguon trong meta.json.")
         return 3
     return code
