@@ -208,8 +208,11 @@ def sync(conn, extra_numbers, run_at, run_date, config):
             url_moi = set(summary.pop("url_moi"))
             store.set_state(conn, SEARCHED_STATE, json.dumps(numbers, ensure_ascii=False))
             print(f"vbpl.vn: đã tìm văn bản — {summary}; văn bản mới cần đọc: {len(url_moi)}")
-        except BlockedError:
-            raise
+        except BlockedError as error:
+            # Sơ đồ trang bị chặn: không đọc tiếp việc tìm văn bản, nhưng vẫn đọc trạng thái các văn bản đã theo dõi
+            # (đọc trang chi tiết không bị chặn). Trước đây lỗi này dừng cả đợt đọc, nên tình trạng không được cập nhật.
+            loi_tim = f"bị chặn khi tìm văn bản mới ({error})"
+            print(f"vbpl.vn: {loi_tim}. Vẫn đọc trạng thái văn bản đã theo dõi.")
         except Exception as error:  # noqa: BLE001 - lỗi tìm văn bản không chặn việc đọc trạng thái
             loi_tim = str(error)
             print(f"vbpl.vn: lỗi khi tìm văn bản ({error}). Vẫn đọc trạng thái văn bản đã theo dõi.")

@@ -53,15 +53,20 @@ class Ghi:
         store.log_nguon(self.conn, self.run_at, nguon, moi["trang_thai"], moi["thong_bao"])
         self.conn.commit()
 
-    def co_loi(self, bo_qua=frozenset()):
-        """Có nguồn lỗi hoặc bị chặn. Các nguồn trong bo_qua chỉ ghi vào trạng thái, không tính là lỗi của lần chạy."""
+    def co_loi(self, bo_qua=frozenset(), bo_qua_hoan_toan=frozenset()):
+        """Có nguồn lỗi hoặc bị chặn trong lần chạy.
+
+        bo_qua: nguồn chỉ có lỗi tạm thời (LOI) không tính là lỗi của lần chạy.
+        bo_qua_hoan_toan: nguồn phụ, kể cả bị chặn (BI_CHAN) cũng không tính.
+        """
         return any(
-            item["trang_thai"] == BI_CHAN or (item["trang_thai"] == LOI and nguon not in bo_qua)
+            nguon not in bo_qua_hoan_toan
+            and (item["trang_thai"] == BI_CHAN or (item["trang_thai"] == LOI and nguon not in bo_qua))
             for nguon, item in self.ket_qua.items()
         )
 
-    def co_bi_chan(self):
-        return any(item["trang_thai"] == BI_CHAN for item in self.ket_qua.values())
+    def co_bi_chan(self, bo_qua=frozenset()):
+        return any(item["trang_thai"] == BI_CHAN for nguon, item in self.ket_qua.items() if nguon not in bo_qua)
 
     def tom_tat(self):
         """In bảng trạng thái ra màn hình và, khi chạy trên GitHub Actions, vào phần tóm tắt của lần chạy."""

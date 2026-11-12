@@ -36,6 +36,16 @@ class LoiDvcTest(unittest.TestCase):
         self.assertTrue(self.ghi.co_bi_chan())
         self.assertTrue(self.ghi.co_loi(bo_qua=frozenset({"cong_dvc_quoc_gia"})))
 
+    def test_nguon_thu_cap_bi_chan_khong_lam_lan_chay_bi_chan(self):
+        self.ghi.ghi("vbpl", nguon_trang_thai.OK, "ok")
+        self.ghi.ghi("phaplyvn", nguon_trang_thai.BI_CHAN, "HTTP 403")
+        self.assertFalse(self.ghi.co_bi_chan(bo_qua=frozenset({"phaplyvn"})))
+        self.assertFalse(self.ghi.co_loi(bo_qua=frozenset({"phaplyvn"}), bo_qua_hoan_toan=frozenset({"phaplyvn"})))
+
+    def test_vbpl_bi_chan_van_lam_lan_chay_bi_chan(self):
+        self.ghi.ghi("vbpl", nguon_trang_thai.BI_CHAN, "HTTP 403")
+        self.assertTrue(self.ghi.co_bi_chan(bo_qua=frozenset({"phaplyvn"})))
+
 
 if __name__ == "__main__":
     unittest.main()

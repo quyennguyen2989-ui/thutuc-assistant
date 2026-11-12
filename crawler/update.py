@@ -35,6 +35,8 @@ MIN_RATIO = 0.5
 # Lỗi của nguồn này chỉ ghi vào trang_thai_nguon, không làm lần chạy báo lỗi, để khỏi có thư lỗi mỗi ngày.
 # Nếu cổng từ chối truy cập (bị chặn) thì vẫn báo lỗi như thường.
 NGUON_CHI_GHI_NHAN = frozenset({"cong_dvc_quoc_gia", "phaplyvn"})
+# Nguồn phụ (thứ cấp): kể cả bị chặn cũng không làm lần chạy báo lỗi.
+NGUON_PHU = frozenset({"phaplyvn"})
 
 
 def run():
@@ -44,10 +46,10 @@ def run():
 
     code = _chay(conn, run_at, ghi)
     ghi.tom_tat()
-    if code == 0 and ghi.co_bi_chan():
+    if code == 0 and ghi.co_bi_chan(bo_qua=NGUON_PHU):
         print("Có nguồn bị chặn truy cập. Không thử lại để tránh bị chặn thêm.")
         return 4
-    if code == 0 and ghi.co_loi(bo_qua=NGUON_CHI_GHI_NHAN):
+    if code == 0 and ghi.co_loi(bo_qua=NGUON_CHI_GHI_NHAN, bo_qua_hoan_toan=NGUON_PHU):
         print("Có nguồn lỗi. Dữ liệu các nguồn khác đã được ghi; xem trang_thai_nguon trong meta.json.")
         return 3
     return code

@@ -96,11 +96,22 @@ class TrangThaiNguonTest(unittest.TestCase):
         self.assertEqual(row["tinh_trang"], "Còn hiệu lực")
         self.assertIsNone(store.get_state(self.conn, vbpl_sync.SEARCHED_STATE))
 
-    def test_bi_chan_khi_tim_van_ban_thi_dung_han(self):
-        with mock.patch("crawler.vbpl_sync.discover", side_effect=BlockedError("HTTP 403")):
-            with self.assertRaises(BlockedError):
-                vbpl_sync.sync(self.conn, ["1/2025/TT-BCA"], "2026-11-04T08:00:00+07:00",
-                               date(2026, 11, 4), CONFIG)
+    def test_bi_chan_khi_tim_van_ban_van_doc_trang_thai(self):
+        store.upsert_vbpl(self.conn, {"url": "https://vbpl.vn/a", "so_ky_hieu": "1/2025/TT-BCA"})
+        self.conn.commit()
+
+        def fake_read(urls, on_result, **kwargs):
+            for url in urls:
+                on_result(url, {"tieu_de": "Thông tư 1", "tinh_trang": "Còn hiệu lực",
+                                "ngay_hieu_luc": "01/01/2025", "ngay_cap_nhat": "02/01/2026"})
+
+        with mock.patch("crawler.vbpl_sync.discover", side_effect=BlockedError("HTTP 403")),                 mock.patch("crawler.vbpl.read_detail_pages", side_effect=fake_read):
+            so_doc, so_loi, loi_tim, so_khong_con = vbpl_sync.sync(
+                self.conn, ["1/2025/TT-BCA"], "2026-11-04T08:00:00+07:00", date(2026, 11, 4), CONFIG,
+            )
+        self.assertIn("bị chặn", loi_tim)
+        self.assertEqual((so_doc, so_loi), (1, 0))
+        self.assertEqual(store.load_vbpl(self.conn)[0]["tinh_trang"], "Còn hiệu lực")
 
 
 if __name__ == "__main__":
