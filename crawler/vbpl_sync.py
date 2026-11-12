@@ -186,6 +186,45 @@ def _count_history(raw):
     return len(json.loads(raw)) if isinstance(raw, str) else len(raw)
 
 
+KET_QUA_SERVER = Path(__file__).resolve().parents[1] / "data" / "vbpl_kham_pha.json"
+SO_NGAY_KET_QUA_SERVER_CON_HAN = 1
+
+
+def doc_ket_qua_server(run_date, path=KET_QUA_SERVER):
+    """Danh sách văn bản do server-chat tìm được, hoặc None nếu thiếu, đã cũ hoặc mới hơn ngày chạy.
+
+    Chỉ nhận kết quả của hôm nay hoặc tối đa một ngày trước. server-chat tìm văn bản mới hằng ngày,
+    vì GitHub Actions bị vbpl.vn chặn sơ đồ trang.
+    """
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    tao = date.fromisoformat(data["tao_luc"][:10])
+    if not run_date - timedelta(days=SO_NGAY_KET_QUA_SERVER_CON_HAN) <= tao <= run_date:
+        return None
+    return data.get("van_ban", [])
+
+
+def nap_ket_qua_server(conn, van_ban, run_date):
+    """Ghi văn bản server-chat tìm được vào dữ liệu. Trả về các đường dẫn chưa từng có (cần đọc ngay).
+
+    Chỉ ghi trường có giá trị: trường thiếu giữ nguyên, nên không xóa số ký hiệu đã biết.
+    """
+    known = {row["url"] for row in store.load_vbpl(conn)}
+    url_moi = set()
+    for item in van_ban:
+        url = item["url"]
+        if url not in known:
+            url_moi.add(url)
+        row = {"url": url}
+        for field in ("so_ky_hieu", "sheet", "lastmod"):
+            if item.get(field) not in (None, ""):
+                row[field] = item[field]
+        store.upsert_vbpl(conn, row)
+    store.set_state(conn, DISCOVERY_STATE, run_date.isoformat())
+    return url_moi
+
+
 def sync(conn, extra_numbers, run_at, run_date, config):
     """Chạy đồng bộ vbpl.vn. Trả về (số văn bản đã đọc trạng thái, số văn bản đọc lỗi, lỗi khi tìm văn bản hoặc None).
 
@@ -199,7 +238,12 @@ def sync(conn, extra_numbers, run_at, run_date, config):
     new_numbers = [number for number in numbers if number not in searched]
 
     # Phát hiện văn bản mới mỗi ngày (sơ đồ trang, khoảng vài phút), để văn bản mới được đọc ngay trong ngày.
-    tim_hom_nay = bool(new_numbers) or discovery_due(conn, run_date, config["chu_ky_tim_van_ban_moi_ngay"])
+    # Nếu server-chat đã tìm hôm nay thì không thử lại ở đây (sơ đồ trang bị GitHub chặn, thử chỉ tốn thời gian).
+    ket_qua_server = doc_ket_qua_server(run_date)
+    if ket_qua_server is None:
+        tim_hom_nay = bool(new_numbers) or discovery_due(conn, run_date, config["chu_ky_tim_van_ban_moi_ngay"])
+    else:
+        tim_hom_nay = False
     loi_tim = None
     url_moi = set()
     if tim_hom_nay:
@@ -216,6 +260,10 @@ def sync(conn, extra_numbers, run_at, run_date, config):
         except Exception as error:  # noqa: BLE001 - lỗi tìm văn bản không chặn việc đọc trạng thái
             loi_tim = str(error)
             print(f"vbpl.vn: lỗi khi tìm văn bản ({error}). Vẫn đọc trạng thái văn bản đã theo dõi.")
+
+    if ket_qua_server is not None:
+        url_moi = nap_ket_qua_server(conn, ket_qua_server, run_date)
+        print(f"vbpl.vn: nạp {len(ket_qua_server)} văn bản do server-chat tìm; văn bản mới cần đọc: {len(url_moi)}")
 
     # Đọc lại toàn bộ tình trạng mỗi chu kỳ (mặc định 7 ngày) để đối chiếu đầy đủ. Các ngày khác chỉ đọc:
     # văn bản chưa từng kiểm tra, đang lỗi, có ngày sửa mới hơn lần kiểm tra, và văn bản mới vừa phát hiện.

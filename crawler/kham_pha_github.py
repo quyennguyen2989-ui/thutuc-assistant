@@ -1,0 +1,77 @@
+"""Đẩy tệp kết quả tìm văn bản vbpl lên GitHub bằng API nội dung. Chỉ dùng thư viện chuẩn của Python.
+
+Dùng trên server-chat, nơi có token GitHub giới hạn một repo (quyền Contents: đọc và ghi).
+Token đọc từ một tệp trên máy chủ, không bao giờ ghi vào repo hay log.
+Chỉ đẩy khi nội dung đổi, để không tạo commit trùng mỗi ngày.
+"""
+
+import base64
+import json
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+API = "https://api.github.com"
+REPO = "quyennguyen2989-ui/thutuc-assistant"
+NHANH = "main"
+DUONG_DAN_KET_QUA = "data/vbpl_kham_pha.json"
+USER_AGENT = "thutuc-assistant/0.1 (open-source, cong cu tra cuu van ban cho can bo dan cu)"
+
+
+class LoiGitHub(RuntimeError):
+    pass
+
+
+def doc_token(duong_dan):
+    token = Path(duong_dan).read_text(encoding="utf-8").strip()
+    if not token:
+        raise LoiGitHub(f"tệp token trống: {duong_dan}")
+    return token
+
+
+def _yeu_cau(method, url, token, body=None):
+    """Gọi API. Trả về (mã HTTP, dữ liệu JSON). 404 không ném lỗi để người gọi tự xử lý."""
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": USER_AGENT,
+    }
+    data = None
+    if body is not None:
+        data = json.dumps(body).encode("utf-8")
+        headers["Content-Type"] = "application/json"
+    request = urllib.request.Request(url, data=data, headers=headers, method=method)
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            raw = response.read().decode("utf-8")
+            return response.status, (json.loads(raw) if raw else None)
+    except urllib.error.HTTPError as error:
+        if error.code == 404:
+            return 404, None
+        raise LoiGitHub(f"GitHub trả HTTP {error.code} khi {method} {duong_dan_api(url)}") from error
+
+
+def duong_dan_api(url):
+    """Đường dẫn trong URL API để ghi log (không kèm tham số truy vấn)."""
+    return url.split("?", 1)[0].replace(API, "")
+
+
+def day_tep(token, noi_dung, thong_diep, duong_dan=DUONG_DAN_KET_QUA, repo=REPO, nhanh=NHANH):
+    """Ghi tệp lên nhánh. Trả về True nếu đã đẩy commit, False nếu nội dung không đổi."""
+    url = f"{API}/repos/{repo}/contents/{duong_dan}?ref={nhanh}"
+    status, hien_tai = _yeu_cau("GET", url, token)
+    sha = None
+    if status == 200:
+        if base64.b64decode(hien_tai["content"]) == noi_dung:
+            return False
+        sha = hien_tai["sha"]
+    body = {
+        "message": thong_diep,
+        "content": base64.b64encode(noi_dung).decode("ascii"),
+        "branch": nhanh,
+    }
+    if sha:
+        body["sha"] = sha
+    _yeu_cau("PUT", f"{API}/repos/{repo}/contents/{duong_dan}", token, body)
+    return True
