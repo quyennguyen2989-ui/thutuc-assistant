@@ -150,7 +150,8 @@ def read_statuses(conn, run_at, delay, keywords, only_urls=None):
         if not baseline and new["tinh_trang"]:
             _record_change(conn, run_at, url, by_url.get(url, {}), new)
 
-    vbpl.read_detail_pages(targets, save, delay_seconds=delay, history_urls=history_urls)
+    if targets:  # không có văn bản nào cần đọc thì không mở trình duyệt
+        vbpl.read_detail_pages(targets, save, delay_seconds=delay, history_urls=history_urls)
     return len(targets), so_loi, so_khong_con
 
 
@@ -188,6 +189,18 @@ def _count_history(raw):
 
 KET_QUA_SERVER = Path(__file__).resolve().parents[1] / "data" / "vbpl_kham_pha.json"
 SO_NGAY_KET_QUA_SERVER_CON_HAN = 1
+MAY_CHU_STATE = "vbpl_may_chu_ngay"  # ngày server-chat đọc vbpl.vn thành công lần gần nhất
+
+
+def may_chu_da_doc(conn, run_date):
+    """True nếu server-chat đã đọc trạng thái và toàn văn vbpl.vn trong hôm nay hoặc hôm qua.
+
+    Khi đó CI không mở vbpl.vn nữa (CI bị chặn trang chi tiết), chỉ dùng dữ liệu server đã ghi.
+    """
+    value = store.get_state(conn, MAY_CHU_STATE)
+    if not value:
+        return False
+    return run_date - timedelta(days=SO_NGAY_KET_QUA_SERVER_CON_HAN) <= date.fromisoformat(value) <= run_date
 
 
 def doc_ket_qua_server(run_date, path=KET_QUA_SERVER):

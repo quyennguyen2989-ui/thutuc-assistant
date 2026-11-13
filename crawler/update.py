@@ -264,8 +264,12 @@ def _sync_vbpl(conn, run_at, ghi):
             ghi.ghi("vbpl", LOI, f"quá nửa số văn bản không đọc được: {thong_bao}")
         else:
             ghi.ghi("vbpl", OK, thong_bao)
-        texts = vbpl_text.sync_texts(conn, DOCS_DATA_DIR / "vbpl_text", config["do_tre_giua_cac_yeu_cau_giay"])
-        print(f"vbpl.vn: đã lưu toàn văn {texts} văn bản có thay đổi.")
+        if vbpl_sync.may_chu_da_doc(conn, run_date):
+            # server-chat đã đọc trạng thái và toàn văn hôm nay: không mở vbpl.vn từ GitHub (đang bị chặn).
+            print("vbpl.vn: server-chat đã đọc trạng thái và toàn văn, bỏ qua bước toàn văn ở đây.")
+        else:
+            texts = vbpl_text.sync_texts(conn, DOCS_DATA_DIR / "vbpl_text", config["do_tre_giua_cac_yeu_cau_giay"])
+            print(f"vbpl.vn: đã lưu toàn văn {texts} văn bản có thay đổi.")
     except ImportError as error:
         conn.rollback()
         print(f"Bỏ qua vbpl.vn: thiếu thư viện ({error}). Cài Playwright để bật bước này.")
