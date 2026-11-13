@@ -1,7 +1,7 @@
 {
- "tao_luc": "2026-11-13T07:02:18+07:00",
- "so_sanh_duoc": 174513,
- "so_ky_hieu_da_tim": 449,
+ "tao_luc": "2026-11-13T21:39:53+07:00",
+ "so_sanh_duoc": 174520,
+ "so_ky_hieu_da_tim": 444,
  "van_ban": [
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/bai-bo-cac-nghi-quyet-cua-hoi-dong-nhan-dan-thanh-pho-ho-chi-minh-tinh-binh-duong-tinh-ba-ria-vung-tau-truoc-sap-xep-thuoc-linh-vuc-an-ninh-trat-tu--hhtquyetdinh_634",
@@ -4403,7 +4403,7 @@
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-35-2024-tt-bgtvt-quy-dinh-ve-dao-tao-sat-hach-cap-giay-phep-lai-xe-cap-su-dung-giay-phep-lai-xe-quoc-te-dao-tao-kiem-tra-cap-chung-chi-boi-duong-kien-thuc-phap-luat-ve-giao-thong-duong-bo--173067",
    "sheet": 10,
    "lastmod": "2026-01-08",
-   "so_ky_hieu": "35/2024/TT-BGTVT",
+   "so_ky_hieu": null,
    "theo_tu_khoa": true
   },
   {
