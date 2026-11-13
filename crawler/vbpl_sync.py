@@ -200,7 +200,8 @@ def may_chu_da_doc(conn, run_date):
     value = store.get_state(conn, MAY_CHU_STATE)
     if not value:
         return False
-    return run_date - timedelta(days=SO_NGAY_KET_QUA_SERVER_CON_HAN) <= date.fromisoformat(value) <= run_date
+    # Múi giờ: server ghi ngày theo giờ Việt Nam, CI có thể chạy lệch một ngày theo giờ UTC.
+    return abs((run_date - date.fromisoformat(value)).days) <= SO_NGAY_KET_QUA_SERVER_CON_HAN
 
 
 def doc_ket_qua_server(run_date, path=KET_QUA_SERVER):

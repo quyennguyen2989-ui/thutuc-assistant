@@ -70,12 +70,50 @@ class DauHieuMayChuTest(unittest.TestCase):
         from datetime import date
         self.assertFalse(vbpl_sync.may_chu_da_doc(self.conn, date(2026, 11, 13)))
 
-    def test_hom_nay_hoac_hom_qua_thi_da_doc(self):
+    def test_lech_mot_ngay_do_mui_gio_van_la_da_doc(self):
         from datetime import date
         store.set_state(self.conn, vbpl_sync.MAY_CHU_STATE, "2026-11-13")
         self.assertTrue(vbpl_sync.may_chu_da_doc(self.conn, date(2026, 11, 13)))
+        self.assertTrue(vbpl_sync.may_chu_da_doc(self.conn, date(2026, 11, 12)))
         self.assertTrue(vbpl_sync.may_chu_da_doc(self.conn, date(2026, 11, 14)))
+        self.assertFalse(vbpl_sync.may_chu_da_doc(self.conn, date(2026, 11, 11)))
         self.assertFalse(vbpl_sync.may_chu_da_doc(self.conn, date(2026, 11, 15)))
+
+
+class CanhBaoServerTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.conn = store.connect(Path(self._tmp.name) / "thutuc.db")
+
+    def tearDown(self):
+        self.conn.close()
+        self._tmp.cleanup()
+
+    def _chay_vbpl(self, run_at):
+        from crawler import update, vbpl_text
+        ghi = nguon_trang_thai.Ghi(self.conn, run_at)
+        with mock.patch.object(vbpl_sync, "sync", return_value=(0, 0, None, 0)), \
+                mock.patch.object(vbpl_text, "sync_texts", return_value=0):
+            update._sync_vbpl(self.conn, run_at, ghi, kiem_tra_may_chu=True)
+        return ghi.ket_qua["vbpl"]["trang_thai"]
+
+    def test_server_khong_tu_bao_loi(self):
+        from crawler import update
+        run_at = "2026-11-14T01:00:00+07:00"
+        ghi = nguon_trang_thai.Ghi(self.conn, run_at)
+        from crawler import vbpl_text
+        with mock.patch.object(vbpl_sync, "sync", return_value=(0, 0, None, 0)), \
+                mock.patch.object(vbpl_text, "sync_texts", return_value=0):
+            update._sync_vbpl(self.conn, run_at, ghi)
+        self.assertEqual(ghi.ket_qua["vbpl"]["trang_thai"], nguon_trang_thai.OK)
+
+    def test_server_chua_doc_hom_nay_thi_bao_loi(self):
+        self.assertEqual(self._chay_vbpl("2026-11-14T08:00:00+07:00"), nguon_trang_thai.LOI)
+
+    def test_server_da_doc_thi_khong_bao_loi(self):
+        store.set_state(self.conn, vbpl_sync.MAY_CHU_STATE, "2026-11-14")
+        self.conn.commit()
+        self.assertEqual(self._chay_vbpl("2026-11-14T08:00:00+07:00"), nguon_trang_thai.OK)
 
 
 class ChayTest(unittest.TestCase):

@@ -117,7 +117,7 @@ def _chay(conn, run_at, ghi):
     # Nếu tiến trình bị dừng giữa chừng, bản xuất này vẫn được lưu (workflow luôn chạy bước lưu dữ liệu).
     export.write_outputs(conn, DOCS_DATA_DIR, OVERRIDES_PATH, EXTRA_PATH, run_at)
     if "--khong-vbpl" not in sys.argv:
-        _sync_vbpl(conn, run_at, ghi)
+        _sync_vbpl(conn, run_at, ghi, kiem_tra_may_chu=True)
     else:
         _bo_qua(ghi, ["vbpl"], "--khong-vbpl")
     # Xuất lần hai để tình trạng vbpl.vn vừa đọc được đưa vào dữ liệu.
@@ -243,8 +243,12 @@ def _sync_congan_tin(conn, run_at, ghi):
         ghi.ghi("congan_tin", LOI, str(error))
 
 
-def _sync_vbpl(conn, run_at, ghi):
-    """Đọc trạng thái từ vbpl.vn. Lỗi ở bước này không chặn cập nhật từ cổng Phòng CSQLHC."""
+def _sync_vbpl(conn, run_at, ghi, kiem_tra_may_chu=False):
+    """Đọc trạng thái từ vbpl.vn. Lỗi ở bước này không chặn cập nhật từ cổng Phòng CSQLHC.
+
+    kiem_tra_may_chu: chỉ bật trên CI (GitHub Actions). CI báo lỗi nếu server-chat không đọc hôm nay.
+    Server-chat không bật, vì chính nó ghi dấu hiệu sau khi đọc xong.
+    """
     try:
         config = vbpl_sync.load_config()
         extra_numbers = [item["so_ky_hieu"] for item in json.loads(EXTRA_PATH.read_text(encoding="utf-8"))]
@@ -264,6 +268,10 @@ def _sync_vbpl(conn, run_at, ghi):
             ghi.ghi("vbpl", LOI, f"quá nửa số văn bản không đọc được: {thong_bao}")
         else:
             ghi.ghi("vbpl", OK, thong_bao)
+        if kiem_tra_may_chu and not vbpl_sync.may_chu_da_doc(conn, run_date):
+            # server-chat không đọc được hôm nay (tác vụ tchc-vbpl-kham-pha lỗi hoặc chưa chạy): báo để kiểm tra.
+            # Trạng thái LOI không bị hạ xuống OK bởi các bước khác trong cùng lần chạy.
+            ghi.ghi("vbpl", LOI, "server-chat chưa đọc trạng thái và toàn văn hôm nay; kiểm tra tác vụ tchc-vbpl-kham-pha")
         if vbpl_sync.may_chu_da_doc(conn, run_date):
             # server-chat đã đọc trạng thái và toàn văn hôm nay: không mở vbpl.vn từ GitHub (đang bị chặn).
             print("vbpl.vn: server-chat đã đọc trạng thái và toàn văn, bỏ qua bước toàn văn ở đây.")
