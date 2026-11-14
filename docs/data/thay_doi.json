@@ -1,5 +1,18 @@
 [
  {
+  "run_at": "2026-11-13T21:39:57+07:00",
+  "kind": "vbpl",
+  "record_id": 3813993805,
+  "change_type": "moi",
+  "diff": {
+   "_ten": "Thông tư liên tịch 02/1999/TTLT-BVCSTE-HLHPN của Bộ Nội vụ",
+   "tinh_trang": {
+    "cu": null,
+    "moi": "Còn hiệu lực"
+   }
+  }
+ },
+ {
   "run_at": "2026-11-05T04:22:29+00:00",
   "kind": "vbpl",
   "record_id": 2609273430,
@@ -3693,19 +3706,6 @@
     "moi": 4
    },
    "_ten": "Thông tư 31/2015/TT-BCA của Bộ Công an"
-  }
- },
- {
-  "run_at": "2026-11-03T13:04:50+07:00",
-  "kind": "vbpl",
-  "record_id": 1212068992,
-  "change_type": "moi",
-  "diff": {
-   "_ten": "Nghị định 280/2025/NĐ-CP của Chính phủ",
-   "tinh_trang": {
-    "cu": null,
-    "moi": "Hết hiệu lực một phần"
-   }
   }
  }
 ]

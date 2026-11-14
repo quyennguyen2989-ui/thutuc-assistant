@@ -1,69 +1,69 @@
 {
- "cap_nhat_luc": "2026-11-13T01:55:16+00:00",
- "lan_chay_thanh_cong_gan_nhat": "2026-11-13T01:55:16+00:00",
+ "cap_nhat_luc": "2026-11-14T07:12:07+00:00",
+ "lan_chay_thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00",
  "trang_thai_nguon": {
   "bo_cong_an": {
    "ten": "Cổng Thông tin điện tử Bộ Công an (Hệ thống văn bản)",
    "trang_thai": "ok",
    "thong_bao": "giai đoạn 1: 1 văn bản liên quan, 0 mới; giai đoạn 2: 1 văn bản liên quan, 0 mới; giai đoạn 3: 1 văn bản liên quan, 0 mới",
-   "luc": "2026-11-13T01:55:16+00:00",
-   "thanh_cong_gan_nhat": "2026-11-13T01:55:16+00:00"
+   "luc": "2026-11-14T07:12:07+00:00",
+   "thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00"
   },
   "chinh_phu": {
    "ten": "Công báo điện tử Chính phủ",
    "trang_thai": "ok",
    "thong_bao": "giai đoạn 1: 0 văn bản liên quan, 0 mới; giai đoạn 2: 1 văn bản liên quan, 0 mới; giai đoạn 3: 1 văn bản liên quan, 0 mới",
-   "luc": "2026-11-13T01:55:16+00:00",
-   "thanh_cong_gan_nhat": "2026-11-13T01:55:16+00:00"
+   "luc": "2026-11-14T07:12:07+00:00",
+   "thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00"
   },
   "cong_dvc_quoc_gia": {
    "ten": "Cổng Dịch vụ công Quốc gia",
    "trang_thai": "loi",
    "thong_bao": "gọi /submitting/formality/list-all-public-formality-by-citizen thất bại sau 3 lần (<urlopen error timed out>) và qua trình duyệt (APIRequestContext.post: Timeout 90000ms exceeded.\nCall log:\n  - → POST https://dichvucong.gov.vn/api/v1/submitting/formality/list-all-public-formality-by-citizen\n    - user-agent: thutuc-assistant/0.1 (open-source, cong cu tra cuu van ban cho can bo dan cu)\n    - accept: application/json\n    - accept-encoding: gzip,deflate,br\n    - Content-Type: application/json\n    - content-length: 77\n)",
-   "luc": "2026-11-13T01:55:16+00:00",
+   "luc": "2026-11-14T07:12:07+00:00",
    "thanh_cong_gan_nhat": null
   },
   "cong_phong_csqlhc": {
    "ten": "Cổng Phòng CSQLHC (Công an TP.HCM)",
    "trang_thai": "ok",
    "thong_bao": "31 văn bản, 42 thủ tục",
-   "luc": "2026-11-13T01:55:16+00:00",
-   "thanh_cong_gan_nhat": "2026-11-13T01:55:16+00:00"
+   "luc": "2026-11-14T07:12:07+00:00",
+   "thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00"
   },
   "congan_tin": {
    "ten": "Tin Công an TP.HCM (chỉ đạo, triển khai)",
    "trang_thai": "ok",
-   "thong_bao": "14 tin đọc được, 1 có chỉ đạo, 0 mới",
-   "luc": "2026-11-13T01:55:16+00:00",
-   "thanh_cong_gan_nhat": "2026-11-13T01:55:16+00:00"
+   "thong_bao": "14 tin đọc được, 3 có chỉ đạo, 2 mới",
+   "luc": "2026-11-14T07:12:07+00:00",
+   "thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00"
   },
   "phaplyvn": {
    "ten": "vanban.phaplyvn.com (nguồn thứ cấp, toàn văn)",
    "trang_thai": "bi_chan",
    "thong_bao": "HTTP 403 khi tải https://vanban.phaplyvn.com/?sap_xep=moi",
-   "luc": "2026-11-13T01:55:16+00:00",
+   "luc": "2026-11-14T07:12:07+00:00",
    "thanh_cong_gan_nhat": null
   },
   "toan_van": {
    "ten": "Toàn văn văn bản chính thức",
    "trang_thai": "ok",
    "thong_bao": "thêm 0 văn bản, không đọc được 0",
-   "luc": "2026-11-13T01:55:16+00:00",
-   "thanh_cong_gan_nhat": "2026-11-13T01:55:16+00:00"
+   "luc": "2026-11-14T07:12:07+00:00",
+   "thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00"
   },
   "tphcm": {
    "ten": "Công báo Thành phố Hồ Chí Minh",
    "trang_thai": "ok",
    "thong_bao": "giai đoạn 1: 0 văn bản liên quan, 0 mới; giai đoạn 2: 0 văn bản liên quan, 0 mới; giai đoạn 3: 0 văn bản liên quan, 0 mới",
-   "luc": "2026-11-13T01:55:16+00:00",
-   "thanh_cong_gan_nhat": "2026-11-13T01:55:16+00:00"
+   "luc": "2026-11-14T07:12:07+00:00",
+   "thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00"
   },
   "vbpl": {
    "ten": "vbpl.vn",
-   "trang_thai": "bi_chan",
-   "thong_bao": "HTTP 403 khi mở https://vbpl.vn/van-ban/chi-tiet/thong-tu-lien-tich-so-02-1999-ttlt-bvcste-hlhpn-ve-tang-cuong-phoi-hop-hoat-dong-xay-dung-gia-dinh-hanh-phuc-nuoi-day-con-tot-ngan-chan-tinh-trang-xam-hai-tre-em-dac-biet-la-tre-em-gai--123118",
-   "luc": "2026-11-13T01:55:16+00:00",
-   "thanh_cong_gan_nhat": "2026-11-10T01:51:26+00:00"
+   "trang_thai": "ok",
+   "thong_bao": "đọc trạng thái 0 văn bản, 0 không đọc được, 0 không còn trên vbpl.vn (liên kết cũ)",
+   "luc": "2026-11-14T07:12:07+00:00",
+   "thanh_cong_gan_nhat": "2026-11-14T07:12:07+00:00"
   }
  },
  "so_van_ban": 443,
