@@ -97,6 +97,16 @@ class CanhBaoServerTest(unittest.TestCase):
             update._sync_vbpl(self.conn, run_at, ghi, kiem_tra_may_chu=True)
         return ghi.ket_qua["vbpl"]["trang_thai"]
 
+    def test_server_luon_luu_toan_van_du_da_co_dau_hieu(self):
+        from crawler import update, vbpl_text
+        store.set_state(self.conn, vbpl_sync.MAY_CHU_STATE, "2026-11-14")
+        self.conn.commit()
+        ghi = nguon_trang_thai.Ghi(self.conn, "2026-11-14T18:00:00+07:00")
+        with mock.patch.object(vbpl_sync, "sync", return_value=(0, 0, None, 0)), \
+                mock.patch.object(vbpl_text, "sync_texts", return_value=0) as texts:
+            update._sync_vbpl(self.conn, "2026-11-14T18:00:00+07:00", ghi)
+        texts.assert_called_once()
+
     def test_server_khong_tu_bao_loi(self):
         from crawler import update
         run_at = "2026-11-14T01:00:00+07:00"

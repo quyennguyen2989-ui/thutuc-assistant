@@ -279,8 +279,9 @@ def _sync_vbpl(conn, run_at, ghi, kiem_tra_may_chu=False):
             # server-chat không đọc được hôm nay (tác vụ tchc-vbpl-kham-pha lỗi hoặc chưa chạy): báo để kiểm tra.
             # Trạng thái LOI không bị hạ xuống OK bởi các bước khác trong cùng lần chạy.
             ghi.ghi("vbpl", LOI, "server-chat chưa đọc trạng thái và toàn văn hôm nay; kiểm tra tác vụ tchc-vbpl-kham-pha")
-        if vbpl_sync.may_chu_da_doc(conn, run_date):
-            # server-chat đã đọc trạng thái và toàn văn hôm nay: không mở vbpl.vn từ GitHub (đang bị chặn).
+        if kiem_tra_may_chu and vbpl_sync.may_chu_da_doc(conn, run_date):
+            # CI: server-chat đã đọc trạng thái và toàn văn hôm nay, không mở vbpl.vn từ GitHub (đang bị chặn).
+            # Server-chat luôn tự lưu toàn văn của mình.
             print("vbpl.vn: server-chat đã đọc trạng thái và toàn văn, bỏ qua bước toàn văn ở đây.")
         else:
             texts = vbpl_text.sync_texts(conn, DOCS_DATA_DIR / "vbpl_text", config["do_tre_giua_cac_yeu_cau_giay"])
