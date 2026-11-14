@@ -1,6 +1,6 @@
 {
- "tao_luc": "2026-11-14T01:02:39+07:00",
- "so_sanh_duoc": 174520,
+ "tao_luc": "2026-11-14T17:52:26+07:00",
+ "so_sanh_duoc": 174531,
  "so_ky_hieu_da_tim": 444,
  "van_ban": [
   {
@@ -529,6 +529,13 @@
    "theo_tu_khoa": true
   },
   {
+   "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-118-2015-nd-cp-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-dau-tu--92899",
+   "sheet": 3,
+   "lastmod": "2026-04-06",
+   "so_ky_hieu": "118/2015/NĐ-CP",
+   "theo_tu_khoa": false
+  },
+  {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-118-2018-nd-cp-quy-dinh-ve-cong-tac-ket-hop-quan-dan-y--137213",
    "sheet": 4,
    "lastmod": "2026-04-05",
@@ -947,6 +954,13 @@
    "lastmod": "2026-01-10",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
+  },
+  {
+   "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-385-2026-nd-cp-ve-kiem-soat-thu-tuc-hanh-chinh--19c72770-df3c-11f1-9346-0f2dfcac3b78",
+   "sheet": 1,
+   "lastmod": "2026-11-13",
+   "so_ky_hieu": "385/2026/NĐ-CP",
+   "theo_tu_khoa": false
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-389-ttg-ve-quy-dinh-viec-cap-ho-chieu--897",
@@ -5196,13 +5210,6 @@
    "lastmod": "2026-04-01",
    "so_ky_hieu": "83/2010/TT-BTC",
    "theo_tu_khoa": true
-  },
-  {
-   "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-83-2016-tt-btc-huong-dan-thuc-hien-uu-dai-dau-tu-theo-quy-dinh-cua-luat-dau-tu-va-nghi-dinh-so-118-2015-nd-cp-ngay-12-11-2015-cua-chinh-phu-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-dau-tu--112967",
-   "sheet": 2,
-   "lastmod": "2026-05-08",
-   "so_ky_hieu": "118/2015/NĐ-CP",
-   "theo_tu_khoa": false
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-83-2024-tt-bca-quy-dinh-ve-xay-dung-quan-ly-van-hanh-khai-thac-va-su-dung-he-thong-giam-sat-bao-dam-an-ninh-trat-tu-an-toan-giao-thong-duong-bo--174900",
