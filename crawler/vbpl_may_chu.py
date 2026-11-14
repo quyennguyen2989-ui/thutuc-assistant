@@ -4,9 +4,10 @@ Lý do: GitHub Actions bị vbpl.vn chặn trang chi tiết (HTTP 403), còn ser
 (Playwright). Luồng chạy:
 1. Tải cơ sở dữ liệu và chỉ mục toàn văn từ nhánh main của repo.
 2. Chạy đúng phần vbpl của crawler.update (_sync_vbpl): nạp văn bản tìm được, đọc trạng thái, lưu toàn văn.
-3. Nếu có thay đổi, đẩy cơ sở dữ liệu, chỉ mục và các tệp toàn văn mới trong MỘT commit.
+3. Đồng bộ thủ tục Cổng Dịch vụ công quốc gia (_sync_cong_dvc), vì server-chat vào được cổng còn GitHub thì không.
+4. Nếu có thay đổi, đẩy cơ sở dữ liệu, chỉ mục và các tệp toàn văn mới trong MỘT commit.
 
-Khi đó CI hằng ngày chỉ xuất dữ liệu: văn bản đã có trạng thái hôm nay, nên không cần mở vbpl.vn.
+Khi đó CI hằng ngày chỉ xuất dữ liệu: vbpl và Cổng quốc gia đã có dữ liệu hôm nay, nên không cần mở các trang đó.
 
 Cách chạy (từ thư mục repo, nơi có thư mục crawler):
     python -m crawler.vbpl_may_chu --day-github <tệp token>
@@ -21,7 +22,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import kham_pha_github, nguon_trang_thai, store, update, vbpl_sync
+from . import cong_dvc, kham_pha_github, nguon_trang_thai, store, update, vbpl_sync
 from .client import USER_AGENT
 
 RAW = "https://raw.githubusercontent.com/quyennguyen2989-ui/thutuc-assistant/main/"
@@ -83,6 +84,11 @@ def chay(goc, token_path=None, bay_gio=None):
         if trang_thai == nguon_trang_thai.OK:
             # Đánh dấu để CI biết hôm nay đã có trạng thái và toàn văn từ server-chat.
             store.set_state(conn, vbpl_sync.MAY_CHU_STATE, run_at[:10])
+        conn.commit()
+        # Cổng Dịch vụ công quốc gia: server-chat vào được, GitHub thì bị timeout. Lỗi ở đây không làm hỏng vbpl.
+        update._sync_cong_dvc(conn, run_at, ghi)
+        if ghi.ket_qua.get("cong_dvc_quoc_gia", {}).get("trang_thai") == nguon_trang_thai.OK:
+            store.set_state(conn, cong_dvc.MAY_CHU_STATE, run_at[:10])
         conn.commit()
     finally:
         conn.close()

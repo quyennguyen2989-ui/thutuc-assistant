@@ -102,7 +102,7 @@ def _chay(conn, run_at, ghi):
     else:
         _bo_qua(ghi, list(nguon_chinh_thuc.READERS) + ["toan_van"], "--khong-chinh-thuc")
     if "--khong-cong-dvc" not in sys.argv:
-        _sync_cong_dvc(conn, run_at, ghi)
+        _sync_cong_dvc(conn, run_at, ghi, tin_may_chu=True)
     else:
         _bo_qua(ghi, ["cong_dvc_quoc_gia"], "--khong-cong-dvc")
     if "--khong-phaplyvn" not in sys.argv:
@@ -209,8 +209,15 @@ def _sync_phaplyvn(ghi):
         ghi.ghi("phaplyvn", LOI, str(error))
 
 
-def _sync_cong_dvc(conn, run_at, ghi):
-    """Thủ tục do công an từ Cổng Dịch vụ công Quốc gia. Lỗi ở đây không chặn các nguồn khác."""
+def _sync_cong_dvc(conn, run_at, ghi, tin_may_chu=False):
+    """Thủ tục do công an từ Cổng Dịch vụ công Quốc gia. Lỗi ở đây không chặn các nguồn khác.
+
+    tin_may_chu: bật trên CI. Nếu server-chat đã đồng bộ hôm nay thì CI bỏ qua (cổng chặn GitHub, chỉ tốn thời gian).
+    """
+    run_date = datetime.fromisoformat(run_at).date()
+    if tin_may_chu and cong_dvc.may_chu_da_dong_bo(conn, run_date):
+        ghi.ghi("cong_dvc_quoc_gia", OK, "đồng bộ trên server-chat hôm nay")
+        return
     try:
         tong, chon, moi = cong_dvc.dong_bo(conn, run_at)
         print(f"Cổng quốc gia: {tong} thủ tục công khai; chọn {chon} thủ tục có công an; {moi} thay đổi.")

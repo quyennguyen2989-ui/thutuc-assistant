@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
-from crawler import kham_pha_github, nguon_trang_thai, store, vbpl_may_chu, vbpl_sync
+from crawler import cong_dvc, kham_pha_github, nguon_trang_thai, store, vbpl_may_chu, vbpl_sync
 
 
 def _tra_loi_cay(cay_cu_entries):
@@ -116,9 +116,43 @@ class CanhBaoServerTest(unittest.TestCase):
         self.assertEqual(self._chay_vbpl("2026-11-14T08:00:00+07:00"), nguon_trang_thai.OK)
 
 
+class CongDvcTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.conn = store.connect(Path(self._tmp.name) / "thutuc.db")
+
+    def tearDown(self):
+        self.conn.close()
+        self._tmp.cleanup()
+
+    def test_ci_bo_qua_khi_server_da_dong_bo_hom_nay(self):
+        from crawler import cong_dvc, update
+        store.set_state(self.conn, cong_dvc.MAY_CHU_STATE, "2026-11-14")
+        self.conn.commit()
+        ghi = nguon_trang_thai.Ghi(self.conn, "2026-11-14T08:00:00+07:00")
+        with mock.patch.object(cong_dvc, "dong_bo") as dong_bo:
+            update._sync_cong_dvc(self.conn, "2026-11-14T08:00:00+07:00", ghi, tin_may_chu=True)
+
+        dong_bo.assert_not_called()
+        self.assertEqual(ghi.ket_qua["cong_dvc_quoc_gia"]["trang_thai"], nguon_trang_thai.OK)
+
+    def test_server_luon_dong_bo(self):
+        from crawler import cong_dvc, update
+        store.set_state(self.conn, cong_dvc.MAY_CHU_STATE, "2026-11-14")
+        self.conn.commit()
+        ghi = nguon_trang_thai.Ghi(self.conn, "2026-11-14T01:00:00+07:00")
+        with mock.patch.object(cong_dvc, "dong_bo", return_value=(7094, 146, 0)) as dong_bo:
+            update._sync_cong_dvc(self.conn, "2026-11-14T01:00:00+07:00", ghi)
+
+        dong_bo.assert_called_once()
+
+
 class ChayTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
+        dvc = mock.patch.object(vbpl_may_chu.update.cong_dvc, "dong_bo", return_value=(0, 0, 0))
+        dvc.start()
+        self.addCleanup(dvc.stop)
         self.goc = Path(self._tmp.name) / "repo"
         self.goc.mkdir()
         db = Path(self._tmp.name) / "mau.db"
@@ -160,6 +194,18 @@ class ChayTest(unittest.TestCase):
         self.assertIn("docs/data/vbpl_text/van-ban-moi.txt", captured["tep"])
         self.assertNotIn(vbpl_may_chu.INDEX_REL, captured["tep"])  # chỉ mục không đổi thì không đẩy
         self.assertEqual(set(captured["sha_cu"]), {vbpl_may_chu.DB_REL, vbpl_may_chu.INDEX_REL})
+
+    def test_chay_dat_dau_hieu_dvc_sau_khi_thanh_cong(self):
+        with mock.patch.object(vbpl_may_chu, "tai_ve", side_effect=self._tai_ve), \
+                mock.patch.object(vbpl_may_chu.update, "_sync_vbpl", side_effect=self._sync_gia), \
+                mock.patch.object(cong_dvc, "dong_bo", return_value=(7094, 146, 3)):
+            vbpl_may_chu.chay(self.goc, None)
+
+        conn = store.connect(self.goc / vbpl_may_chu.DB_REL)
+        try:
+            self.assertIsNotNone(store.get_state(conn, cong_dvc.MAY_CHU_STATE))
+        finally:
+            conn.close()
 
     def test_khong_co_token_thi_khong_day(self):
         with mock.patch.object(vbpl_may_chu, "tai_ve", side_effect=self._tai_ve), \

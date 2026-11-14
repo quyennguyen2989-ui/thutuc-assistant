@@ -13,11 +13,21 @@ import sys
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 from . import nguon_chinh_thuc, store, trinh_duyet, vbpl_sync
 from .client import BlockedError
+
+MAY_CHU_STATE = "cong_dvc_may_chu_ngay"  # ngày server-chat đồng bộ thành công lần gần nhất
+
+
+def may_chu_da_dong_bo(conn, run_date):
+    """True nếu server-chat đã đồng bộ Cổng quốc gia hôm nay hoặc hôm qua (múi giờ có thể lệch một ngày)."""
+    value = store.get_state(conn, MAY_CHU_STATE)
+    if not value:
+        return False
+    return abs((run_date - date.fromisoformat(value)).days) <= 1
 
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "data" / "thutuc.db"
