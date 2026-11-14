@@ -58,11 +58,26 @@ def save_index(out_dir, index):
     path.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def bo_muc_gan_sai(out_dir, index):
+    """Xóa mục và tệp toàn văn đã lưu cho cặp (số ký hiệu, đường dẫn) gán sai. Trả về số mục đã xóa."""
+    cam = vbpl.khong_khop_cap()
+    xoa = [key for key, entry in index.items()
+           if (vbpl.normalize_number(entry.get("so_ky_hieu") or ""), entry.get("url")) in cam]
+    for key in xoa:
+        tep = index[key].get("tep")
+        if tep and (Path(out_dir) / tep).exists():
+            (Path(out_dir) / tep).unlink()
+        del index[key]
+    return len(xoa)
+
+
 def sync_texts(conn, out_dir, delay_seconds):
     """Tải toàn văn các văn bản có số ký hiệu đang theo dõi và có ngày cập nhật mới. Trả về số tệp đã ghi."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     index = load_index(out_dir)
+    if bo_muc_gan_sai(out_dir, index):
+        save_index(out_dir, index)
 
     keywords = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))["tu_khoa_tim_van_ban_moi"]
     tu_khoa = nguon_chinh_thuc.tu_khoa_giai_doan(3, keywords)

@@ -239,6 +239,17 @@ def nap_ket_qua_server(conn, van_ban, run_date):
     return url_moi
 
 
+def don_so_gan_sai(conn):
+    """Bỏ số ký hiệu đã gán sai cho một đường dẫn (theo vbpl_khong_khop.json). Trả về số dòng đã sửa."""
+    cam = vbpl.khong_khop_cap()
+    sua = 0
+    for row in store.load_vbpl(conn):
+        if row["so_ky_hieu"] and (vbpl.normalize_number(row["so_ky_hieu"]), row["url"]) in cam:
+            store.upsert_vbpl(conn, {"url": row["url"], "so_ky_hieu": None})
+            sua += 1
+    return sua
+
+
 def sync(conn, extra_numbers, run_at, run_date, config):
     """Chạy đồng bộ vbpl.vn. Trả về (số văn bản đã đọc trạng thái, số văn bản đọc lỗi, lỗi khi tìm văn bản hoặc None).
 
@@ -247,6 +258,7 @@ def sync(conn, extra_numbers, run_at, run_date, config):
     Bị chặn (BlockedError) thì dừng hẳn, không đọc tiếp.
     """
     delay = config["do_tre_giua_cac_yeu_cau_giay"]
+    don_so_gan_sai(conn)
     numbers = watched_numbers(conn, extra_numbers)
     searched = set(json.loads(store.get_state(conn, SEARCHED_STATE, "[]")))
     new_numbers = [number for number in numbers if number not in searched]

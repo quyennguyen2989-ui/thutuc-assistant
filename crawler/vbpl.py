@@ -8,12 +8,14 @@ Vì vậy mô-đun này chỉ làm hai việc:
    bằng HTTP thường.
 """
 
+import json
 import re
 import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from pathlib import Path
 
 from .client import BlockedError, USER_AGENT
 
@@ -126,18 +128,39 @@ def _rank(entry):
     return 1 if HCM_MARK in slug_of(entry["url"]) else 2
 
 
+KHONG_KHOP_PATH = Path(__file__).resolve().parent / "vbpl_khong_khop.json"
+_khong_khop_cache = None
+
+
+def khong_khop_cap():
+    """Các cặp (số ký hiệu đã chuẩn hóa, đường dẫn) không được gán cho nhau.
+
+    Dùng cho trường hợp trang vbpl.vn chỉ nhắc đến số ký hiệu trong tên, không phải văn bản có số ấy.
+    """
+    global _khong_khop_cache
+    if _khong_khop_cache is None:
+        if KHONG_KHOP_PATH.exists():
+            data = json.loads(KHONG_KHOP_PATH.read_text(encoding="utf-8"))
+            _khong_khop_cache = {(normalize_number(item["so_ky_hieu"]), item["url"]) for item in data}
+        else:
+            _khong_khop_cache = set()
+    return _khong_khop_cache
+
+
 def find_by_number(entries, so_ky_hieu):
     """Tìm văn bản gốc (không phải bản hợp nhất) có số ký hiệu này trong tên.
 
     Ưu tiên văn bản mang chính số đó (không phải văn bản bãi bỏ hay sửa đổi nó),
-    rồi đến văn bản trung ương, TP.HCM, các tỉnh khác.
+    rồi đến văn bản trung ương, TP.HCM, các tỉnh khác. Bỏ các cặp trong vbpl_khong_khop.json.
     """
     number = normalize_number(so_ky_hieu)
+    cam = khong_khop_cap()
     matches = [
         entry for entry in entries
         if is_vietnamese_version(entry["url"])
         and not is_consolidated(entry["url"])
         and number_in_slug(number, slug_of(entry["url"]))
+        and (number, entry["url"]) not in cam
     ]
     matches.sort(key=lambda entry: (not _is_own_number(slug_of(entry["url"]), number), _rank(entry)))
     return matches[0] if matches else None
