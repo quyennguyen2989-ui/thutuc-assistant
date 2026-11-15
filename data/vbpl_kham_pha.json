@@ -1,7 +1,7 @@
 {
- "tao_luc": "2026-11-15T01:02:44+07:00",
- "so_sanh_duoc": 174531,
- "so_ky_hieu_da_tim": 444,
+ "tao_luc": "2026-11-16T01:02:21+07:00",
+ "so_sanh_duoc": 174545,
+ "so_ky_hieu_da_tim": 445,
  "van_ban": [
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/bai-bo-cac-nghi-quyet-cua-hoi-dong-nhan-dan-thanh-pho-ho-chi-minh-tinh-binh-duong-tinh-ba-ria-vung-tau-truoc-sap-xep-thuoc-linh-vuc-an-ninh-trat-tu--hhtquyetdinh_634",
@@ -1506,6 +1506,13 @@
    "sheet": 23,
    "lastmod": "2026-04-06",
    "so_ky_hieu": "23/2025/NQ-HĐND",
+   "theo_tu_khoa": false
+  },
+  {
+   "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-23-2026-nq-hdnd-quy-dinh-chinh-sach-ho-tro-ngu-dan-nang-cap-thay-the-thiet-bi-giam-sat-hanh-trinh-tau-ca-dap-ung-dieu-kien-quy-dinh-tai-nghi-dinh-so-41-2026-nd-cp-ngay-25-thang-01-nam-2026-cua-chinh-phu-tren-dia-ban-tinh-vinh-long--b1dde2c0-7686-11f1-9d6e-3d368be13866",
+   "sheet": 13,
+   "lastmod": "2026-08-28",
+   "so_ky_hieu": "41/2026/NĐ-CP",
    "theo_tu_khoa": false
   },
   {
@@ -4871,7 +4878,7 @@
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-60-2024-tt-bgtvt-sua-doi-bo-sung-mot-so-dieu-cua-cac-thong-tu-quy-dinh-ve-dang-ky-phuong-tien-thuy-noi-dia-va-quy-dinh-thi-kiem-tra-cap-cap-lai-chuyen-doi-giay-chung-nhan-kha-nang-chuyen-mon-chung-chi-chuyen-mon-thuyen-vien-nguoi-lai-phuong-tien-thuy-noi-dia--173090",
    "sheet": 1,
-   "lastmod": "2026-09-27",
+   "lastmod": "2026-11-14",
    "so_ky_hieu": "60/2024/TT-BGTVT",
    "theo_tu_khoa": true
   },
