@@ -1062,12 +1062,12 @@
   "tep": "quyet-dinh-so-2705-qd-bnn-tcln-ve-viec-cap-phat-vu-khi-quan-dung-cong-cu-ho-tro-cho-luc-luo-3f34a6c0.txt"
  },
  "quyet-dinh-so-404-qd-bnv-ve-viec-quy-dinh-doi-tuong-tieu-chuan-trang-bi-cac-loai-vu-khi-tho-so-va-cong-cu-ho-tro": {
-  "url": "https://vbpl.vn/van-ban/chi-tiet/quyet-dinh-so-404-qd-bnv-ve-viec-quy-dinh-doi-tuong-tieu-chuan-trang-bi-cac-loai-vu-khi-tho-so-va-cong-cu-ho-tro--88275",
-  "tieu_de": "Quyết định 404-QĐ-BNV của Bộ Nội vụ",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/quyet-dinh-so-404-qd-bnv-ve-viec-quy-dinh-doi-tuong-tieu-chuan-trang-bi-cac-loai-vu-khi-tho-so-va-cong-cu-ho-tro--9445",
+  "tieu_de": "Quyết định 404/QĐ-BNV của Bộ Nội vụ",
   "so_ky_hieu": null,
   "tinh_trang": "Còn hiệu lực",
   "ngay_hieu_luc": "1995-07-15",
-  "ngay_cap_nhat": "2026-03-30",
+  "ngay_cap_nhat": "2026-04-15",
   "tep": "quyet-dinh-so-404-qd-bnv-ve-viec-quy-dinh-doi-tuong-tieu-chuan-trang-bi-cac-loai-vu-khi-tho-12a6c107.txt"
  },
  "quyet-dinh-so-446-qd-bnv-ban-hanh-the-le-quan-ly-ve-an-ninh-trat-tu-doi-voi-cac-nghe-kinh-doanh-dac-biet": {
@@ -4962,9 +4962,9 @@
   "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-60-2024-tt-bgtvt-sua-doi-bo-sung-mot-so-dieu-cua-cac-thong-tu-quy-dinh-ve-dang-ky-phuong-tien-thuy-noi-dia-va-quy-dinh-thi-kiem-tra-cap-cap-lai-chuyen-doi-giay-chung-nhan-kha-nang-chuyen-mon-chung-chi-chuyen-mon-thuyen-vien-nguoi-lai-phuong-tien-thuy-noi-dia--173090",
   "tieu_de": "Thông tư 60/2024/TT-BGTVT của Bộ Giao thông vận tải",
   "so_ky_hieu": "60/2024/TT-BGTVT",
-  "tinh_trang": "Còn hiệu lực",
+  "tinh_trang": "Hết hiệu lực một phần",
   "ngay_hieu_luc": "2025-03-01",
-  "ngay_cap_nhat": "2026-09-27",
+  "ngay_cap_nhat": "2026-11-15",
   "tep": "60-2024-TT-BGTVT.txt"
  },
  "62/2024/TT-BCA": {
@@ -5326,5 +5326,14 @@
   "ngay_hieu_luc": "2026-10-10",
   "ngay_cap_nhat": "2026-11-13",
   "tep": "385-2026-NĐ-CP.txt"
+ },
+ "41/2026/NĐ-CP": {
+  "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-23-2026-nq-hdnd-quy-dinh-chinh-sach-ho-tro-ngu-dan-nang-cap-thay-the-thiet-bi-giam-sat-hanh-trinh-tau-ca-dap-ung-dieu-kien-quy-dinh-tai-nghi-dinh-so-41-2026-nd-cp-ngay-25-thang-01-nam-2026-cua-chinh-phu-tren-dia-ban-tinh-vinh-long--b1dde2c0-7686-11f1-9d6e-3d368be13866",
+  "tieu_de": "Nghị quyết 23/2026/NQ-HĐND của HĐND Tỉnh Vĩnh Long",
+  "so_ky_hieu": "41/2026/NĐ-CP",
+  "tinh_trang": "Còn hiệu lực",
+  "ngay_hieu_luc": "2026-07-10",
+  "ngay_cap_nhat": "2026-08-28",
+  "tep": "41-2026-NĐ-CP.txt"
  }
 }
