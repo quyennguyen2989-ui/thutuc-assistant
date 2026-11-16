@@ -1,6 +1,6 @@
 {
- "tao_luc": "2026-11-16T01:02:21+07:00",
- "so_sanh_duoc": 174545,
+ "tao_luc": "2026-11-17T01:02:23+07:00",
+ "so_sanh_duoc": 174570,
  "so_ky_hieu_da_tim": 445,
  "van_ban": [
   {
@@ -350,7 +350,7 @@
    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro-so-42-2024-qh15--170609",
    "sheet": 7,
    "lastmod": "2026-03-25",
-   "so_ky_hieu": null,
+   "so_ky_hieu": "42/2024/QH15",
    "theo_tu_khoa": true
   },
   {
@@ -1446,9 +1446,9 @@
    "theo_tu_khoa": true
   },
   {
-   "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-11-2026-nq-hdnd-quy-dinh-chinh-sach-ho-tro-kinh-phi-di-lai-va-luu-tru-cho-can-bo-cong-chuc-va-nguoi-lao-dong-tren-dia-ban-tinh-phu-tho--828f3930-7a76-11f1-a35f-570eff97a944",
+   "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-quyet-so-11-2026-nq-hdnd-chinh-sach-ho-tro-tiep-can-dat-dai-mat-bang-san-xuat-kinh-doanh-trong-cac-khu-cong-nghiep-tren-dia-ban-tinh-nghe-an--bfe2c330-e162-11f1-b5c2-79898263801e",
    "sheet": 13,
-   "lastmod": "2026-08-28",
+   "lastmod": "2026-11-16",
    "so_ky_hieu": "11/2026/NQ-HĐND",
    "theo_tu_khoa": false
   },
@@ -1832,7 +1832,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/quyet-dinh-so-115-2007-qd-ubnd-ve-ban-hanh-quy-che-trang-bi-quan-ly-kiem-tra-su-dung-cong-cu-ho-tro-trong-hoat-dong-cua-luc-luong-trat-tu-vien-bao-ve-du-lich-thanh-nien-xung-phong-thanh-pho-ho-chi-minh--63786",
-   "sheet": 28,
+   "sheet": 29,
    "lastmod": "2026-01-10",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
