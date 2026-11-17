@@ -1,11 +1,13 @@
 ---
-so_ky_hieu: 126/1999/QĐ-BNN-TCCB
-chu_de: QĐ 126/1999 của Bộ trưởng Bộ Nông nghiệp và PTNT phân cấp cho một số đơn vị trực thuộc quyền quyết định xuất cảnh (việc công và việc riêng) cho người thuộc biên chế và lao động hợp đồng dài hạn. Không liên quan cấp xã.
+so_ky_hieu: 126/1999/QĐ-BNN
+chu_de: QĐ 126/1999/QĐ-BNN/TCCB phân cấp quyết định xuất cảnh trong ngành nông nghiệp
 ---
-# QĐ 126/1999/QĐ-BNN-TCCB: phân cấp quyết định xuất cảnh (Bộ NN&PTNT)
+# QĐ 126/1999/QĐ-BNN/TCCB phân cấp quyết định xuất cảnh trong ngành nông nghiệp
 
-**Đã đọc:** toàn văn (Điều 1 đến Điều 4 và danh sách 31 đơn vị được phân cấp) trên dữ liệu công khai.
+Nguồn vbpl.vn, đánh dấu còn hiệu lực, hiệu lực 21/09/1999 (15 ngày sau ngày ký 06/09/1999). Đã đọc toàn văn (Điều 1-4 và danh sách 31 đơn vị).
 
-**Nội dung:** Bộ trưởng quyết định xuất cảnh cho Chủ tịch HĐQT, Tổng giám đốc, Giám đốc đơn vị, người đi học sau đại học, người nhận học vị và đoàn cao cấp. Chủ tịch HĐQT quyết định cho thành viên HĐQT. Thủ trưởng đơn vị quyết định cho những người còn lại. Hiệu lực sau 15 ngày kể từ ngày ký (21/09/1999 theo vbpl).
-
-**Lưu ý:** căn cứ NĐ 24/CP và NĐ 76/CP (thủ tục xuất nhập cảnh năm 1995) là văn bản cũ. Không dùng để trả lời thủ tục xuất cảnh hiện hành của công dân.
+Chỉ là quy định nội bộ của Bộ Nông nghiệp và PTNT, không phải thủ tục cấp hộ chiếu hay xuất nhập cảnh của công dân tại công an.
+- Điều 1: phân cấp quyền quyết định cho đi xuất cảnh (việc công, việc riêng) đối với cán bộ biên chế và lao động hợp đồng dài hạn: Bộ trưởng quyết định với lãnh đạo đơn vị, người đi học sau đại học, nhận học vị...; Chủ tịch HĐQT quyết định với thành viên HĐQT; thủ trưởng đơn vị quyết định với người còn lại.
+- Điều 2-3: người quyết định chịu trách nhiệm, gửi quyết định và báo cáo 6 tháng/năm về Vụ Tổ chức cán bộ và Vụ Hợp tác quốc tế.
+- Căn cứ Nghị định 24/CP và 76/CP năm 1995 về thủ tục xuất nhập cảnh (nay đã được thay thế bởi luật mới, chưa kiểm tra tại đây).
+Không dùng để trả lời thủ tục của người dân.
