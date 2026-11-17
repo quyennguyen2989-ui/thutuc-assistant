@@ -1,6 +1,6 @@
 {
- "tao_luc": "2026-11-17T01:02:23+07:00",
- "so_sanh_duoc": 174570,
+ "tao_luc": "2026-11-18T01:02:20+07:00",
+ "so_sanh_duoc": 174631,
  "so_ky_hieu_da_tim": 445,
  "van_ban": [
   {
@@ -1181,7 +1181,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-70-2024-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-can-cuoc--168344",
-   "sheet": 4,
+   "sheet": 5,
    "lastmod": "2026-04-02",
    "so_ky_hieu": "70/2024/NĐ-CP",
    "theo_tu_khoa": true
@@ -4674,7 +4674,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-50-2013-tt-btc-huong-dan-ho-tro-lai-suat-tien-vay-ngan-hang-de-mua-tam-tru-thoc-gao-vu-dong-xuan-nam-2012-2013--32474",
-   "sheet": 2,
+   "sheet": 3,
    "lastmod": "2026-04-16",
    "so_ky_hieu": "50/2013/TT-BTC",
    "theo_tu_khoa": true
