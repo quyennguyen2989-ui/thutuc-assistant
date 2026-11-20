@@ -1,6 +1,6 @@
 {
- "tao_luc": "2026-11-19T01:02:26+07:00",
- "so_sanh_duoc": 174641,
+ "tao_luc": "2026-11-21T01:02:28+07:00",
+ "so_sanh_duoc": 174704,
  "so_ky_hieu_da_tim": 445,
  "van_ban": [
   {
@@ -1622,7 +1622,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/quyet-dinh-16-2022-qd-ubnd-ban-hanh-quy-che-phoi-hop-quan-ly-nhap-canh-xuat-canh-qua-canh-cu-tru-va-hoat-dong-cua-nguoi-nuoc-ngoai-tren-dia-ban-thanh-pho-ho-chi-minh--a4c2e8f0-5c42-11f1-b266-f12ec0e0399e",
-   "sheet": 14,
+   "sheet": 15,
    "lastmod": "2026-05-30",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
@@ -1881,7 +1881,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/quyet-dinh-so-1317-qd-btc-ve-viec-dinh-chinh-thong-tu-so-58-2012-tt-btc-cua-bo-tai-chinh-huong-dan-viec-thuc-hien-mot-so-noi-dung-cua-quyet-dinh-so-05-2012-qd-ttg-ngay-19-01-2012-cua-thu-tuong-chinh-phu-ve-viec-thi-diem-hoan-thue-gia-tri-gia-tang-doi-voi-hang-hoa-cua-nguoi-nuoc-ngoai-mua-tai-viet-nam-mang-theo-khi-xuat-canh-qua-cua-khau-san-bay-quoc-te-noi-bai-va-san-bay-quoc-te-tan-son-nhat--70288",
-   "sheet": 6,
+   "sheet": 7,
    "lastmod": "2026-03-28",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
@@ -5136,7 +5136,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-75-2014-tt-bgtvt-quy-dinh-ve-dang-ky-phuong-tien-thuy-noi-dia--72689",
-   "sheet": 1,
+   "sheet": 2,
    "lastmod": "2026-05-08",
    "so_ky_hieu": "75/2014/TT-BGTVT",
    "theo_tu_khoa": true
