@@ -1,0 +1,15 @@
+---
+so_ky_hieu: 309/2026/NĐ-CP
+chu_de: Sửa đổi NĐ 118/2025/NĐ-CP về cơ chế một cửa, một cửa liên thông, Cổng Dịch vụ công quốc gia (ki-ốt thông minh, VNeID)
+---
+# NĐ 309/2026/NĐ-CP (ký 05/08/2026), hiệu lực 05/08/2026 (Điều 16 khoản 1)
+Nguồn: toàn văn vbpl.vn đã đọc; số ký hiệu khớp số được giao. Trang vbpl ghi "Còn hiệu lực", cập nhật 18/08/2026. Sửa đổi NĐ 118/2025/NĐ-CP (09/06/2025) đã được NĐ 367/2025/NĐ-CP sửa đổi. Không có phụ lục.
+Là văn bản chung về thủ tục hành chính; không nêu riêng thủ tục cư trú, hộ tịch, lệ phí. Điểm liên quan thủ tục dân cư:
+- Điều 1 (sửa đổi, bổ sung Điều 3 NĐ 118): khoản 4 mới về Cổng Dịch vụ công quốc gia; bổ sung khoản 9 định nghĩa ki-ốt thông minh (thiết bị tự phục vụ tra cứu, nộp hồ sơ, xác thực định danh, thanh toán trực tuyến, nhận kết quả).
+- Điều 2 (bổ sung khoản 2a, 2b Điều 4 NĐ 118): cơ quan khai thác dữ liệu có sẵn trong các cơ sở dữ liệu để thay thành phần hồ sơ, không yêu cầu cung cấp lại thông tin đã có dữ liệu được chia sẻ; chỉ yêu cầu bổ sung khi không khai thác được do sự cố, thảm họa hoặc thông tin chưa chính xác. Khuyến khích triển khai ki-ốt thông minh tại Bộ phận Tiếp nhận và Trả kết quả; không làm thay đổi thẩm quyền giải quyết.
+- Điều 8 (Điều 17 NĐ 118): khoản 2a mới: hồ sơ nộp qua ki-ốt thông minh được xác thực danh tính qua VNeID hoặc thiết bị đọc thẻ Căn cước, có giá trị thay thế việc kiểm tra, đối chiếu giấy tờ tùy thân. Điểm a khoản 2: thông báo bổ sung hồ sơ nêu rõ trong một lần, kể cả khi không khai thác được hoặc thông tin trong cơ sở dữ liệu không đầy đủ, không chính xác thì người dân cập nhật, điều chỉnh thông tin trong cơ sở dữ liệu. Khoản 3: mỗi hồ sơ được cấp 01 Mã số hồ sơ để tra cứu; thời gian giải quyết tính từ khi hồ sơ đã tiếp nhận đầy đủ.
+- Điều 7 (Điều 14 NĐ 118): khoản 4 bổ sung: Trung tâm Phục vụ hành chính công cấp tỉnh, cấp xã tiếp nhận thủ tục không phụ thuộc địa giới hành chính trong phạm vi toàn quốc đối với các thủ tục đáp ứng yêu cầu số hóa, xác thực điện tử, liên thông dữ liệu theo danh mục do cơ quan có thẩm quyền công bố (danh mục này chưa có trong văn bản).
+- Điều 13 (bổ sung điểm i khoản 1 Điều 38 NĐ 118): căn cứ tình hình thực tế, quyết định tổ chức ki-ốt thông minh tại nhà văn hóa, bưu điện hoặc khu vực công cộng. Toàn văn không nêu chủ thể của Điều 38 NĐ 118; chưa đối chiếu.
+- Điều 10 (Điều 26 NĐ 118): Bộ trưởng Bộ Công an quy định dữ liệu kết nối, chia sẻ giữa Cổng Dịch vụ công quốc gia và các hệ thống; Bộ Công an chủ trì tái cấu trúc quy trình. Điều 16 khoản 2: hồ sơ đã tiếp nhận trên Cổng do Văn phòng Chính phủ triển khai được chuyển sang Cổng tại Trung tâm dữ liệu quốc gia do Bộ Công an xây dựng.
+- Các điều khác (Điều 3-6, 9, 11, 12, 14) về tổ chức Bộ phận Một cửa, Trung tâm Phục vụ hành chính công, nhân sự, ứng dụng AI hỗ trợ (Điều 12 khoản 3), trách nhiệm Bộ Tư pháp: không trực tiếp liên quan thủ tục dân cư.
+- Điều 15: bãi bỏ khoản 4 Điều 10, khoản 6 Điều 36, khoản 3 Điều 40 của NĐ 118/2025/NĐ-CP (nội dung các khoản này chưa đọc vì không có trong toàn văn).
