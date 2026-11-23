@@ -1,0 +1,22 @@
+---
+so_ky_hieu: 55/2021/TT-BCA
+chu_de: Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú
+---
+# TT 55/2021/TT-BCA ngày 15/05/2021, hiệu lực 01/07/2021 (Điều 26 khoản 1); trang vbpl.vn ghi tình trạng "Hết hiệu lực toàn bộ" (cập nhật 20/07/2026), toàn văn không nêu văn bản thay thế
+Nguồn: toàn văn vbpl.vn đã đọc.
+- Điều 26 khoản 1: thay thế TT 35/2014/TT-BCA. Toàn văn không có điều khoản về lệ phí hay mức thu; không có phụ lục, biểu mẫu (Tờ khai thay đổi thông tin cư trú được nhắc tên, mẫu chưa đọc).
+- Điều 3: nộp hồ sơ đăng ký cư trú trực tiếp hoặc qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Cổng dịch vụ công quản lý cư trú; nộp bản sao chứng thực hoặc bản chụp kèm bản chính để đối chiếu (khoản 2, 3); thông báo kết quả bằng văn bản, tin nhắn, cổng dịch vụ công (khoản 4); được từ chối giải quyết và không hoàn lệ phí nếu giấy tờ tẩy xóa, sửa chữa, làm giả (khoản 5).
+- Điều 4: tiếp nhận, xử lý thông tin phản ánh về cư trú.
+- Điều 5: tạm thời chưa giải quyết thay đổi nơi cư trú: người bị hạn chế quyền tự do cư trú (điểm a, b, c khoản 2 Điều 4 Luật Cư trú), người đang bị cách ly dịch bệnh hoặc tình trạng khẩn cấp, người bị phạt cấm cư trú.
+- Điều 6: thu thập, cập nhật thông tin vào Cơ sở dữ liệu về cư trú, Cơ sở dữ liệu quốc gia về dân cư; công dân sống tại chỗ ở khác trong cùng đơn vị hành chính cấp xã nơi thường trú mà chỗ ở không đủ điều kiện thường trú phải cập nhật nơi ở hiện tại (khoản 3); danh sách quan hệ với chủ hộ (khoản 4).
+- Điều 7: đăng ký thường trú tại cơ sở tín ngưỡng, tôn giáo (chủ hộ, giấy tờ chứng minh). Điều 8: tại cơ sở trợ giúp xã hội (văn bản đề nghị, giấy tờ xác nhận). Điều 9: thường trú có yếu tố nước ngoài (quyết định nhập quốc tịch; Việt kiều nhập cảnh bằng hộ chiếu Việt Nam hoặc hộ chiếu nước ngoài kèm giấy tờ quốc tịch và văn bản đồng ý của cơ quan xuất nhập cảnh).
+- Điều 10: điều chỉnh thông tin cư trú (đổi chủ hộ, thay đổi hộ tịch, đổi địa giới, tên đường, tổ dân phố, thôn, số nhà). Công dân không phải xuất trình giấy tờ nếu thay đổi hộ tịch đã có trong Cơ sở dữ liệu hộ tịch điện tử (khoản 2).
+- Điều 11: hủy bỏ đăng ký thường trú; trong 01 ngày làm việc kể từ khi nhận quyết định phải cập nhật cơ sở dữ liệu, thông báo tàng thư, thông báo văn bản cho công dân nêu lý do.
+- Điều 12: văn bản đồng ý cho giải quyết thường trú tại cơ quan xuất nhập cảnh. Hồ sơ: tờ khai, bản sao hộ chiếu nhập cảnh lần gần nhất, giấy tờ chứng minh quốc tịch Việt Nam. Thời hạn: nộp tại Công an tỉnh thì 20 ngày xác minh, rồi Cục Quản lý xuất nhập cảnh 20 ngày thẩm định, cấp (khoản 3); nộp tại Cục thì 40 ngày (khoản 4); đăng ký thường trú trong 12 tháng kể từ ngày được cấp văn bản (khoản 5); thông báo Cục hủy, thu hồi giấy tờ nhập xuất cảnh theo hộ chiếu nước ngoài (khoản 6).
+- Điều 13: đăng ký tạm trú mới khi đổi chỗ ở; đăng ký tập thể qua cơ quan, tổ chức quản lý (ký túc xá, nhà ở người lao động, cơ sở tín ngưỡng, tôn giáo, trợ giúp xã hội) kèm danh sách và tờ khai. Điều 14: hủy bỏ đăng ký tạm trú (cập nhật trong 01 ngày làm việc).
+- Điều 15: thông báo lưu trú (hình thức trực tiếp, điện thoại, thư điện tử, trang thông tin, cổng dịch vụ công, ứng dụng); cơ sở lưu trú, thành viên hộ gia đình đề nghị người lưu trú xuất trình giấy tờ có số định danh cá nhân; thời gian lưu trú không quá 30 ngày (khoản 4).
+- Điều 16: khai báo tạm vắng (điểm c, d khoản 1 Điều 31 Luật Cư trú), các hình thức tiếp nhận.
+- Điều 17: xác nhận thông tin về cư trú; nộp ở bất kỳ cơ quan đăng ký cư trú; giá trị 06 tháng (xác nhận khai báo cư trú, khoản 1 Điều 19 Luật Cư trú) hoặc 30 ngày (xác nhận thông tin cư trú); hết giá trị khi thông tin thay đổi; giải quyết trong 03 ngày làm việc, có chữ ký, đóng dấu của thủ trưởng cơ quan đăng ký cư trú hoặc chữ ký số (khoản 2, 3).
+- Điều 18-20: đăng ký thường trú, tạm trú tại đơn vị đóng quân của người trong Công an nhân dân (điều kiện, hồ sơ có giấy giới thiệu ký tên đóng dấu của thủ trưởng đơn vị); gia hạn tạm trú trong 15 ngày trước ngày hết hạn (Điều 19 khoản 4); đơn vị gửi danh sách xóa đăng ký thường trú, tạm trú hàng quý (Điều 20, dẫn Điều 24, 29 Luật Cư trú).
+- Điều 21-25: trách nhiệm quản lý cư trú của Cục Cảnh sát QLHC về TTXH, Công an tỉnh, huyện, xã; kiểm tra cư trú (Điều 25: định kỳ, đột xuất, huy động lực lượng bảo vệ an ninh, trật tự ở cơ sở).
+- Điều 26 khoản 2, 3: khi công dân làm thủ tục dẫn đến thay đổi thông tin trong Sổ hộ khẩu, Sổ tạm trú thì thu hồi sổ đã cấp, cập nhật Cơ sở dữ liệu về cư trú, không cấp mới, cấp lại Sổ hộ khẩu, Sổ tạm trú; sổ hộ khẩu thu hồi chuyển vào tàng thư hồ sơ cư trú.
