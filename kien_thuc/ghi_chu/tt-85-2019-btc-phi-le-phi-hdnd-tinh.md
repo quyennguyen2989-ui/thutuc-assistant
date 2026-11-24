@@ -1,0 +1,14 @@
+---
+so_ky_hieu: 85/2019/TT-BTC
+chu_de: Phí, lệ phí thuộc thẩm quyền HĐND tỉnh (lệ phí hộ tịch, cư trú, CMND)
+---
+# TT 85/2019/TT-BTC ngày 29/11/2019 của Bộ Tài chính, hiệu lực 13/01/2020 (Điều 9 khoản 1)
+Nguồn: toàn văn vbpl.vn đã đọc (tình trạng trên vbpl: hết hiệu lực một phần). Thay Thông tư 250/2016/TT-BTC và 96/2017/TT-BTC (Điều 9 khoản 2).
+Chỉ ghi phần liên quan thủ tục dân cư; các khoản phí ngành khác (cây giống, thăm quan, môi trường, nước ngầm...) không đưa vào.
+- Điều 3: lệ phí thuộc thẩm quyền HĐND cấp tỉnh gồm lệ phí đăng ký cư trú (hoạt động do cơ quan địa phương thực hiện), lệ phí cấp chứng minh nhân dân, lệ phí hộ tịch, lệ phí đăng ký kinh doanh và các lệ phí khác.
+- Điều 5 khoản 1 điểm a (lệ phí đăng ký cư trú): trên vbpl điểm này bị đánh dấu bãi bỏ. Căn cứ Thông tư 75/2022/TT-BTC (hiệu lực 05/02/2023), lệ phí đăng ký cư trú do Bộ Tài chính quy định thống nhất, không còn do HĐND tỉnh quyết định; không dùng nội dung cũ về mức thu theo quận, phường nội thành. Xem ghi chú tt-75-2022-btc-le-phi-dang-ky-cu-tru.md.
+- Điều 5 điểm b (lệ phí cấp chứng minh nhân dân, không gồm tiền ảnh): gồm cấp lần đầu, cấp lại, cấp đổi; mức thu tại quận, phường nội thành cao hơn khu vực khác. Điều khoản được đánh dấu đã sửa đổi, bổ sung; văn bản sửa đổi không nêu trong toàn văn. Thông tư 75/2022 Điều 7 nêu việc HĐND tỉnh ban hành lệ phí cấp chứng minh nhân dân chỉ thực hiện khi luật chuyên ngành quy định cơ quan địa phương thu.
+- Điều 5 điểm c (lệ phí hộ tịch): thu đối với người được cơ quan nhà nước giải quyết việc hộ tịch; không gồm cấp bản sao trích lục hộ tịch (thu phí khai thác dữ liệu theo Thông tư 281/2016/TT-BTC). Tại UBND xã, phường, thị trấn: khai sinh (không đúng hạn, đăng ký lại, cho người đã có hồ sơ giấy tờ cá nhân), khai tử (không đúng hạn, đăng ký lại), đăng ký lại kết hôn, nhận cha mẹ con, thay đổi cải chính hộ tịch người dưới 14 tuổi ở trong nước, bổ sung hộ tịch, giấy xác nhận tình trạng hôn nhân, ghi sổ việc hộ tịch khác. Tại UBND huyện, quận, thị xã, thành phố thuộc tỉnh: khai sinh, khai tử, kết hôn (mới và lại), giám hộ, chấm dứt giám hộ, nhận cha mẹ con, thay đổi cải chính người từ đủ 14 tuổi, xác định lại dân tộc, hộ tịch có yếu tố nước ngoài, ghi sổ việc đã giải quyết ở nước ngoài. HĐND tỉnh quy định mức theo điều kiện địa phương; miễn lệ phí hộ tịch theo khoản 1 Điều 11 Luật Hộ tịch. Điều khoản này được đánh dấu đã sửa đổi, bổ sung; văn bản sửa đổi không nêu trong toàn văn nên danh mục việc thuộc cấp xã, cấp huyện cần đối chiếu bản mới nếu hỏi cụ thể.
+- Điều 6: HĐND tỉnh quyết định đối tượng miễn, giảm theo luật chuyên ngành, chủ trương chính sách, điều kiện địa phương. Điều 7: lệ phí nộp 100% vào ngân sách; phí do HĐND quyết định tỷ lệ để lại.
+- Điều 8 khoản 2: HĐND tỉnh quyết định theo hướng tham khảo địa phương khác.
+Không ghi mức thu cụ thể (mức do HĐND từng tỉnh quyết định); Phụ lục không có trong toàn văn đã đọc.
