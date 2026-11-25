@@ -1,6 +1,6 @@
 {
- "tao_luc": "2026-11-25T01:02:18+07:00",
- "so_sanh_duoc": 174764,
+ "tao_luc": "2026-11-26T01:02:19+07:00",
+ "so_sanh_duoc": 174798,
  "so_ky_hieu_da_tim": 445,
  "van_ban": [
   {
@@ -698,8 +698,8 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-18-2026-nd-cp-sua-doi-bo-sung-mot-so-nghi-dinh-de-cat-giam-don-gian-hoa-thu-tuc-hanh-chinh-dieu-kien-kinh-doanh-thuoc-pham-vi-quan-ly-cua-bo-tu-phap--187582",
-   "sheet": 2,
-   "lastmod": "2026-04-17",
+   "sheet": 1,
+   "lastmod": "2026-11-25",
    "so_ky_hieu": "18/2026/NĐ-CP",
    "theo_tu_khoa": false
   },
@@ -4177,7 +4177,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-221-2009-tt-btc-huong-dan-ho-tro-lai-suat-vay-ngan-hang-de-mua-tam-tru-lua-gao-he-thu-nam-2009--107964",
-   "sheet": 3,
+   "sheet": 4,
    "lastmod": "2026-04-06",
    "so_ky_hieu": "221/2009/TT-BTC",
    "theo_tu_khoa": true
@@ -4716,7 +4716,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-51-2025-tt-bt-quy-dinh-thu-tuc-ve-giao-dich-dien-tu-trong-linh-vuc-thue-doi-voi-hang-hoa-xuat-khau-nhap-khau-qua-canh-va-phuong-tien-van-tai-xuat-canh-nhap-canh-qua-canh--179043",
-   "sheet": 3,
+   "sheet": 4,
    "lastmod": "2026-04-06",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
@@ -5101,7 +5101,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-72-2014-tt-btc-quy-dinh-ve-hoan-thue-gia-tri-gia-tang-doi-voi-hang-hoa-cua-nguoi-nuoc-ngoai-nguoi-viet-nam-dinh-cu-o-nuoc-ngoai-mang-theo-khi-xuat-canh--70289",
-   "sheet": 1,
+   "sheet": 2,
    "lastmod": "2026-05-08",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
