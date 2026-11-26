@@ -1,19 +1,12 @@
 {
- "tao_luc": "2026-11-26T01:02:19+07:00",
- "so_sanh_duoc": 174798,
+ "tao_luc": "2026-11-27T01:02:21+07:00",
+ "so_sanh_duoc": 174817,
  "so_ky_hieu_da_tim": 445,
  "van_ban": [
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/bai-bo-cac-nghi-quyet-cua-hoi-dong-nhan-dan-thanh-pho-ho-chi-minh-tinh-binh-duong-tinh-ba-ria-vung-tau-truoc-sap-xep-thuoc-linh-vuc-an-ninh-trat-tu--hhtquyetdinh_634",
    "sheet": 17,
    "lastmod": "2026-05-07",
-   "so_ky_hieu": null,
-   "theo_tu_khoa": true
-  },
-  {
-   "url": "https://vbpl.vn/van-ban/chi-tiet/chi-thi-26-ct-ub-nc-nam-1997-thuc-hien-nghi-dinh-51-cp-va-thong-tu-06-tt-bnv-c13-ve-dang-ky-va-quan-ly-ho-khau-do-uy-ban-nhan-dan-thanh-pho-ho-chi-minh-ban-hanh--79336",
-   "sheet": 26,
-   "lastmod": "2026-01-19",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
   },
@@ -313,7 +306,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-ngan-sach-nha-nuoc-so-89-2025-qh15--179427",
-   "sheet": 3,
+   "sheet": 4,
    "lastmod": "2026-04-06",
    "so_ky_hieu": "89/2025/QH15",
    "theo_tu_khoa": false
@@ -866,7 +859,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/nghi-dinh-so-31-2014-nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-cu-tru--34848",
-   "sheet": 1,
+   "sheet": 2,
    "lastmod": "2026-05-08",
    "so_ky_hieu": "31/2014/NĐ-CP",
    "theo_tu_khoa": true
@@ -2700,7 +2693,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-lien-tich-so-03-2016-ttlt-bca-bqp-huong-dan-viec-nhap-canh-xuat-canh-cu-tru-cua-nguoi-nuoc-ngoai-va-kiem-tra-kiem-soat-giam-sat-phuong-tien-van-tai-hang-hoa-nuoc-ngoai-vao-ra-khu-kinh-te-cua-khau-va-cang-bien-thuoc-khu-kinh-te--126275",
-   "sheet": 5,
+   "sheet": 6,
    "lastmod": "2026-03-31",
    "so_ky_hieu": "03/2016/TTLT-BCA-BQP",
    "theo_tu_khoa": true
@@ -3246,8 +3239,8 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-05-2022-tt-bnv-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-04-2012-tt-bnv-ngay-31-8-2012-cua-bo-truong-bo-noi-vu-huong-dan-ve-to-chuc-va-hoat-dong-cua-thon-to-dan-pho--154059",
-   "sheet": 6,
-   "lastmod": "2026-03-29",
+   "sheet": 1,
+   "lastmod": "2026-11-26",
    "so_ky_hieu": "05/2022/TT-BNV",
    "theo_tu_khoa": true
   },
@@ -3631,7 +3624,7 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-11-2014-tt-nhnn-quy-dinh-viec-mang-vang-cua-ca-nhan-khi-xuat-canh-nhap-canh--44162",
-   "sheet": 1,
+   "sheet": 2,
    "lastmod": "2026-05-08",
    "so_ky_hieu": "11/2014/TT-NHNN",
    "theo_tu_khoa": true
@@ -3841,8 +3834,8 @@
   },
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/thong-tu-so-14-2018-tt-bnv-sua-doi-bo-sung-mot-so-dieu-cua-thong-tu-so-04-2012-tt-bnv-ngay-31-thang-8-nam-2012-cua-bo-truong-bo-noi-vu-huong-dan-ve-to-chuc-va-hoat-dong-cua-thon-to-dan-pho--132466",
-   "sheet": 2,
-   "lastmod": "2026-05-08",
+   "sheet": 1,
+   "lastmod": "2026-11-26",
    "so_ky_hieu": "14/2018/TT-BNV",
    "theo_tu_khoa": true
   },
