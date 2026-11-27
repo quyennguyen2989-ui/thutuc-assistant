@@ -1,12 +1,19 @@
 {
- "tao_luc": "2026-11-27T01:02:21+07:00",
- "so_sanh_duoc": 174817,
+ "tao_luc": "2026-11-28T01:02:21+07:00",
+ "so_sanh_duoc": 174900,
  "so_ky_hieu_da_tim": 445,
  "van_ban": [
   {
    "url": "https://vbpl.vn/van-ban/chi-tiet/bai-bo-cac-nghi-quyet-cua-hoi-dong-nhan-dan-thanh-pho-ho-chi-minh-tinh-binh-duong-tinh-ba-ria-vung-tau-truoc-sap-xep-thuoc-linh-vuc-an-ninh-trat-tu--hhtquyetdinh_634",
    "sheet": 17,
    "lastmod": "2026-05-07",
+   "so_ky_hieu": null,
+   "theo_tu_khoa": true
+  },
+  {
+   "url": "https://vbpl.vn/van-ban/chi-tiet/chi-thi-26-ct-ub-nc-nam-1997-thuc-hien-nghi-dinh-51-cp-va-thong-tu-06-tt-bnv-c13-ve-dang-ky-va-quan-ly-ho-khau-do-uy-ban-nhan-dan-thanh-pho-ho-chi-minh-ban-hanh--79336",
+   "sheet": 27,
+   "lastmod": "2026-01-19",
    "so_ky_hieu": null,
    "theo_tu_khoa": true
   },
